@@ -5,7 +5,7 @@
     <description>Recent content in M1sty on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -14,11 +14,17 @@
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/about/</guid>
-      <description>&lt;p&gt;1111&lt;/p&gt;
+      <description>&lt;p&gt;Hello！我是Misty，欢迎来到我的个人网站！&lt;/p&gt;
+&lt;p&gt;我目前在香港大学进行我的研究生课程，我的研究方向是数据分析与数据挖掘（闲暇之余利用专业知识研究电子竞技）。&lt;/p&gt;
+&lt;p&gt;在这里主要记录我的学习笔记和学习心得，如果想要了解其他可以访问我的&lt;a href=&#34;https://weibo.com/u/5151075654&#34;&gt;微博主页&lt;/a&gt;或者&lt;a href=&#34;https://space.bilibili.com/1215569613&#34;&gt;B站主页&lt;/a&gt;！&lt;/p&gt;
+&lt;p&gt;2021年许愿：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;https://github.com/russross/blackfriday&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;家人朋友平安健康！&lt;/li&gt;
+&lt;li&gt;顺利毕业找到工作！&lt;/li&gt;
+&lt;li&gt;成为十万粉的UP主！&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;其他的想到再写，谢谢你来看我的网站！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/IMG_0295.JPG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -28,21 +34,36 @@
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/links/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;https://github.com/russross/blackfriday&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+      <description>&lt;h3 id=&#34;个人主页&#34;&gt;个人主页&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;微博：&lt;a href=&#34;https://weibo.com/u/5151075654&#34;&gt;@浅呸呸&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;B站：&lt;a href=&#34;https://space.bilibili.com/1215569613&#34;&gt;@甜甜忙着学习没空理你&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;我的收藏&#34;&gt;我的收藏&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;amp;__biz=MzA5MjcxNDQxNw==&amp;amp;scene=124#wechat_redirect&#34;&gt;小蚊子数据分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;amp;__biz=MzUyMjI4MzE0MQ==&amp;amp;scene=124#wechat_redirect&#34;&gt;木东居士&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mp.weixin.qq.com/mp/profile_ext?action=home&amp;amp;__biz=MzI0MTAyMjY0Ng==&amp;amp;scene=124#wechat_redirect&#34;&gt;Tableau社区&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://public.tableau.com/zh-cn/s/&#34;&gt;Tableau Public&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;实用工具&#34;&gt;实用工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gaoding.com/&#34;&gt;搞定设计&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jiumodiary.com/&#34;&gt;Jiumo搜书&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.canva.com/&#34;&gt;Canva&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;快乐源泉&#34;&gt;快乐源泉&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Yy4y1J7yw&#34;&gt;字母钢：高压锅说唱&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Vi4y1F7Xr&#34;&gt;What are in the Tiffiany Young&amp;rsquo;s Bag&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title>Posts</title>
       <link>https://www.m1sty.com/posts/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/posts/</guid>
       <description></description>

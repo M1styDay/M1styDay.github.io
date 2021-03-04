@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on M1sty</title>
-    <link>https://www.m1sty.com/posts/</link>
-    <description>Recent content in Posts on M1sty</description>
+    <title>Database on M1sty</title>
+    <link>https://www.m1sty.com/categories/database/</link>
+    <description>Recent content in Database on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL面试必会50题_题解【施工中……】</title>
       <link>https://www.m1sty.com/2020/database_sql_50/</link>

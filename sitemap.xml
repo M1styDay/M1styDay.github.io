@@ -22,29 +22,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/1111/</loc>
-      
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/blog/</loc>
-      
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/categories/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
       
       
@@ -52,19 +32,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2014/creating-a-new-theme/</loc>
+      <loc>https://www.m1sty.com/categories/database/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/hugo/</loc>
-      
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
       
       
@@ -74,7 +44,7 @@
     <url>
       <loc>https://www.m1sty.com/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
       
       
@@ -84,7 +54,27 @@
     <url>
       <loc>https://www.m1sty.com/posts/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/sql/</loc>
+      
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2020/database_sql_50/</loc>
+      
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
       
       
@@ -94,7 +84,7 @@
     <url>
       <loc>https://www.m1sty.com/tags/</loc>
       
-      <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
       
       
@@ -102,99 +92,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2014/goisforlovers/</loc>
+      <loc>https://www.m1sty.com/2020/database_sql_sentences/</loc>
       
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/development/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/go/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/golang/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/templates/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/themes/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/uncategorized/</loc>
-      
-      <lastmod>2014-07-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2014/hugoisforlovers/</loc>
-      
-      <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/1111111/</loc>
-      
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2014/migrate-from-jekyll/</loc>
-      
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-28T00:00:00+00:00</lastmod>
       
       
       
