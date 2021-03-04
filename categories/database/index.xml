@@ -6,7 +6,16 @@
     <description>Recent content in Database on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>牛客网数据库_错题集【施工中……】</title>
+      <link>https://www.m1sty.com/2021/database_sql_nowcoder/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/database_sql_nowcoder/</guid>
+      <description>TBC </description>
+    </item>
+    
     <item>
       <title>SQL面试必会50题_题解【施工中……】</title>
       <link>https://www.m1sty.com/2020/database_sql_50/</link>
@@ -44,15 +53,6 @@ Alter table tabname drop primary key(col)</description>
       
       <guid>https://www.m1sty.com/2020/database_sql_notes/</guid>
       <description>表操作 创建表 create table 表名（字段名称 字段类型 约束，……） 字符类型  character 字符串  char(size) 保存固定长度的字符串 varchar(n) 可变长度的字符_最多8000个字符 text 可变长度的字符串_最多2GB字符数据   unicode 字符串  nchar(n) 固定长度的Unicode数据_最多4000个字符 nvarchar(n) 可变长度的Unicode数据_最多4000个字符 ntext 可变长度的Unicode数据_最多2GB字符数据   Binary 类型  bit 允许0/1/null binary(n) 固定长度的二进制数据_最多8000字节 varbinary(n) 可变长度的二进制数据_最多8000字节 image 可变长度的二进制数据_最多2GB   Number 类型  tinyint 允许从0到255的所有数字 int 允许从-2,147,483,648到2,147,483,647的所有数字_占4字节 bigint -9,223,372,036,854,775,808到9,223,372,036,854,775,807范围内数字_占8字节 float 从-1.79E+308到1.79E+308的浮动精度数字数据 real 从-3.40E+38到3.40E+38的浮动精度数字数据 money 10进制货币数据   Date 类型  datetime 从1753年1月1日到9999年年12月31日，精度为3.33毫秒_8bytes date 仅储存日期。从0001年1月1日到9999年12月31日_3bytes   其他数据类型  uniqueidentifler 存储全局标识符（GUID） xml 存储XML格式化数据_最多2GB cursor 存储对用于数据库操作的指针的引用   常见的字符类型选择  字符类型建议采用varchar/nvarchar数据类型 全额货币建议采用money数据类型 自增长标识建议采用bigint数据类型（int类型限制） 时间类型建议采用datetime数据类型 尽量不用text、ntext、image 尽量不用xml、varchar(max)、nvarchar(max)    不同数据库数据字符类型区别  https://www.</description>
-    </item>
-    
-    <item>
-      <title>牛客网数据库_错题集【施工中……】</title>
-      <link>https://www.m1sty.com/1/database_sql_nowcoder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/1/database_sql_nowcoder/</guid>
-      <description>TBC </description>
     </item>
     
   </channel>

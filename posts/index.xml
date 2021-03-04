@@ -6,7 +6,16 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>牛客网数据库_错题集【施工中……】</title>
+      <link>https://www.m1sty.com/2021/database_sql_nowcoder/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/database_sql_nowcoder/</guid>
+      <description>TBC </description>
+    </item>
+    
     <item>
       <title>SQL面试必会50题_题解【施工中……】</title>
       <link>https://www.m1sty.com/2020/database_sql_50/</link>
@@ -53,15 +62,6 @@ Alter table tabname drop primary key(col)</description>
       
       <guid>https://www.m1sty.com/2020/overview_data-analyst/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>牛客网数据库_错题集【施工中……】</title>
-      <link>https://www.m1sty.com/1/database_sql_nowcoder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/1/database_sql_nowcoder/</guid>
-      <description>TBC </description>
     </item>
     
   </channel>

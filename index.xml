@@ -5,8 +5,17 @@
     <description>Recent content in M1sty on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://www.m1sty.com/posts/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/posts/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>About</title>
@@ -58,15 +67,6 @@
 &lt;li&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Vi4y1F7Xr&#34;&gt;What are in the Tiffiany Young&amp;rsquo;s Bag&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>https://www.m1sty.com/posts/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/posts/</guid>
-      <description></description>
     </item>
     
   </channel>
