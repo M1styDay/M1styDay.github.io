@@ -47,7 +47,7 @@
     "articleSection" : "posts",
     "name" : "SQL面试必会50题_题解【施工中……】",
     "headline" : "SQL面试必会50题_题解【施工中……】",
-    "description" : "材料 题源\u002b数据 SQL面试必会50题\n表关系  题解（1-10） 1. 查询课程编号为“01”的课程比“02”的课程成绩高的所有学生的学号 SELECT st.s_id, a.s_score, b.s_score FROM student st INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = \u0026#34;01\u0026#34;) as a on a.s_id = st.`s_id` INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = \u0026#34;02\u0026#34;) as b on b.s_id = st.`s_id` WHERE a.s_score \u0026gt; b.s_score; 2. 查询平均成绩大于60分的学生的学号和平均成绩 SELECT distinct s_id, AVG(s_score) as avg1 FROM score Group by S_id having avg1 \u0026gt; 60 3.",
+    "description" : "材料 题源\u002b数据 SQL面试必会50题\n表关系  题解 01-10 1. 查询课程编号为“01”的课程比“02”的课程成绩高的所有学生的学号 SELECT st.s_id, a.s_score, b.s_score FROM student st INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = \u0026#34;01\u0026#34;) as a on a.s_id = st.`s_id` INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = \u0026#34;02\u0026#34;) as b on b.s_id = st.`s_id` WHERE a.s_score \u0026gt; b.s_score; 2. 查询平均成绩大于60分的学生的学号和平均成绩 SELECT distinct s_id, AVG(s_score) as avg1 FROM score Group by S_id having avg1 \u0026gt; 60 3.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -58,7 +58,7 @@
     "datePublished": "2020-12-30 00:00:00 \u002b0000 UTC",
     "dateModified" : "2020-12-30 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2020\/database_sql_50\/",
-    "wordCount" : "331",
+    "wordCount" : "366",
     "keywords" : [ "sql", "M1sty"]
 }
 </script>
@@ -130,7 +130,7 @@
             </span>
           <span class="post-time"> on
         <time datetime=2020-12-30 itemprop="datePublished">December 30, 2020</time>
-           </span> (<span class="post-word-count">331 words)</span>
+           </span> (<span class="post-word-count">366 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -145,12 +145,12 @@
         <li><a href="#表关系">表关系</a></li>
       </ul>
     </li>
-    <li><a href="#题解1-10">题解（1-10）</a>
+    <li><a href="#题解">题解</a>
       <ul>
-        <li></li>
+        <li><a href="#01-10">01-10</a></li>
+        <li><a href="#11-21">11-21</a></li>
       </ul>
     </li>
-    <li><a href="#题解11-21">题解（11-21）</a></li>
     <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
@@ -209,7 +209,8 @@
 <h3 id="表关系">表关系</h3>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/0-%E8%A1%A8%E5%85%B3%E7%B3%BB.png" alt=""></p>
 <hr>
-<h2 id="题解1-10">题解（1-10）</h2>
+<h2 id="题解">题解</h2>
+<h3 id="01-10">01-10</h3>
 <h4 id="1-查询课程编号为01的课程比02的课程成绩高的所有学生的学号">1. 查询课程编号为“01”的课程比“02”的课程成绩高的所有学生的学号</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> st.s_id, a.s_score, b.s_score
 <span style="color:#66d9ef">FROM</span> student st
@@ -227,7 +228,7 @@
 <span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> score
 <span style="color:#66d9ef">ON</span> student.s_id <span style="color:#f92672">=</span> score.s_id
 <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> s_id;
-</code></pre></div><h4 id="4-查询姓猴的老师的个数">4. 查询姓“猴”的老师的个数</h4>
+</code></pre></div><h4 id="4-查询姓李的老师的个数">4. 查询姓“李”的老师的个数</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(t_name)
 <span style="color:#66d9ef">FROM</span> Teacher
 <span style="color:#66d9ef">WHERE</span> t_name <span style="color:#66d9ef">like</span> <span style="color:#e6db74">&#34;李%&#34;</span>
@@ -261,7 +262,16 @@
 <span style="color:#66d9ef">WHERE</span> s_id <span style="color:#66d9ef">IN</span> 
 (<span style="color:#66d9ef">SELECT</span> a.s_id 
 <span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> s_id <span style="color:#66d9ef">FROM</span> score <span style="color:#66d9ef">WHERE</span> c_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;01&#34;</span> ) a
-<span style="color:#66d9ef">WHERE</span> s_id <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">in</span> (<span style="color:#66d9ef">SELECT</span> s_id <span style="color:#66d9ef">FROM</span> score <span style="color:#66d9ef">WHERE</span> c_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;02&#34;</span>)
+<span style="color:#66d9ef">WHERE</span> s_id <span style="color:#66d9ef">in</span> (<span style="color:#66d9ef">SELECT</span> s_id <span style="color:#66d9ef">FROM</span> score <span style="color:#66d9ef">WHERE</span> c_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;02&#34;</span>)
+)
+</code></pre></div><p>解法三：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> student.s_id, student.s_name
+<span style="color:#66d9ef">from</span> student 
+<span style="color:#66d9ef">where</span> student.s_id <span style="color:#66d9ef">in</span> 
+(<span style="color:#66d9ef">select</span> a.s_id <span style="color:#66d9ef">from</span>
+(<span style="color:#66d9ef">select</span> score.s_id <span style="color:#66d9ef">from</span> score <span style="color:#66d9ef">where</span> c_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;01&#39;</span>) a,
+(<span style="color:#66d9ef">select</span> score.s_id <span style="color:#66d9ef">from</span> score <span style="color:#66d9ef">where</span> c_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;02&#39;</span>) b
+<span style="color:#66d9ef">where</span> a.s_id <span style="color:#f92672">=</span> b.s_id
 )
 </code></pre></div><h4 id="8-查询课程编号为02的总成绩">8. 查询课程编号为“02”的总成绩</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">SUM</span>(s_score)
@@ -290,8 +300,7 @@
 <span style="color:#66d9ef">ON</span> st.s_id <span style="color:#f92672">=</span> sc.s_id 
 <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> st.s_id
 <span style="color:#66d9ef">HAVING</span> <span style="color:#66d9ef">COUNT</span>(c_id) <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">DISTINCT</span> c_id) <span style="color:#66d9ef">FROM</span> Course)
-</code></pre></div><hr>
-<h2 id="题解11-21">题解（11-21）</h2>
+</code></pre></div><h3 id="11-21">11-21</h3>
 <p> </p>
 <hr>
 <p> </p>
