@@ -2,9 +2,9 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://www.m1sty.com/categories/</loc>
+      <loc>https://www.m1sty.com/categories/business/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -12,9 +12,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/database/</loc>
+      <loc>https://www.m1sty.com/categories/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -24,7 +24,7 @@
     <url>
       <loc>https://www.m1sty.com/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -34,17 +34,7 @@
     <url>
       <loc>https://www.m1sty.com/posts/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/sql/</loc>
-      
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -54,7 +44,7 @@
     <url>
       <loc>https://www.m1sty.com/tags/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -62,9 +52,19 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/database_sql_nowcoder/</loc>
+      <loc>https://www.m1sty.com/tags/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/object_index/</loc>
+      
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -85,6 +85,26 @@
       <loc>https://www.m1sty.com/links/</loc>
       
       <lastmod>2020-12-31T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/database/</loc>
+      
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/sql/</loc>
+      
+      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
       
       
@@ -145,6 +165,16 @@
       <loc>https://www.m1sty.com/2020/overview_data-analyst/</loc>
       
       <lastmod>2020-12-24T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2020/database_sql_nowcoder/</loc>
+      
+      <lastmod>2020-12-18T00:00:00+00:00</lastmod>
       
       
       

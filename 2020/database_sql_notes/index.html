@@ -287,20 +287,22 @@
 </ul>
 </li>
 </ul>
-<h6 id="不同数据库数据字符类型区别">不同数据库数据字符类型区别</h6>
+<h5 id="不同数据库数据字符类型区别">不同数据库数据字符类型区别</h5>
 <ul>
 <li><a href="https://www.runoob.com/sql/sql-datatypes.html">https://www.runoob.com/sql/sql-datatypes.html</a></li>
 </ul>
 <h5 id="约束">约束</h5>
-<p>创建表时，对表进行限定，保证之后插入表的数据的完整性和正确性</p>
-<h6 id="约束种类">约束种类</h6>
+<ul>
+<li>创建表时，对表进行限定，保证之后插入表的数据的完整性和正确性</li>
+</ul>
+<h5 id="约束种类">约束种类</h5>
 <ul>
 <li>primary key 主键
 <ul>
 <li>非空且唯一</li>
 </ul>
 </li>
-<li>no null 非空</li>
+<li>not null 非空</li>
 <li>unique 唯一</li>
 <li>autoincrement 主键且增长
 <ul>
@@ -340,27 +342,41 @@
 </code></pre></div><h4 id="修改列类型-modify">修改列类型: modify</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">alter</span> <span style="color:#66d9ef">table</span> stu <span style="color:#66d9ef">modify</span> <span style="color:#66d9ef">column</span> gender text;
 </code></pre></div><h4 id="修改列名-change">修改列名: change</h4>
-<p>字段类型不能丢，change不光能改列名也能修改类型</p>
+<ul>
+<li>字段类型不能丢，change不光能改列名也能修改类型</li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">alter</span> <span style="color:#66d9ef">table</span> stu change <span style="color:#66d9ef">column</span> gender sex text
 </code></pre></div><h4 id="修改表名-rename">修改表名: rename</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">alter</span> <span style="color:#66d9ef">table</span> stu <span style="color:#66d9ef">rename</span> <span style="color:#66d9ef">to</span> student
 </code></pre></div><h3 id="查询表">查询表</h3>
 <h4 id="show-tables">show tables</h4>
-<p>查询当前的数据库下的所有表名称</p>
+<ul>
+<li>查询当前的数据库下的所有表名称</li>
+</ul>
 <h4 id="desc-表名">desc 表名</h4>
-<p>查询表的详细信息</p>
+<ul>
+<li>查询表的详细信息</li>
+</ul>
 <h3 id="删除表">删除表</h3>
-<p>drop table</p>
+<ul>
+<li>drop table</li>
+</ul>
 <h2 id="操作表中的数据">操作表中的数据</h2>
 <h3 id="增">增</h3>
-<p>insert into 表名（列名1，列名2……） values （&lsquo;值1&rsquo;，&lsquo;值2&rsquo;……）</p>
-<p>如果是给所有的列增加数据，则列名可以省略</p>
+<ul>
+<li>insert into 表名（列名1，列名2……） values （&lsquo;值1&rsquo;，&lsquo;值2&rsquo;……）</li>
+<li>如果是给所有的列增加数据，则列名可以省略</li>
+</ul>
 <h3 id="删">删</h3>
-<p>delete from 表名 [where 条件]</p>
-<p>如果不加条件，则将表中的数据全部删除</p>
-<p>删除所有行 truncate table</p>
+<ul>
+<li>delete from 表名 [where 条件]</li>
+<li>如果不加条件，则将表中的数据全部删除</li>
+<li>删除所有行 truncate table</li>
+</ul>
 <h3 id="改">改</h3>
-<p>update 表名 set 列名= 值， 列2=值2，……[where 条件]</p>
+<ul>
+<li>update 表名 set 列名= 值， 列2=值2，……[where 条件]</li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">update</span> scores <span style="color:#66d9ef">set</span> scores <span style="color:#f92672">=</span> scores<span style="color:#f92672">+</span><span style="color:#ae81ff">5</span> <span style="color:#66d9ef">where</span> scores <span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">95</span>
 </code></pre></div><h3 id="克隆表">克隆表</h3>
 <p>参考<a href="https://www.m1sty.com/2020/database_sql_sentences/">review</a>中的例子</p>
@@ -396,10 +412,14 @@
     <span style="color:#66d9ef">full</span> <span style="color:#66d9ef">outer</span> <span style="color:#66d9ef">join</span> table2
     <span style="color:#66d9ef">on</span> table1.<span style="color:#66d9ef">column_name</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">table</span>.<span style="color:#66d9ef">column_name</span>;
 </code></pre></div><p><strong>左连接 left join：如果表中有至少一个匹配，则返回行</strong></p>
-<p>left join关键字从左表（table1）返回所有的行，即使右表（table2）中没有匹配。如果右表中没有匹配，则结果为null。</p>
+<ul>
+<li>left join关键字从左表（table1）返回所有的行，即使右表（table2）中没有匹配。如果右表中没有匹配，则结果为null。</li>
+</ul>
 <p> </p>
 <p><strong>右连接 right join：即使左表中没有匹配，也从右表返回所有的行</strong></p>
-<p>right join关键字从右表（table2）返回所有的行，即使左表（table1）中没有匹配。如果左表中没有匹配，则结果为null。</p>
+<ul>
+<li>right join关键字从右表（table2）返回所有的行，即使左表（table1）中没有匹配。如果左表中没有匹配，则结果为null。</li>
+</ul>
 <h3 id="过滤where">过滤：where</h3>
 <ul>
 <li>=、！=、&lt;&gt;、&lt;、&lt;=、&gt;、&gt;=</li>

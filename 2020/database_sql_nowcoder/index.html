@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  
+  <link rel="next" href="https://www.m1sty.com/2020/overview_data-analyst/" />
+  <link rel="canonical" href="https://www.m1sty.com/2020/database_sql_nowcoder/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           牛客网数据库_错题集【施工中……】 | M1sty
+       
+  </title>
+  <meta name="title" content="牛客网数据库_错题集【施工中……】 | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "牛客网数据库_错题集【施工中……】",
+    "headline" : "牛客网数据库_错题集【施工中……】",
+    "description" : "mysql_db_query和mysql_query 关于mysql_db_query与mysql_query说法错误的是：(ABC)\n A.mysql_db_query与mysql_query在执行sql语句后的返回值是一样的，成功返回资源号，失败返回FALSE B.不能用mysql_query函数临时在另一个数据库上执行sql语句，而mysql_db_query可以 C.mysql_query在功能上等于mysql_select_db() \u002b mysql_db_query() D.mysql_db_query不会切换回先前连接到的数据库  范式 下面关于数据库范式的说法哪些是正确的：（ADE）\n A.关系型数据库设计必须符合第一范式，在这种范式下一个数据列只能有一个值 B.数据库设计范式的引入，提高了数据库访问的效率 C.数据库表设计[学号，学生姓名、年龄、性别、课程号、课程名称 课程学分]满足第二范式，但不满足第三范式 D.满足第四范式必然满足第三范式，满足第三范式必然满足第二范式 E.通过数据范式的引入，可以减少数据冗余，消除数据操作异常 F.数据库设计时，符合的范式的等级越高越好  Notes 第一范式：表的每一列属性不可再分。不满足第一范式的就不是关系数据库。\n第二范式：在第一范式的基础上，非主键列属性完全依赖于主键列属性。如果是组合字段主键，部分属性可能只依赖于主键中的某个字段。\n第三范式：非主键列只能由主键决定，不能由其他非主键决定或导出。\n数据库范式的引入，主要是为了解决数据冗余、插入异常、删除异常、更新异常等问题！\nc选项，主键是【学号，课程号】，但是非主键列并不完全依赖主键，如：课程学分只依赖于课程号\n日志 MySQL主从架构的主数据库中不可能出现的日志为：（C）\n A.错误日志 B.事务日志 C.中继日志 D.重做日志  Notes 主服务器将改变记录到二进制日志文件（binary log)中， 从服务器将主服务器的二进制文件拷贝到它的中继日志（relay log)中，并重新开启线程处理中继日志中的事件。\n数据库系统 数据库应用系统中的核心问题是：（A）\n A.数据库设计 B.数据库系统设计 C.数据库维护 D.数据库管理员培训  数据库的锁 如果事务T获得了数据项Q上的排它锁，则T对Q：（D）\n A.只能读不能写 B.只能写不能读 C.既可读又可写 D.不能读不能写  Notes 锁的类型有三种：\n共享（S)锁：多个事务可封锁一个共享页；任何事务都不能修改该页； 通常是该页被读取完毕，S锁立即被释放。\n排它（X)锁：仅允许一个事务封锁此页；其他任何事务必须等到X锁被释放才能对该页进行访问；X锁一直到事务结束才能被释放。\n更新（U)锁：用来预定要对此页施加X锁，它允许其他事务读，但不允许再施加U锁或X锁；当被读取的页将要被更新时，则升级为X锁；U锁一直到事务结束时才能被释放。",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-12-18 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2020-12-18 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2020\/database_sql_nowcoder\/",
+    "wordCount" : "52",
+    "keywords" : [ "sql", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">牛客网数据库_错题集【施工中……】</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/database/"> Database </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2020-12-18 itemprop="datePublished">December 18, 2020</time>
+           </span> (<span class="post-word-count">52 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mysql_db_query和mysql_query">mysql_db_query和mysql_query</a></li>
+    <li><a href="#范式">范式</a>
+      <ul>
+        <li><a href="#notes">Notes</a></li>
+      </ul>
+    </li>
+    <li><a href="#日志">日志</a>
+      <ul>
+        <li><a href="#notes-1">Notes</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据库系统">数据库系统</a></li>
+    <li><a href="#数据库的锁">数据库的锁</a>
+      <ul>
+        <li><a href="#notes-2">Notes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h2 id="mysql_db_query和mysql_query">mysql_db_query和mysql_query</h2>
+<p>关于mysql_db_query与mysql_query说法错误的是：(ABC)</p>
+<ul>
+<li>A.mysql_db_query与mysql_query在执行sql语句后的返回值是一样的，成功返回资源号，失败返回FALSE</li>
+<li>B.不能用mysql_query函数临时在另一个数据库上执行sql语句，而mysql_db_query可以</li>
+<li>C.mysql_query在功能上等于mysql_select_db() + mysql_db_query()</li>
+<li>D.mysql_db_query不会切换回先前连接到的数据库</li>
+</ul>
+<h2 id="范式">范式</h2>
+<p>下面关于数据库范式的说法哪些是正确的：（ADE）</p>
+<ul>
+<li>A.关系型数据库设计必须符合第一范式，在这种范式下一个数据列只能有一个值</li>
+<li>B.数据库设计范式的引入，提高了数据库访问的效率</li>
+<li>C.数据库表设计[学号，学生姓名、年龄、性别、课程号、课程名称 课程学分]满足第二范式，但不满足第三范式</li>
+<li>D.满足第四范式必然满足第三范式，满足第三范式必然满足第二范式</li>
+<li>E.通过数据范式的引入，可以减少数据冗余，消除数据操作异常</li>
+<li>F.数据库设计时，符合的范式的等级越高越好</li>
+</ul>
+<h3 id="notes">Notes</h3>
+<p>第一范式：表的每一列属性不可再分。不满足第一范式的就不是关系数据库。</p>
+<p>第二范式：在第一范式的基础上，非主键列属性完全依赖于主键列属性。如果是组合字段主键，部分属性可能只依赖于主键中的某个字段。</p>
+<p>第三范式：非主键列只能由主键决定，不能由其他非主键决定或导出。</p>
+<p>数据库范式的引入，主要是为了解决数据冗余、插入异常、删除异常、更新异常等问题！</p>
+<p><strong>c选项，主键是【学号，课程号】，但是非主键列并不完全依赖主键，如：课程学分只依赖于课程号</strong></p>
+<h2 id="日志">日志</h2>
+<p>MySQL主从架构的主数据库中不可能出现的日志为：（C）</p>
+<ul>
+<li>A.错误日志</li>
+<li>B.事务日志</li>
+<li>C.中继日志</li>
+<li>D.重做日志</li>
+</ul>
+<h3 id="notes-1">Notes</h3>
+<p>主服务器将改变记录到二进制日志文件（binary log)中，
+从服务器将主服务器的二进制文件拷贝到它的中继日志（relay log)中，并重新开启线程处理中继日志中的事件。</p>
+<h2 id="数据库系统">数据库系统</h2>
+<p>数据库应用系统中的核心问题是：（A）</p>
+<ul>
+<li>A.数据库设计</li>
+<li>B.数据库系统设计</li>
+<li>C.数据库维护</li>
+<li>D.数据库管理员培训</li>
+</ul>
+<h2 id="数据库的锁">数据库的锁</h2>
+<p>如果事务T获得了数据项Q上的排它锁，则T对Q：（D）</p>
+<ul>
+<li>A.只能读不能写</li>
+<li>B.只能写不能读</li>
+<li>C.既可读又可写</li>
+<li>D.不能读不能写</li>
+</ul>
+<h3 id="notes-2">Notes</h3>
+<p>锁的类型有三种：</p>
+<p>共享（S)锁：多个事务可封锁一个共享页；任何事务都不能修改该页； 通常是该页被读取完毕，S锁立即被释放。</p>
+<p>排它（X)锁：仅允许一个事务封锁此页；其他任何事务必须等到X锁被释放才能对该页进行访问；X锁一直到事务结束才能被释放。</p>
+<p>更新（U)锁：用来预定要对此页施加X锁，它允许其他事务读，但不允许再施加U锁或X锁；当被读取的页将要被更新时，则升级为X锁；U锁一直到事务结束时才能被释放。</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2020/database_sql_nowcoder/>https://www.m1sty.com/2020/database_sql_nowcoder/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/sql/">
+                    #sql</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+         
+        
+        <a href="https://www.m1sty.com/2020/overview_data-analyst/" class="next" rel="next" title="数据分析师学习路径">数据分析师学习路径&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
