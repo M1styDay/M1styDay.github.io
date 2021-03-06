@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>SQL面试必会50题_题解【施工中……】</title>
+      <title>SQL面试必会50题_题解</title>
       <link>https://www.m1sty.com/2020/database_sql_50/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -47,7 +47,7 @@ Alter table tabname drop primary key(col)</description>
     </item>
     
     <item>
-      <title>牛客网数据库_错题集【施工中……】</title>
+      <title>牛客网数据库_错题集</title>
       <link>https://www.m1sty.com/2020/database_sql_nowcoder/</link>
       <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
       
