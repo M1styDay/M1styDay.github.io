@@ -47,7 +47,7 @@
     "articleSection" : "posts",
     "name" : "Top-k Queries",
     "headline" : "Top-k Queries",
-    "description" : "Top-k search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.",
+    "description" : "Top-k Search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -139,10 +139,20 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#top-k-search">Top-k search</a>
+    <li><a href="#background">Background</a>
       <ul>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#top-k-search-methods">Top-k search methods</a></li>
+        <li><a href="#multidimensional-data">Multidimensional Data</a></li>
+        <li><a href="#attribute-types">Attribute Types</a></li>
+        <li><a href="#basic-queries">Basic Queries</a></li>
+      </ul>
+    </li>
+    <li><a href="#top-k-search-methods">Top-k Search Methods</a>
+      <ul>
+        <li><a href="#top-k-query">Top-k Query</a></li>
+        <li><a href="#top-k-query-variants">Top-k Query Variants</a></li>
+        <li><a href="#top-k-query-evaluation">Top-k Query Evaluation</a></li>
+        <li><a href="#rank-aggregation">Rank aggregation</a></li>
+        <li><a href="#index-based-methods">Index-based methods</a></li>
       </ul>
     </li>
   </ul>
@@ -196,9 +206,9 @@
           
           
 
-          <h2 id="top-k-search">Top-k search</h2>
-<h3 id="background">Background</h3>
-<h4 id="multidimensional-data">Multidimensional Data</h4>
+          <h1 id="top-k-search">Top-k Search</h1>
+<h2 id="background">Background</h2>
+<h3 id="multidimensional-data">Multidimensional Data</h3>
 <ul>
 <li>Flat relational tables</li>
 <li>Multimedia feature vectors</li>
@@ -206,7 +216,7 @@
 <li>Spatial data</li>
 <li>Text documents</li>
 </ul>
-<h4 id="attribute-types">Attribute Types</h4>
+<h3 id="attribute-types">Attribute Types</h3>
 <ul>
 <li>Attributes of multidimensional tuples may have variable types
 <ul>
@@ -217,7 +227,7 @@
 </li>
 <li>Basic queries: range, NN, similarity</li>
 </ul>
-<h4 id="basic-queries">Basic Queries</h4>
+<h3 id="basic-queries">Basic Queries</h3>
 <ul>
 <li>(Range) selection query
 <ul>
@@ -245,8 +255,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="top-k-search-methods">Top-k search methods</h3>
-<h4 id="top-k-query">Top-k Query</h4>
+<h2 id="top-k-search-methods">Top-k Search Methods</h2>
+<h3 id="top-k-query">Top-k Query</h3>
 <ul>
 <li>Given a set of objects (e.g., relational tuples),</li>
 <li>Returns the k objects with the highest combined score, based on an aggregate function f.</li>
@@ -263,33 +273,33 @@
 </ul>
 </li>
 </ul>
-<h4 id="top-k-query-variants">Top-k Query Variants</h4>
+<h3 id="top-k-query-variants">Top-k Query Variants</h3>
 <ul>
-<li>
-<p>Apply on single table, or ranked lists of tuples ordered by individual attributes
-<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041261460.jpg" alt=""></p>
-</li>
-<li>
-<p>Ranked inputs in the same or different servers (centralized or distributed data)
-<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041590204.jpg" alt=""></p>
-</li>
-<li>
-<p>Standalone query or operator in a more complex query plan
-<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041663148.jpg" alt=""></p>
-</li>
+<li>Apply on single table, or ranked lists of tuples ordered by individual attributes</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041261460.jpg" alt=""></p>
+<ul>
+<li>Ranked inputs in the same or different servers (centralized or distributed data)</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041590204.jpg" alt=""></p>
+<ul>
+<li>Standalone query or operator in a more complex query plan</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041663148.jpg" alt=""></p>
+<ul>
 <li>
 <p>Incremental retrieval of objects with highest scores (k is not predefined)</p>
 </li>
 <li>
 <p>Top-k joins</p>
-<ul>
-<li>SELECT h.id, s.id</li>
-<li>FROM House h School s</li>
-<li>WHERE h.location=s.location</li>
-<li>ORDER BY h.price + 10 ∗ s.tuition</li>
-<li>LIMIT 5</li>
-</ul>
 </li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> h.id, s.id 
+<span style="color:#66d9ef">FROM</span> House h School s 
+<span style="color:#66d9ef">WHERE</span> h.<span style="color:#66d9ef">location</span><span style="color:#f92672">=</span>s.<span style="color:#66d9ef">location</span> 
+<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> h.price <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span> <span style="color:#960050;background-color:#1e0010">∗</span> s.tuition 
+<span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">5</span>
+</code></pre></div><ul>
 <li>
 <p>Probabilistic/approximate top-k retrieval</p>
 </li>
@@ -297,7 +307,7 @@
 <p>Random and/or sorted accesses at ranked inputs</p>
 </li>
 </ul>
-<h4 id="top-k-query-evaluation">Top-k Query Evaluation</h4>
+<h3 id="top-k-query-evaluation">Top-k Query Evaluation</h3>
 <ul>
 <li>
 <p>Most solutions assume distributive, monotone aggregate functions (e.g. f=sum)</p>
@@ -321,8 +331,8 @@
 <p>Solutions based on multidimensional indexing</p>
 </li>
 </ul>
-<h4 id="rank-aggregation">Rank aggregation</h4>
-<h4 id="index-based-methods">Index-based methods</h4>
+<h3 id="rank-aggregation">Rank aggregation</h3>
+<h3 id="index-based-methods">Index-based methods</h3>
 
     </div>
 
