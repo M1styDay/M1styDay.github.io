@@ -25,7 +25,7 @@ https://public.tableau.com/zh-cn/s/
 建议学习时间：长期积累
 Tableau 白皮书 阅读有关数据可视化和 Tableau 最佳做法的深度信息。
 https://www.tableau.com/zh-cn/learn/whitepapers
-推荐模板 Must Read Books By Black Authors 马克，以后可以用来做学习路径图谱
+ 推荐模板 Must Read Books By Black Authors 马克，以后可以用来做学习路径图谱
 https://public.tableau.com/zh-cn/gallery/must-read-books-black-authors?tab=viz-of-the-day&amp;amp;type=viz-of-the-day
 Analyzing the Work of Bob Ross 可以用于关联规则分析的可视化展现
 https://public.tableau.com/zh-cn/gallery/analyzing-work-bob-ross?tab=viz-of-the-day&amp;amp;type=viz-of-the-day
@@ -33,9 +33,9 @@ Disney+ 交互设计非常有趣，可以用于运营数据展现
 https://public.tableau.com/zh-cn/gallery/disney?tab=viz-of-the-day&amp;amp;type=viz-of-the-day
 PPP Loan Data 适用年终汇报
 https://public.tableau.com/profile/dzifa.amexo#!/vizhome/PPPLoanData-MAD4Week7/Overview
-Website Traffic Analysis 网站流量数据仪表板。
+Website Traffic Analysis 网站流量数据仪表板
 https://public.tableau.com/profile/allison.wright4813#!/vizhome/WebsiteTrafficAnalysis_16032478866130/Webalytics-AnalyticsPackage
-结语 Tableau将原始数据转变为可操作、集成化、有意义的仪表板，有利于发现数据规律、找到数据问题、制定解决方案。
+ 结语 Tableau将原始数据转变为可操作、集成化、有意义的仪表板，有利于发现数据规律、找到数据问题、制定解决方案。
 Tableau的学习最重要的就是动手操作，学习数据的逻辑、页面的布局，如何在有限的版面聚合更多的有效信息。而页面的美观只是其次的。</description>
     </item>
     
@@ -45,7 +45,7 @@ Tableau的学习最重要的就是动手操作，学习数据的逻辑、页面�
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/atdm_top-k/</guid>
-      <description></description>
+      <description>Top-k search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
     </item>
     
     <item>
@@ -121,6 +121,15 @@ delete和drop最本质的区别在于，delete是数据操纵语言，即DML，�
  A.revoke create table to u1 B.revoke create table from u1 C.revoke create table from u1 with grant option D.deny create table to u1  Notes: with grant option 权限传递 使用这个子句时将允许用户将其权限分配给他人
  应用问题 mysql_query 关于mysql_db_query与mysql_query说法错误的是：(ABC)
  A.mysql_db_query与mysql_query在执行sql语句后的返回值是一样的，成功返回资源号，失败返回FALSE B.不能用mysql_query函数临时在另一个数据库上执行sql语句，而mysql_db_query可以 C.mysql_query在功能上等于mysql_select_db() + mysql_db_query() D.mysql_db_query不会切换回先前连接到的数据库  范式 下面关于数据库范式的说法哪些是正确的：（ADE）</description>
+    </item>
+    
+    <item>
+      <title>常用商业分析模型</title>
+      <link>https://www.m1sty.com/2020/business_analysis_model/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2020/business_analysis_model/</guid>
+      <description></description>
     </item>
     
   </channel>

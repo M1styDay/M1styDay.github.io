@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/project_data-index/" />
-  <link rel="next" href="https://www.m1sty.com/2021/visualization_tableau_map/" />
-  <link rel="canonical" href="https://www.m1sty.com/2021/atdm_top-k/" />
+  
+  <link rel="next" href="https://www.m1sty.com/2020/database_sql_nowcoder/" />
+  <link rel="canonical" href="https://www.m1sty.com/2020/business_analysis_model/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Top-k Queries | M1sty
+           常用商业分析模型 | M1sty
        
   </title>
-  <meta name="title" content="Top-k Queries | M1sty">
+  <meta name="title" content="常用商业分析模型 | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,21 +45,21 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Top-k Queries",
-    "headline" : "Top-k Queries",
-    "description" : "Top-k search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.",
+    "name" : "常用商业分析模型",
+    "headline" : "常用商业分析模型",
+    "description" : "",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
     "publisher": "Misty",
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
-    "copyrightYear" : "2021",
-    "datePublished": "2021-03-06 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-03-06 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/www.m1sty.com\/2021\/atdm_top-k\/",
-    "wordCount" : "325",
-    "keywords" : [ "Top-k","HKU", "M1sty"]
+    "copyrightYear" : "2020",
+    "datePublished": "2020-11-29 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2020-11-29 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2020\/business_analysis_model\/",
+    "wordCount" : "0",
+    "keywords" : [ "Analysis", "M1sty"]
 }
 </script>
 
@@ -121,32 +121,23 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Top-k Queries</h1>
+        <h1 class="post-title" itemprop="name headline">常用商业分析模型</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
-                <a href="https://www.m1sty.com/categories/advanced-topics-in-data-management/"> Advanced Topics in Data Management </a>
+                <a href="https://www.m1sty.com/categories/business/"> Business </a>
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-03-06 itemprop="datePublished">March 6, 2021</time>
-           </span> (<span class="post-word-count">325 words)</span>
+        <time datetime=2020-11-29 itemprop="datePublished">November 29, 2020</time>
+           </span> (<span class="post-word-count">0 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#top-k-search">Top-k search</a>
-      <ul>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#top-k-search-methods">Top-k search methods</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 <script type="text/javascript">
@@ -182,8 +173,6 @@
         
 
         
-            
-        
 
         
         
@@ -196,134 +185,7 @@
           
           
 
-          <h2 id="top-k-search">Top-k search</h2>
-<h3 id="background">Background</h3>
-<h4 id="multidimensional-data">Multidimensional Data</h4>
-<ul>
-<li>Flat relational tables</li>
-<li>Multimedia feature vectors</li>
-<li>Data warehouse data</li>
-<li>Spatial data</li>
-<li>Text documents</li>
-</ul>
-<h4 id="attribute-types">Attribute Types</h4>
-<ul>
-<li>Attributes of multidimensional tuples may have variable types
-<ul>
-<li>Ordinal (e.g., age, salary)</li>
-<li>Nominal categorical values (e.g., color, religion)</li>
-<li>Binary (e.g., gender, owns_property)</li>
-</ul>
-</li>
-<li>Basic queries: range, NN, similarity</li>
-</ul>
-<h4 id="basic-queries">Basic Queries</h4>
-<ul>
-<li>(Range) selection query
-<ul>
-<li>Returns the records that qualify a (multidimensional) range predicate</li>
-<li>Example:
-<ul>
-<li>Return the employees of age between 45 and 50 and salary above $100,000</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Distance (similarity) query
-<ul>
-<li>Returns the records that are within a distance from a reference record.</li>
-<li>Example:
-<ul>
-<li>Find images with feature vectors of Euclidean distance at most ε with the feature vector of a given image</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Nearest neighbor (similarity) query
-<ul>
-<li>Replaces distance bound by ranking predicate</li>
-</ul>
-</li>
-</ul>
-<h3 id="top-k-search-methods">Top-k search methods</h3>
-<h4 id="top-k-query">Top-k Query</h4>
-<ul>
-<li>Given a set of objects (e.g., relational tuples),</li>
-<li>Returns the k objects with the highest combined score, based on an aggregate function f.</li>
-<li>Example:
-<ul>
-<li>Relational table containing information about restaurants, with attributes(e.g. price, quality, location)</li>
-<li>f: sum(-price, quality, -dist(location,my_hotel))‏</li>
-<li>attribute value ranges are usually normalized
-<ul>
-<li>E.g., all values in a [0,1] range</li>
-<li>otherwise some attribute may be favored in f</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="top-k-query-variants">Top-k Query Variants</h4>
-<ul>
-<li>
-<p>Apply on single table, or ranked lists of tuples ordered by individual attributes
-<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041261460.jpg" alt=""></p>
-</li>
-<li>
-<p>Ranked inputs in the same or different servers (centralized or distributed data)
-<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041590204.jpg" alt=""></p>
-</li>
-<li>
-<p>Standalone query or operator in a more complex query plan
-<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615041663148.jpg" alt=""></p>
-</li>
-<li>
-<p>Incremental retrieval of objects with highest scores (k is not predefined)</p>
-</li>
-<li>
-<p>Top-k joins</p>
-<ul>
-<li>SELECT h.id, s.id</li>
-<li>FROM House h School s</li>
-<li>WHERE h.location=s.location</li>
-<li>ORDER BY h.price + 10 ∗ s.tuition</li>
-<li>LIMIT 5</li>
-</ul>
-</li>
-<li>
-<p>Probabilistic/approximate top-k retrieval</p>
-</li>
-<li>
-<p>Random and/or sorted accesses at ranked inputs</p>
-</li>
-</ul>
-<h4 id="top-k-query-evaluation">Top-k Query Evaluation</h4>
-<ul>
-<li>
-<p>Most solutions assume distributive, monotone aggregate functions (e.g. f=sum)</p>
-<ul>
-<li>distributive: f(x,y,z,w)= f(f(x,y),f(z,w))
-<ul>
-<li>e.g., A+B+C+D = (A+B) + (C+D)</li>
-</ul>
-</li>
-<li>monotone: if x&lt;y and z&lt;w, then f(x,z)&lt;f(y,w)
-<ul>
-<li>e.g., 3 &lt; 5 and 2 &lt; 8  3+2 &lt; 5+8</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Solutions based on 1-D ordering and merging sorted lists (rank aggregation)</p>
-</li>
-<li>
-<p>Solutions based on multidimensional indexing</p>
-</li>
-</ul>
-<h4 id="rank-aggregation">Rank aggregation</h4>
-<h4 id="index-based-methods">Index-based methods</h4>
-
+          
     </div>
 
     <div class="post-copyright">
@@ -337,7 +199,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://www.m1sty.com/2021/atdm_top-k/>https://www.m1sty.com/2021/atdm_top-k/</span>
+                    <a href=https://www.m1sty.com/2020/business_analysis_model/>https://www.m1sty.com/2020/business_analysis_model/</span>
             </p>
             
              
@@ -353,11 +215,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/top-k/">
-                    #Top-k</a></span>
-            
-            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
-                    #HKU</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/analysis/">
+                    #Analysis</a></span>
             
             </section>
         
@@ -368,11 +227,9 @@
     </div>
 
     <div class="post-nav">
-        
-        <a href="https://www.m1sty.com/2021/project_data-index/" class="prev" rel="prev" title="数据指标体系搭建（以PY项目为例）【施工中……】"><i class="iconfont icon-left"></i>&nbsp;数据指标体系搭建（以PY项目为例）【施工中……】</a>
          
         
-        <a href="https://www.m1sty.com/2021/visualization_tableau_map/" class="next" rel="next" title="Tableau学习心得与模板分享">Tableau学习心得与模板分享&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2020/database_sql_nowcoder/" class="next" rel="next" title="牛客网数据库_错题集">牛客网数据库_错题集&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -414,9 +271,8 @@
 
 
     
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
   
 
