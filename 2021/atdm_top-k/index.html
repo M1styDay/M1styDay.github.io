@@ -10,8 +10,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/project_data-index/" />
-  <link rel="next" href="https://www.m1sty.com/2021/visualization_tableau_map/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/visualization_tableau_map/" />
+  
   <link rel="canonical" href="https://www.m1sty.com/2021/atdm_top-k/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Top-k Queries | M1sty
+           Lecture 4：Top-k Queries | M1sty
        
   </title>
-  <meta name="title" content="Top-k Queries | M1sty">
+  <meta name="title" content="Lecture 4：Top-k Queries | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,8 +45,8 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Top-k Queries",
-    "headline" : "Top-k Queries",
+    "name" : "Lecture 4：Top-k Queries",
+    "headline" : "Lecture 4：Top-k Queries",
     "description" : "Top-k Search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.",
     "inLanguage" : "en-us",
     "author" : "Misty",
@@ -58,7 +58,7 @@
     "datePublished": "2021-03-06 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-03-06 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/atdm_top-k\/",
-    "wordCount" : "325",
+    "wordCount" : "828",
     "keywords" : [ "Top-k","HKU", "M1sty"]
 }
 </script>
@@ -121,7 +121,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Top-k Queries</h1>
+        <h1 class="post-title" itemprop="name headline">Lecture 4：Top-k Queries</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -130,7 +130,7 @@
             </span>
           <span class="post-time"> on
         <time datetime=2021-03-06 itemprop="datePublished">March 6, 2021</time>
-           </span> (<span class="post-word-count">325 words)</span>
+           </span> (<span class="post-word-count">828 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -151,10 +151,19 @@
         <li><a href="#top-k-query">Top-k Query</a></li>
         <li><a href="#top-k-query-variants">Top-k Query Variants</a></li>
         <li><a href="#top-k-query-evaluation">Top-k Query Evaluation</a></li>
-        <li><a href="#rank-aggregation">Rank aggregation</a></li>
-        <li><a href="#index-based-methods">Index-based methods</a></li>
       </ul>
     </li>
+    <li><a href="#rank-aggregation">Rank Aggregation</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#advantages-and-drawbacks">Advantages and Drawbacks</a></li>
+        <li><a href="#ta-threshold-algorithm">TA: Threshold Algorithm</a></li>
+        <li><a href="#nra-no-random-accesses">NRA: No Random Accesses</a></li>
+        <li><a href="#lara-lattice-based-rank-aggregation">LARA: LAttice-based Rank Aggregation</a></li>
+      </ul>
+    </li>
+    <li><a href="#indexview-based-solutions">Index/View Based Solutions</a></li>
+    <li><a href="#reference">Reference</a></li>
   </ul>
 </nav>
   </div>
@@ -256,6 +265,8 @@
 </li>
 </ul>
 <h2 id="top-k-search-methods">Top-k Search Methods</h2>
+<p>Rank aggregation</p>
+<p>Index-based methods</p>
 <h3 id="top-k-query">Top-k Query</h3>
 <ul>
 <li>Given a set of objects (e.g., relational tuples),</li>
@@ -266,7 +277,7 @@
 <li>f: sum(-price, quality, -dist(location,my_hotel))‏</li>
 <li>attribute value ranges are usually normalized
 <ul>
-<li>E.g., all values in a [0,1] range</li>
+<li>E.g., all values in a (0,1) range</li>
 <li>otherwise some attribute may be favored in f</li>
 </ul>
 </li>
@@ -331,8 +342,166 @@
 <p>Solutions based on multidimensional indexing</p>
 </li>
 </ul>
-<h3 id="rank-aggregation">Rank aggregation</h3>
-<h3 id="index-based-methods">Index-based methods</h3>
+<h2 id="rank-aggregation">Rank Aggregation</h2>
+<h3 id="introduction">Introduction</h3>
+<ul>
+<li>
+<p>Solutions based on 1-D ordering and merging sorted lists (rank aggregation)</p>
+</li>
+<li>
+<p>Assume that there is a total ranking of theobjects for each attributethat can be used in top-kqueries</p>
+</li>
+<li>
+<p>These sorted inputs canbe accessed sequentiallyand/or by random accesses</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615205673523.jpg" alt=""></p>
+<h3 id="advantages-and-drawbacks">Advantages and Drawbacks</h3>
+<ul>
+<li>Advantages：
+<ul>
+<li>can be applied on any subset of inputs (arbitrary subspace)</li>
+<li>appropriate for distributed data</li>
+<li>appropriate for top-k joins</li>
+<li>easy to understand and implement</li>
+</ul>
+</li>
+<li>Drawbacks:
+<ul>
+<li>slower than index-based methods</li>
+<li>require inputs to be sorted</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615206220821.jpg" alt=""></p>
+<h3 id="ta-threshold-algorithm">TA: Threshold Algorithm</h3>
+<h4 id="introduction-1">Introduction</h4>
+<ul>
+<li>Iteratively retrieves objects and their atomic scores from the ranked inputs in a round-robin fashion.</li>
+<li>For each encountered object x, perform random accesses to the inputs where x has not been seen.</li>
+<li>Maintain top-k objects seen so far.</li>
+<li>T = f($l_1$, . . . , $l_m$) is the score derived when applying the aggregation function to the last atomic scores seen at each input. If the score of the k-th object is no smaller than T, terminate.</li>
+</ul>
+<h4 id="example-of-tak1fsum">Example of TA(k=1,f=sum)</h4>
+<ul>
+<li><strong>STEP 1</strong>
+<ul>
+<li>top-1 is c, with score 2.0</li>
+<li>T=sum(0.9,0.9,0.9)=2.7</li>
+<li>T&gt;top-1, we proceed to another round of accesses</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615207174399.jpg" alt=""></p>
+<ul>
+<li><strong>STEP 2</strong>
+<ul>
+<li>top-1 is b, with score 2.2</li>
+<li>T=sum(0.8,0.8,0.9)=2.5</li>
+<li>T&gt;top-1, we proceed to another round of accesses</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615208610189.jpg" alt=""></p>
+<ul>
+<li><strong>STEP 3</strong>
+<ul>
+<li>top-1 is b, with score 2.2</li>
+<li>T=sum(0.6,0.6,0.8)=2.0</li>
+<li>T≤top-1, terminate and output (b,2.2)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615208912717.jpg" alt=""></p>
+<h4 id="properties-of-ta">Properties of TA</h4>
+<ul>
+<li>Used as a standard module for merging ranked lists in many applications</li>
+<li>Usually finds the result quickly</li>
+<li>Depends on random accesses, which can be expensive</li>
+<li>random accesses are impossible in some cases
+<ul>
+<li>e.g., an API allows to access objects incrementally by ranking score, but does not provide the score of a given object</li>
+</ul>
+</li>
+</ul>
+<h3 id="nra-no-random-accesses">NRA: No Random Accesses</h3>
+<h4 id="introduction-2">Introduction</h4>
+<ul>
+<li>Iteratively retrieves objects and their atomic scores from the ranked inputs in a round-robin fashion.</li>
+<li>For each object x seen so far at any input maintain:
+<ul>
+<li>$f_x$ub: upper bound for x’s aggregate score ($f_x$)</li>
+<li>$f_x$lb: lower bound for x’s aggregate score ($f_x$)</li>
+</ul>
+</li>
+<li>$W_k$ = k objects with the largest $f^lb$.</li>
+<li>If the smallest $f^lb$ in $W_k$ is at least the largest $f_x$ub of any object x not in $W_k$, then terminate and report $W_k$ as top-k result.</li>
+</ul>
+<h4 id="example-of-nrak1fsum">Example of NRA(k=1,f=sum)</h4>
+<ul>
+<li>
+<p><strong>STEP 1</strong>
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615211411711.jpg" alt=""></p>
+</li>
+<li>
+<p><strong>STEP 2</strong>
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615211431867.jpg" alt=""></p>
+</li>
+<li>
+<p><strong>STEP 3</strong>
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615211449553.jpg" alt=""></p>
+</li>
+<li>
+<p><strong>STEP 4</strong>
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/1615211471044.jpg" alt=""></p>
+</li>
+</ul>
+<h4 id="nra-properties">NRA Properties</h4>
+<ul>
+<li>More generic than TA, since it does not depend on random accesses</li>
+<li>Can be cheaper than TA, if random accesses are very expensive</li>
+<li>NRA accesses objects sequentially from all inputs and updates the upper bounds for all objects seen so far unconditionally.
+<ul>
+<li>Cost: O(n) per access (the expected distinct number of objects accessed so far is O(n))</li>
+<li>No input list is pruned until the algorithm terminates</li>
+</ul>
+</li>
+</ul>
+<h3 id="lara-lattice-based-rank-aggregation">LARA: LAttice-based Rank Aggregation</h3>
+<h4 id="introduction-3">Introduction</h4>
+<ul>
+<li>LARA: An efficient NRA implementation</li>
+<li>Based on 3 observations about the top-k candidates</li>
+<li>Operates differently in the two (growing, shrinking) phases</li>
+<li>Takes its name from the lattice used in the shrinking phase</li>
+<li>Extendable to various top-k query variants</li>
+</ul>
+<h4 id="observation-1">Observation 1</h4>
+<h4 id="example-of-observation-1-k1">Example of Observation 1 (k=1)</h4>
+<h4 id="observation-2">Observation 2</h4>
+<h4 id="implication-of-observations-12">Implication of observations 1,2</h4>
+<h4 id="observation-3">Observation 3</h4>
+<h4 id="implication-of-observation-3">Implication of observation 3</h4>
+<h2 id="indexview-based-solutions">Index/View Based Solutions</h2>
+<hr>
+<p> </p>
+<h2 id="reference">Reference</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Name</th>
+<th style="text-align:center">Link</th>
+<th style="text-align:center">Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">liweisnake</td>
+<td style="text-align:center"><a href="https://blog.csdn.net/liweisnake/article/details/11021667">top-k问题</a></td>
+<td style="text-align:center">TA和NRA的例子</td>
+</tr>
+</tbody>
+</table>
 
     </div>
 
@@ -379,10 +548,8 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/project_data-index/" class="prev" rel="prev" title="数据指标体系搭建（以PY项目为例）【施工中……】"><i class="iconfont icon-left"></i>&nbsp;数据指标体系搭建（以PY项目为例）【施工中……】</a>
+        <a href="https://www.m1sty.com/2021/visualization_tableau_map/" class="prev" rel="prev" title="Tableau学习心得与模板分享"><i class="iconfont icon-left"></i>&nbsp;Tableau学习心得与模板分享</a>
          
-        
-        <a href="https://www.m1sty.com/2021/visualization_tableau_map/" class="next" rel="next" title="Tableau学习心得与模板分享">Tableau学习心得与模板分享&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -432,6 +599,23 @@
 
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
      </div>
   </body>
 </html>

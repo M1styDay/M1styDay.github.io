@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on M1sty</title>
+    <link>https://www.m1sty.com/tags/tutorial/</link>
+    <description>Recent content in Tutorial on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial 4：Top-k Query Evaluation</title>
+      <link>https://www.m1sty.com/2021/atdm_top-k_qustion/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_top-k_qustion/</guid>
+      <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
+Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
+Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
+    </item>
+    
+  </channel>
+</rss>
