@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercise on M1sty</title>
+    <link>https://www.m1sty.com/tags/exercise/</link>
+    <description>Recent content in Exercise on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exercise 2：Clusterings</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings_exercise/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_clusterings_exercise/</guid>
+      <description>Clusterings K-Means Algorithm Input Points Centroids Reclustering step 1 Recomputing centroids step 2 Recomputing the centroids step 3 Final Clustering K-Means++: Main Intuition Probaility distribution Sampling points Examples K-means- To understand why K-means++ use some randomness we compare it against the following algorithm which we call it K-means–:
+The algorithm selects the first point randomly. Let t be any step of the algorithm, with 2 ≤ t &amp;lt; k. Let C be the set of points chosen at step t.</description>
+    </item>
+    
+  </channel>
+</rss>

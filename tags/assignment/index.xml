@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignment on M1sty</title>
+    <link>https://www.m1sty.com/tags/assignment/</link>
+    <description>Recent content in Assignment on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/assignment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assignment 2：Clusterings</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings_assignment/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_clusterings_assignment/</guid>
+      <description>Clusterings Theoretical exercises on K-means Qustion 1 Answer 1 Qustion 2 Answer 2 Practical Exercise on Clustering Qustion 3 Answer 3 </description>
+    </item>
+    
+  </channel>
+</rss>
