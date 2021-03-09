@@ -47,7 +47,7 @@
     "articleSection" : "posts",
     "name" : "Assignment 2：Clusterings",
     "headline" : "Assignment 2：Clusterings",
-    "description" : "Clusterings Theoretical exercises on K-means Qustion 1 Answer 1 Qustion 2 Answer 2 Practical Exercise on Clustering Qustion 3 Answer 3 ",
+    "description" : "Clusterings Theoretical exercises on K-means Qustion 1 Answer 1 Input Points and Set Centroids Input P1=(0,0), P2=(0,1\/2), P3=(1,1\/2), P4=(1,1), P5=(4,0), P6=(4,1), P7=(5,1)\nSet P1=(0,0) and P4=(1,1) as centroids\nReclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest centroid\n   d(a,P1) distance d(a,P4) distance     d(P2,P1) $\\sqrt{ 0^2 \u002b (\\frac{1}{2})^2 }$ d(p2,p4) $\\sqrt{ (\\frac{1}{2})^2 \u002b 1^2 }$   d(P3,P1) $\\sqrt{ (\\frac{1}{2})^2 \u002b 1^2 }$ d(P3,P4) $\\sqrt{ 0^2 \u002b (\\frac{1}{2})^2 }$   d(P5,P1) $\\sqrt{ 0^2 \u002b 4^2 }$ d(P5,P4) $\\sqrt{ 1^2 \u002b 3^2 }$   d(P6,P1) $\\sqrt{ 1^2 \u002b 4^2 }$ d(P6,P4) $\\sqrt{ 0^2 \u002b 3^2 }$   d(P7,P1) $\\sqrt{ 1^2 \u002b 5^2 }$ d(P7,P4) $\\sqrt{ 0^2 \u002b 4^2 }$    P2 is assigned to the red cluster",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -58,7 +58,7 @@
     "datePublished": "2021-03-04 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-03-04 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/dm_clusterings_assignment\/",
-    "wordCount" : "21",
+    "wordCount" : "408",
     "keywords" : [ "Clusterings","HKU","Assignment", "M1sty"]
 }
 </script>
@@ -130,7 +130,7 @@
             </span>
           <span class="post-time"> on
         <time datetime=2021-03-04 itemprop="datePublished">March 4, 2021</time>
-           </span> (<span class="post-word-count">21 words)</span>
+           </span> (<span class="post-word-count">408 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -209,9 +209,202 @@
 <h3 id="qustion-1">Qustion 1</h3>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309213215.png" alt=""></p>
 <h3 id="answer-1">Answer 1</h3>
+<h4 id="input-points-and-set-centroids">Input Points and Set Centroids</h4>
+<p>Input P1=(0,0), P2=(0,1/2), P3=(1,1/2), P4=(1,1), P5=(4,0), P6=(4,1), P7=(5,1)</p>
+<p>Set P1=(0,0) and P4=(1,1) as centroids</p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309224023.png" alt=""></p>
+<h4 id="reclustering">Reclustering</h4>
+<ul>
+<li>STEP 1</li>
+</ul>
+<p>For each point P2, P3, P5, P6, P7, determine the closest centroid</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">d(a,P1)</th>
+<th style="text-align:center">distance</th>
+<th style="text-align:center">d(a,P4)</th>
+<th style="text-align:center">distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d(P2,P1)</td>
+<td style="text-align:center">$\sqrt{  0^2 + (\frac{1}{2})^2  }$</td>
+<td style="text-align:center">d(p2,p4)</td>
+<td style="text-align:center">$\sqrt{  (\frac{1}{2})^2 + 1^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P3,P1)</td>
+<td style="text-align:center">$\sqrt{  (\frac{1}{2})^2 + 1^2  }$</td>
+<td style="text-align:center">d(P3,P4)</td>
+<td style="text-align:center">$\sqrt{  0^2 + (\frac{1}{2})^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P5,P1)</td>
+<td style="text-align:center">$\sqrt{  0^2 + 4^2  }$</td>
+<td style="text-align:center">d(P5,P4)</td>
+<td style="text-align:center">$\sqrt{  1^2 + 3^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P6,P1)</td>
+<td style="text-align:center">$\sqrt{  1^2 + 4^2  }$</td>
+<td style="text-align:center">d(P6,P4)</td>
+<td style="text-align:center">$\sqrt{  0^2 + 3^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P7,P1)</td>
+<td style="text-align:center">$\sqrt{  1^2 + 5^2  }$</td>
+<td style="text-align:center">d(P7,P4)</td>
+<td style="text-align:center">$\sqrt{  0^2 + 4^2  }$</td>
+</tr>
+</tbody>
+</table>
+<p>P2 is assigned to the red cluster</p>
+<p>P3,P5,P6,P7 are assigned to the green cluster</p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309224132.png" alt=""></p>
+<ul>
+<li>Recomputing centroids</li>
+</ul>
+<p>$\overline{C1}$ = (P1+P2)/2 = (0,0.25)</p>
+<p>$\overline{C2}$ = (P3+P4+P5+P6+P7)/5 = (3,0.7)</p>
+<ul>
+<li>STEP 2</li>
+</ul>
+<p>For each point P1, P2, P3, P4, P5, P6, P7, determine the closest centroid</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">d(a,$\overline{C1}$)</th>
+<th style="text-align:center">distance</th>
+<th style="text-align:center">d(a,$\overline{C2}$)</th>
+<th style="text-align:center">distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d(P1,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  0^2 + (\frac{1}{4})^2  }$</td>
+<td style="text-align:center">d(p1,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  3^2 + 0.7^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P2,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  0^2 + (\frac{1}{4})^2  }$</td>
+<td style="text-align:center">d(p2,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  3^2 + 0.2^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P3,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  1^2 + (\frac{1}{4})^2  }$</td>
+<td style="text-align:center">d(P3,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  2^2 + 0.2^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P4,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  1^2 + (\frac{3}{4})^2  }$</td>
+<td style="text-align:center">d(P4,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  2^2 + 0.3^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P5,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  4^2 + (\frac{1}{4})^2  }$</td>
+<td style="text-align:center">d(P5,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  1^2 + 0.7^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P6,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  4^2 + (\frac{3}{4})^2  }$</td>
+<td style="text-align:center">d(P6,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  1^2 + 0.3^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P7,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  5^2 + (\frac{3}{4})^2  }$</td>
+<td style="text-align:center">d(P7,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  2^2 + 0.3^2  }$</td>
+</tr>
+</tbody>
+</table>
+<p>P1,P2,P3,P4 is assigned to the red cluster</p>
+<p>P5,P6,P7 are assigned to the green cluster</p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309230000.png" alt=""></p>
+<ul>
+<li>Recomputing centroids</li>
+</ul>
+<p>$\overline{C1}$ = (P1+P2+P3+P4)/4 = (0.5,0.5)</p>
+<p>$\overline{C2}$ = (PP5+P6+P7)/3 = ($\frac{13}{3}$,$\frac{2}{3}$)</p>
+<ul>
+<li>STEP 3</li>
+</ul>
+<p>For each point P1, P2, P3, P4, P5, P6, P7, determine the closest centroid</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">d(a,$\overline{C1}$)</th>
+<th style="text-align:center">distance</th>
+<th style="text-align:center">d(a,$\overline{C2}$)</th>
+<th style="text-align:center">distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d(P1,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  0.5^2 + 0.5^2  }$</td>
+<td style="text-align:center">d(p1,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (\frac{13}{3})^2 + (\frac{2}{3})^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P2,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  0.5^2 + 0^2  }$</td>
+<td style="text-align:center">d(p2,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (\frac{13}{3})^2 + (\frac{2}{3}-0.5)^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P3,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  0.5^2 + 0^2  }$</td>
+<td style="text-align:center">d(P3,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (\frac{13}{3}-1)^2 + (\frac{2}{3}-0.5)^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P4,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  0.5^2 + 0.5^2  }$</td>
+<td style="text-align:center">d(P4,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (\frac{13}{3}-1)^2 + (1-\frac{2}{3})^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P5,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  3.5^2 + 0.5^2  }$</td>
+<td style="text-align:center">d(P5,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (\frac{13}{3}-4)^2 + (\frac{2}{3})^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P6,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  3.5^2 + 0.5^2  }$</td>
+<td style="text-align:center">d(P6,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (\frac{13}{3}-4)^2 + (1-\frac{2}{3})^2  }$</td>
+</tr>
+<tr>
+<td style="text-align:center">d(P7,$\overline{C1}$)</td>
+<td style="text-align:center">$\sqrt{  4.5^2 + 0.5^2  }$</td>
+<td style="text-align:center">d(P7,$\overline{C2}$)</td>
+<td style="text-align:center">$\sqrt{  (5-\frac{13}{3})^2 + (1-\frac{2}{3})^2  }$</td>
+</tr>
+</tbody>
+</table>
+<p>P1,P2,P3,P4 stay the red cluster</p>
+<p>P5,P6,P7 stay the green cluster</p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309230000.png" alt=""></p>
+<ul>
+<li>Final Clustering</li>
+</ul>
+<p>As the clustering did not change , the algorithm terminates with the following final clustering:</p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309230000.png" alt=""></p>
 <h3 id="qustion-2">Qustion 2</h3>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210309213258.png" alt=""></p>
 <h3 id="answer-2">Answer 2</h3>
+<p><a href="https://blog.csdn.net/shwan_ma/article/details/80096408">https://blog.csdn.net/shwan_ma/article/details/80096408</a></p>
+<p>如果所有的点在指派步骤都未分配到某个簇，就会得到空簇。如果这种情况发生，则需要某种策略来选择一个替补质心，否则的话，平方误差将会偏大。一种方法是选择一个距离当前任何质心最远的点。这将消除当前对总平方误差影响最大的点。另一种方法是从具有最大SEE的簇中选择一个替补的质心。这将分裂簇并降低聚类的总SEE。如果有多个空簇，则该过程重复多次。另外编程实现时，要注意空簇可能导致的程序bug。</p>
 <h2 id="practical-exercise-on-clustering">Practical Exercise on Clustering</h2>
 <h3 id="qustion-3">Qustion 3</h3>
 <h3 id="answer-3">Answer 3</h3>
