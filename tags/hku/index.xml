@@ -6,7 +6,22 @@
     <description>Recent content in HKU on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practise：Clusterings</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings_practise/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_clusterings_practise/</guid>
+      <description>Clusterings K-means聚类的思想和原理 模型介绍 对于监督的数据挖掘算法而言，数据集中需要包含标签变量（即因变量y的值）。但在有些场景下，并没有给定的y值，对于这类数据的建模，一般称为无监督的数据挖掘算法，最典型的当属聚类算法。
+K-means聚类算法利用距离远近的思想将目标数据为制定的k个簇，进而使样本呈现簇内差异小，簇间差异大的特征。
+聚类步骤  从数据中随机挑选k个样本点作为原始的簇中心 计算剩余样本与簇中心的距离，并把各样本标记为离k个簇中心最近的类别 重新计算各簇中样本点的均值，并以均值作为新的k个簇中心 不断重复第二步和第三步，直到簇中心的变化趋于稳定，形成最终的k个簇  原理介绍 最佳K值的选择 拐点法 簇内离差平方和拐点法的思想很简单，就是在不同的k值下计算簇内利差平方和，然后通过可视化的方法找到“拐点”所对应的k值。当折线图中的斜率由大突然变小时，并且之后的斜率变化缓慢，则认为突然变化的点就是寻找的目标点，因为继续随着簇数k的增加，聚类效果不再有大的变化。
+def k_SSE(X,cluster): # 选择连续的K种不同的值 K = range(1,clusters+1) # 构建空列表用于存储总的簇内离差平方和 TSSE = [] for k in K: # 用于存储各个簇内离差平方和 SSE = [] kmeans = KMeans(n_clusters = k) Kmeans.fit(X) # 返回簇标签 labels = Kmeans.labels_ # 返回簇中心 centers = Kmeans.cluster_centers_ # 计算各簇样本的离差平方和，并保存到列表中 for label in set(labels): SEE.append(np.sum((X.loc[labels == label,]-centers[label,:])**2)) # 计算总的簇内离差平方和 TSSE.append(np.sum(SSE)) 轮廓系数法 该方法综合考虑了簇的密集性和分散性两个信息，如果数据集被分割为理想的k各簇，那么对应的簇内样本会很密集，而簇间样本会很分散，轮廓系数的计算公式可以表示为：
+其中，a(i)体现了簇内的密集性，代表样本i与同簇内其他样本点距离的平均值；b(i)反映了簇间的分散性，它的计算过程是，样本i与其他非同簇样本点距离的平均值，然后从平均值中挑选出最小值。
+当S(i)接近于-1时，说明样本i分配的不合理，需要将分配到其他簇中；当S(i)近似为0时，说明样本i落在了模糊地带，即簇的边界处；当S(i)近似为1时，说明样本i的分配是合理的。
+# 构造自定义函数 def k_silhouette(X,clusters): K = range(2,clusters+1) # 构建空列表，用于存储不同簇数下的轮廓系数 S = [] for k in K: kmeans = KMeans(n_clusters = k) Kmenas.</description>
+    </item>
+    
     <item>
       <title>Lecture 4：Top-k Queries</title>
       <link>https://www.m1sty.com/2021/atdm_top-k/</link>
@@ -28,7 +43,7 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     </item>
     
     <item>
-      <title>Assignment 2：Clusterings</title>
+      <title>Assignment：Clusterings</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_assignment/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -40,7 +55,7 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     </item>
     
     <item>
-      <title>Exercise 2：Clusterings</title>
+      <title>Exercise：Clusterings</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_exercise/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -50,7 +65,7 @@ The algorithm selects the first point randomly. Let t be any step of the algorit
     </item>
     
     <item>
-      <title>Supplement 2：Clusterings</title>
+      <title>Supplement：Clusterings</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_more/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
@@ -59,7 +74,7 @@ The algorithm selects the first point randomly. Let t be any step of the algorit
     </item>
     
     <item>
-      <title>Topic 2：Clusterings</title>
+      <title>Topic：Clusterings</title>
       <link>https://www.m1sty.com/2021/dm_clusterings/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
