@@ -60,8 +60,9 @@ Truncate：删除数据表中的数据（仅数据表中的数据，不删除表
 delete和drop最本质的区别在于，delete是数据操纵语言，即DML，而drop是数据定义语言，即DDL。因此，当我们需要删除或者创建一个东西，如表/视图/触发器等等，用的是数据定义语言。当我们对已经存在的表/视图/触发器进行修改/更新时，用的是数据操纵语言。以表为例，如果你不想将表真的删掉，只是想删除其中某些特定的记录，则应该用delete，此时，表的其他数据以及表的结构还在。
 权限 收回从u1创建表的权限：（B）
  A.revoke create table to u1 B.revoke create table from u1 C.revoke create table from u1 with grant option D.deny create table to u1  Notes: with grant option 权限传递 使用这个子句时将允许用户将其权限分配给他人
- 应用问题 mysql_query 关于mysql_db_query与mysql_query说法错误的是：(ABC)
- A.mysql_db_query与mysql_query在执行sql语句后的返回值是一样的，成功返回资源号，失败返回FALSE B.不能用mysql_query函数临时在另一个数据库上执行sql语句，而mysql_db_query可以 C.mysql_query在功能上等于mysql_select_db() + mysql_db_query() D.mysql_db_query不会切换回先前连接到的数据库  范式 下面关于数据库范式的说法哪些是正确的：（ADE）</description>
+子查询： 在SQL语言中，子查询是： (D)
+ A.返回单表中数据子集的查询语言 B.选取多表中字段子集的查询语句 C.选取单表中字段子集的查询语句 D.嵌入到另一个查询语句之中的查询语句  Notes: 子查询本质上是嵌套进其他SELECT,UPDATE,INSERT,DELETE语句的一个被限制的SELECT语句。
+子查询也可以嵌套在其他子查询中,这个嵌套最多可达32层。子查询也叫内部查询(Inner query)或者内部选择(Inner Select),而包含子查询的查询语句也叫做外部查询（Outter)或者外部选择(Outer Select)。</description>
     </item>
     
   </channel>
