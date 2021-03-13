@@ -32,16 +32,6 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/hku/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/</loc>
       
       <lastmod>2021-03-13T00:00:00+00:00</lastmod>
@@ -72,7 +62,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings-dbscan_practise/</loc>
+      <loc>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</loc>
       
       <lastmod>2021-03-13T00:00:00+00:00</lastmod>
       
@@ -82,7 +72,17 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings-hierarchical_practise/</loc>
+      <loc>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</loc>
+      
+      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</loc>
       
       <lastmod>2021-03-13T00:00:00+00:00</lastmod>
       
@@ -102,16 +102,6 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_practise/</loc>
-      
-      <lastmod>2021-03-11T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/categories/advanced-topics-in-data-management/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
@@ -122,7 +112,27 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k/</loc>
+      <loc>https://www.m1sty.com/tags/content/</loc>
+      
+      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/hku/</loc>
+      
+      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_top-k_1_content/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
       
@@ -172,7 +182,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k_qustion/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
       
@@ -202,7 +212,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_assignment/</loc>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</loc>
       
       <lastmod>2021-03-04T00:00:00+00:00</lastmod>
       
@@ -222,7 +232,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_exercise/</loc>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</loc>
       
       <lastmod>2021-03-04T00:00:00+00:00</lastmod>
       
@@ -242,7 +252,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_more/</loc>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_4_more/</loc>
       
       <lastmod>2021-03-04T00:00:00+00:00</lastmod>
       
@@ -252,7 +262,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings/</loc>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_1_content/</loc>
       
       <lastmod>2021-03-04T00:00:00+00:00</lastmod>
       
@@ -282,9 +292,19 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/project_data-index/</loc>
+      <loc>https://www.m1sty.com/2021/project_data-index_content/</loc>
       
       <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clear/</loc>
+      
+      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
       
       
       
@@ -342,7 +362,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2020/database_sql_sentences/</loc>
+      <loc>https://www.m1sty.com/2020/database_sql_notes2/</loc>
       
       <lastmod>2020-12-28T00:00:00+00:00</lastmod>
       
@@ -382,7 +402,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2020/overview_data-analyst/</loc>
+      <loc>https://www.m1sty.com/2020/overview_data-analyst_map/</loc>
       
       <lastmod>2020-12-24T00:00:00+00:00</lastmod>
       
@@ -395,36 +415,6 @@
       <loc>https://www.m1sty.com/2020/database_sql_nowcoder/</loc>
       
       <lastmod>2020-12-18T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/analysis/</loc>
-      
-      <lastmod>2020-11-29T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/business/</loc>
-      
-      <lastmod>2020-11-29T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2020/business_analysis_model/</loc>
-      
-      <lastmod>2020-11-29T00:00:00+00:00</lastmod>
       
       
       

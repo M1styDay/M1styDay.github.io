@@ -9,19 +9,19 @@
     <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/top-k/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lecture 4：Top-k Queries</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k/</link>
+      <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_top-k/</guid>
-      <description>Top-k Search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
+      <guid>https://www.m1sty.com/2021/atdm_top-k_1_content/</guid>
+      <description>Top-k Queries Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
     </item>
     
     <item>
       <title>Tutorial 4：Top-k Query Evaluation</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k_qustion/</link>
+      <link>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_top-k_qustion/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</guid>
       <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
 Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
 Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>

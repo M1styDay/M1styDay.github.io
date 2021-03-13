@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/assignment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Assignment：Clusterings</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings_assignment/</link>
+      <link>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings_assignment/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</guid>
       <description>Clusterings Theoretical exercises on K-means Qustion 1 Answer 1 Input Points and Set Centroids Input P1=(0,0), P2=(0,1/2), P3=(1,1/2), P4=(1,1), P5=(4,0), P6=(4,1), P7=(5,1)
 Set P1=(0,0) and P4=(1,1) as centroids
 Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest centroid

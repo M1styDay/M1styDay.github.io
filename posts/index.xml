@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pricatise：Clusterings(DBSCAN)</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings-dbscan_practise/</link>
+      <title>Practise：Clusterings(DBSCAN)</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</link>
       <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings-dbscan_practise/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</guid>
       <description>Clusterings 熟悉密度聚类中的几个概念 模型介绍   Kmeans聚类存在两个致命缺点，一是聚类效果容易受到异常样本点的影响;二是该算法无法准确地将非球形样本进行合理的聚类。
   基于密度的聚类则可以解决非球形簇的问题，“密度”可以理解为样本点的紧密程度，如果在指定的半径领域内，实际样本量超过给定的最小样本量阈值，则认为是密度高的对象，就可以聚成一个簇。
   概念讲解  点的领域：在某点p处，给定其半径e后，所得到的覆盖区域 核心对象：对于给定的最少样本量MinPts而言，如果某点p的e领域内至少包含MinPts个样本点，则点p就为核心对象。 直接密度可达：假设点p为核心对象，且在点p的e领域内存在点q，则从点p出发到点q是直接密度可达的。 密度可达：假设存在一系列的对象链$P_1$,$P_2$,&amp;hellip;,$P_n$，如果$p_i$是关于半径e和最少样本点MinPts的直接密度可达$P_(i+1)$，则p1密度可达$P_n$。(i = 1,2,&amp;hellip;n) 密度相连：假设点o为核心对象，从点o出发得到两个密度可达点p和点q，则称点p和点q是密度相连的。 聚类的簇：簇包含了最大的密度相连所构成的样本点。 边界点：假设点p为核心对象，在其领域内包含了点b，如果点b为非核心对象，则称其为点p的边界点。 异常点：不属于任何簇的样本点。  理解密度聚类的过程 步骤讲解  为密度聚类算法设置一个合理的半径以及半径领域内所包含的最少样本量MinPts。 从数据集中随机挑选一个样本点p，检验其在半径领域内是否包含制定的最少样本量，如果包含就将其定性为核心对象，并构成一个簇C；否则，重新挑选一个样本点。 对于核心对象p所覆盖的其他样本点q，如果点q对应的半径领域内仍然包含最少样本量MinPts，就将其覆盖的样本点统统归于簇C。 重复步骤（3），将最大的密度相连所包含的样本点聚为一类，形成一个大簇。 完成步骤（4）后，重新回到步骤（2），并重复步骤（3）和（4），直到没有新的样本点可以生成新簇时算法结束。  函数介绍 cluster.DBSCAN(eps=0.5, min_samples=5, metric=‘euclidean’, p=None)   eps:用于设置密度聚类中的e领域，即半径，默认为0.5。
@@ -24,11 +24,11 @@
     </item>
     
     <item>
-      <title>Pricatise：Clusterings(Hierarchical Clusterings)</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings-hierarchical_practise/</link>
+      <title>Practise：Clusterings(Hierarchical Clusterings)</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</link>
       <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings-hierarchical_practise/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</guid>
       <description>层次聚类 理论说明 https://blog.csdn.net/shulianghan/article/details/105960850
 https://blog.csdn.net/liujh845633242/article/details/103679724
 层次聚类更适合小样本；K-Means更适合大样本。
@@ -36,11 +36,11 @@ https://blog.csdn.net/liujh845633242/article/details/103679724
     </item>
     
     <item>
-      <title>Pricatise：Clusterings(K-means)</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings_practise/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Practise：Clusterings(K-means)</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings_practise/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</guid>
       <description>Clusterings K-means聚类的思想和原理 模型介绍 对于监督的数据挖掘算法而言，数据集中需要包含标签变量（即因变量y的值）。但在有些场景下，并没有给定的y值，对于这类数据的建模，一般称为无监督的数据挖掘算法，最典型的当属聚类算法。
 K-means聚类算法利用距离远近的思想将目标数据为制定的k个簇，进而使样本呈现簇内差异小，簇间差异大的特征。
 聚类步骤  从数据中随机挑选k个样本点作为原始的簇中心 计算剩余样本与簇中心的距离，并把各样本标记为离k个簇中心最近的类别 重新计算各簇中样本点的均值，并以均值作为新的k个簇中心 不断重复第二步和第三步，直到簇中心的变化趋于稳定，形成最终的k个簇  原理介绍 最佳K值的选择 拐点法 簇内离差平方和拐点法的思想很简单，就是在不同的k值下计算簇内利差平方和，然后通过可视化的方法找到“拐点”所对应的k值。当折线图中的斜率由大突然变小时，并且之后的斜率变化缓慢，则认为突然变化的点就是寻找的目标点，因为继续随着簇数k的增加，聚类效果不再有大的变化。
@@ -52,11 +52,11 @@ def k_SSE(X,cluster): # 选择连续的K种不同的值 K = range(1,clusters+1) 
     
     <item>
       <title>Lecture 4：Top-k Queries</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k/</link>
+      <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_top-k/</guid>
-      <description>Top-k Search Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
+      <guid>https://www.m1sty.com/2021/atdm_top-k_1_content/</guid>
+      <description>Top-k Queries Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
     </item>
     
     <item>
@@ -93,10 +93,10 @@ Tableau的学习最重要的就是动手操作，学习数据的逻辑、页面�
     
     <item>
       <title>Tutorial 4：Top-k Query Evaluation</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k_qustion/</link>
+      <link>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_top-k_qustion/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</guid>
       <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
 Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
 Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
@@ -104,10 +104,10 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     
     <item>
       <title>Assignment：Clusterings</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings_assignment/</link>
+      <link>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings_assignment/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</guid>
       <description>Clusterings Theoretical exercises on K-means Qustion 1 Answer 1 Input Points and Set Centroids Input P1=(0,0), P2=(0,1/2), P3=(1,1/2), P4=(1,1), P5=(4,0), P6=(4,1), P7=(5,1)
 Set P1=(0,0) and P4=(1,1) as centroids
 Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest centroid
@@ -116,39 +116,53 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     
     <item>
       <title>Exercise：Clusterings</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings_exercise/</link>
+      <link>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings_exercise/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</guid>
       <description>Clusterings K-Means Algorithm Input Points Centroids Reclustering step 1 Recomputing centroids step 2 Recomputing the centroids step 3 Final Clustering K-Means++: Main Intuition Probaility distribution Sampling points Examples K-means- To understand why K-means++ use some randomness we compare it against the following algorithm which we call it K-means–:
 The algorithm selects the first point randomly. Let t be any step of the algorithm, with 2 ≤ t &amp;lt; k. Let C be the set of points chosen at step t.</description>
     </item>
     
     <item>
       <title>Supplement：Clusterings</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings_more/</link>
+      <link>https://www.m1sty.com/2021/dm_clusterings_4_more/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings_more/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings_4_more/</guid>
       <description>Clusterings 《数据挖掘概念与技术》 第10章小结  簇是数据对象的集合,同一个簇中的对象彼此相似,而不同簇中的对象彼此相异。将物理或抽象对象的集合划分为相似对象的类的过程称为聚类。 聚类分析具有广泛的应用,包括商务智能、图像模式识别、Web搜索、生物学和安全。聚类分析可以作为独立的数据挖掘工具来获得对数据分布的了解,也可以作为在检测的簇上运行的其他数据挖掘算法的预处理步骤。 聚类是数据挖掘研究一个富有活力的领域。它与机器学习的无监督学习有关。 聚类是一个充满挑战的领域,其典型的要求包括可伸缩性、处理不同类型的数据和属性的能力、发现任意形状的簇、确定输入参数的最小领域知识需求、处理噪声数据的能力、增量聚类和对输入次 序的不敏感性、聚类高维数据的能力、基于约束的聚类,以及聚类的可解释性和可用性。 已经开发了许多聚类算法,这些算法可以从多方面分类,如根据划分标准、簇的分离性、所使用的相似性度量和聚类空间。本章讨论如下几类主要的基本聚类方法:划分方法、层次方法、基于密度的方法和基于网格的方法。有些算法可能属于多个类别。 划分方法首先创建k个分区的初始集合,其中参数k是要构建的分区数。然后,它采用选代重定位技术,试图通过把对象从一个簇移到另一个簇来改进划分的质量。典型的划分方法包括k-均值、k-中心点、 CLARANS。 层次方法创建给定数据对象集的层次分解。根据层次分解的形成方式,层次方法可以分为凝聚的 (自底向上)或分裂的(自顶向下)。为了弥补合并或分裂的僵硬性,凝聚的层次方法的聚类质量可以通过以下方法改进:分析每个层次划分中的对象连接(如Chameleon),或者首先执行微聚类(也就是把数据划分为“微簇”),然后使用其他的聚类技术,迭代重定位,在微簇上聚类(如BIRCH)。 基于密度的方法基于密度的概念来聚类对象。它或者根据邻域中对象的密度(例如DBSCAN),或者根据某种密度函数(例如DENCLUE)来生成簇。OPTICS是一个基于密度的方法,它生成数据聚类结构的一个增广序。 基于网格的方法首先将对象空间量化为有限数目的单元,形成网格结构,然后在网格结构上进行聚类。STNG是基于网格方法的一个典型例子,它基于存储在网格单元中的统计信息聚类。CLIQUE是基于网格的子空间聚类算法。 聚类评估估计在数据集上进行聚类分析的可行性和由聚类方法产生的结果的质量。任务包括评估聚类趋势、确定簇数和测定聚类的质量。  第11章小结  在传统的聚类分析中,对象被互斥地指派到一个簇中。然而,在许多应用中,需要以模糊或概率方式把一个对象指派到一个或多个簇。模糊聚类和基于概率模型的聚类允许一个对象属于一个或多个 簇。划分矩阵记录对象属于簇的隶属度。 基于概率模型的聚类假定每个簇是一个有参分布。使用待聚类的数据作为观测样本,我们可以估计簇的参数 混合模型假定观测对象是来自多个概率簇的实例的混合。从概念上讲,每个观测对象都是通过如下方法独立地产生的:首先根据簇概率选择一个概率簇,然后根据选定簇的概率密度函数选择一个样本。 期望最大化(EM)算法是一个框架,它通近最大似然或统计模型参数的后验概率估计。EM算法 可以用来计算模糊聚类和基于概率模型的聚类。 高维数据对聚类分析提出了一些挑战,包括如何对高维簇建模和如何搜索这样的簇。 高维数据聚类方法主要有两类:子空间聚类方法和维归约方法。子空间聚类方法在原空间的子空间中搜索簇。例子包括子空间搜索方法、基于相关性的聚类方法和双聚类方法。维归约方法创建较低维的新空间,并在新空间搜索簇。 双聚类方法同时聚类对象和属性。双簇的类型包括具有常数值、行/列常数值、相干值、行/列相干 演变值的双簇。双聚类方法的两种主要类型是基于最优化的方法和枚举方法。 谱聚类是一种维归约方法。其一般思想是使用相似矩阵构建新维。 聚类图和网络数据有许多应用,如社会网络分析。挑战包括如何度量图中对象之间的相似性和如何为图和网络数据设计聚类方法。 测地距是图中两个顶点之间的边数,它可以用来度量相似性。另外,像社会网络这样的图的相似性也可以用结构情境和随机游走度量。SimRank是一种基于结构情境和随机游走的相似性度量。 图聚类可以建模为计算图割。最稀疏的割导致好的聚类,而模块性可以用来度量聚类质量。 SCAN是一种图聚类算法,它搜索图,识别良连通的成分作为簇。 约束可以用来表达具体应用对聚类分析的要求或背景知识。聚类约束可以分为实例、簇和相似性度量上的约束。实例上的约束可以是必须联系约束和不能联系约束。约束可以是硬性的或软性的。 聚类的硬性约束可以通过在聚类指派过程严格遵守约束而强制实施。软性约束聚类可以看做一个优化问题。可以使用启发式方法加快约束聚类的速度。  </description>
     </item>
     
     <item>
       <title>Topic：Clusterings</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings/</link>
+      <link>https://www.m1sty.com/2021/dm_clusterings_1_content/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clusterings/</guid>
+      <guid>https://www.m1sty.com/2021/dm_clusterings_1_content/</guid>
       <description>Clusterings Background What is Cluster Analysis  Finding groups of objects such that the objects in a group will be similar (or related) to one another and different from (or unrelated to) the objects in other groups  Intra-cluster distances are minimized Inter-cluster distances are maximized   Notion of a Cluster can be Ambiguous  Applications of Cluster Analysis  Understanding  Group related documents for browsing, group genes and proteins that hav similar functionality, or group stocks with similar price fluctuations   Summarization  Reduce size of large data sets    What is not Cluster Analysis  Superviesd classification  Have class label information   Simple segmentation  Dividing students into different registration groups alpgabetically, by last name   Results of a query  Groupings are a result of an external specification   Graph partitioning  Some mutual relevance and synergy, but areas are not identical    Types of Clusterings Introduction   A clustering is a set of clusters</description>
     </item>
     
     <item>
       <title>数据指标体系搭建（以PY项目为例）【施工中……】</title>
-      <link>https://www.m1sty.com/2021/project_data-index/</link>
+      <link>https://www.m1sty.com/2021/project_data-index_content/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/project_data-index/</guid>
+      <guid>https://www.m1sty.com/2021/project_data-index_content/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>数据清洗</title>
+      <link>https://www.m1sty.com/2021/dm_clear/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_clear/</guid>
+      <description>常用工具 numpy 构建数组   Numpy中常用的数据结构是ndarray格式
+  使用array函数创建，语法格式为array(列表或元组)
+  可以使用其他函数例如arange、linspace、zeros等创建
+  import numpy as np arr1 = np.array([-9,7,4,3]) np.arange(0,10,1) np.linspace(1,10,10) np.zeros (1,5) 常用方法   常用方法名称：ndim、shape、size、dtype、运算
+  数组访问方法：array$[行，列]$
+  排序  sort函数：从小到大进行排序 argsort函数：返回的是数据中, 从小到大的索引值  s = np.array([1,2,3,4,3,1,2,2,4,6,7,2,4,8,4,5]) np.sort(s) np.argsort(s) 搜索 np.where np.extract np.where(s&amp;gt;3,1,-1) np.extract(s&amp;gt;3,s) pandas 构建数组（series） series1 = pd.Series([2.8,3.01,8.99,8.59,5.18]) series2 = pd.Series([2.8,3.01,8.99,8.59,5.18],index = [&amp;#39;a&amp;#39;,&amp;#39;b&amp;#39;,&amp;#39;c&amp;#39;,&amp;#39;d&amp;#39;,&amp;#39;e&amp;#39;],name =&amp;#39;这是一个series’)  series3 = pd.Series(np.array((2.8,3.10,8.99,8.59,5.18)),index = [&amp;#39;a&amp;#39;,&amp;#39;b&amp;#39;,&amp;#39;c&amp;#39;,&amp;#39;d&amp;#39;,&amp;#39;e’]) series4 = pd.Series({&amp;#39;北京&amp;#39;:2.8,&amp;#39;上海&amp;#39;:3.01,&amp;#39;广东&amp;#39;:8.99,&amp;#39;江苏&amp;#39;:8.59,&amp;#39;浙江&amp;#39;:5.18}) 构建数组（dataframe） list1 = [[&amp;#39;张三&amp;#39;,23,&amp;#39;男&amp;#39;],[&amp;#39;李四&amp;#39;,27,&amp;#39;女&amp;#39;],[&amp;#39;王二&amp;#39;,26,&amp;#39;女&amp;#39;]]#使用嵌套列表 df1 = pd.</description>
     </item>
     
     <item>
@@ -163,10 +177,10 @@ The algorithm selects the first point randomly. Let t be any step of the algorit
     
     <item>
       <title>SQL语句复习</title>
-      <link>https://www.m1sty.com/2020/database_sql_sentences/</link>
+      <link>https://www.m1sty.com/2020/database_sql_notes2/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/database_sql_sentences/</guid>
+      <guid>https://www.m1sty.com/2020/database_sql_notes2/</guid>
       <description>DDL &amp;amp; DML 库操作 创建数据库 CREATE DATABASE database-name
 删除数据库 drop database dbname
 分离数据库 sp_detach_db
@@ -192,10 +206,10 @@ Alter table tabname drop primary key(col)</description>
     
     <item>
       <title>数据分析师学习路径</title>
-      <link>https://www.m1sty.com/2020/overview_data-analyst/</link>
+      <link>https://www.m1sty.com/2020/overview_data-analyst_map/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/overview_data-analyst/</guid>
+      <guid>https://www.m1sty.com/2020/overview_data-analyst_map/</guid>
       <description></description>
     </item>
     
@@ -215,15 +229,6 @@ delete和drop最本质的区别在于，delete是数据操纵语言，即DML，�
  A.revoke create table to u1 B.revoke create table from u1 C.revoke create table from u1 with grant option D.deny create table to u1  Notes: with grant option 权限传递 使用这个子句时将允许用户将其权限分配给他人
  应用问题 mysql_query 关于mysql_db_query与mysql_query说法错误的是：(ABC)
  A.mysql_db_query与mysql_query在执行sql语句后的返回值是一样的，成功返回资源号，失败返回FALSE B.不能用mysql_query函数临时在另一个数据库上执行sql语句，而mysql_db_query可以 C.mysql_query在功能上等于mysql_select_db() + mysql_db_query() D.mysql_db_query不会切换回先前连接到的数据库  范式 下面关于数据库范式的说法哪些是正确的：（ADE）</description>
-    </item>
-    
-    <item>
-      <title>常用商业分析模型</title>
-      <link>https://www.m1sty.com/2020/business_analysis_model/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2020/business_analysis_model/</guid>
-      <description></description>
     </item>
     
   </channel>
