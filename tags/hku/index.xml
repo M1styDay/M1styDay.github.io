@@ -58,5 +58,44 @@ The algorithm selects the first point randomly. Let t be any step of the algorit
       <description>Clusterings Background What is Cluster Analysis  Finding groups of objects such that the objects in a group will be similar (or related) to one another and different from (or unrelated to) the objects in other groups  Intra-cluster distances are minimized Inter-cluster distances are maximized   Notion of a Cluster can be Ambiguous  Applications of Cluster Analysis  Understanding  Group related documents for browsing, group genes and proteins that hav similar functionality, or group stocks with similar price fluctuations   Summarization  Reduce size of large data sets    What is not Cluster Analysis  Superviesd classification  Have class label information   Simple segmentation  Dividing students into different registration groups alpgabetically, by last name   Results of a query  Groupings are a result of an external specification   Graph partitioning  Some mutual relevance and synergy, but areas are not identical    Types of Clusterings Introduction   A clustering is a set of clusters</description>
     </item>
     
+    <item>
+      <title>Assignment：Association</title>
+      <link>https://www.m1sty.com/2021/dm_association_3_assignment/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_3_assignment/</guid>
+      <description>Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.</description>
+    </item>
+    
+    <item>
+      <title>Exercise：Association</title>
+      <link>https://www.m1sty.com/2021/dm_association_2_exercise/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_2_exercise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topic：Association(2)</title>
+      <link>https://www.m1sty.com/2021/dm_association_1_content2/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_1_content2/</guid>
+      <description>Improvements to A-Priori PCY Algorithm Introdution  Main observation: during pass 1 of A-priori, most memory is idle. Use that memory to keep additional info to improve storage during pass 2 of A-priori. Passes &amp;gt; 2 are the same as in A-Priori.  Pass 1  Use a hash function which &amp;ldquo;bucketizes&amp;rdquo; item pairs, that is, maps them to integers in $[1,k]$. Each &amp;ldquo;bucket&amp;rdquo; i in $[1,k]$ is associated with a counter $c_i$.</description>
+    </item>
+    
+    <item>
+      <title>Topic：Association(1)</title>
+      <link>https://www.m1sty.com/2021/dm_association_1_content1/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_1_content1/</guid>
+      <description>Frequent Itemsets and Association Rules Market Baskets The Market-Basket Model   A large set of items, e.g., things sold in a supermarket.
+  A large set of baskets, each of which is a small set of the items, e.g., the things one customer buys on one day.
+  A general many-many mapping (association) between two kinds of things.
+  The technology focuses on common events, not rare events (“long tail”).</description>
+    </item>
+    
   </channel>
 </rss>

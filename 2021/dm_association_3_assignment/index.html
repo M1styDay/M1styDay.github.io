@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_0_clear/" />
-  <link rel="next" href="https://www.m1sty.com/2021/dm_association_1_content1/" />
-  <link rel="canonical" href="https://www.m1sty.com/2021/project_data-index_content/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_association_2_exercise/" />
+  <link rel="next" href="https://www.m1sty.com/2021/dm_clusterings_1_content/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_association_3_assignment/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           数据指标体系搭建（以PY项目为例）【施工中……】 | M1sty
+           Assignment：Association | M1sty
        
   </title>
-  <meta name="title" content="数据指标体系搭建（以PY项目为例）【施工中……】 | M1sty">
+  <meta name="title" content="Assignment：Association | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,9 +45,9 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "数据指标体系搭建（以PY项目为例）【施工中……】",
-    "headline" : "数据指标体系搭建（以PY项目为例）【施工中……】",
-    "description" : "",
+    "name" : "Assignment：Association",
+    "headline" : "Assignment：Association",
+    "description" : "Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -55,11 +55,11 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-01-05 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-01-05 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/www.m1sty.com\/2021\/project_data-index_content\/",
-    "wordCount" : "0",
-    "keywords" : [ "数据指标体系", "M1sty"]
+    "datePublished": "2021-02-04 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-02-04 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_association_3_assignment\/",
+    "wordCount" : "260",
+    "keywords" : [ "Association","HKU","Assignment", "M1sty"]
 }
 </script>
 
@@ -121,23 +121,38 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">数据指标体系搭建（以PY项目为例）【施工中……】</h1>
+        <h1 class="post-title" itemprop="name headline">Assignment：Association</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
-                <a href="https://www.m1sty.com/categories/project/"> Project </a>
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-01-05 itemprop="datePublished">January 5, 2021</time>
-           </span> (<span class="post-word-count">0 words)</span>
+        <time datetime=2021-02-04 itemprop="datePublished">February 4, 2021</time>
+           </span> (<span class="post-word-count">260 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#frequent-itemsets">Frequent Itemsets</a>
+      <ul>
+        <li><a href="#qustion-1">Qustion 1</a></li>
+        <li><a href="#answer-1">Answer 1</a></li>
+      </ul>
+    </li>
+    <li><a href="#practical-exercise-on-fi-and-ar">Practical exercise on FI and AR</a>
+      <ul>
+        <li><a href="#qustion-4">Qustion 4</a></li>
+        <li><a href="#answer-4">Answer 4</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
 <script type="text/javascript">
@@ -187,7 +202,32 @@
           
           
 
-          <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%201.png" alt=""></p>
+          <h1 id="association">Association</h1>
+<h2 id="frequent-itemsets">Frequent Itemsets</h2>
+<h3 id="qustion-1">Qustion 1</h3>
+<h4 id="qustion-1-1">Qustion 1-1</h4>
+<ul>
+<li>Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.) In particular you should specify for each pass of the algorithm, the frequent itemsets, as well as the counters (and their values) kept in main memory by the A-priori algorithm.</li>
+</ul>
+<h4 id="qustion-1-2">Qustion 1-2</h4>
+<ul>
+<li>Use the results from the previous step so as to compute the confidence and support of the rule b → d. In order to answer this question, are the results from the previous step sufficient or some information is missing?</li>
+</ul>
+<h4 id="qustion-1-3">Qustion 1-3</h4>
+<ul>
+<li>Table 2 shows a new list of baskets as well as the items they contain. Using the PCY algorithm, find all frequent itemsets with support threshold 0.33 (i.e. in this example they occur at least 33% of 6, i.e. at least two times.) To this end, we are going to use the hash function f(i,j) = (i+j)%3 (% and mod are equivalent). In particular you should specify for each pass of the algorithm, the frequent itemsets, as well as all the counters (and their values) kept in main memory by the PCY algorithm.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210313234142.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210313234207.png" alt=""></p>
+<h3 id="answer-1">Answer 1</h3>
+<h2 id="practical-exercise-on-fi-and-ar">Practical exercise on FI and AR</h2>
+<h3 id="qustion-4">Qustion 4</h3>
+<h4 id="qustion-4-1">Qustion 4-1</h4>
+<h4 id="qustion-4-2">Qustion 4-2</h4>
+<h4 id="qustion-4-3">Qustion 4-3</h4>
+<h4 id="qustion-4-4">Qustion 4-4</h4>
+<h4 id="qustion-4-5">Qustion 4-5</h4>
+<h3 id="answer-4">Answer 4</h3>
 
     </div>
 
@@ -202,7 +242,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://www.m1sty.com/2021/project_data-index_content/>https://www.m1sty.com/2021/project_data-index_content/</span>
+                    <a href=https://www.m1sty.com/2021/dm_association_3_assignment/>https://www.m1sty.com/2021/dm_association_3_assignment/</span>
             </p>
             
              
@@ -218,8 +258,14 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB/">
-                    #数据指标体系</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/association/">
+                    #Association</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/assignment/">
+                    #Assignment</a></span>
             
             </section>
         
@@ -231,10 +277,10 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_0_clear/" class="prev" rel="prev" title="数据清洗"><i class="iconfont icon-left"></i>&nbsp;数据清洗</a>
+        <a href="https://www.m1sty.com/2021/dm_association_2_exercise/" class="prev" rel="prev" title="Exercise：Association"><i class="iconfont icon-left"></i>&nbsp;Exercise：Association</a>
          
         
-        <a href="https://www.m1sty.com/2021/dm_association_1_content1/" class="next" rel="next" title="Topic：Association(1)">Topic：Association(1)&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2021/dm_clusterings_1_content/" class="next" rel="next" title="Topic：Clusterings">Topic：Clusterings&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

@@ -52,10 +52,10 @@ def k_SSE(X,cluster): # 选择连续的K种不同的值 K = range(1,clusters+1) 
     
     <item>
       <title>数据清洗</title>
-      <link>https://www.m1sty.com/2021/dm_clear/</link>
+      <link>https://www.m1sty.com/2021/dm_0_clear/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_clear/</guid>
+      <guid>https://www.m1sty.com/2021/dm_0_clear/</guid>
       <description>常用工具 numpy 构建数组   Numpy中常用的数据结构是ndarray格式
   使用array函数创建，语法格式为array(列表或元组)
   可以使用其他函数例如arange、linspace、zeros等创建

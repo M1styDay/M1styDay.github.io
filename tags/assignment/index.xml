@@ -19,5 +19,14 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
    d(a,P1) distance d(a,P4) distance     d(P2,P1) $\sqrt{ 0^2 + (\frac{1}{2})^2 }$ d(p2,p4) $\sqrt{ (\frac{1}{2})^2 + 1^2 }$   d(P3,P1) $\sqrt{ (\frac{1}{2})^2 + 1^2 }$ d(P3,P4) $\sqrt{ 0^2 + (\frac{1}{2})^2 }$   d(P5,P1) $\sqrt{ 0^2 + 4^2 }$ d(P5,P4) $\sqrt{ 1^2 + 3^2 }$   d(P6,P1) $\sqrt{ 1^2 + 4^2 }$ d(P6,P4) $\sqrt{ 0^2 + 3^2 }$   d(P7,P1) $\sqrt{ 1^2 + 5^2 }$ d(P7,P4) $\sqrt{ 0^2 + 4^2 }$    P2 is assigned to the red cluster</description>
     </item>
     
+    <item>
+      <title>Assignment：Association</title>
+      <link>https://www.m1sty.com/2021/dm_association_3_assignment/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_3_assignment/</guid>
+      <description>Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.</description>
+    </item>
+    
   </channel>
 </rss>
