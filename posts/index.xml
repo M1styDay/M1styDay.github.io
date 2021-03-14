@@ -157,7 +157,12 @@ The algorithm selects the first point randomly. Let t be any step of the algorit
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_2_exercise/</guid>
-      <description></description>
+      <description>Naive Algorithm Pass 1 Support treshold：2
+Pass 2 Support treshold：2
+Pass 3 Support treshold：2
+A-priori Algorithm Pass 1 Pass 2 Pass 3 PCY Algorithm Input Data Pass 1 Pass 2 The remaining passes The remaining passes are the same of A-priori
+SON Algorithm Introduction Let s be the support threshold:
+ Pass 1:  Divide the dataset into k chunks, let $p_i$ be such that the ith chunk contains a fraction of pi of the input dataset.</description>
     </item>
     
     <item>
