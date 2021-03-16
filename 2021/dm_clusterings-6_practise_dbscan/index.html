@@ -11,7 +11,7 @@
   
   
   <link rel="prev" href="https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/" />
-  
+  <link rel="next" href="https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/" />
   <link rel="canonical" href="https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Practise：Clusterings(DBSCAN) | M1sty
+           Clusterings：Practise(DBSCAN) | M1sty
        
   </title>
-  <meta name="title" content="Practise：Clusterings(DBSCAN) | M1sty">
+  <meta name="title" content="Clusterings：Practise(DBSCAN) | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,8 +45,8 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Practise：Clusterings(DBSCAN)",
-    "headline" : "Practise：Clusterings(DBSCAN)",
+    "name" : "Clusterings：Practise(DBSCAN)",
+    "headline" : "Clusterings：Practise(DBSCAN)",
     "description" : "Clusterings 熟悉密度聚类中的几个概念 模型介绍   Kmeans聚类存在两个致命缺点，一是聚类效果容易受到异常样本点的影响;二是该算法无法准确地将非球形样本进行合理的聚类。\n  基于密度的聚类则可以解决非球形簇的问题，“密度”可以理解为样本点的紧密程度，如果在指定的半径领域内，实际样本量超过给定的最小样本量阈值，则认为是密度高的对象，就可以聚成一个簇。\n  概念讲解  点的领域：在某点p处，给定其半径e后，所得到的覆盖区域 核心对象：对于给定的最少样本量MinPts而言，如果某点p的e领域内至少包含MinPts个样本点，则点p就为核心对象。 直接密度可达：假设点p为核心对象，且在点p的e领域内存在点q，则从点p出发到点q是直接密度可达的。 密度可达：假设存在一系列的对象链$P_1$,$P_2$,\u0026hellip;,$P_n$，如果$p_i$是关于半径e和最少样本点MinPts的直接密度可达$P_(i\u002b1)$，则p1密度可达$P_n$。(i = 1,2,\u0026hellip;n) 密度相连：假设点o为核心对象，从点o出发得到两个密度可达点p和点q，则称点p和点q是密度相连的。 聚类的簇：簇包含了最大的密度相连所构成的样本点。 边界点：假设点p为核心对象，在其领域内包含了点b，如果点b为非核心对象，则称其为点p的边界点。 异常点：不属于任何簇的样本点。  理解密度聚类的过程 步骤讲解  为密度聚类算法设置一个合理的半径以及半径领域内所包含的最少样本量MinPts。 从数据集中随机挑选一个样本点p，检验其在半径领域内是否包含制定的最少样本量，如果包含就将其定性为核心对象，并构成一个簇C；否则，重新挑选一个样本点。 对于核心对象p所覆盖的其他样本点q，如果点q对应的半径领域内仍然包含最少样本量MinPts，就将其覆盖的样本点统统归于簇C。 重复步骤（3），将最大的密度相连所包含的样本点聚为一类，形成一个大簇。 完成步骤（4）后，重新回到步骤（2），并重复步骤（3）和（4），直到没有新的样本点可以生成新簇时算法结束。  函数介绍 cluster.DBSCAN(eps=0.5, min_samples=5, metric=‘euclidean’, p=None)   eps:用于设置密度聚类中的e领域，即半径，默认为0.5。\n  min_samples:用于设置e领域内最少的样本量，默认为5。\n  metric:用于指定计算点之间距离的方法，默认为欧氏距离 。\n  p:当参数metric为闵可夫斯基(\u0026lsquo;minkowski\u0026rsquo;)距离时，p=1，表示计算点之间的曼哈顿距离;p=2，表示计算点之间的欧式距离；该参数的默认值为2。\n  密度聚类相比Kmeans聚类的优势 球形簇的情况 K-means DBSCAN 非球形簇的情况 K-means DBSCAN DBSCAN难确定半径和MinPts\n密度聚类的应用实战 利用自定义球形簇数据对比DBSCAN和K-means # 导入第三方模块 import pandas as pd import numpy as np from sklearn.",
     "inLanguage" : "en-us",
     "author" : "Misty",
@@ -55,8 +55,8 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-03-13 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-03-13 00:00:00 \u002b0000 UTC",
+    "datePublished": "2021-02-05 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-02-05 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/dm_clusterings-6_practise_dbscan\/",
     "wordCount" : "757",
     "keywords" : [ "Clusterings","Practise", "M1sty"]
@@ -121,7 +121,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Practise：Clusterings(DBSCAN)</h1>
+        <h1 class="post-title" itemprop="name headline">Clusterings：Practise(DBSCAN)</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -129,7 +129,7 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-03-13 itemprop="datePublished">March 13, 2021</time>
+        <time datetime=2021-02-05 itemprop="datePublished">February 5, 2021</time>
            </span> (<span class="post-word-count">757 words)</span>
         </div>
     
@@ -562,8 +562,10 @@ plt<span style="color:#f92672">.</span>show()
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/" class="prev" rel="prev" title="Practise：Clusterings(Hierarchical Clusterings)"><i class="iconfont icon-left"></i>&nbsp;Practise：Clusterings(Hierarchical Clusterings)</a>
+        <a href="https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/" class="prev" rel="prev" title="Clusterings：Practise(Hierarchical Clusterings)"><i class="iconfont icon-left"></i>&nbsp;Clusterings：Practise(Hierarchical Clusterings)</a>
          
+        
+        <a href="https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/" class="next" rel="next" title="Clusterings：Practise(K-means)">Clusterings：Practise(K-means)&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

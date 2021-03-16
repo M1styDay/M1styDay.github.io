@@ -10,8 +10,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_association_2_exercise/" />
-  <link rel="next" href="https://www.m1sty.com/2021/dm_clusterings_1_content/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_association_4_more/" />
+  <link rel="next" href="https://www.m1sty.com/2021/dm_association_2_exercise/" />
   <link rel="canonical" href="https://www.m1sty.com/2021/dm_association_3_assignment/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Assignment：Association | M1sty
+           Association：Assignment | M1sty
        
   </title>
-  <meta name="title" content="Assignment：Association | M1sty">
+  <meta name="title" content="Association：Assignment | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,8 +45,8 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Assignment：Association",
-    "headline" : "Assignment：Association",
+    "name" : "Association：Assignment",
+    "headline" : "Association：Assignment",
     "description" : "Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.",
     "inLanguage" : "en-us",
     "author" : "Misty",
@@ -55,10 +55,10 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-02-04 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-02-04 00:00:00 \u002b0000 UTC",
+    "datePublished": "2021-01-03 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-01-03 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/dm_association_3_assignment\/",
-    "wordCount" : "260",
+    "wordCount" : "671",
     "keywords" : [ "Association","HKU","Assignment", "M1sty"]
 }
 </script>
@@ -121,7 +121,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Assignment：Association</h1>
+        <h1 class="post-title" itemprop="name headline">Association：Assignment</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -129,8 +129,8 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-02-04 itemprop="datePublished">February 4, 2021</time>
-           </span> (<span class="post-word-count">260 words)</span>
+        <time datetime=2021-01-03 itemprop="datePublished">January 3, 2021</time>
+           </span> (<span class="post-word-count">671 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -147,7 +147,7 @@
     </li>
     <li><a href="#practical-exercise-on-fi-and-ar">Practical exercise on FI and AR</a>
       <ul>
-        <li><a href="#qustion-4">Qustion 4</a></li>
+        <li><a href="#question-4">Question 4</a></li>
         <li><a href="#answer-4">Answer 4</a></li>
       </ul>
     </li>
@@ -220,15 +220,190 @@
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210313234142.png" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210313234207.png" alt=""></p>
 <h3 id="answer-1">Answer 1</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316162335.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316162403.png" alt=""></p>
 <h2 id="practical-exercise-on-fi-and-ar">Practical exercise on FI and AR</h2>
-<h3 id="qustion-4">Qustion 4</h3>
-<h4 id="qustion-4-1">Qustion 4-1</h4>
-<h4 id="qustion-4-2">Qustion 4-2</h4>
-<h4 id="qustion-4-3">Qustion 4-3</h4>
-<h4 id="qustion-4-4">Qustion 4-4</h4>
-<h4 id="qustion-4-5">Qustion 4-5</h4>
+<h3 id="question-4">Question 4</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316162615.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316164248.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316164324.png" alt=""></p>
 <h3 id="answer-4">Answer 4</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">from</span> mlxtend.preprocessing <span style="color:#f92672">import</span> TransactionEncoder
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> apriori
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> association_rules
 
+data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;mammographic_masses.csv&#34;</span>,delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>,header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+
+d<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>tolist()
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,len(d)):
+    j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span>(True):
+        <span style="color:#66d9ef">if</span> (type(d[i][j])<span style="color:#f92672">==</span>float <span style="color:#f92672">and</span> math<span style="color:#f92672">.</span>isnan(d[i][j])) :
+            <span style="color:#66d9ef">del</span> d[i][j]
+            j<span style="color:#f92672">-=</span><span style="color:#ae81ff">1</span>
+        j<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">if</span> (j<span style="color:#f92672">&gt;</span>len(d[i])<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+            <span style="color:#66d9ef">break</span>
+
+data
+
+<span style="color:#75715e">#adding attributes</span>
+<span style="color:#66d9ef">print</span>(d[:<span style="color:#ae81ff">2</span>])
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(d)):
+    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range (len(d[i])):
+        d[i][j]<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>columns[j] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=&#34;</span> <span style="color:#f92672">+</span>str(d[i][j])
+<span style="color:#66d9ef">print</span>(d[:<span style="color:#ae81ff">2</span>])
+
+
+te <span style="color:#f92672">=</span> TransactionEncoder()
+te_ary <span style="color:#f92672">=</span> te<span style="color:#f92672">.</span>fit(d)<span style="color:#f92672">.</span>transform(d)
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(te_ary, columns<span style="color:#f92672">=</span>te<span style="color:#f92672">.</span>columns_)
+
+<span style="color:#75715e">#computing frequent itemsets and association rules</span>
+frequent_itemsets <span style="color:#f92672">=</span> apriori(df, min_support<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, use_colnames<span style="color:#f92672">=</span>True)
+
+a<span style="color:#f92672">=</span>association_rules(frequent_itemsets, metric<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;confidence&#34;</span>, min_threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>)
+
+<span style="color:#75715e">#visualizing association rules results</span>
+a[[<span style="color:#e6db74">&#34;antecedents&#34;</span>,<span style="color:#e6db74">&#34;consequents&#34;</span>,<span style="color:#e6db74">&#34;support&#34;</span>,<span style="color:#e6db74">&#34;confidence&#34;</span>]]
+
+
+<span style="color:#75715e">#computing frequent itemsets and association rules</span>
+frequent_itemsets <span style="color:#f92672">=</span> apriori(df, min_support<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>, use_colnames<span style="color:#f92672">=</span>True)
+
+a<span style="color:#f92672">=</span>association_rules(frequent_itemsets, metric<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;confidence&#34;</span>, min_threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>)
+
+<span style="color:#75715e">#visualizing association rules results</span>
+a[[<span style="color:#e6db74">&#34;antecedents&#34;</span>,<span style="color:#e6db74">&#34;consequents&#34;</span>,<span style="color:#e6db74">&#34;support&#34;</span>,<span style="color:#e6db74">&#34;confidence&#34;</span>]]
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">33</span>):
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Severity=1&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i] ):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;the&#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">+</span>str(i)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;Severity=1&#34;</span>)
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i])
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">33</span>):
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i] ):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;the&#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">+</span>str(i)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;Severity=0&#34;</span>)
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i])
+
+<span style="color:#75715e">#computing frequent itemsets and association rules</span>
+frequent_itemsets <span style="color:#f92672">=</span> apriori(df, min_support<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>, use_colnames<span style="color:#f92672">=</span>True)
+
+a<span style="color:#f92672">=</span>association_rules(frequent_itemsets, metric<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;confidence&#34;</span>, min_threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>)
+
+<span style="color:#75715e">#visualizing association rules results</span>
+a[[<span style="color:#e6db74">&#34;antecedents&#34;</span>,<span style="color:#e6db74">&#34;consequents&#34;</span>,<span style="color:#e6db74">&#34;support&#34;</span>,<span style="color:#e6db74">&#34;confidence&#34;</span>]]
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">4676</span>):
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age=35&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i] ):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">from</span> mlxtend.preprocessing <span style="color:#f92672">import</span> TransactionEncoder
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> apriori
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> association_rules
+
+missing_values <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;?&#34;</span>]
+
+data2 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_excel(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;mammographic_masses_v2.xlsx&#34;</span>,na_values <span style="color:#f92672">=</span> missing_values)
+
+data2<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: sum(x<span style="color:#f92672">.</span>isnull())<span style="color:#f92672">/</span>len(x),axis<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) 
+
+<span style="color:#75715e"># pre-processing missing values</span>
+<span style="color:#75715e"># Age BI-RADS(means)</span>
+data2<span style="color:#f92672">.</span>Age<span style="color:#f92672">.</span>fillna(data2<span style="color:#f92672">.</span>Age<span style="color:#f92672">.</span>mean(),inplace<span style="color:#f92672">=</span>True) 
+
+data2<span style="color:#f92672">.</span>Age<span style="color:#f92672">.</span>mean()
+
+data2<span style="color:#f92672">.</span>BI_RADS<span style="color:#f92672">.</span>fillna(data2<span style="color:#f92672">.</span>BI_RADS<span style="color:#f92672">.</span>mean(),inplace<span style="color:#f92672">=</span>True) 
+
+data2<span style="color:#f92672">.</span>BI_RADS<span style="color:#f92672">.</span>mean()
+
+<span style="color:#75715e"># pre-processing missing values</span>
+<span style="color:#75715e"># shape Margin Density(mode)</span>
+
+data2<span style="color:#f92672">.</span>Shape<span style="color:#f92672">.</span>fillna(data2<span style="color:#f92672">.</span>Shape<span style="color:#f92672">.</span>mode()[<span style="color:#ae81ff">0</span>],inplace<span style="color:#f92672">=</span>True) 
+
+data2<span style="color:#f92672">.</span>Margin<span style="color:#f92672">.</span>fillna(data2<span style="color:#f92672">.</span>Margin<span style="color:#f92672">.</span>mode()[<span style="color:#ae81ff">0</span>],inplace<span style="color:#f92672">=</span>True) 
+
+data2<span style="color:#f92672">.</span>Density<span style="color:#f92672">.</span>fillna(data2<span style="color:#f92672">.</span>Density<span style="color:#f92672">.</span>mode()[<span style="color:#ae81ff">0</span>],inplace<span style="color:#f92672">=</span>True)  
+
+data2<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: sum(x<span style="color:#f92672">.</span>isnull())<span style="color:#f92672">/</span>len(x),axis<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+
+<span style="color:#75715e"># Age gap 20</span>
+w <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">40</span>,<span style="color:#ae81ff">60</span>,<span style="color:#ae81ff">80</span>,<span style="color:#ae81ff">100</span>]
+
+data2[<span style="color:#e6db74">&#39;Age_group&#39;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>cut(data2[<span style="color:#e6db74">&#39;Age&#39;</span>],bins <span style="color:#f92672">=</span> w)
+
+data3 <span style="color:#f92672">=</span> data2<span style="color:#f92672">.</span>drop(labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Age&#39;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+
+data3<span style="color:#f92672">.</span>head()
+
+d <span style="color:#f92672">=</span> data3<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>tolist()
+
+<span style="color:#75715e">#removing nan values</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,len(d)):
+    j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span>(True):
+        <span style="color:#66d9ef">if</span> (type(d[i][j])<span style="color:#f92672">==</span>float <span style="color:#f92672">and</span> math<span style="color:#f92672">.</span>isnan(d[i][j])) :
+            <span style="color:#66d9ef">del</span> d[i][j]
+            j<span style="color:#f92672">-=</span><span style="color:#ae81ff">1</span>
+        j<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">if</span> (j<span style="color:#f92672">&gt;</span>len(d[i])<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+            <span style="color:#66d9ef">break</span>
+
+data3
+
+<span style="color:#75715e">#adding attributes</span>
+<span style="color:#66d9ef">print</span>(d[:<span style="color:#ae81ff">2</span>])
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(d)):
+    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range (len(d[i])):
+        d[i][j]<span style="color:#f92672">=</span>data3<span style="color:#f92672">.</span>columns[j] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=&#34;</span> <span style="color:#f92672">+</span>str(d[i][j])
+<span style="color:#66d9ef">print</span>(d[:<span style="color:#ae81ff">2</span>])
+
+
+te <span style="color:#f92672">=</span> TransactionEncoder()
+te_ary <span style="color:#f92672">=</span> te<span style="color:#f92672">.</span>fit(d)<span style="color:#f92672">.</span>transform(d)
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(te_ary, columns<span style="color:#f92672">=</span>te<span style="color:#f92672">.</span>columns_)
+
+<span style="color:#75715e">#computing frequent itemsets and association rules</span>
+frequent_itemsets <span style="color:#f92672">=</span> apriori(df, min_support<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>, use_colnames<span style="color:#f92672">=</span>True)
+
+a<span style="color:#f92672">=</span>association_rules(frequent_itemsets, metric<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;confidence&#34;</span>, min_threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0.9</span>)
+
+<span style="color:#75715e">#visualizing association rules results</span>
+a[[<span style="color:#e6db74">&#34;antecedents&#34;</span>,<span style="color:#e6db74">&#34;consequents&#34;</span>,<span style="color:#e6db74">&#34;support&#34;</span>,<span style="color:#e6db74">&#34;confidence&#34;</span>]]
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">81</span>):
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(0, 20]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(20, 40]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(40, 60]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(60, 80]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(80, 100]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=0&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">81</span>):
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(0, 20]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=1&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(20, 40]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=1&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(40, 60]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=1&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(60, 80]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=1&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+    <span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;Age_group=(80, 100]&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;Severity=1&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i]):
+        <span style="color:#66d9ef">print</span>(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i],a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i],a[<span style="color:#e6db74">&#34;support&#34;</span>][i],a[<span style="color:#e6db74">&#34;confidence&#34;</span>][i])
+</code></pre></div>
     </div>
 
     <div class="post-copyright">
@@ -277,10 +452,10 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_association_2_exercise/" class="prev" rel="prev" title="Exercise：Association"><i class="iconfont icon-left"></i>&nbsp;Exercise：Association</a>
+        <a href="https://www.m1sty.com/2021/dm_association_4_more/" class="prev" rel="prev" title="Association：Supplement"><i class="iconfont icon-left"></i>&nbsp;Association：Supplement</a>
          
         
-        <a href="https://www.m1sty.com/2021/dm_clusterings_1_content/" class="next" rel="next" title="Topic：Clusterings">Topic：Clusterings&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2021/dm_association_2_exercise/" class="next" rel="next" title="Association：Exercise">Association：Exercise&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

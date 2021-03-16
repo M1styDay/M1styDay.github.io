@@ -2,107 +2,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://www.m1sty.com/categories/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/clusterings/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/data-mining/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/posts/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/practise/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/</loc>
-      
-      <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/categories/advanced-topics-in-data-management/</loc>
+      
+      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
       
@@ -142,6 +52,26 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/</loc>
+      
+      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/posts/</loc>
+      
+      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/tags/tableau/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
@@ -153,6 +83,16 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/visualization_tableau_map/</loc>
+      
+      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
       
@@ -202,59 +142,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/assignment/</loc>
+      <loc>https://www.m1sty.com/tags/clusterings/</loc>
       
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</loc>
-      
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/exercise/</loc>
-      
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</loc>
-      
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/supplement/</loc>
-      
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings_4_more/</loc>
-      
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+      <lastmod>2021-02-10T00:00:00+00:00</lastmod>
       
       
       
@@ -264,7 +154,7 @@
     <url>
       <loc>https://www.m1sty.com/2021/dm_clusterings_1_content/</loc>
       
-      <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+      <lastmod>2021-02-10T00:00:00+00:00</lastmod>
       
       
       
@@ -272,7 +162,107 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_association_3_assignment/</loc>
+      <loc>https://www.m1sty.com/categories/data-mining/</loc>
+      
+      <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</loc>
+      
+      <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/exercise/</loc>
+      
+      <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/assignment/</loc>
+      
+      <lastmod>2021-02-08T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_3_assignment/</loc>
+      
+      <lastmod>2021-02-08T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_4_more/</loc>
+      
+      <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/supplement/</loc>
+      
+      <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</loc>
+      
+      <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/practise/</loc>
+      
+      <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</loc>
+      
+      <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</loc>
       
       <lastmod>2021-02-04T00:00:00+00:00</lastmod>
       
@@ -284,37 +274,7 @@
     <url>
       <loc>https://www.m1sty.com/tags/association/</loc>
       
-      <lastmod>2021-02-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_association_2_exercise/</loc>
-      
-      <lastmod>2021-02-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_association_4_more/</loc>
-      
-      <lastmod>2021-02-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_association_1_content2/</loc>
-      
-      <lastmod>2021-02-04T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-06T00:00:00+00:00</lastmod>
       
       
       
@@ -324,7 +284,17 @@
     <url>
       <loc>https://www.m1sty.com/2021/dm_association_1_content1/</loc>
       
-      <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_1_content2/</loc>
+      
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
       
       
@@ -355,6 +325,46 @@
       <loc>https://www.m1sty.com/2021/project_data-index_content/</loc>
       
       <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_2_exercise/</loc>
+      
+      <lastmod>2021-01-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_3_assignment/</loc>
+      
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_4_more/</loc>
+      
+      <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_5_practise/</loc>
+      
+      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
       
       
       

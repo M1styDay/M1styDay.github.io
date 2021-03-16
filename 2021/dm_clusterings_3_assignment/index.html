@@ -10,8 +10,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_clusterings_2_exercise/" />
-  <link rel="next" href="https://www.m1sty.com/2021/atdm_top-k_2_tutorial/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_clusterings_4_more/" />
+  <link rel="next" href="https://www.m1sty.com/2021/dm_clusterings_2_exercise/" />
   <link rel="canonical" href="https://www.m1sty.com/2021/dm_clusterings_3_assignment/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Assignment：Clusterings | M1sty
+           Clusterings：Assignment | M1sty
        
   </title>
-  <meta name="title" content="Assignment：Clusterings | M1sty">
+  <meta name="title" content="Clusterings：Assignment | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,8 +45,8 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Assignment：Clusterings",
-    "headline" : "Assignment：Clusterings",
+    "name" : "Clusterings：Assignment",
+    "headline" : "Clusterings：Assignment",
     "description" : "Clusterings Theoretical exercises on K-means Qustion 1 Answer 1 Input Points and Set Centroids Input P1=(0,0), P2=(0,1\/2), P3=(1,1\/2), P4=(1,1), P5=(4,0), P6=(4,1), P7=(5,1)\nSet P1=(0,0) and P4=(1,1) as centroids\nReclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest centroid\n   d(a,P1) distance d(a,P4) distance     d(P2,P1) $\\sqrt{ 0^2 \u002b (\\frac{1}{2})^2 }$ d(p2,p4) $\\sqrt{ (\\frac{1}{2})^2 \u002b 1^2 }$   d(P3,P1) $\\sqrt{ (\\frac{1}{2})^2 \u002b 1^2 }$ d(P3,P4) $\\sqrt{ 0^2 \u002b (\\frac{1}{2})^2 }$   d(P5,P1) $\\sqrt{ 0^2 \u002b 4^2 }$ d(P5,P4) $\\sqrt{ 1^2 \u002b 3^2 }$   d(P6,P1) $\\sqrt{ 1^2 \u002b 4^2 }$ d(P6,P4) $\\sqrt{ 0^2 \u002b 3^2 }$   d(P7,P1) $\\sqrt{ 1^2 \u002b 5^2 }$ d(P7,P4) $\\sqrt{ 0^2 \u002b 4^2 }$    P2 is assigned to the red cluster",
     "inLanguage" : "en-us",
     "author" : "Misty",
@@ -55,10 +55,10 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-03-04 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-03-04 00:00:00 \u002b0000 UTC",
+    "datePublished": "2021-02-08 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-02-08 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/dm_clusterings_3_assignment\/",
-    "wordCount" : "558",
+    "wordCount" : "625",
     "keywords" : [ "Clusterings","HKU","Assignment", "M1sty"]
 }
 </script>
@@ -121,7 +121,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Assignment：Clusterings</h1>
+        <h1 class="post-title" itemprop="name headline">Clusterings：Assignment</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -129,8 +129,8 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-03-04 itemprop="datePublished">March 4, 2021</time>
-           </span> (<span class="post-word-count">558 words)</span>
+        <time datetime=2021-02-08 itemprop="datePublished">February 8, 2021</time>
+           </span> (<span class="post-word-count">625 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -410,91 +410,103 @@
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210312000759.png" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210312000841.png" alt=""></p>
 <h3 id="answer-3">Answer 3</h3>
-<h4 id="3-1">3-1</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 导入第三方包</span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
 <span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np  
 <span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
 <span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
 <span style="color:#f92672">from</span> sklearn.cluster <span style="color:#f92672">import</span> KMeans
 <span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
 <span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> preprocessing
+<span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> Normalizer
+<span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> print_function
 
-<span style="color:#75715e"># 读取iris数据集</span>
+<span style="color:#75715e"># raw data</span>
 stock <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;data.csv&#39;</span>)
-<span style="color:#75715e"># 查看数据集的前几行</span>
-stock<span style="color:#f92672">.</span>head()
 
-<span style="color:#75715e"># 提取出用于建模的数据集X</span>
+<span style="color:#75715e"># cluster</span>
 X <span style="color:#f92672">=</span> stock<span style="color:#f92672">.</span>drop(labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;StockName&#39;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
 
-<span style="color:#75715e"># 将股票数据集聚为8类</span>
-kmeans <span style="color:#f92672">=</span> KMeans(init<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;random&#39;</span>,n_clusters<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>)
+
+<span style="color:#75715e">#kmeans = KMeans(init=&#39;random&#39;,n_clusters=8)</span>
+kmeans <span style="color:#f92672">=</span> KMeans(init<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;k-means++&#39;</span>,n_clusters<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>)
 kmeans<span style="color:#f92672">.</span>fit(X)
 
-<span style="color:#75715e"># 构建空列表用于存储总的簇内离差平方和</span>
-TSSE <span style="color:#f92672">=</span> []
-<span style="color:#75715e"># 用于存储各个簇内离差平方和</span>
-SSE <span style="color:#f92672">=</span> []
-
-<span style="color:#75715e"># 返回簇标签</span>
 labels <span style="color:#f92672">=</span> kmeans<span style="color:#f92672">.</span>labels_
-<span style="color:#75715e"># 返回簇中心</span>
 centers <span style="color:#f92672">=</span> kmeans<span style="color:#f92672">.</span>cluster_centers_
 
-<span style="color:#75715e"># 计算各簇样本的离差平方和，并保存到列表中</span>
-<span style="color:#66d9ef">for</span> label <span style="color:#f92672">in</span> set(labels):
-    SSE<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>sum((X<span style="color:#f92672">.</span>loc[labels <span style="color:#f92672">==</span> label,]<span style="color:#f92672">-</span>centers[label,:])<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>))
-<span style="color:#75715e"># 计算总的簇内离差平方和 </span>
-TSSE<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>sum(SSE))
-
-<span style="color:#66d9ef">print</span>(TSSE)
-
-<span style="color:#75715e"># 将聚类结果标签插入到数据集stock中</span>
 stock[<span style="color:#e6db74">&#39;cluster&#39;</span>] <span style="color:#f92672">=</span> kmeans<span style="color:#f92672">.</span>labels_
 
-<span style="color:#75715e"># 各类频数统计</span>
 stock<span style="color:#f92672">.</span>cluster<span style="color:#f92672">.</span>value_counts()
 
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">9</span>):
     res <span style="color:#f92672">=</span> stock[kmeans<span style="color:#f92672">.</span>labels_ <span style="color:#f92672">==</span> i]
     stockname <span style="color:#f92672">=</span> res<span style="color:#f92672">.</span>loc[:,<span style="color:#e6db74">&#39;StockName&#39;</span>]
     <span style="color:#66d9ef">print</span>(stockname)
-</code></pre></div><h4 id="3-2">3-2</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">次数</th>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">TSSE</th>
-<th style="text-align:center">结果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">init=&lsquo;random&rsquo;</td>
-<td style="text-align:center">1613.9882401462098</td>
-<td style="text-align:center">8 8 5 4 2 1 1 1</td>
-</tr>
-<tr>
-<td style="text-align:center">2</td>
-<td style="text-align:center">init=&lsquo;k-means++&rsquo;</td>
-<td style="text-align:center">1568.4483335556654</td>
-<td style="text-align:center">11 9 4 2 1 1 1 1</td>
-</tr>
-<tr>
-<td style="text-align:center">3</td>
-<td style="text-align:center">algorithm=&lsquo;elkan&rsquo;</td>
-<td style="text-align:center">1609.175819660893</td>
-<td style="text-align:center">8 8 4 4 2 2 1 1</td>
-</tr>
-</tbody>
-</table>
-<p>疑惑：第三次的algorithm参数按照网上的说法只加快的运行的速度（迭代速度），对结果不会造成太大影响。不知道应该选择改变什么参数以提高TSSE？</p>
-<h4 id="3-3">3-3</h4>
-<p>TBC</p>
 
+SSE <span style="color:#f92672">=</span> []
+SSE_labels <span style="color:#f92672">=</span> []
+
+<span style="color:#66d9ef">for</span> label <span style="color:#f92672">in</span> set(labels):
+    SSE_labels<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>sum((X<span style="color:#f92672">.</span>loc[labels <span style="color:#f92672">==</span> label,]<span style="color:#f92672">-</span>centers[label,:])<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>))
+
+
+SSE<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>sum(SSE_labels))
+<span style="color:#66d9ef">print</span>(SSE)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np  
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
+<span style="color:#f92672">from</span> sklearn.cluster <span style="color:#f92672">import</span> KMeans
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> preprocessing
+<span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> Normalizer
+<span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> print_function
+
+
+<span style="color:#75715e"># Normalize the data</span>
+
+stock <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;data.csv&#39;</span>)
+X_first <span style="color:#f92672">=</span> stock[<span style="color:#e6db74">&#39;StockName&#39;</span>]
+
+X <span style="color:#f92672">=</span> stock<span style="color:#f92672">.</span>drop(labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;StockName&#39;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+
+norm_X_l1 <span style="color:#f92672">=</span> Normalizer(norm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;l1&#34;</span>)<span style="color:#f92672">.</span>fit_transform(X)
+
+stock_l1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(norm_X_l1)
+
+new_stock_l1 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([X_first, stock_l1], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+
+<span style="color:#75715e"># cluster</span>
+X_l1 <span style="color:#f92672">=</span> new_stock_l1<span style="color:#f92672">.</span>drop(labels <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;StockName&#39;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+
+
+<span style="color:#75715e">#kmeans = KMeans(init=&#39;random&#39;,n_clusters=8)</span>
+kmeans <span style="color:#f92672">=</span> KMeans(init<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;k-means++&#39;</span>,n_clusters<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>)
+kmeans<span style="color:#f92672">.</span>fit(X_l1)
+
+
+labels <span style="color:#f92672">=</span> kmeans<span style="color:#f92672">.</span>labels_
+centers <span style="color:#f92672">=</span> kmeans<span style="color:#f92672">.</span>cluster_centers_
+
+new_stock_l1[<span style="color:#e6db74">&#39;cluster&#39;</span>] <span style="color:#f92672">=</span> kmeans<span style="color:#f92672">.</span>labels_
+
+new_stock_l1<span style="color:#f92672">.</span>cluster<span style="color:#f92672">.</span>value_counts()
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">9</span>):
+    res <span style="color:#f92672">=</span> new_stock_l1[kmeans<span style="color:#f92672">.</span>labels_ <span style="color:#f92672">==</span> i]
+    stockname <span style="color:#f92672">=</span> res<span style="color:#f92672">.</span>loc[:,<span style="color:#e6db74">&#39;StockName&#39;</span>]
+    <span style="color:#66d9ef">print</span>(stockname)
+
+SSE_l1 <span style="color:#f92672">=</span> []
+SSE_labels_l1 <span style="color:#f92672">=</span> []
+
+<span style="color:#66d9ef">for</span> label <span style="color:#f92672">in</span> set(labels):
+    SSE_labels_l1<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>sum((X_l1<span style="color:#f92672">.</span>loc[labels <span style="color:#f92672">==</span> label,]<span style="color:#f92672">-</span>centers[label,:])<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>))
+
+
+SSE_l1<span style="color:#f92672">.</span>append(np<span style="color:#f92672">.</span>sum(SSE_labels_l1))
+<span style="color:#66d9ef">print</span>(SSE_l1)
+</code></pre></div>
     </div>
 
     <div class="post-copyright">
@@ -543,10 +555,10 @@ stock<span style="color:#f92672">.</span>cluster<span style="color:#f92672">.</s
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_clusterings_2_exercise/" class="prev" rel="prev" title="Exercise：Clusterings"><i class="iconfont icon-left"></i>&nbsp;Exercise：Clusterings</a>
+        <a href="https://www.m1sty.com/2021/dm_clusterings_4_more/" class="prev" rel="prev" title="Clusterings：Supplement"><i class="iconfont icon-left"></i>&nbsp;Clusterings：Supplement</a>
          
         
-        <a href="https://www.m1sty.com/2021/atdm_top-k_2_tutorial/" class="next" rel="next" title="Tutorial 4：Top-k Query Evaluation">Tutorial 4：Top-k Query Evaluation&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2021/dm_clusterings_2_exercise/" class="next" rel="next" title="Clusterings：Exercise">Clusterings：Exercise&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

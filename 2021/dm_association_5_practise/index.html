@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_0_clear/" />
+  <link rel="next" href="https://www.m1sty.com/2021/dm_association_4_more/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_association_5_practise/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Association：Practise | M1sty
+       
+  </title>
+  <meta name="title" content="Association：Practise | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Association：Practise",
+    "headline" : "Association：Practise",
+    "description" : "#we run apriori on the order_data.csv file import math import pandas as pd from mlxtend.preprocessing import TransactionEncoder from mlxtend.frequent_patterns import apriori from mlxtend.frequent_patterns import association_rules data = pd.read_csv(r\u0026#34;order_data.csv\u0026#34;,delimiter=\u0026#34; \u0026#34;,header=None) #preprocessing: change to one hot encoding so as to be able to use apriori from mlxtend d=data.values.tolist() #removing nan values for i in range(len(d)): j=0 while(True): if (type(d[i][j])==float and math.isnan(d[i][j])) : del d[i][j] j-=1 j\u002b=1 if (j\u0026gt;len(d[i])-1): break te = TransactionEncoder() te_ary = te.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-01-01 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-01-01 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_association_5_practise\/",
+    "wordCount" : "255",
+    "keywords" : [ "Association","Practise", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Association：Practise</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-01-01 itemprop="datePublished">January 1, 2021</time>
+           </span> (<span class="post-word-count">255 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#we run apriori on the order_data.csv file</span>
+
+<span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">from</span> mlxtend.preprocessing <span style="color:#f92672">import</span> TransactionEncoder
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> apriori
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> association_rules
+
+
+data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;order_data.csv&#34;</span>,delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>,header<span style="color:#f92672">=</span>None)
+
+<span style="color:#75715e">#preprocessing: change to one hot encoding so as to be able to use apriori from mlxtend</span>
+d<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>tolist()
+
+<span style="color:#75715e">#removing nan values</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(d)):
+    j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span>(True):
+        <span style="color:#66d9ef">if</span> (type(d[i][j])<span style="color:#f92672">==</span>float <span style="color:#f92672">and</span> math<span style="color:#f92672">.</span>isnan(d[i][j])) :
+            <span style="color:#66d9ef">del</span> d[i][j]
+            j<span style="color:#f92672">-=</span><span style="color:#ae81ff">1</span>
+        j<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">if</span> (j<span style="color:#f92672">&gt;</span>len(d[i])<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+            <span style="color:#66d9ef">break</span>
+
+te <span style="color:#f92672">=</span> TransactionEncoder()
+te_ary <span style="color:#f92672">=</span> te<span style="color:#f92672">.</span>fit(d)<span style="color:#f92672">.</span>transform(d)
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(te_ary, columns<span style="color:#f92672">=</span>te<span style="color:#f92672">.</span>columns_)
+
+<span style="color:#75715e">#computing frequent itemsets and association rules</span>
+frequent_itemsets <span style="color:#f92672">=</span> apriori(df, min_support<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, use_colnames<span style="color:#f92672">=</span>True)
+
+a<span style="color:#f92672">=</span>association_rules(frequent_itemsets, metric<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;confidence&#34;</span>, min_threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">0.6</span>)
+
+<span style="color:#75715e">#visualizing association rules results</span>
+a[[<span style="color:#e6db74">&#34;antecedents&#34;</span>,<span style="color:#e6db74">&#34;consequents&#34;</span>,<span style="color:#e6db74">&#34;support&#34;</span>,<span style="color:#e6db74">&#34;confidence&#34;</span>]]
+
+type(a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][<span style="color:#ae81ff">99</span>]) <span style="color:#75715e">#prints frozenset</span>
+
+<span style="color:#75715e">#frozenset is very similar to a set in Python with the main difference that cannot be changed.</span>
+<span style="color:#75715e">#so we can check if a rule contains shampoo and honey as follows</span>
+i<span style="color:#f92672">=</span><span style="color:#ae81ff">99</span>
+<span style="color:#66d9ef">if</span> (<span style="color:#e6db74">&#34;shampoo&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;antecedents&#34;</span>][i] <span style="color:#f92672">and</span> <span style="color:#e6db74">&#34;honey&#34;</span> <span style="color:#f92672">in</span> a[<span style="color:#e6db74">&#34;consequents&#34;</span>][i] ):
+    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;The &#34;</span><span style="color:#f92672">+</span>str(i)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; rule talks about shampoo and honey:&#34;</span> )
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;The &#34;</span><span style="color:#f92672">+</span>str(i)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;th rule does not talk about shampoo and honey:&#34;</span> )
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">from</span> mlxtend.preprocessing <span style="color:#f92672">import</span> TransactionEncoder
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> apriori
+<span style="color:#f92672">from</span> mlxtend.frequent_patterns <span style="color:#f92672">import</span> association_rules
+
+
+data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;mammographic_masses.csv&#34;</span>,delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>,header<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+
+<span style="color:#75715e">#preprocessing: change to one hot encoding so as to be able to use apriori from mlxtend</span>
+d<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>tolist()
+
+<span style="color:#75715e">#removing nan values</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,len(d)):
+    j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span>(True):
+        <span style="color:#66d9ef">if</span> (type(d[i][j])<span style="color:#f92672">==</span>float <span style="color:#f92672">and</span> math<span style="color:#f92672">.</span>isnan(d[i][j])) :
+            <span style="color:#66d9ef">del</span> d[i][j]
+            j<span style="color:#f92672">-=</span><span style="color:#ae81ff">1</span>
+        j<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">if</span> (j<span style="color:#f92672">&gt;</span>len(d[i])<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+            <span style="color:#66d9ef">break</span>
+
+data
+
+<span style="color:#75715e">#adding attributes</span>
+<span style="color:#66d9ef">print</span>(d[:<span style="color:#ae81ff">2</span>])
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(d)):
+    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range (len(d[i])):
+        d[i][j]<span style="color:#f92672">=</span>data<span style="color:#f92672">.</span>columns[j] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=&#34;</span> <span style="color:#f92672">+</span>str(d[i][j])
+<span style="color:#66d9ef">print</span>(d[:<span style="color:#ae81ff">2</span>])
+
+
+te <span style="color:#f92672">=</span> TransactionEncoder()
+te_ary <span style="color:#f92672">=</span> te<span style="color:#f92672">.</span>fit(d)<span style="color:#f92672">.</span>transform(d)
+
+df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(te_ary, columns<span style="color:#f92672">=</span>te<span style="color:#f92672">.</span>columns_)
+
+<span style="color:#75715e">#this part needs to be filled...</span>
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dm_association_5_practise/>https://www.m1sty.com/2021/dm_association_5_practise/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/association/">
+                    #Association</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/practise/">
+                    #Practise</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/dm_0_clear/" class="prev" rel="prev" title="Pre-processing"><i class="iconfont icon-left"></i>&nbsp;Pre-processing</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/dm_association_4_more/" class="next" rel="next" title="Association：Supplement">Association：Supplement&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>
