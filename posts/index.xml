@@ -6,7 +6,18 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Applied AI in Business</title>
+      <link>https://www.m1sty.com/2021/ed_2_applied-ai-in-business/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/ed_2_applied-ai-in-business/</guid>
+      <description>Applied AI in Business Curriculum Structure   Reading
+ What is Machine Learning and the 5 components of AI systems（Read Chapter 1-3 of AI book）    Material
+ Why use Machine Learning for Credit Scoring and deciding to give Loans? What are the 5 components of AI systems What are the 5 components of DoNotPay? Several FinTech Use Cases Summary Questions for reflection    Class 2 PPT Intro to Applied AI Four Pillars of Applied AI  Virtual Assistance Generating Insights Automation of Manual Processes Unlocking Unstructured Data  DoNotPay: Four Pillars of Applied AI?</description>
+    </item>
+    
     <item>
       <title>Intro Entrepreneurship Development</title>
       <link>https://www.m1sty.com/2021/ed_1_intro/</link>
