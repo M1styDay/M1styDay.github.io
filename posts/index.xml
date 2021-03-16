@@ -6,7 +6,18 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro Entrepreneurship Development</title>
+      <link>https://www.m1sty.com/2021/ed_1_intro/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/ed_1_intro/</guid>
+      <description>Topic Topics covered
+ The Business Model Canvas Customer Discovery Value Propositions &amp;amp; Minimal Viable Products Channels and Influencers Pivots Revenues and Pricing Models Resources, Activities and Partners Costs, Metrics, Financials and Fundraising Crowdfunding, Venture Capital Hong Kong incubators and accelerators Applied AI in Business The Applied AI Data Business Model Canvas The AI Startup Playbook  MVP Minimum Viable Product
+Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</description>
+    </item>
+    
     <item>
       <title>Lecture 4：Top-k Queries</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
@@ -292,6 +303,16 @@ delete和drop最本质的区别在于，delete是数据操纵语言，即DML，�
 子查询： 在SQL语言中，子查询是： (D)
  A.返回单表中数据子集的查询语言 B.选取多表中字段子集的查询语句 C.选取单表中字段子集的查询语句 D.嵌入到另一个查询语句之中的查询语句  Notes: 子查询本质上是嵌套进其他SELECT,UPDATE,INSERT,DELETE语句的一个被限制的SELECT语句。
 子查询也可以嵌套在其他子查询中,这个嵌套最多可达32层。子查询也叫内部查询(Inner query)或者内部选择(Inner Select),而包含子查询的查询语句也叫做外部查询（Outter)或者外部选择(Outer Select)。</description>
+    </item>
+    
+    <item>
+      <title>Web 2.0：A Strategy Guide</title>
+      <link>https://www.m1sty.com/2020/business_book_web-2.0-a-strategy-guide/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2020/business_book_web-2.0-a-strategy-guide/</guid>
+      <description>Web 2.0: A Strategy Guide Chapter 1 Users Create Value Flickr and Collective User Value   What is Web2.0
+Web 2.0 turbocharges network effects because online users are no longer limited by how many things they can find, see, or down- load off the Web, but rather by how many things they can do, interact, combine, remix, upload, change, and customize for them- selves. This online DIY self-expression benefits businesses and other users, not just individual uploaders.</description>
     </item>
     
   </channel>
