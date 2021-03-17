@@ -6,7 +6,16 @@
     <description>Recent content in Supplement on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/supplement/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/supplement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top-k Query：Supplement</title>
+      <link>https://www.m1sty.com/2021/atdm_top-k_4_more/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_top-k_4_more/</guid>
+      <description>Threshold Algorithm (TA)  Original version, often used as synonym for entire family of top-k algorithms. But: eager random access to candidate objects required. Worst-case memory consumption is strictly bounded → O(k)  No-Random-Access Algorithm (NRA)  No random access required at all, but may have to scan large parts of the index lists. Worst-case memory consumption bounded by index size → O(m*n + k)  </description>
+    </item>
+    
     <item>
       <title>Clusterings：Supplement</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_4_more/</link>

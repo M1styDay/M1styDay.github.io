@@ -84,7 +84,7 @@
     <url>
       <loc>https://www.m1sty.com/categories/advanced-topics-in-data-management/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
       
       
       
@@ -94,7 +94,7 @@
     <url>
       <loc>https://www.m1sty.com/tags/content/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
       
       
       
@@ -104,7 +104,17 @@
     <url>
       <loc>https://www.m1sty.com/tags/hku/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/top-k/</loc>
+      
+      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
       
       
       
@@ -114,7 +124,47 @@
     <url>
       <loc>https://www.m1sty.com/2021/atdm_top-k_1_content/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</loc>
+      
+      <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/tutorial/</loc>
+      
+      <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/supplement/</loc>
+      
+      <lastmod>2021-03-07T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_top-k_4_more/</loc>
+      
+      <lastmod>2021-03-07T00:00:00+00:00</lastmod>
       
       
       
@@ -133,36 +183,6 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/visualization_tableau_map/</loc>
-      
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/top-k/</loc>
-      
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/tutorial/</loc>
-      
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
       
@@ -253,16 +273,6 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/dm_clusterings_4_more/</loc>
-      
-      <lastmod>2021-02-07T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/supplement/</loc>
       
       <lastmod>2021-02-07T00:00:00+00:00</lastmod>
       

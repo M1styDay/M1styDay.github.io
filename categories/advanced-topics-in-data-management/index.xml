@@ -6,25 +6,34 @@
     <description>Recent content in Advanced Topics in Data Management on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/advanced-topics-in-data-management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/advanced-topics-in-data-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lecture 4：Top-k Queries</title>
+      <title>Top-k Query：Content</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/atdm_top-k_1_content/</guid>
       <description>Top-k Queries Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
     </item>
     
     <item>
-      <title>Tutorial 4：Top-k Query Evaluation</title>
+      <title>Top-k Query：Tutorial</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</guid>
       <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
 Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
 Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
+    </item>
+    
+    <item>
+      <title>Top-k Query：Supplement</title>
+      <link>https://www.m1sty.com/2021/atdm_top-k_4_more/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_top-k_4_more/</guid>
+      <description>Threshold Algorithm (TA)  Original version, often used as synonym for entire family of top-k algorithms. But: eager random access to candidate objects required. Worst-case memory consumption is strictly bounded → O(k)  No-Random-Access Algorithm (NRA)  No random access required at all, but may have to scan large parts of the index lists. Worst-case memory consumption bounded by index size → O(m*n + k)  </description>
     </item>
     
   </channel>

@@ -6,11 +6,11 @@
     <description>Recent content in Tutorial on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tutorial 4：Top-k Query Evaluation</title>
+      <title>Top-k Query：Tutorial</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</guid>
       <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
