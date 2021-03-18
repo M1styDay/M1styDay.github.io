@@ -18,5 +18,14 @@ Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
 Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
     </item>
     
+    <item>
+      <title>Spatial Networks：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</guid>
+      <description>Dijkstra&amp;rsquo;s algorithm review A* search algorithm review Nearest neighbor search exercise Question Consider a spatial network database, which includes a road network graph G and a set of points of interest P. The points in P can only be located on the vertices or edges of G. Each point of interest is with some labels (at least one), e.g., &amp;lsquo;school&amp;rsquo;, &amp;lsquo;hotel&amp;rsquo;, &amp;lsquo;restaurant&amp;rsquo;. The points P are indexed by an R-tree RP based on location and by an inverted file (see the demo below) IP based on the labels.</description>
+    </item>
+    
   </channel>
 </rss>

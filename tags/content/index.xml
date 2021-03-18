@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Spatial Networks：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</guid>
+      <description>Spatial Networks Background Network Distance  In many real applications accessibility of objects is restricted by a spatial network  Examples  Driver looking for nearest gas station Mobile user looking for nearest restaurant     Shortest path distance used instead of Euclidean distance SP(a,b) = path between a and b with the minimum accumulated length  Challenges  Euclidean distance is no longer relevant  R-tree may not be useful, when search is based on shortest path distance   Graph cannot be flattened to a one-dimensional space  Special storage and indexing techniques for graphs are required   Graph properties may vary  directed vs.</description>
+    </item>
+    
+    <item>
       <title>Association：Content(1)</title>
       <link>https://www.m1sty.com/2021/dm_association_1_content1/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>

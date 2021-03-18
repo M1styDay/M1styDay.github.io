@@ -46,6 +46,15 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     </item>
     
     <item>
+      <title>Spatial Networks：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</guid>
+      <description>Spatial Networks Background Network Distance  In many real applications accessibility of objects is restricted by a spatial network  Examples  Driver looking for nearest gas station Mobile user looking for nearest restaurant     Shortest path distance used instead of Euclidean distance SP(a,b) = path between a and b with the minimum accumulated length  Challenges  Euclidean distance is no longer relevant  R-tree may not be useful, when search is based on shortest path distance   Graph cannot be flattened to a one-dimensional space  Special storage and indexing techniques for graphs are required   Graph properties may vary  directed vs.</description>
+    </item>
+    
+    <item>
       <title>Clusterings：Exercise</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
@@ -53,6 +62,15 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
       <guid>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</guid>
       <description>Clusterings K-Means Algorithm Input Points Centroids Reclustering step 1 Recomputing centroids step 2 Recomputing the centroids step 3 Final Clustering K-Means++: Main Intuition Probaility distribution Sampling points Examples K-means- To understand why K-means++ use some randomness we compare it against the following algorithm which we call it K-means–:
 The algorithm selects the first point randomly. Let t be any step of the algorithm, with 2 ≤ t &amp;lt; k. Let C be the set of points chosen at step t.</description>
+    </item>
+    
+    <item>
+      <title>Spatial Networks：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</guid>
+      <description>Dijkstra&amp;rsquo;s algorithm review A* search algorithm review Nearest neighbor search exercise Question Consider a spatial network database, which includes a road network graph G and a set of points of interest P. The points in P can only be located on the vertices or edges of G. Each point of interest is with some labels (at least one), e.g., &amp;lsquo;school&amp;rsquo;, &amp;lsquo;hotel&amp;rsquo;, &amp;lsquo;restaurant&amp;rsquo;. The points P are indexed by an R-tree RP based on location and by an inverted file (see the demo below) IP based on the labels.</description>
     </item>
     
     <item>
