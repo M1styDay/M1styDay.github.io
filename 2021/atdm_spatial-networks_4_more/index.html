@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_clusterings_3_assignment/" />
-  <link rel="next" href="https://www.m1sty.com/2021/dm_clusterings_2_exercise/" />
-  <link rel="canonical" href="https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/" />
+  <link rel="next" href="https://www.m1sty.com/2021/dm_clusterings_4_more/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/atdm_spatial-networks_4_more/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Spatial Networks：Tutorial | M1sty
+           Spatial Networks：Supplement | M1sty
        
   </title>
-  <meta name="title" content="Spatial Networks：Tutorial | M1sty">
+  <meta name="title" content="Spatial Networks：Supplement | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,9 +45,9 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Spatial Networks：Tutorial",
-    "headline" : "Spatial Networks：Tutorial",
-    "description" : "Dijkstra\u0026rsquo;s algorithm review A* search algorithm review Nearest neighbor search exercise Question Consider a spatial network database, which includes a road network graph G and a set of points of interest P. The points in P can only be located on the vertices or edges of G. Each point of interest is with some labels (at least one), e.g., \u0026lsquo;school\u0026rsquo;, \u0026lsquo;hotel\u0026rsquo;, \u0026lsquo;restaurant\u0026rsquo;. The points P are indexed by an R-tree $R_P$ based on location and by an inverted file (see the demo below) IP based on the labels.",
+    "name" : "Spatial Networks：Supplement",
+    "headline" : "Spatial Networks：Supplement",
+    "description" : "Dijkstra\u0026rsquo;s algorithm   Dijkstra算法用来寻找图形中节点之间的最短路径。\n  在Dijkstra算法中，需要计算每一个节点距离起点的总移动代价。同时，还需要一个优先队列结构。对于所有待遍历的节点，放入优先队列中会按照代价进行排序。\n  在算法运行的过程中，每次都从优先队列中选出代价最小的作为下一个遍历的节点。直到到达终点为止。\n  A* algorithm   A*算法通过下面这个函数来计算每个节点的优先级:\n f(n)=g(n)\u002bh(n)  f(n)是节点n的综合优先级。当我们选择下一个要遍历的节点时，我们总会选取综合优先级最高（值最小）的节点。 g(n) 是节点n距离起点的代价。 h(n)是节点n距离终点的预计代价，这也就是A*算法的启发函数。      A*算法在运算过程中，每次从优先队列中选取f(n)值最小（优先级最高）的节点作为下一个待遍历的节点。\n  另外，A*算法使用两个集合来表示待遍历的节点，与已经遍历过的节点，这通常称之为open_set和close_set。\n   在极端情况下，当启发函数h(n)始终为0，则将由g(n)决定节点的优先级，此时算法就退化成了Dijkstra算法。 如果h(n)始终小于等于节点n到终点的代价，则A*算法保证一定能够找到最短路径。但是当h(n)的值越小，算法将遍历越多的节点，也就导致算法越慢。 如果h(n)完全等于节点n到终点的代价，则A*算法将找到最佳路径，并且速度很快。可惜的是，并非所有场景下都能做到这一点。因为在没有达到终点之前，我们很难确切算出距离终点还有多远。 如果h(n)的值比节点n到终点的代价要大，则A*算法不能保证找到最短路径，不过此时会很快。 在另外一个极端情况下，如果h(n)相较于g(n)大很多，则此时只有h(n)产生效果，这也就变成了最佳优先搜索。  ",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -55,11 +55,11 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-02-09 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-02-09 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/www.m1sty.com\/2021\/atdm_spatial-networks_2_tutorial\/",
-    "wordCount" : "311",
-    "keywords" : [ "HKU","Spatial Networks","Tutorial", "M1sty"]
+    "datePublished": "2021-02-07 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-02-07 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/atdm_spatial-networks_4_more\/",
+    "wordCount" : "20",
+    "keywords" : [ "HKU","Spatial Networks","Supplement", "M1sty"]
 }
 </script>
 
@@ -121,7 +121,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Spatial Networks：Tutorial</h1>
+        <h1 class="post-title" itemprop="name headline">Spatial Networks：Supplement</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -129,8 +129,8 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-02-09 itemprop="datePublished">February 9, 2021</time>
-           </span> (<span class="post-word-count">311 words)</span>
+        <time datetime=2021-02-07 itemprop="datePublished">February 7, 2021</time>
+           </span> (<span class="post-word-count">20 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -139,14 +139,8 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#dijkstras-algorithm-review">Dijkstra&rsquo;s algorithm review</a></li>
-    <li><a href="#a-search-algorithm-review">A* search algorithm review</a></li>
-    <li><a href="#nearest-neighbor-search-exercise">Nearest neighbor search exercise</a>
-      <ul>
-        <li><a href="#question">Question</a></li>
-        <li><a href="#answer">Answer</a></li>
-      </ul>
-    </li>
+    <li><a href="#dijkstras-algorithm">Dijkstra&rsquo;s algorithm</a></li>
+    <li><a href="#a-algorithm">A* algorithm</a></li>
   </ul>
 </nav>
   </div>
@@ -198,31 +192,50 @@
           
           
 
-          <h2 id="dijkstras-algorithm-review">Dijkstra&rsquo;s algorithm review</h2>
-<h2 id="a-search-algorithm-review">A* search algorithm review</h2>
-<h2 id="nearest-neighbor-search-exercise">Nearest neighbor search exercise</h2>
-<h3 id="question">Question</h3>
-<p>Consider a spatial network database, which includes a road network graph G and a set of points of interest P. The points in P can only be located on the vertices or edges of G. Each point of interest is with some labels (at least one), e.g., &lsquo;school&rsquo;, &lsquo;hotel&rsquo;, &lsquo;restaurant&rsquo;. The points P are indexed by an R-tree $R_P$ based on location and by an inverted file (see the demo below) IP based on the labels. There is also an R-tree $R_E$ that spatially indexes the edges of G. Finally, there is a graph index for G, which enables us to quickly find all edges adjacent to any vertex in G. Consider a mobile user u on the spatial network who issues the query <strong>find the nearest point of interest in P, in terms of shortest path distance, which contains the label &lsquo;vegetarian&rsquo; and &lsquo;restaurant&rsquo;</strong>. Describe an efficient way to evaluate the query, using the given indexes, taking into consideration the following information:</p>
-<ol>
-<li>Every edge of G includes at least one point in P which has the label &lsquo;restaurant&rsquo;. However, only five points in P have the label &lsquo;vegetarian&rsquo;.</li>
-<li>The Euclidean distance between any two vertices of G is a lower bound of their shortest path distance.</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210318215341.png" alt=""></p>
-<h3 id="answer">Answer</h3>
+          <h2 id="dijkstras-algorithm">Dijkstra&rsquo;s algorithm</h2>
 <ul>
 <li>
-<p>Find the nearest point of interest in P, in terms of shortest path distance, which contains the label &lsquo;vegetarian&rsquo; and &lsquo;restaurant’.</p>
+<p>Dijkstra算法用来寻找图形中节点之间的最短路径。</p>
 </li>
 <li>
-<p>First perform a range query on $R_E$ to find the edge which includes u. Since &lsquo;vegetarian&rsquo; is very rare, use the inverted file to find all points that include words &lsquo;vegetarian&rsquo; and &lsquo;restaurant’.</p>
+<p>在Dijkstra算法中，需要计算每一个节点距离起点的总移动代价。同时，还需要一个优先队列结构。对于所有待遍历的节点，放入优先队列中会按照代价进行排序。</p>
 </li>
 <li>
-<p>Use R-tree $R_E$ again to find the locations of these candidate points on the spatial network.</p>
-</li>
-<li>
-<p>Perform an A* search from u to each candidate point and get the one with the lowest network distance to u.</p>
+<p>在算法运行的过程中，每次都从优先队列中选出代价最小的作为下一个遍历的节点。直到到达终点为止。</p>
 </li>
 </ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210318155247.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210319000637.png" alt=""></p>
+<h2 id="a-algorithm">A* algorithm</h2>
+<ul>
+<li>
+<p>A*算法通过下面这个函数来计算每个节点的优先级:</p>
+<ul>
+<li>f(n)=g(n)+h(n)
+<ul>
+<li>f(n)是节点n的综合优先级。当我们选择下一个要遍历的节点时，我们总会选取综合优先级最高（值最小）的节点。</li>
+<li>g(n) 是节点n距离起点的代价。</li>
+<li>h(n)是节点n距离终点的预计代价，这也就是A*算法的启发函数。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>A*算法在运算过程中，每次从优先队列中选取f(n)值最小（优先级最高）的节点作为下一个待遍历的节点。</p>
+</li>
+<li>
+<p>另外，A*算法使用两个集合来表示待遍历的节点，与已经遍历过的节点，这通常称之为open_set和close_set。</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210319001256.png" alt=""></p>
+<ul>
+<li>在极端情况下，当启发函数h(n)始终为0，则将由g(n)决定节点的优先级，此时算法就退化成了Dijkstra算法。</li>
+<li>如果h(n)始终小于等于节点n到终点的代价，则A*算法保证一定能够找到最短路径。但是当h(n)的值越小，算法将遍历越多的节点，也就导致算法越慢。</li>
+<li>如果h(n)完全等于节点n到终点的代价，则A*算法将找到最佳路径，并且速度很快。可惜的是，并非所有场景下都能做到这一点。因为在没有达到终点之前，我们很难确切算出距离终点还有多远。</li>
+<li>如果h(n)的值比节点n到终点的代价要大，则A*算法不能保证找到最短路径，不过此时会很快。</li>
+<li>在另外一个极端情况下，如果h(n)相较于g(n)大很多，则此时只有h(n)产生效果，这也就变成了最佳优先搜索。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210319002151.png" alt=""></p>
 
     </div>
 
@@ -237,7 +250,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</span>
+                    <a href=https://www.m1sty.com/2021/atdm_spatial-networks_4_more/>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</span>
             </p>
             
              
@@ -259,8 +272,8 @@
             <span class="tag"><a href="https://www.m1sty.com/tags/spatial-networks/">
                     #Spatial Networks</a></span>
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/tutorial/">
-                    #Tutorial</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/supplement/">
+                    #Supplement</a></span>
             
             </section>
         
@@ -272,10 +285,10 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_clusterings_3_assignment/" class="prev" rel="prev" title="Clusterings：Assignment"><i class="iconfont icon-left"></i>&nbsp;Clusterings：Assignment</a>
+        <a href="https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/" class="prev" rel="prev" title="Clusterings：Practise(K-means)"><i class="iconfont icon-left"></i>&nbsp;Clusterings：Practise(K-means)</a>
          
         
-        <a href="https://www.m1sty.com/2021/dm_clusterings_2_exercise/" class="next" rel="next" title="Clusterings：Exercise">Clusterings：Exercise&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2021/dm_clusterings_4_more/" class="next" rel="next" title="Clusterings：Supplement">Clusterings：Supplement&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
