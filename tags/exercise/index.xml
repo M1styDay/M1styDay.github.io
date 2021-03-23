@@ -6,7 +6,16 @@
     <description>Recent content in Exercise on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PageRank：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</guid>
+      <description>Simple Wev Graph and its Matrix System of Linear Equations PageRank Algorithm </description>
+    </item>
+    
     <item>
       <title>Clusterings：Exercise</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_2_exercise/</link>

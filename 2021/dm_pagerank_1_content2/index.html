@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_pagerank_1_content1/" />
-  <link rel="next" href="https://www.m1sty.com/2021/ed_2_applied-ai-in-business/" />
-  <link rel="canonical" href="https://www.m1sty.com/2021/ed_1_intro/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/atdm_top-k_2_tutorial/" />
+  <link rel="next" href="https://www.m1sty.com/2021/atdm_top-k_1_content/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_pagerank_1_content2/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,10 +23,10 @@
   <title>
        
        
-           Intro Entrepreneurship Development | M1sty
+           PageRank：Content(2)【Not finish】 | M1sty
        
   </title>
-  <meta name="title" content="Intro Entrepreneurship Development | M1sty">
+  <meta name="title" content="PageRank：Content(2)【Not finish】 | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -45,9 +45,9 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Intro Entrepreneurship Development",
-    "headline" : "Intro Entrepreneurship Development",
-    "description" : "Topic Topics covered\n The Business Model Canvas Customer Discovery Value Propositions \u0026amp; Minimal Viable Products Channels and Influencers Pivots Revenues and Pricing Models Resources, Activities and Partners Costs, Metrics, Financials and Fundraising Crowdfunding, Venture Capital Hong Kong incubators and accelerators Applied AI in Business The Applied AI Data Business Model Canvas The AI Startup Playbook  MVP Minimum Viable Product\nBusiness Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos",
+    "name" : "PageRank：Content(2)【Not finish】",
+    "headline" : "PageRank：Content(2)【Not finish】",
+    "description" : "The Theory behind PageRank Computing Importance  Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages. Importance of v is proportional to the importance of nodes linking to v. It can be modeled by a system of linear equations\u0026hellip;  System of Linear Equations for PageRank PageRank  The importance of a web page can be computed by solving the corresponding system of linear equations.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -55,11 +55,11 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-03-14 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-03-14 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/www.m1sty.com\/2021\/ed_1_intro\/",
-    "wordCount" : "187",
-    "keywords" : [ "Entrepreneurship Development", "M1sty"]
+    "datePublished": "2021-03-09 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-03-09 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_pagerank_1_content2\/",
+    "wordCount" : "159",
+    "keywords" : [ "PageRank","HKU","Content", "M1sty"]
 }
 </script>
 
@@ -121,16 +121,16 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Intro Entrepreneurship Development</h1>
+        <h1 class="post-title" itemprop="name headline">PageRank：Content(2)【Not finish】</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
-                <a href="https://www.m1sty.com/categories/business/"> Business </a>
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-03-14 itemprop="datePublished">March 14, 2021</time>
-           </span> (<span class="post-word-count">187 words)</span>
+        <time datetime=2021-03-09 itemprop="datePublished">March 9, 2021</time>
+           </span> (<span class="post-word-count">159 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -139,11 +139,13 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#topic">Topic</a></li>
-    <li><a href="#mvp">MVP</a></li>
-    <li><a href="#business-model-canvas">Business Model Canvas</a></li>
-    <li><a href="#steve-blank-lean-startup-videos">Steve Blank Lean Startup Videos</a></li>
-    <li><a href="#takeaways">Takeaways</a></li>
+    <li><a href="#computing-importance">Computing Importance</a></li>
+    <li><a href="#system-of-linear-equations-for-pagerank">System of Linear Equations for PageRank</a></li>
+    <li><a href="#pagerank">PageRank</a>
+      <ul>
+        <li><a href="#eigenvector-computation">Eigenvector Computation</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -195,48 +197,30 @@
           
           
 
-          <h2 id="topic">Topic</h2>
-<p>Topics covered</p>
+          <h1 id="the-theory-behind-pagerank">The Theory behind PageRank</h1>
+<h2 id="computing-importance">Computing Importance</h2>
 <ul>
-<li>The Business Model Canvas</li>
-<li>Customer Discovery</li>
-<li>Value Propositions &amp; Minimal Viable Products</li>
-<li>Channels and Influencers</li>
-<li>Pivots</li>
-<li>Revenues and Pricing Models</li>
-<li>Resources, Activities and Partners</li>
-<li>Costs, Metrics, Financials and Fundraising</li>
-<li>Crowdfunding, Venture Capital</li>
-<li>Hong Kong incubators and accelerators</li>
-<li>Applied AI in Business</li>
-<li>The Applied AI Data Business Model Canvas</li>
-<li>The AI Startup Playbook</li>
+<li>Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages.</li>
+<li>Importance of v is proportional to the importance of nodes linking to v.</li>
+<li>It can be modeled by a system of linear equations&hellip;</li>
 </ul>
-<h2 id="mvp">MVP</h2>
-<p><strong>Minimum Viable Product</strong></p>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316223521.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316223628.png" alt=""></p>
-<h2 id="business-model-canvas">Business Model Canvas</h2>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316223720.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210316223757.png" alt=""></p>
-<h2 id="steve-blank-lean-startup-videos">Steve Blank Lean Startup Videos</h2>
-<p><a href="https://www.youtube.com/watch?v=6WLsXC9_IKQ">Value Proposition Videos</a></p>
-<p>Self-test questions:</p>
-<ol>
-<li>What is a value proposition?</li>
-<li>Compare a business model and a business plan?</li>
-<li>What is a hypotheses?</li>
-<li>What is a testable experiment?</li>
-<li>What is a MVP-minimum viable product?</li>
-<li>What is product-market fit?</li>
-<li>How many boxes are there in the BMC?</li>
-<li>Is there a lean startup video in your area of interest?</li>
-</ol>
-<h2 id="takeaways">Takeaways</h2>
+<h2 id="system-of-linear-equations-for-pagerank">System of Linear Equations for PageRank</h2>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210323163538.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210323163631.png" alt=""></p>
+<h2 id="pagerank">PageRank</h2>
 <ul>
-<li>The Lean Startup Approach is a fast, iterative, circular process for startups based on learning, building and measuring your product/service’s value proposition via an MVP.</li>
-<li>Many success stories like DropBox show the effectiveness of fast experimentation and hypothesis testing vs. other approaches.</li>
-<li>The Business Model Canvas starts as “hypotheses” and a living record or startup founder’s map of the “pivots” required over time.</li>
+<li>The importance of a web page can be computed by solving the corresponding system of linear equations.</li>
+<li>However there are two main issues:
+<ul>
+<li>The solution might not be unique!</li>
+<li>It is expensive to solve large system of linear equations. Gaussian elimination requires Ω($n^3$) operations.</li>
+</ul>
+</li>
+</ul>
+<h3 id="eigenvector-computation">Eigenvector Computation</h3>
+<ul>
+<li>The vector x is an eigenvector of the matrix A with eigenvalue λ if Ax = λx.</li>
+<li>Therefore, one could compute the importance of web pages by computing an eigenvector with eigenvalue 1 of $M_G$ , which is also very expensive!</li>
 </ul>
 
     </div>
@@ -252,7 +236,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://www.m1sty.com/2021/ed_1_intro/>https://www.m1sty.com/2021/ed_1_intro/</span>
+                    <a href=https://www.m1sty.com/2021/dm_pagerank_1_content2/>https://www.m1sty.com/2021/dm_pagerank_1_content2/</span>
             </p>
             
              
@@ -268,8 +252,14 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/entrepreneurship-development/">
-                    #Entrepreneurship Development</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/pagerank/">
+                    #PageRank</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/content/">
+                    #Content</a></span>
             
             </section>
         
@@ -281,10 +271,10 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_pagerank_1_content1/" class="prev" rel="prev" title="PageRank：Content(1)"><i class="iconfont icon-left"></i>&nbsp;PageRank：Content(1)</a>
+        <a href="https://www.m1sty.com/2021/atdm_top-k_2_tutorial/" class="prev" rel="prev" title="Top-k Query：Tutorial"><i class="iconfont icon-left"></i>&nbsp;Top-k Query：Tutorial</a>
          
         
-        <a href="https://www.m1sty.com/2021/ed_2_applied-ai-in-business/" class="next" rel="next" title="Applied AI in Business">Applied AI in Business&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2021/atdm_top-k_1_content/" class="next" rel="next" title="Top-k Query：Content">Top-k Query：Content&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

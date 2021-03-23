@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PageRank on M1sty</title>
+    <link>https://www.m1sty.com/tags/pagerank/</link>
+    <description>Recent content in PageRank on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/pagerank/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PageRank：Content(1)</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_1_content1/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_1_content1/</guid>
+      <description>Data and Algorithms of the Web Link Analysis Algorithms &amp;amp; Page Rank Link Analysis Algorithms  Page Rank Hubs and Authorities Topic-Specific Page Rank Spam Detection Algorithms Other interesting topics we won&amp;rsquo;t cover  Detecting duplicates and mirrors Mining for communities    Ranking Web Pages  Web pages are not equally “important” www.bernard.com and www.stanford.edu both contain both the term “stanford” but:  www.stanford.edu has 23,400 webpages linking to it www.</description>
+    </item>
+    
+    <item>
+      <title>PageRank：Content(2)【Not finish】</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_1_content2/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_1_content2/</guid>
+      <description>The Theory behind PageRank Computing Importance  Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages. Importance of v is proportional to the importance of nodes linking to v. It can be modeled by a system of linear equations&amp;hellip;  System of Linear Equations for PageRank PageRank  The importance of a web page can be computed by solving the corresponding system of linear equations.</description>
+    </item>
+    
+    <item>
+      <title>PageRank：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</guid>
+      <description>Simple Wev Graph and its Matrix System of Linear Equations PageRank Algorithm </description>
+    </item>
+    
+    <item>
+      <title>PageRank：Supplement</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_4_more/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_4_more/</guid>
+      <description>Key words  Link Analysis PageRank  Links 海量数据挖掘MMDS week1: Link Analysis - PageRank
+链接分析（Link Analysis）：PageRank算法</description>
+    </item>
+    
+  </channel>
+</rss>
