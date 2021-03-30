@@ -107,6 +107,15 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     </item>
     
     <item>
+      <title>Artificial Intelligence and Machine Learning for Business</title>
+      <link>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</guid>
+      <description>Artificial Intelligence and Machine Learning for Business 1.Introduction Topics in the book  What machine learning and artificial intelligence are. The sort o things organizations use artificial intelligence for. What a predictive model looks like. The relationship between artificial intelligence, machine learning and Big Data. The people and tools needed to apply artificial intelligence. How to use artificial intelligence to improve business processes and the bottom line. The legal and ethical issues that need to be considered when developing artificial intelligence based solutions that are going to be used to make decisions about people.</description>
+    </item>
+    
+    <item>
       <title>Top-k Query：Supplement</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_4_more/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
@@ -295,7 +304,7 @@ https://blog.csdn.net/liujh845633242/article/details/103679724
     </item>
     
     <item>
-      <title>数据指标体系搭建</title>
+      <title>搭建数据指标体系</title>
       <link>https://www.m1sty.com/2021/project_data-index_content/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
@@ -457,12 +466,22 @@ Before we get into this section, let&amp;rsquo;s talk about the flywheel effect.
     </item>
     
     <item>
-      <title>Artificial Intelligence and Machine Learning for Business</title>
-      <link>https://www.m1sty.com/2020/business_book_artificial-intelligence-and-machine-learning-for-business/</link>
-      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      <title>精益数据分析</title>
+      <link>https://www.m1sty.com/2020/business_book_jingyishujufenxi/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/business_book_artificial-intelligence-and-machine-learning-for-business/</guid>
-      <description>Artificial Intelligence and Machine Learning for Business 1.Introduction Topics in the book  What machine learning and artificial intelligence are. The sort o things organizations use artificial intelligence for. What a predictive model looks like. The relationship between artificial intelligence, machine learning and Big Data. The people and tools needed to apply artificial intelligence. How to use artificial intelligence to improve business processes and the bottom line. The legal and ethical issues that need to be considered when developing artificial intelligence based solutions that are going to be used to make decisions about people.</description>
+      <guid>https://www.m1sty.com/2020/business_book_jingyishujufenxi/</guid>
+      <description>精益数据分析 先导概念 客户开发法 客户开发方法聚焦于持续地收集用户反馈，这些反馈会对产品和业务的每个阶段产生实质性的影响。
+精益创业   客户开发+敏捷软件开发方法+精益生产实践
+  “构建-衡量-学习”循环：想法=》构建=》产品=》衡量=》数据=》学习=》想法
+  第一部分 精益创业和基本分析技术 精益创业   Airbnb：专人接待式最小可行化产品
+ 在精益创业理论中，最小可行化产品指足以向市场传达你所主张的价值的最小化产品。但定义中并未对产品的真实程度做出要求。例如，如果你正在考虑创建一种拼车服务，则可以试着用人工牵线搭桥这种原始方式将司机和乘客联系在一起。    数据指标   什么是好的数据指标？
+ 比较性 简单易懂 比率    什么是正确的数据指标？
+ 定性指标与量化指标 虚荣指标与可付诸行动的指标（规避虚荣指标） 探索性指标与报告性指标 先见性指标与后见性指标 相关性指标与因果性指标（相关性很好，因果性更佳）    市场细分、同期群分析、A/B测试和多变量分析
+  同期群分析
+  同期群分析使你能够观察处于生命周期不同阶段客户的行为模式，而非个体的自然生命周期，对所有客户一刀切
+  同期群分析适用于营收、客户流失率、口碑的病毒式传播、客户支持成本等数据指标
+       精益数据分析周期  精益画布 第二部分 精益分析如何用于创业公司 数据分析框架   精益创业画布模块及相关指标</description>
     </item>
     
   </channel>
