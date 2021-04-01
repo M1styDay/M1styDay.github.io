@@ -2,19 +2,9 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_5_midterm-review/</loc>
-      
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/categories/</loc>
       
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
       
       
       
@@ -22,19 +12,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/entrepreneurship/</loc>
+      <loc>https://www.m1sty.com/categories/data-mining/</loc>
       
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/entrepreneurship-development/</loc>
-      
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
       
       
       
@@ -42,9 +22,29 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/hku/</loc>
+      <loc>https://www.m1sty.com/tags/decistion-trees/</loc>
       
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_decistion-trees_5_practise/</loc>
+      
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_decistion-trees_5_practiseproject/</loc>
+      
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
       
       
       
@@ -54,7 +54,7 @@
     <url>
       <loc>https://www.m1sty.com/</loc>
       
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
       
       
       
@@ -64,7 +64,17 @@
     <url>
       <loc>https://www.m1sty.com/posts/</loc>
       
-      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/practise/</loc>
+      
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
       
       
       
@@ -73,6 +83,56 @@
   
     <url>
       <loc>https://www.m1sty.com/tags/</loc>
+      
+      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/</loc>
+      
+      <lastmod>2021-03-31T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/entrepreneurship/</loc>
+      
+      <lastmod>2021-03-31T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/entrepreneurship-development/</loc>
+      
+      <lastmod>2021-03-31T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/hku/</loc>
+      
+      <lastmod>2021-03-31T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/ed_5_midterm-review/</loc>
       
       <lastmod>2021-03-28T00:00:00+00:00</lastmod>
       
@@ -123,16 +183,6 @@
   
     <url>
       <loc>https://www.m1sty.com/categories/advanced-topics-in-data-management/</loc>
-      
-      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/data-mining/</loc>
       
       <lastmod>2021-03-10T00:00:00+00:00</lastmod>
       
@@ -373,16 +423,6 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</loc>
-      
-      <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/practise/</loc>
       
       <lastmod>2021-02-06T00:00:00+00:00</lastmod>
       
