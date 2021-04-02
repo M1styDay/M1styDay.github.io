@@ -18,10 +18,10 @@
     
     <item>
       <title>Decistion Trees：Practise(project)</title>
-      <link>https://www.m1sty.com/2021/dm_decistion-trees_5_practiseproject/</link>
+      <link>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_decistion-trees_5_practiseproject/</guid>
+      <guid>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</guid>
       <description>随机森林模型项目代码 建模版 导入数据 import pandas as pd import numpy as np import matplotlib.pyplot as plt import seaborn as sns import numpy as nps from scipy import stats from sklearn import metrics # 导入Excel文档 data=pd.read_excel(&amp;#39;D:\\Britney\\项目1\\K数据.xlsx&amp;#39;) 数据预处理 # 去除为0的行 a=data[data[&amp;#39;大货唛架 YY&amp;#39;]==0].index data1=data.drop(a,axis=0) data1[data1[&amp;#39;大货唛架 YY&amp;#39;].isin([0])] y1=data1[&amp;#39;大货唛架利用率%&amp;#39;] y2=data1[&amp;#39;大货唛架 YY&amp;#39;] #如果缺失率达到40%就可以去除该因子 d1=data1.isnull().sum()/data1.shape[0] #a=d1&amp;gt;0.5 a1=pd.DataFrame(d1) print(a1[a1[0]&amp;gt;0.4]) #去掉缺失率过大的因子 data2=data1.drop([&amp;#39;后整方式&amp;#39;,&amp;#39;循环尺寸标准_经向(Inch)&amp;#39;,&amp;#39;循环尺寸标准_纬向(Inch)&amp;#39;],axis=1) # 类型变量集合 quality=[attr for attr in data2.columns if data2.dtypes[attr] == &amp;#39;object&amp;#39;] # 类型变量缺失值补全 for c in quality: data2[c] = data2[c].</description>
     </item>
     

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regression：Linear Regression</title>
+      <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</guid>
+      <description>线性回归 一元线性回归 相关分析 一元线性回归模型  模型中的x称为自变量，y称为因变量; a为模型的截距项，b为模型的斜率项，ε为模型的误差项; 误差项ε的存在主要是为了平衡等号两边的值，通常被称为模型 无法解释的部分; 如果拟合线能够精确地捕捉到每一个点(即所有散点全部落在拟合线上)，那么对应的误差项ε应该为0; 所以，模型拟合的越好，则误差项ε应该越小。进而可以理解为: 求解参数的问题便是求解误差平方和最小的问题。  参数a和b求解  J(a,b)为目标函数，需求解该函数的最小值； 求解方法便是计算目标函数关于参数a和b的两个偏导数，最终令偏倒数为0即可。  模型的应用 # 导入第三方模块 import statsmodels.api as sm sm.ols(formula, data, subset=None, drop_cols=None)  formula:以字符串的形式指定线性回归模型的公式，如&amp;rsquo;y~x&amp;rsquo;就表示简单线性回归模型 data:指定建模的数据集 subset:通过bool类型的数组对象，获取data的子集用于建模 drop_cols:指定需要从data中删除的变量  # 导入第三方模块 import pandas as pd import statsmodels.api as sm # 导入数据 income = pd.read_csv(&amp;#39;Salary_Data.csv&amp;#39;) # 利用收入数据集，构建回归模型 fit = sm.formula.ols(&amp;#39;Salary ~ YearsExperience&amp;#39;, data = income).fit() # 返回模型的参数值 fit.params # 相关系数 income.columns income.Salary.corr(income.YearsExperience) 多元线性回归 定义  对于一元线性回归模型来说，其反映的是单个自变量对因变量的影响，然而实际情况中，影 响因变量的自变量往往不止一个，从而需要将一元线性回归模型扩展到多元线性回归模型。  参数求解 模型的应用  数据集包含5个变量，分别是产品的研发成本、管理成本、市场营销成本、销售市场和销 售利润。  # 导入模块 from sklearn import model_selection # 导入数据 Profit = pd.</description>
+    </item>
+    
     <item>
       <title>Decistion Trees：Practise</title>
       <link>https://www.m1sty.com/2021/dm_decistion-trees_5_practise/</link>
@@ -18,10 +27,10 @@
     
     <item>
       <title>Decistion Trees：Practise(project)</title>
-      <link>https://www.m1sty.com/2021/dm_decistion-trees_5_practiseproject/</link>
+      <link>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_decistion-trees_5_practiseproject/</guid>
+      <guid>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</guid>
       <description>随机森林模型项目代码 建模版 导入数据 import pandas as pd import numpy as np import matplotlib.pyplot as plt import seaborn as sns import numpy as nps from scipy import stats from sklearn import metrics # 导入Excel文档 data=pd.read_excel(&amp;#39;D:\\Britney\\项目1\\K数据.xlsx&amp;#39;) 数据预处理 # 去除为0的行 a=data[data[&amp;#39;大货唛架 YY&amp;#39;]==0].index data1=data.drop(a,axis=0) data1[data1[&amp;#39;大货唛架 YY&amp;#39;].isin([0])] y1=data1[&amp;#39;大货唛架利用率%&amp;#39;] y2=data1[&amp;#39;大货唛架 YY&amp;#39;] #如果缺失率达到40%就可以去除该因子 d1=data1.isnull().sum()/data1.shape[0] #a=d1&amp;gt;0.5 a1=pd.DataFrame(d1) print(a1[a1[0]&amp;gt;0.4]) #去掉缺失率过大的因子 data2=data1.drop([&amp;#39;后整方式&amp;#39;,&amp;#39;循环尺寸标准_经向(Inch)&amp;#39;,&amp;#39;循环尺寸标准_纬向(Inch)&amp;#39;],axis=1) # 类型变量集合 quality=[attr for attr in data2.columns if data2.dtypes[attr] == &amp;#39;object&amp;#39;] # 类型变量缺失值补全 for c in quality: data2[c] = data2[c].</description>
     </item>
     
