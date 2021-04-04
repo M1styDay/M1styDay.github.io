@@ -60,7 +60,7 @@
     "datePublished": "2020-12-30 00:00:00 \u002b0000 UTC",
     "dateModified" : "2020-12-30 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2020\/database_sql_50\/",
-    "wordCount" : "741",
+    "wordCount" : "1061",
     "keywords" : [ "sql", "M1sty"]
 }
 </script>
@@ -132,7 +132,7 @@
             </span>
           <span class="post-time"> on
         <time datetime=2020-12-30 itemprop="datePublished">December 30, 2020</time>
-           </span> (<span class="post-word-count">741 words)</span>
+           </span> (<span class="post-word-count">1061 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -391,6 +391,78 @@
 <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> teacher <span style="color:#66d9ef">on</span> course.t_id <span style="color:#f92672">=</span> teacher.t_id
 <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> c_id
 <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">AVG</span>(s_score) <span style="color:#66d9ef">DESC</span>
+</code></pre></div><h4 id="22查询所有课程的成绩第2名到第3名的学生信息及该课程成绩">22.查询所有课程的成绩第2名到第3名的学生信息及该课程成绩</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition <span style="color:#66d9ef">by</span> c_id <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> s_score <span style="color:#66d9ef">DESC</span>) rank1
+<span style="color:#66d9ef">FROM</span> score 
+<span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> student
+<span style="color:#66d9ef">ON</span> score.s_id <span style="color:#f92672">=</span> student.s_id) a
+<span style="color:#66d9ef">WHERE</span> rank1 <span style="color:#66d9ef">in</span> (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
+</code></pre></div><h4 id="23使用分段100-8585-7070-6060来统计各科成绩分别统计各分数段人数课程id和课程名称">23.使用分段[100-85],[85-70],[70-60],[&lt;60]来统计各科成绩，分别统计各分数段人数：课程ID和课程名称</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> score.c_id, course.c_name,
+<span style="color:#66d9ef">sum</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> score.s_score <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">100</span> <span style="color:#66d9ef">and</span> score.s_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span> <span style="color:#66d9ef">then</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;[100-85]&#39;</span>,
+<span style="color:#66d9ef">sum</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> score.s_score <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">85</span> <span style="color:#66d9ef">and</span> score.s_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">70</span> <span style="color:#66d9ef">then</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;[85-70]&#39;</span>,
+<span style="color:#66d9ef">sum</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> score.s_score <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">70</span> <span style="color:#66d9ef">and</span> score.s_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">60</span> <span style="color:#66d9ef">then</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;[70-60]&#39;</span>,
+<span style="color:#66d9ef">sum</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> score.s_score <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span> <span style="color:#66d9ef">and</span> score.s_score <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">then</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;[&lt;60]&#39;</span>
+<span style="color:#66d9ef">FROM</span> Score
+<span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> course <span style="color:#66d9ef">on</span> score.c_id <span style="color:#f92672">=</span> course.c_id
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> c_id
+</code></pre></div><h4 id="24查询学生平均成绩及其名次">24.查询学生平均成绩及其名次</h4>
+<p>row_number() over (order by 列 desc)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> s_id, <span style="color:#66d9ef">avg</span>(s_score), row_number() over (<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> <span style="color:#66d9ef">avg</span>(s_score) <span style="color:#66d9ef">desc</span>)
+<span style="color:#66d9ef">FROM</span> score
+<span style="color:#66d9ef">Group</span> <span style="color:#66d9ef">by</span> s_id
+</code></pre></div><h4 id="25查询各科成绩前三名的记录不考虑成绩并列情况">25.查询各科成绩前三名的记录（不考虑成绩并列情况）</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> c_id, 
+<span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> rank1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">then</span> s_score <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> ) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;第一&#39;</span>,
+<span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> rank1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">then</span> s_score <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> ) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;第二&#39;</span>,
+<span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> rank1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#66d9ef">then</span> s_score <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> ) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;第三&#39;</span>
+<span style="color:#66d9ef">FROM</span> (<span style="color:#66d9ef">SELECT</span> score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition <span style="color:#66d9ef">by</span> c_id <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> s_score <span style="color:#66d9ef">DESC</span>) rank1
+<span style="color:#66d9ef">FROM</span> score 
+<span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> student
+<span style="color:#66d9ef">ON</span> score.s_id <span style="color:#f92672">=</span> student.s_id) a
+<span style="color:#66d9ef">WHERE</span> rank1 <span style="color:#66d9ef">in</span> (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
+<span style="color:#66d9ef">Group</span> <span style="color:#66d9ef">by</span> c_id;
+</code></pre></div><h4 id="26查询每门课程被选修的学生数">26.查询每门课程被选修的学生数</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> c_id, <span style="color:#66d9ef">count</span>(s_id) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;每门课选修的学生数&#39;</span>
+<span style="color:#66d9ef">FROM</span> score
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> c_id
+</code></pre></div><h4 id="27查询出只有两门课程的全部学生的学号和姓名">27.查询出只有两门课程的全部学生的学号和姓名</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> score.s_id, student.s_name, <span style="color:#66d9ef">count</span>(score.c_id) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;课程数&#39;</span>
+<span style="color:#66d9ef">FROM</span> score
+<span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> student
+<span style="color:#66d9ef">ON</span> score.s_id <span style="color:#f92672">=</span> student.s_id
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> s_id
+<span style="color:#66d9ef">Having</span> <span style="color:#66d9ef">count</span>(score.c_id) <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</code></pre></div><h4 id="28查询男生女生人数">28.查询男生、女生人数</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> s_sex, <span style="color:#66d9ef">count</span>(s_id)
+<span style="color:#66d9ef">from</span> student
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> s_sex
+</code></pre></div><h4 id="29查询名字中含有风字的学生信息">29.查询名字中含有&quot;风&quot;字的学生信息</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">from</span> student
+<span style="color:#66d9ef">where</span> s_name <span style="color:#66d9ef">like</span> <span style="color:#e6db74">&#34;%风%&#34;</span>
+</code></pre></div><h4 id="31查询1990年出生的学生名单">31.查询1990年出生的学生名单</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">from</span> student
+<span style="color:#66d9ef">where</span> <span style="color:#66d9ef">year</span>(s_birth) <span style="color:#f92672">=</span> <span style="color:#ae81ff">1990</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">from</span> student
+<span style="color:#66d9ef">where</span> s_birth <span style="color:#66d9ef">like</span> <span style="color:#e6db74">&#39;%1990%&#39;</span>
+</code></pre></div><h4 id="32查询平均成绩大于等于85的所有学生的学号姓名和平均成绩">32.查询平均成绩大于等于85的所有学生的学号、姓名和平均成绩</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> score.s_id, student.s_name, <span style="color:#66d9ef">avg</span>(s_score)
+<span style="color:#66d9ef">FROM</span> score
+<span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> student
+<span style="color:#66d9ef">ON</span> score.s_id <span style="color:#f92672">=</span> student.s_id
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> score.s_id
+<span style="color:#66d9ef">Having</span> <span style="color:#66d9ef">avg</span>(s_score) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">85</span>
+</code></pre></div><h4 id="33查询每门课程的平均成绩结果按平均成绩升序排序平均成绩相同时按课程号降序排列">33.查询每门课程的平均成绩，结果按平均成绩升序排序，平均成绩相同时，按课程号降序排列</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> Score.c_id, c_name, <span style="color:#66d9ef">avg</span>(s_score)
+<span style="color:#66d9ef">FROM</span> Score
+<span style="color:#66d9ef">INNER</span> <span style="color:#66d9ef">JOIN</span> Course
+<span style="color:#66d9ef">ON</span> Score.c_id <span style="color:#f92672">=</span> Course.c_id
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> c_id
+<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">avg</span>(s_score) , c_id <span style="color:#66d9ef">DESC</span>
 </code></pre></div><p> </p>
 <hr>
 <p> </p>
