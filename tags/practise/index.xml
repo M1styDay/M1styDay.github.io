@@ -6,14 +6,25 @@
     <description>Recent content in Practise on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/practise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/practise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Regression：Linear Regression</title>
       <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</link>
-      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</guid>
       <description>线性回归 一元线性回归 相关分析 一元线性回归模型  模型中的x称为自变量，y称为因变量; a为模型的截距项，b为模型的斜率项，ε为模型的误差项; 误差项ε的存在主要是为了平衡等号两边的值，通常被称为模型 无法解释的部分; 如果拟合线能够精确地捕捉到每一个点(即所有散点全部落在拟合线上)，那么对应的误差项ε应该为0; 所以，模型拟合的越好，则误差项ε应该越小。进而可以理解为: 求解参数的问题便是求解误差平方和最小的问题。  参数a和b求解  J(a,b)为目标函数，需求解该函数的最小值； 求解方法便是计算目标函数关于参数a和b的两个偏导数，最终令偏倒数为0即可。  模型的应用 # 导入第三方模块 import statsmodels.api as sm sm.ols(formula, data, subset=None, drop_cols=None)  formula:以字符串的形式指定线性回归模型的公式，如&amp;rsquo;y~x&amp;rsquo;就表示简单线性回归模型 data:指定建模的数据集 subset:通过bool类型的数组对象，获取data的子集用于建模 drop_cols:指定需要从data中删除的变量  # 导入第三方模块 import pandas as pd import statsmodels.api as sm # 导入数据 income = pd.read_csv(&amp;#39;Salary_Data.csv&amp;#39;) # 利用收入数据集，构建回归模型 fit = sm.formula.ols(&amp;#39;Salary ~ YearsExperience&amp;#39;, data = income).fit() # 返回模型的参数值 fit.params # 相关系数 income.columns income.Salary.corr(income.YearsExperience) 多元线性回归 定义  对于一元线性回归模型来说，其反映的是单个自变量对因变量的影响，然而实际情况中，影 响因变量的自变量往往不止一个，从而需要将一元线性回归模型扩展到多元线性回归模型。  参数求解 模型的应用  数据集包含5个变量，分别是产品的研发成本、管理成本、市场营销成本、销售市场和销 售利润。  # 导入模块 from sklearn import model_selection # 导入数据 Profit = pd.</description>
+    </item>
+    
+    <item>
+      <title>Regression：Ridge Regression and Lasson Regression</title>
+      <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</guid>
+      <description>线性回归模型的短板 当列数比行数多 当列之间存在多重共线性 岭回归模型 为解决多元线性回归模型中可能存在的不可逆问题，统计学家提出了岭回归模型。该模型解决问题的思路就是在线性回归模型的目标函数之上增加l2正则项（也称为惩罚项）。
+表达式 系数求解 凸优化的等价命题 系数求解的几何意义 交叉验证法 Lasso模型 岭回归模型解决线性回归模型中矩阵X&amp;rsquo;X不可逆的办法是添加l2正则的惩罚项,但缺陷在于始终保留建模时的所有变量,无法降低模型的复杂度。对于 此, Lasso回归采用了l1正则的惩罚项。
+表达式 凸优化的等价命题 系数求解的几何意义 交叉验证法 实操 # 导入第三方模块 import pandas as pd import numpy as np from sklearn import model_selection from sklearn.linear_model import Ridge,RidgeCV import matplotlib.pyplot as plt # 读取糖尿病数据集 diabetes = pd.read_excel(r&amp;#39;diabetes.xlsx&amp;#39;) # 构造自变量（剔除患者性别、年龄和因变量） predictors = diabetes.columns[2:-1] # 将数据集拆分为训练集和测试集 X_train, X_test, y_train, y_test = model_selection.train_test_split(diabetes[predictors], diabetes[&amp;#39;Y&amp;#39;], test_size = 0.2, random_state = 1234 ) 多元线性回归 # 导入第三方模块 from statsmodels import api as sms # 为自变量X添加常数列1，用于拟合截距项 X_train2 = sms.</description>
     </item>
     
     <item>

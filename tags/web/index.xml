@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Business on M1sty</title>
-    <link>https://www.m1sty.com/categories/business/</link>
-    <description>Recent content in Business on M1sty</description>
+    <title>Web on M1sty</title>
+    <link>https://www.m1sty.com/tags/web/</link>
+    <description>Recent content in Web on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/business/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AB Test实验全知识</title>
       <link>https://www.m1sty.com/2021/business_web_ab-test/</link>
@@ -47,46 +47,6 @@ ROI 指标 曝光-转化体系  基准值：各指标的及格线 pv：page view
   重合用户特征：用户人口统计学特征和用户行为特征，这个指标主要观测即将收官的内容是否能够承接用户给新热内容，如果新热内容不能完全承接则需要提取片库内的内容来留存用户。
   收入体系  GMV=DAU X 转化率 X ARPU GMV：gross merchandise volume，成交额 DAU：daily active user，日访问用户量 ARPU：average revenue per user，平均单用户收入 会员收入体系主要考量是否能够通过有效的售卖手段让用户续费和充值，广告收入体系主要考量分发是否准确，能够为广告主带来曝光和收益。  ROI策略 入水和出水 稳定的流量池——量和结构的稳定 流量池每天都会有入水和出水，我们不仅仅要关注量的稳定，还要关注结构的稳定，并且分析流入和流出的原因。
   量的稳定：需观测入水和出水的流转过程，通常关注DAU/WAU/MAU等能够反映用户总体活跃的指标，以及整体的拉新-留存-促活-承接体系是否周期性（有些指标在一定的时间周期内呈现规律性特征）运转健康正常，如果在某段时间中体系中某个指标出现异常（需要设定基准值），应该及时追溯原因并补救，一般头部内容可以反映大部分的整体情况，因此我们只需关注头部内容的特征指标即可。比如，某个头部内容在有比较高的资源投入上持续有较高新用户占比，但在某一集之后新用户占比和留存率都持续走低，那么有可能是以下几种原因：剧情出现问题 不再能够吸引用户/明星的吸引力有限 已不足以支持粉丝继续追剧/会员权益已释放 无持续的内容更新，如果判定由于权益不合理释放导致需调整排播策略和会员权益释放节奏，如果判定该内容已经不具备拉新和留存的能力则需将其做降级处理，以避免过多的资源投入浪费在不停的拉新和流失中。</description>
-    </item>
-    
-    <item>
-      <title>Web 2.0：A Strategy Guide</title>
-      <link>https://www.m1sty.com/2020/business_book_web-2.0-a-strategy-guide/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2020/business_book_web-2.0-a-strategy-guide/</guid>
-      <description>Web 2.0: A Strategy Guide Chapter 1 Users Create Value Flickr and Collective User Value   What is Web2.0
-Web 2.0 turbocharges network effects because online users are no longer limited by how many things they can find, see, or down- load off the Web, but rather by how many things they can do, interact, combine, remix, upload, change, and customize for them- selves. This online DIY self-expression benefits businesses and other users, not just individual uploaders.</description>
-    </item>
-    
-    <item>
-      <title>Data Application in Enterprise</title>
-      <link>https://www.m1sty.com/2020/business_essay_data-application-in-enterprise/</link>
-      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2020/business_essay_data-application-in-enterprise/</guid>
-      <description>截取自HKU课程E-commerce technologies，Case Study，本人撰写部分
-Data Applications: Enterprise This chapter will analyze the application of data commercialization in enterprises from the perspectives of large enterprises as well as small/medium-sized enterprises. There are two development trends in the future: vertical integration of industry and enterprise boundary broadening.
-Before we get into this section, let&amp;rsquo;s talk about the flywheel effect. The essence of the flywheel effect is to produce motion properties. Once a huge flywheel wants to turn, it needs a vast source of power.</description>
-    </item>
-    
-    <item>
-      <title>精益数据分析</title>
-      <link>https://www.m1sty.com/2020/business_book_jingyishujufenxi/</link>
-      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2020/business_book_jingyishujufenxi/</guid>
-      <description>精益数据分析 先导概念 客户开发法 客户开发方法聚焦于持续地收集用户反馈，这些反馈会对产品和业务的每个阶段产生实质性的影响。
-精益创业   客户开发+敏捷软件开发方法+精益生产实践
-  “构建-衡量-学习”循环：想法=》构建=》产品=》衡量=》数据=》学习=》想法
-  第一部分 精益创业和基本分析技术 精益创业   Airbnb：专人接待式最小可行化产品
- 在精益创业理论中，最小可行化产品指足以向市场传达你所主张的价值的最小化产品。但定义中并未对产品的真实程度做出要求。例如，如果你正在考虑创建一种拼车服务，则可以试着用人工牵线搭桥这种原始方式将司机和乘客联系在一起。    数据指标   什么是好的数据指标？
- 比较性 简单易懂 比率    什么是正确的数据指标？
- 定性指标与量化指标 虚荣指标与可付诸行动的指标（规避虚荣指标） 探索性指标与报告性指标 先见性指标与后见性指标 相关性指标与因果性指标（相关性很好，因果性更佳）    市场细分、同期群分析、A/B测试和多变量分析
-  同期群分析
-  同期群分析使你能够观察处于生命周期不同阶段客户的行为模式，而非个体的自然生命周期，对所有客户一刀切
-  同期群分析适用于营收、客户流失率、口碑的病毒式传播、客户支持成本等数据指标
-       精益数据分析周期  精益画布 第二部分 精益分析如何用于创业公司 数据分析框架   精益创业画布模块及相关指标</description>
     </item>
     
   </channel>
