@@ -6,7 +6,16 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture1：Business Order; Chaos and Complexity</title>
+      <link>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</guid>
+      <description>Curriculum structure  Transition from industrial revolution to digital revolution Information as an experience good Economics of information Chaos and complexity e-Business transformation cycle  Text Book: Chapter 1 Introduction Chapter 1 Change and transformation in business explores past attempts at organisational transformation and considers why many of these efforts have been unsuccessful. Particular attention is given to the hope placed in the Total Quality Management (TQM) and Business Process Reengineering (BPR) movements as an elixir for organisational problems.</description>
+    </item>
+    
     <item>
       <title>AB Test实验全知识</title>
       <link>https://www.m1sty.com/2021/business_web_ab-test/</link>
