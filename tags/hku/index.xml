@@ -43,6 +43,15 @@
     </item>
     
     <item>
+      <title>Decision Trees：Content</title>
+      <link>https://www.m1sty.com/2021/dm_decision-trees_1_content/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_decision-trees_1_content/</guid>
+      <description>Decisision Trees Classification Definition  Given a collection of records (training set)  Each record contains a set of attributes, one of the attributes is the Class.   Find a model for Class attribute as a function of the values of other attributes Goal: previously unseen records should be assigned a Class as accurately as possible  A test set is used to determine the accuracy of the model. Usually, the given data set is divided into training and test sets, with training set used to build the model and test set used to validate it.</description>
+    </item>
+    
+    <item>
       <title>Lecture1：Business Order; Chaos and Complexity</title>
       <link>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</link>
       <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
@@ -52,6 +61,16 @@
  Transition from industrial revolution to digital revolution Information as an experience good Economics of information Chaos and complexity e-Business transformation cycle    Reading:
  Chapter 1 (textbook)    Case:
  From Mental Models to Transformation: Overcoming Inhibitors to Change (HBR)    Text Book: Chapter 1 Introduction Chapter 1 Change and transformation in business explores past attempts at organisational transformation and considers why many of these efforts have been unsuccessful.</description>
+    </item>
+    
+    <item>
+      <title>Decision Trees：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_decision-trees_2_exercise/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_decision-trees_2_exercise/</guid>
+      <description>Decision Trees：Exercise Question Construct a decision tree with the following properties:
+ Choose the best split based on GINI index; Stopping rule: when gini value=0 or no further split is possible; Class of a leaf is determined by majority rule. If ties use the default class (NM).  Answer Building Decision Tree Step 1 Step 2 Step 3 Predicting Post Pruning </description>
     </item>
     
     <item>
@@ -135,6 +154,15 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
     </item>
     
     <item>
+      <title>PageRank：Content(2)【Not finish】</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_1_content2/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_1_content2/</guid>
+      <description>The Theory behind PageRank Computing Importance  Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages. Importance of v is proportional to the importance of nodes linking to v. It can be modeled by a system of linear equations&amp;hellip;  System of Linear Equations for PageRank PageRank  The importance of a web page can be computed by solving the corresponding system of linear equations.</description>
+    </item>
+    
+    <item>
       <title>Top-k Query：Content</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
@@ -144,12 +172,12 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
     </item>
     
     <item>
-      <title>PageRank：Content(2)【Not finish】</title>
-      <link>https://www.m1sty.com/2021/dm_pagerank_1_content2/</link>
+      <title>PageRank：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_pagerank_1_content2/</guid>
-      <description>The Theory behind PageRank Computing Importance  Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages. Importance of v is proportional to the importance of nodes linking to v. It can be modeled by a system of linear equations&amp;hellip;  System of Linear Equations for PageRank PageRank  The importance of a web page can be computed by solving the corresponding system of linear equations.</description>
+      <guid>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</guid>
+      <description>Simple Wev Graph and its Matrix System of Linear Equations PageRank Algorithm </description>
     </item>
     
     <item>
@@ -161,34 +189,6 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
       <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
 Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
 Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
-    </item>
-    
-    <item>
-      <title>PageRank：Exercise</title>
-      <link>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</link>
-      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</guid>
-      <description>Simple Wev Graph and its Matrix System of Linear Equations PageRank Algorithm </description>
-    </item>
-    
-    <item>
-      <title>Top-k Query：Supplement</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k_4_more/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/atdm_top-k_4_more/</guid>
-      <description>Threshold Algorithm (TA)  Original version, often used as synonym for entire family of top-k algorithms. But: eager random access to candidate objects required. Worst-case memory consumption is strictly bounded → O(k)  No-Random-Access Algorithm (NRA)  No random access required at all, but may have to scan large parts of the index lists. Worst-case memory consumption bounded by index size → O(m*n + k)  </description>
-    </item>
-    
-    <item>
-      <title>PageRank：Supplement</title>
-      <link>https://www.m1sty.com/2021/dm_pagerank_4_more/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_pagerank_4_more/</guid>
-      <description>Key words  Link Analysis PageRank  Links 海量数据挖掘MMDS week1: Link Analysis - PageRank
-链接分析（Link Analysis）：PageRank算法</description>
     </item>
     
     <item>
@@ -241,24 +241,9 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     </item>
     
     <item>
-      <title>Spatial Networks：Supplement</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</link>
-      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</guid>
-      <description>Shortest Path Search Dijkstra&amp;rsquo;s algorithm   Dijkstra算法用来寻找图形中节点之间的最短路径。
-  在Dijkstra算法中，需要计算每一个节点距离起点的总移动代价。同时，还需要一个优先队列结构。对于所有待遍历的节点，放入优先队列中会按照代价进行排序。
-  在算法运行的过程中，每次都从优先队列中选出代价最小的作为下一个遍历的节点。直到到达终点为止。
-  A* algorithm   A*算法通过下面这个函数来计算每个节点的优先级:
- f(n)=g(n)+h(n)  f(n)是节点n的综合优先级。当我们选择下一个要遍历的节点时，我们总会选取综合优先级最高（值最小）的节点。 g(n) 是节点n距离起点的代价。 h(n)是节点n距离终点的预计代价，这也就是A*算法的启发函数。      A*算法在运算过程中，每次从优先队列中选取f(n)值最小（优先级最高）的节点作为下一个待遍历的节点。
-  另外，A*算法使用两个集合来表示待遍历的节点，与已经遍历过的节点，这通常称之为open_set和close_set。
-   在极端情况下，当启发函数h(n)始终为0，则将由g(n)决定节点的优先级，此时算法就退化成了Dijkstra算法。 如果h(n)始终小于等于节点n到终点的代价，则A*算法保证一定能够找到最短路径。但是当h(n)的值越小，算法将遍历越多的节点，也就导致算法越慢。 如果h(n)完全等于节点n到终点的代价，则A*算法将找到最佳路径，并且速度很快。可惜的是，并非所有场景下都能做到这一点。因为在没有达到终点之前，我们很难确切算出距离终点还有多远。 如果h(n)的值比节点n到终点的代价要大，则A*算法不能保证找到最短路径，不过此时会很快。 在另外一个极端情况下，如果h(n)相较于g(n)大很多，则此时只有h(n)产生效果，这也就变成了最佳优先搜索。  Bi-directional search Spatial queries over spatial networks  Data:  A (static) spatial network (e.g., city map) A (dynamic) set of spatial objects   Spatial queries based on network distance:  Selections.</description>
-    </item>
-    
-    <item>
       <title>Association：Content(1)</title>
       <link>https://www.m1sty.com/2021/dm_association_1_content1/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_1_content1/</guid>
       <description>Frequent Itemsets and Association Rules Market Baskets The Market-Basket Model   A large set of items, e.g., things sold in a supermarket.
@@ -270,7 +255,7 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     <item>
       <title>Association：Content(2)</title>
       <link>https://www.m1sty.com/2021/dm_association_1_content2/</link>
-      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_1_content2/</guid>
       <description>Improvements to A-Priori PCY Algorithm Introdution  Main observation: during pass 1 of A-priori, most memory is idle. Use that memory to keep additional info to improve storage during pass 2 of A-priori. Passes &amp;gt; 2 are the same as in A-Priori.  Pass 1  Use a hash function which &amp;ldquo;bucketizes&amp;rdquo; item pairs, that is, maps them to integers in $[1,k]$. Each &amp;ldquo;bucket&amp;rdquo; i in $[1,k]$ is associated with a counter $c_i$.</description>
@@ -279,7 +264,7 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     <item>
       <title>Association：Exercise</title>
       <link>https://www.m1sty.com/2021/dm_association_2_exercise/</link>
-      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_2_exercise/</guid>
       <description>Naive Algorithm Pass 1 Support treshold：2
@@ -293,7 +278,7 @@ SON Algorithm Introduction Let s be the support threshold:
     <item>
       <title>Association：Assignment</title>
       <link>https://www.m1sty.com/2021/dm_association_3_assignment/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_3_assignment/</guid>
       <description>Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.</description>

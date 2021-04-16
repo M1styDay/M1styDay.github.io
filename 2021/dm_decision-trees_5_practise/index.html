@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_decision-trees_6_project/" />
+  <link rel="next" href="https://www.m1sty.com/2021/business_web_roi/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_decision-trees_5_practise/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Decision Trees：Practise | M1sty
+       
+  </title>
+  <meta name="title" content="Decision Trees：Practise | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Decision Trees：Practise",
+    "headline" : "Decision Trees：Practise",
+    "description" : "决策树与随机森林 决策树节点字段的选择和阈值的选择 决策树模型介绍  图中的决策树呈现自顶向下的生长过程，深色的椭圆表示树的根节点;浅色的椭圆表示树的中间节点;方框则表示树的叶节点。 对于所有的非叶节点来说，都是用来表示条件判断，而叶节点则存储最终的分类结果，例如中年分支下的叶节点(4,0)表示4位客户购买，0位客户不购买。  信息熵与条件熵  熵原本是物理学中的一个定义，后来香农将其引申到了信息论领域，用来表示信息量的大小。 信息量越大(分类越不“纯净”)，对应的熵值就越大，反之亦然。信息熵的计算公式如下:   在实际应用中，会将概率$P_k$的值用经验概率替换，所以经验信息熵可以表示为：   举例:以产品是否被购买为例，假设数据集一共包含14个样本，其中购买的用户有9个，没有购买 的用户有5个，所以对于是否购买这个事件来说，它的经验信息熵为:   条件熵  信息增益  信息增益：对于已知的事件A来说，事件D的信息增益就是D的信息熵与A事件下D的条件熵之差，事件A对于事件D的影响越大，条件熵H（D｜A）就会越小（在事件A的影响下，事件D就划分得越“纯净”），体现在信息增益熵就是差值越大，进而说明事件D的信息熵下降得越多。   所以，在根节点或中间节点的变量选择过程中，就是挑选出各自变量下因变量的信息增益最大的。  信息增益率  决策树中的ID3算法使用信息增益指标实现根节点或中间节点的字段选择，但是该指标存在一个非常明显的缺点，即信息增益会偏向于取值较多的字段。 为了克服信息增益指标的缺点，提出了信息增益率的概念，它的思想很简单，就是在信息增益的基础上进行相应的惩罚。信息增益率的公式可以表示为:   其中$H_A$为事件A的信息熵。事件A的取值越多$Gain_A$(D)可能越大，但同时$H_A$也会越大，这样以商的形式就实现了$Gain_A$(D)的惩罚。  基尼指数与条件基尼指数  决策树中的C4.5算法使用信息增益率指标实现根节点或中间节点的字段选择，但该算法与ID3算法一致，都只能针对离散型因变量进行分类，对于连续型的因变量就显得束手无策了。 为了能够让决策树预测连续型的因变量，Breiman等人在1984年提出了CART算法，该算法也称为分类回归树，它所使用的字段选择指标是基尼指数。   条件基尼指数  基尼指数增益  与信息增益类似，还需要考虑自变量对因变量的影响程度，即因变量的基尼指数下降速度的快慢，下降得越快，自变量对因变量的影响就越强。下降速度的快慢可用下方式子衡量:  生成算法与划分标准 随机森林的思想 分类树与回归树 分类树  以C4.5分类树为例，C4.5分类树在每次分枝时，是穷举每一个feature的每一个阈值，找到使得按照feature\u0026lt;=阈值，和feature\u0026gt;阈值分成的两个分枝的熵最大的阈值(熵最大的概念可理解成尽可能每个分枝的男女比例都远离1:1)，按照该标准分枝得到两个新节点，用同样方法继续分枝直到所有人都被分入性别唯一的叶子节点，或达到预设的终止条件，若最终叶子节点中的性别不唯一，则以多数人的性别作为该叶子节点的性别。 总结：分类树使用信息增益或增益比率来划分节点；每个节点样本的类别情况投票决定测试样本的类别。  回归树  回归树总体流程也是类似，区别在于，回归树的每个节点（不一定是叶子节点）都会得一个预测值，以年龄为例，该预测值等于属于这个节点的所有人年龄的平均值。分枝时穷举每一个feature的每个阈值找最好的分割点，但衡量最好的标准不再是最大熵，而是最小化均方差即(每个人的年龄-预测年龄)^2 的总和 \/ N。也就是被预测出错的人数越多，错的越离谱，均方差就越大，通过最小化均方差能够找到最可靠的分枝依据。分枝直到每个叶子节点上人的年龄都唯一或者达到预设的终止条件(如叶子个数上限)，若最终叶子节点上人的年龄不唯一，则以该节点上所有人的平均年龄做为该叶子节点的预测年龄。 总结：回归树使用最大均方差划分节点；每个节点样本的均值作为测试样本的回归预测值  决策树模型函数说明 DecisionTreeClassifier(criterion=\u0026#39;gini\u0026#39;, splitter=\u0026#39;best\u0026#39;, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_leaf_nodes=None, class_weight=None)  criterion:用于指定选择节点字段的评价指标，对于分类决策树，默认为\u0026rsquo;gini\u0027，表示采用基尼指数选择节点的最佳分割字段;对于回归决策树，默认为\u0026rsquo;mse\u0027，表示使用均方误差选择节点的最佳分割字段 splitter:用于指定节点中的分割点选择方法，默认为\u0026rsquo;best\u0027，表示从所有的分割点中选择最佳分割点; 如果指定为\u0026rsquo;random\u0027，则表示随机选择分割点 max_depth:用于指定决策树的最大深度，默认为None，表示树的生长过程中对深度不做任何限制 min_samples_split:用于指定根节点或中间节点能够继续分割的最小样本量，默认为2 min_samples_leaf:用于指定叶节点的最小样本量，默认为1 max_leaf_nodes:用于指定最大的叶节点个数，默认为None，表示对叶节点个数不做任何限制 class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等;如果为balanced，则表示类别权重与原始样本中类别的比例成反比;还可以通过字典传递类别之间的权重差异，其形式为{class_label:weight}  随机森林模型介绍  利用Bootstrp抽样法，从原始数据集合中生成k个数据集，并且每个数据集都含有N个观测和P个自变量； 针对每一个数据集，构造一棵CART决策树，在构建子树的过程中，并没有将所有自变量用作节点字段的选择，而是随机选择p个字段； 让每一棵决策树尽可能地充分生长，使得树中的每个节点尽可能“纯净”，即随机森林中的每一棵子树都不需要剪枝； 针对k棵CART树的随机森林，对分类问题利用投票法，将最高得分的类别用于最终的判断结果；对回归问题利用均值法，将其用作预测样本的最终结果。  随机森林模型函数说明 RandomForestClassifier(n_estimators=10, criterion=\u0026#39;gini\u0026#39;, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_leaf_nodes=None, bootstrap=True, class_weight=None)  n_estimators:用于指定随机森林所包含的决策树个数 criterion:用于指定每棵决策树节点的分割字段所使用的度量标准，用于分类的随机森林，默认的 criterion值为\u0026rsquo;gini\u0027; 用于回归的随机森林，默认的criterion值为\u0026rsquo;mse\u0027 max_depth:用于指定每棵决策树的最大深度，默认不限制树的生长深度 min_samples_split:用于指定每棵决策树根节点或中间节点能够继续分割的最小样本量，默认为2 min_samples_leaf:用于指定每棵决策树叶节点的最小样本量，默认为1 max_leaf_nodes:用于指定每棵决策树最大的叶节点个数，默认为None，表示对叶节点个数不做任 何限制 bootstrap:bool类型参数，是否对原始数据集进行bootstrap抽样，用于子树的构建，默认为True class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等  代码实操 导入数据 # 导入第三方模块 import pandas as pd # 读入数据 Titanic = pd.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-04-06 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-04-06 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_decision-trees_5_practise\/",
+    "wordCount" : "360",
+    "keywords" : [ "Decistion Trees","Practise", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Decision Trees：Practise</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-04-06 itemprop="datePublished">April 6, 2021</time>
+           </span> (<span class="post-word-count">360 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#决策树节点字段的选择和阈值的选择">决策树节点字段的选择和阈值的选择</a>
+      <ul>
+        <li><a href="#决策树模型介绍">决策树模型介绍</a></li>
+        <li><a href="#信息熵与条件熵">信息熵与条件熵</a></li>
+        <li><a href="#信息增益">信息增益</a></li>
+        <li><a href="#信息增益率">信息增益率</a></li>
+        <li><a href="#基尼指数与条件基尼指数">基尼指数与条件基尼指数</a></li>
+        <li><a href="#基尼指数增益">基尼指数增益</a></li>
+        <li><a href="#生成算法与划分标准">生成算法与划分标准</a></li>
+      </ul>
+    </li>
+    <li><a href="#随机森林的思想">随机森林的思想</a>
+      <ul>
+        <li><a href="#分类树与回归树">分类树与回归树</a></li>
+        <li><a href="#决策树模型函数说明">决策树模型函数说明</a></li>
+        <li><a href="#随机森林模型介绍">随机森林模型介绍</a></li>
+        <li><a href="#随机森林模型函数说明">随机森林模型函数说明</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码实操">代码实操</a>
+      <ul>
+        <li><a href="#导入数据">导入数据</a></li>
+        <li><a href="#数据预处理">数据预处理</a></li>
+        <li><a href="#设置训练集和测试集">设置训练集和测试集</a></li>
+        <li><a href="#构建决策树">构建决策树</a></li>
+        <li><a href="#构建随机森林模型">构建随机森林模型</a></li>
+        <li><a href="#绘制roc">绘制ROC</a></li>
+        <li><a href="#变量重要程度">变量重要程度</a></li>
+      </ul>
+    </li>
+    <li><a href="#refernce">Refernce</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="决策树与随机森林">决策树与随机森林</h1>
+<h2 id="决策树节点字段的选择和阈值的选择">决策树节点字段的选择和阈值的选择</h2>
+<h3 id="决策树模型介绍">决策树模型介绍</h3>
+<ul>
+<li>图中的决策树呈现自顶向下的生长过程，深色的椭圆表示树的根节点;浅色的椭圆表示树的中间节点;方框则表示树的叶节点。</li>
+<li>对于所有的非叶节点来说，都是用来表示条件判断，而叶节点则存储最终的分类结果，例如中年分支下的叶节点(4,0)表示4位客户购买，0位客户不购买。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401152754.png" alt=""></p>
+<h3 id="信息熵与条件熵">信息熵与条件熵</h3>
+<ul>
+<li>熵原本是物理学中的一个定义，后来香农将其引申到了信息论领域，用来表示信息量的大小。</li>
+<li>信息量越大(分类越不“纯净”)，对应的熵值就越大，反之亦然。信息熵的计算公式如下:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401152933.png" alt=""></p>
+<ul>
+<li>在实际应用中，会将概率$P_k$的值用经验概率替换，所以经验信息熵可以表示为：</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401153045.png" alt=""></p>
+<ul>
+<li>举例:以产品是否被购买为例，假设数据集一共包含14个样本，其中购买的用户有9个，没有购买 的用户有5个，所以对于是否购买这个事件来说，它的经验信息熵为:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401153309.png" alt=""></p>
+<ul>
+<li>条件熵</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401153436.png" alt=""></p>
+<h3 id="信息增益">信息增益</h3>
+<ul>
+<li>信息增益：对于已知的事件A来说，事件D的信息增益就是D的信息熵与A事件下D的条件熵之差，事件A对于事件D的影响越大，条件熵H（D｜A）就会越小（在事件A的影响下，事件D就划分得越“纯净”），体现在信息增益熵就是差值越大，进而说明事件D的信息熵下降得越多。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401153924.png" alt=""></p>
+<ul>
+<li>所以，在根节点或中间节点的变量选择过程中，就是挑选出各自变量下因变量的信息增益最大的。</li>
+</ul>
+<h3 id="信息增益率">信息增益率</h3>
+<ul>
+<li>决策树中的ID3算法使用信息增益指标实现根节点或中间节点的字段选择，但是该指标存在一个非常明显的缺点，即信息增益会偏向于取值较多的字段。</li>
+<li>为了克服信息增益指标的缺点，提出了信息增益率的概念，它的思想很简单，就是在信息增益的基础上进行相应的惩罚。信息增益率的公式可以表示为:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401154419.png" alt=""></p>
+<ul>
+<li>其中$H_A$为事件A的信息熵。事件A的取值越多$Gain_A$(D)可能越大，但同时$H_A$也会越大，这样以商的形式就实现了$Gain_A$(D)的惩罚。</li>
+</ul>
+<h3 id="基尼指数与条件基尼指数">基尼指数与条件基尼指数</h3>
+<ul>
+<li>决策树中的C4.5算法使用信息增益率指标实现根节点或中间节点的字段选择，但该算法与ID3算法一致，都只能针对离散型因变量进行分类，对于连续型的因变量就显得束手无策了。</li>
+<li>为了能够让决策树预测连续型的因变量，Breiman等人在1984年提出了CART算法，该算法也称为分类回归树，它所使用的字段选择指标是基尼指数。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401160202.png" alt=""></p>
+<ul>
+<li>条件基尼指数</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401160257.png" alt=""></p>
+<h3 id="基尼指数增益">基尼指数增益</h3>
+<ul>
+<li>与信息增益类似，还需要考虑自变量对因变量的影响程度，即因变量的基尼指数下降速度的快慢，下降得越快，自变量对因变量的影响就越强。下降速度的快慢可用下方式子衡量:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401160454.png" alt=""></p>
+<h3 id="生成算法与划分标准">生成算法与划分标准</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210401163004.png" alt=""></p>
+<h2 id="随机森林的思想">随机森林的思想</h2>
+<h3 id="分类树与回归树">分类树与回归树</h3>
+<h4 id="分类树">分类树</h4>
+<ul>
+<li>以C4.5分类树为例，C4.5分类树在每次分枝时，是穷举每一个feature的每一个阈值，找到使得按照feature&lt;=阈值，和feature&gt;阈值分成的两个分枝的熵最大的阈值(熵最大的概念可理解成尽可能每个分枝的男女比例都远离1:1)，按照该标准分枝得到两个新节点，用同样方法继续分枝直到所有人都被分入性别唯一的叶子节点，或达到预设的终止条件，若最终叶子节点中的性别不唯一，则以多数人的性别作为该叶子节点的性别。</li>
+<li>总结：分类树使用信息增益或增益比率来划分节点；每个节点样本的类别情况投票决定测试样本的类别。</li>
+</ul>
+<h4 id="回归树">回归树</h4>
+<ul>
+<li>回归树总体流程也是类似，区别在于，回归树的每个节点（不一定是叶子节点）都会得一个预测值，以年龄为例，该预测值等于属于这个节点的所有人年龄的平均值。分枝时穷举每一个feature的每个阈值找最好的分割点，但衡量最好的标准不再是最大熵，而是最小化均方差即(每个人的年龄-预测年龄)^2 的总和 / N。也就是被预测出错的人数越多，错的越离谱，均方差就越大，通过最小化均方差能够找到最可靠的分枝依据。分枝直到每个叶子节点上人的年龄都唯一或者达到预设的终止条件(如叶子个数上限)，若最终叶子节点上人的年龄不唯一，则以该节点上所有人的平均年龄做为该叶子节点的预测年龄。</li>
+<li>总结：回归树使用最大均方差划分节点；每个节点样本的均值作为测试样本的回归预测值</li>
+</ul>
+<h3 id="决策树模型函数说明">决策树模型函数说明</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">DecisionTreeClassifier(criterion<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gini&#39;</span>, splitter<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;best&#39;</span>, max_depth<span style="color:#f92672">=</span>None, min_samples_split<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, min_samples_leaf<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, max_leaf_nodes<span style="color:#f92672">=</span>None, class_weight<span style="color:#f92672">=</span>None)
+</code></pre></div><ul>
+<li>criterion:用于指定选择节点字段的评价指标，对于分类决策树，默认为&rsquo;gini'，表示采用基尼指数选择节点的最佳分割字段;对于回归决策树，默认为&rsquo;mse'，表示使用均方误差选择节点的最佳分割字段</li>
+<li>splitter:用于指定节点中的分割点选择方法，默认为&rsquo;best'，表示从所有的分割点中选择最佳分割点; 如果指定为&rsquo;random'，则表示随机选择分割点</li>
+<li>max_depth:用于指定决策树的最大深度，默认为None，表示树的生长过程中对深度不做任何限制</li>
+<li>min_samples_split:用于指定根节点或中间节点能够继续分割的最小样本量，默认为2</li>
+<li>min_samples_leaf:用于指定叶节点的最小样本量，默认为1</li>
+<li>max_leaf_nodes:用于指定最大的叶节点个数，默认为None，表示对叶节点个数不做任何限制</li>
+<li>class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等;如果为balanced，则表示类别权重与原始样本中类别的比例成反比;还可以通过字典传递类别之间的权重差异，其形式为{class_label:weight}</li>
+</ul>
+<h3 id="随机森林模型介绍">随机森林模型介绍</h3>
+<ul>
+<li>利用Bootstrp抽样法，从原始数据集合中生成k个数据集，并且每个数据集都含有N个观测和P个自变量；</li>
+<li>针对每一个数据集，构造一棵CART决策树，在构建子树的过程中，并没有将所有自变量用作节点字段的选择，而是随机选择p个字段；</li>
+<li>让每一棵决策树尽可能地充分生长，使得树中的每个节点尽可能“纯净”，即随机森林中的每一棵子树都不需要剪枝；</li>
+<li>针对k棵CART树的随机森林，对分类问题利用投票法，将最高得分的类别用于最终的判断结果；对回归问题利用均值法，将其用作预测样本的最终结果。</li>
+</ul>
+<h3 id="随机森林模型函数说明">随机森林模型函数说明</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">RandomForestClassifier(n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, criterion<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gini&#39;</span>, max_depth<span style="color:#f92672">=</span>None, min_samples_split<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, min_samples_leaf<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, max_leaf_nodes<span style="color:#f92672">=</span>None, bootstrap<span style="color:#f92672">=</span>True, class_weight<span style="color:#f92672">=</span>None)
+</code></pre></div><ul>
+<li>n_estimators:用于指定随机森林所包含的决策树个数</li>
+<li>criterion:用于指定每棵决策树节点的分割字段所使用的度量标准，用于分类的随机森林，默认的 criterion值为&rsquo;gini'; 用于回归的随机森林，默认的criterion值为&rsquo;mse'</li>
+<li>max_depth:用于指定每棵决策树的最大深度，默认不限制树的生长深度</li>
+<li>min_samples_split:用于指定每棵决策树根节点或中间节点能够继续分割的最小样本量，默认为2</li>
+<li>min_samples_leaf:用于指定每棵决策树叶节点的最小样本量，默认为1</li>
+<li>max_leaf_nodes:用于指定每棵决策树最大的叶节点个数，默认为None，表示对叶节点个数不做任 何限制</li>
+<li>bootstrap:bool类型参数，是否对原始数据集进行bootstrap抽样，用于子树的构建，默认为True</li>
+<li>class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等</li>
+</ul>
+<h2 id="代码实操">代码实操</h2>
+<h3 id="导入数据">导入数据</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 导入第三方模块</span>
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#75715e"># 读入数据</span>
+Titanic <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;Titanic.csv&#39;</span>)
+Titanic<span style="color:#f92672">.</span>head()
+</code></pre></div><h3 id="数据预处理">数据预处理</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 删除无意义的变量，并检查剩余自字是否含有缺失值</span>
+Titanic<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;PassengerId&#39;</span>,<span style="color:#e6db74">&#39;Name&#39;</span>,<span style="color:#e6db74">&#39;Ticket&#39;</span>,<span style="color:#e6db74">&#39;Cabin&#39;</span>], axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, inplace <span style="color:#f92672">=</span> True)
+Titanic<span style="color:#f92672">.</span>isnull()<span style="color:#f92672">.</span>sum(axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+
+<span style="color:#75715e"># 对Sex分组，用各组乘客的平均年龄填充各组中的缺失年龄</span>
+fillna_Titanic <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> Titanic<span style="color:#f92672">.</span>Sex<span style="color:#f92672">.</span>unique():
+    update <span style="color:#f92672">=</span> Titanic<span style="color:#f92672">.</span>loc[Titanic<span style="color:#f92672">.</span>Sex <span style="color:#f92672">==</span> i,]<span style="color:#f92672">.</span>fillna(value <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Age&#39;</span>: Titanic<span style="color:#f92672">.</span>Age[Titanic<span style="color:#f92672">.</span>Sex <span style="color:#f92672">==</span> i]<span style="color:#f92672">.</span>mean()})
+    fillna_Titanic<span style="color:#f92672">.</span>append(update)
+Titanic <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat(fillna_Titanic)
+
+<span style="color:#75715e"># 使用Embarked变量的众数填充缺失值</span>
+Titanic<span style="color:#f92672">.</span>fillna(value <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Embarked&#39;</span>:Titanic<span style="color:#f92672">.</span>Embarked<span style="color:#f92672">.</span>mode()[<span style="color:#ae81ff">0</span>]}, inplace<span style="color:#f92672">=</span>True)
+Titanic<span style="color:#f92672">.</span>head()
+
+<span style="color:#75715e"># 将数值型的Pclass转换为类别型，否则无法对其哑变量处理</span>
+Titanic<span style="color:#f92672">.</span>Pclass <span style="color:#f92672">=</span> Titanic<span style="color:#f92672">.</span>Pclass<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;category&#39;</span>)
+<span style="color:#75715e"># 哑变量处理</span>
+dummy <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>get_dummies(Titanic[[<span style="color:#e6db74">&#39;Sex&#39;</span>,<span style="color:#e6db74">&#39;Embarked&#39;</span>,<span style="color:#e6db74">&#39;Pclass&#39;</span>]])
+<span style="color:#75715e"># 水平合并Titanic数据集和哑变量的数据集</span>
+Titanic <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([Titanic,dummy], axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+<span style="color:#75715e"># 删除原始的Sex、Embarked和Pclass变量</span>
+Titanic<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;Sex&#39;</span>,<span style="color:#e6db74">&#39;Embarked&#39;</span>,<span style="color:#e6db74">&#39;Pclass&#39;</span>], inplace<span style="color:#f92672">=</span>True, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+Titanic<span style="color:#f92672">.</span>head()
+</code></pre></div><h3 id="设置训练集和测试集">设置训练集和测试集</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 导入第三方包</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> model_selection
+<span style="color:#75715e"># 取出所有自变量名称</span>
+predictors <span style="color:#f92672">=</span> Titanic<span style="color:#f92672">.</span>columns[<span style="color:#ae81ff">1</span>:]
+<span style="color:#75715e"># 将数据集拆分为训练集和测试集，且测试集的比例为25%</span>
+X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> model_selection<span style="color:#f92672">.</span>train_test_split(Titanic[predictors], Titanic<span style="color:#f92672">.</span>Survived, test_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.25</span>, random_state <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>)
+</code></pre></div><h3 id="构建决策树">构建决策树</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 预设各参数的不同选项值</span>
+max_depth <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]
+min_samples_split <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">8</span>]
+min_samples_leaf <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">12</span>]
+<span style="color:#75715e"># 将各参数值以字典形式组织起来</span>
+parameters <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;max_depth&#39;</span>:max_depth, <span style="color:#e6db74">&#39;min_samples_split&#39;</span>:min_samples_split, <span style="color:#e6db74">&#39;min_samples_leaf&#39;</span>:min_samples_leaf} 
+<span style="color:#75715e"># 网格搜索法，测试不同的参数值</span>
+grid_dtcateg <span style="color:#f92672">=</span> GridSearchCV(estimator <span style="color:#f92672">=</span> tree<span style="color:#f92672">.</span>DecisionTreeClassifier(), param_grid <span style="color:#f92672">=</span> parameters, cv<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>) <span style="color:#75715e"># 模型拟合</span>
+grid_dtcateg<span style="color:#f92672">.</span>fit(X_train, y_train)
+<span style="color:#75715e"># 返回最佳组合的参数值</span>
+grid_dtcateg<span style="color:#f92672">.</span>best_params
+</code></pre></div><p>out:</p>
+<p>{&lsquo;max_depth&rsquo;: 3, &lsquo;min_samples_leaf&rsquo;: 4, &lsquo;min_samples_split&rsquo;: 2}</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 构建分类决策树</span>
+CART_Class <span style="color:#f92672">=</span> tree<span style="color:#f92672">.</span>DecisionTreeClassifier(max_depth<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, min_samples_leaf<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, min_samples_split<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>) <span style="color:#75715e"># 模型拟合</span>
+decision_tree <span style="color:#f92672">=</span> CART_Class<span style="color:#f92672">.</span>fit(X_train, y_train)
+<span style="color:#75715e"># 模型在测试集上的预测</span>
+pred <span style="color:#f92672">=</span> CART_Class<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># 模型的准确率</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;模型在测试集的预测准确率:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>,metrics<span style="color:#f92672">.</span>accuracy_score(y_test, pred)) <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;模型在训练集的预测准确率:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>,
+metrics<span style="color:#f92672">.</span>accuracy_score(y_train, CART_Class<span style="color:#f92672">.</span>predict(X_train)))
+</code></pre></div><h3 id="构建随机森林模型">构建随机森林模型</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 导入第三方包</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> ensemble
+<span style="color:#75715e"># 构建随机森林</span>
+RF_class <span style="color:#f92672">=</span> ensemble<span style="color:#f92672">.</span>RandomForestClassifier(n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">1234</span>)
+<span style="color:#75715e"># 随机森林的拟合</span>
+RF_class<span style="color:#f92672">.</span>fit(X_train, y_train)
+<span style="color:#75715e"># 模型在测试集上的预测</span>
+RFclass_pred <span style="color:#f92672">=</span> RF_class<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># 模型的准确率</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;模型在测试集的预测准确率：</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>,metrics<span style="color:#f92672">.</span>accuracy_score(y_test, RFclass_pred))
+</code></pre></div><h3 id="绘制roc">绘制ROC</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#75715e"># 计算绘图数据</span>
+y_score <span style="color:#f92672">=</span> RF_class<span style="color:#f92672">.</span>predict_proba(X_test)[:,<span style="color:#ae81ff">1</span>]
+fpr,tpr,threshold <span style="color:#f92672">=</span> metrics<span style="color:#f92672">.</span>roc_curve(y_test, y_score)
+roc_auc <span style="color:#f92672">=</span> metrics<span style="color:#f92672">.</span>auc(fpr,tpr)
+<span style="color:#75715e"># 绘图</span>
+plt<span style="color:#f92672">.</span>stackplot(fpr, tpr, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;steelblue&#39;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>, edgecolor <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;black&#39;</span>)
+plt<span style="color:#f92672">.</span>plot(fpr, tpr, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;black&#39;</span>, lw <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+plt<span style="color:#f92672">.</span>plot([<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>],[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>], color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;red&#39;</span>, linestyle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;--&#39;</span>)
+plt<span style="color:#f92672">.</span>text(<span style="color:#ae81ff">0.5</span>,<span style="color:#ae81ff">0.3</span>,<span style="color:#e6db74">&#39;ROC curve (area = </span><span style="color:#e6db74">%0.2f</span><span style="color:#e6db74">)&#39;</span> <span style="color:#f92672">%</span> roc_auc)
+plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;1-Specificity&#39;</span>)
+plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Sensitivity&#39;</span>)
+plt<span style="color:#f92672">.</span>show()
+</code></pre></div><h3 id="变量重要程度">变量重要程度</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 变量的重要性程度值</span>
+importance <span style="color:#f92672">=</span> RF_class<span style="color:#f92672">.</span>feature_importances_
+<span style="color:#75715e"># 构建含序列用于绘图</span>
+Impt_Series <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(importance, index <span style="color:#f92672">=</span> X_train<span style="color:#f92672">.</span>columns)
+<span style="color:#75715e"># 对序列排序绘图</span>
+Impt_Series<span style="color:#f92672">.</span>sort_values(ascending <span style="color:#f92672">=</span> True)<span style="color:#f92672">.</span>plot(<span style="color:#e6db74">&#39;barh&#39;</span>)
+plt<span style="color:#f92672">.</span>show()
+</code></pre></div><h2 id="refernce">Refernce</h2>
+<p><a href="https://blog.csdn.net/weixin_36586536/article/details/80468426">决策树（分类树/回归树）</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dm_decision-trees_5_practise/>https://www.m1sty.com/2021/dm_decision-trees_5_practise/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/decistion-trees/">
+                    #Decistion Trees</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/practise/">
+                    #Practise</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/dm_decision-trees_6_project/" class="prev" rel="prev" title="Decision Trees：Project"><i class="iconfont icon-left"></i>&nbsp;Decision Trees：Project</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/business_web_roi/" class="next" rel="next" title="ROI思维">ROI思维&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>

@@ -12,8 +12,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/" />
-  <link rel="next" href="https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/" />
+  <link rel="next" href="https://www.m1sty.com/2021/dm_decision-trees_6_project/" />
   <link rel="canonical" href="https://www.m1sty.com/2021/overview_interview_map/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,10 +25,10 @@
   <title>
        
        
-           Outline | M1sty
+           知识框架 | M1sty
        
   </title>
-  <meta name="title" content="Outline | M1sty">
+  <meta name="title" content="知识框架 | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -47,8 +47,8 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Outline",
-    "headline" : "Outline",
+    "name" : "知识框架",
+    "headline" : "知识框架",
     "description" : "Database sql基础知识 sql基础知识\n  索引：索引是对数据库表中一列或多列的值进行排序的一种结构，使用索引可快速访问数据库表中的特定信息。如果想按特定职员的姓来查找他或她，则与在表中搜索所有的行相比，索引有助于更快地获取信息。索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放的物理位置为顺序的，而非聚簇索引就不一样了；聚簇索引能提高多行检索的速度，而非聚簇索引对于单行的检索很快。根据数据库的功能，可以在数据库设计器中创建三种索引：唯一索引、主键索引和聚集索引。\n 唯一索引：唯一索引是不允许其中任何两行具有相同索引值的索引。当现有数据中存在重复的键值时，大多数数据库不允许将新创建的唯一索引与表一起保存。数据库还可能防止添加将在表中创建重复键值的新数据。例如，如果在employee表中职员的姓(lname)上创建了唯一索引，则任何两个员工都不能同姓。 主键索引：数据库表经常有一列或多列组合，其值唯一标识表中的每一行。该列称为表的主键。在数据库关系图中为表定义主键将自动创建主键索引，主键索引是唯一索引的特定类型。该索引要求主键中的每个值都唯一。当在查询中使用主键索引时，它还允许对数据的快速访问。 聚集索引：在聚集索引中，表中行的物理顺序与键值的逻辑（索引）顺序相同。一个表只能包含一个聚集索引。如果某索引不是聚集索引，则表中行的物理顺序与键值的逻辑顺序不匹配。与非聚集索引相比，聚集索引通常提供更快的数据访问速度。聚集索引和非聚集索引的区别，如字典默认按字母顺序排序，读者如知道某个字的读音可根据字母顺序快速定位。因此聚集索引和表的内容是在一起的。如读者需查询某个生僻字，则需按字典前面的索引，举例按偏旁进行定位，找到该字对应的页数，再打开对应页数找到该字。这种通过两个地方而查询到某个字的方式就如非聚集索引。    union all \u0026amp; union\n union和union all的区别是,union会自动压缩多个结果集合中的重复结果，而union all则将所有的结果全部显示出来，不管是不是重复。 *Union：对两个结果集进行并集操作，不包括重复行，同时进行默认规则的排序；*Union在进行表链接后会筛选掉重复的记录，所以在表链接后会对所产生的结果集进行排序运算，删除重复的记录再返回结果。实际大部分应用中是不会产生重复的记录，最常见的是过程表与历史表UNION。 *Union All：对两个结果集进行并集操作，包括重复行，不进行排序；*如果返回的两个结果集中有重复的数据，那么返回的结果集就会包含重复的数据了。    sql笔试题 SQL面试必会50题\n# 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as \u0026#39;第一\u0026#39;, max(case when rank1 = 2 then s_score else null end ) as \u0026#39;第二\u0026#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.",
     "inLanguage" : "en-us",
     "author" : "Misty",
@@ -61,7 +61,7 @@
     "dateModified" : "2021-04-02 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/overview_interview_map\/",
     "wordCount" : "373",
-    "keywords" : [ "Interview", "M1sty"]
+    "keywords" : [ "Study Map", "M1sty"]
 }
 </script>
 
@@ -123,7 +123,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Outline</h1>
+        <h1 class="post-title" itemprop="name headline">知识框架</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -707,8 +707,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/interview/">
-                    #Interview</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/study-map/">
+                    #Study Map</a></span>
             
             </section>
         
@@ -720,10 +720,10 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/" class="prev" rel="prev" title="Regression：Ridge Regression and Lasson Regression"><i class="iconfont icon-left"></i>&nbsp;Regression：Ridge Regression and Lasson Regression</a>
+        <a href="https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/" class="prev" rel="prev" title="Deep Learning and Neural Networks"><i class="iconfont icon-left"></i>&nbsp;Deep Learning and Neural Networks</a>
          
         
-        <a href="https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/" class="next" rel="next" title="Regression：Linear Regression">Regression：Linear Regression&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://www.m1sty.com/2021/dm_decision-trees_6_project/" class="next" rel="next" title="Decision Trees：Project">Decision Trees：Project&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

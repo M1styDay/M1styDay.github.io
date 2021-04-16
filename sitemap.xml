@@ -122,9 +122,49 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/categories/data-mining/</loc>
+      
+      <lastmod>2021-04-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_decision-trees_1_content/</loc>
+      
+      <lastmod>2021-04-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/decistion-trees/</loc>
+      
+      <lastmod>2021-04-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</loc>
       
       <lastmod>2021-04-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_decision-trees_2_exercise/</loc>
+      
+      <lastmod>2021-04-09T00:00:00+00:00</lastmod>
       
       
       
@@ -162,6 +202,16 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/tags/operation/</loc>
+      
+      <lastmod>2021-04-07T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/2021/business_web_roi/</loc>
       
       <lastmod>2021-04-07T00:00:00+00:00</lastmod>
@@ -182,9 +232,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/data-mining/</loc>
+      <loc>https://www.m1sty.com/2021/dm_decision-trees_5_practise/</loc>
       
-      <lastmod>2021-04-03T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-06T00:00:00+00:00</lastmod>
       
       
       
@@ -194,7 +244,7 @@
     <url>
       <loc>https://www.m1sty.com/tags/practise/</loc>
       
-      <lastmod>2021-04-03T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-06T00:00:00+00:00</lastmod>
       
       
       
@@ -202,39 +252,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/regression/</loc>
+      <loc>https://www.m1sty.com/2021/dm_decision-trees_6_project/</loc>
       
-      <lastmod>2021-04-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</loc>
-      
-      <lastmod>2021-04-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/interview/</loc>
-      
-      <lastmod>2021-04-02T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/overview_interview_map/</loc>
-      
-      <lastmod>2021-04-02T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-05T00:00:00+00:00</lastmod>
       
       
       
@@ -252,7 +272,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</loc>
+      <loc>https://www.m1sty.com/tags/study-map/</loc>
       
       <lastmod>2021-04-02T00:00:00+00:00</lastmod>
       
@@ -262,29 +282,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/decistion-trees/</loc>
+      <loc>https://www.m1sty.com/2021/overview_interview_map/</loc>
       
-      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_decistion-trees_5_practise/</loc>
-      
-      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</loc>
-      
-      <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-04-02T00:00:00+00:00</lastmod>
       
       
       
@@ -382,6 +382,16 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/2021/dm_pagerank_1_content2/</loc>
+      
+      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/tags/top-k/</loc>
       
       <lastmod>2021-03-10T00:00:00+00:00</lastmod>
@@ -402,7 +412,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_pagerank_1_content2/</loc>
+      <loc>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</loc>
       
       <lastmod>2021-03-09T00:00:00+00:00</lastmod>
       
@@ -415,16 +425,6 @@
       <loc>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</loc>
       
       <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</loc>
-      
-      <lastmod>2021-03-08T00:00:00+00:00</lastmod>
       
       
       
@@ -452,7 +452,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k_4_more/</loc>
+      <loc>https://www.m1sty.com/2021/dm_pagerank_4_more/</loc>
       
       <lastmod>2021-03-07T00:00:00+00:00</lastmod>
       
@@ -462,9 +462,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_pagerank_4_more/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_top-k_4_more/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-07T00:00:00+00:00</lastmod>
       
       
       
@@ -592,6 +592,26 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_dbscan/</loc>
+      
+      <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_hierarchical/</loc>
+      
+      <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</loc>
       
       <lastmod>2021-02-06T00:00:00+00:00</lastmod>
@@ -602,29 +622,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</loc>
-      
-      <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</loc>
-      
-      <lastmod>2021-02-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/tags/association/</loc>
       
-      <lastmod>2021-01-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-10T00:00:00+00:00</lastmod>
       
       
       
@@ -634,7 +634,7 @@
     <url>
       <loc>https://www.m1sty.com/2021/dm_association_1_content1/</loc>
       
-      <lastmod>2021-01-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-10T00:00:00+00:00</lastmod>
       
       
       
@@ -643,6 +643,56 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/dm_association_1_content2/</loc>
+      
+      <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_2_exercise/</loc>
+      
+      <lastmod>2021-01-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_3_assignment/</loc>
+      
+      <lastmod>2021-01-08T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_4_more/</loc>
+      
+      <lastmod>2021-01-07T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_association_5_practise/</loc>
+      
+      <lastmod>2021-01-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/index-system/</loc>
       
       <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
@@ -672,27 +722,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB/</loc>
-      
-      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_association_2_exercise/</loc>
-      
-      <lastmod>2021-01-04T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/dm_association_3_assignment/</loc>
+      <loc>https://www.m1sty.com/tags/regression/</loc>
       
       <lastmod>2021-01-03T00:00:00+00:00</lastmod>
       
@@ -702,9 +732,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_association_4_more/</loc>
+      <loc>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</loc>
       
-      <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
       
       
       
@@ -712,9 +742,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/dm_association_5_practise/</loc>
+      <loc>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</loc>
       
-      <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-02T00:00:00+00:00</lastmod>
       
       
       
@@ -802,16 +832,6 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/study-map/</loc>
-      
-      <lastmod>2020-12-24T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/2020/overview_data-analyst_map/</loc>
       
       <lastmod>2020-12-24T00:00:00+00:00</lastmod>
@@ -853,6 +873,16 @@
   
     <url>
       <loc>https://www.m1sty.com/2020/business_essay_data-application-in-enterprise/</loc>
+      
+      <lastmod>2020-11-30T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/enterprise/</loc>
       
       <lastmod>2020-11-30T00:00:00+00:00</lastmod>
       

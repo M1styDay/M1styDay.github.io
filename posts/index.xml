@@ -43,6 +43,15 @@
     </item>
     
     <item>
+      <title>Decision Trees：Content</title>
+      <link>https://www.m1sty.com/2021/dm_decision-trees_1_content/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_decision-trees_1_content/</guid>
+      <description>Decisision Trees Classification Definition  Given a collection of records (training set)  Each record contains a set of attributes, one of the attributes is the Class.   Find a model for Class attribute as a function of the values of other attributes Goal: previously unseen records should be assigned a Class as accurately as possible  A test set is used to determine the accuracy of the model. Usually, the given data set is divided into training and test sets, with training set used to build the model and test set used to validate it.</description>
+    </item>
+    
+    <item>
       <title>Lecture1：Business Order; Chaos and Complexity</title>
       <link>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</link>
       <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
@@ -52,6 +61,16 @@
  Transition from industrial revolution to digital revolution Information as an experience good Economics of information Chaos and complexity e-Business transformation cycle    Reading:
  Chapter 1 (textbook)    Case:
  From Mental Models to Transformation: Overcoming Inhibitors to Change (HBR)    Text Book: Chapter 1 Introduction Chapter 1 Change and transformation in business explores past attempts at organisational transformation and considers why many of these efforts have been unsuccessful.</description>
+    </item>
+    
+    <item>
+      <title>Decision Trees：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_decision-trees_2_exercise/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_decision-trees_2_exercise/</guid>
+      <description>Decision Trees：Exercise Question Construct a decision tree with the following properties:
+ Choose the best split based on GINI index; Stopping rule: when gini value=0 or no further split is possible; Class of a leaf is determined by majority rule. If ties use the default class (NM).  Answer Building Decision Tree Step 1 Step 2 Step 3 Predicting Post Pruning </description>
     </item>
     
     <item>
@@ -107,16 +126,25 @@ ROI 指标 曝光-转化体系  基准值：各指标的及格线 pv：page view
     </item>
     
     <item>
-      <title>Regression：Linear Regression</title>
-      <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</link>
-      <pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+      <title>Decision Trees：Practise</title>
+      <link>https://www.m1sty.com/2021/dm_decision-trees_5_practise/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</guid>
-      <description>线性回归 一元线性回归 相关分析 一元线性回归模型  模型中的x称为自变量，y称为因变量; a为模型的截距项，b为模型的斜率项，ε为模型的误差项; 误差项ε的存在主要是为了平衡等号两边的值，通常被称为模型 无法解释的部分; 如果拟合线能够精确地捕捉到每一个点(即所有散点全部落在拟合线上)，那么对应的误差项ε应该为0; 所以，模型拟合的越好，则误差项ε应该越小。进而可以理解为: 求解参数的问题便是求解误差平方和最小的问题。  参数a和b求解  J(a,b)为目标函数，需求解该函数的最小值； 求解方法便是计算目标函数关于参数a和b的两个偏导数，最终令偏倒数为0即可。  模型的应用 # 导入第三方模块 import statsmodels.api as sm sm.ols(formula, data, subset=None, drop_cols=None)  formula:以字符串的形式指定线性回归模型的公式，如&amp;rsquo;y~x&amp;rsquo;就表示简单线性回归模型 data:指定建模的数据集 subset:通过bool类型的数组对象，获取data的子集用于建模 drop_cols:指定需要从data中删除的变量  # 导入第三方模块 import pandas as pd import statsmodels.api as sm # 导入数据 income = pd.read_csv(&amp;#39;Salary_Data.csv&amp;#39;) # 利用收入数据集，构建回归模型 fit = sm.formula.ols(&amp;#39;Salary ~ YearsExperience&amp;#39;, data = income).fit() # 返回模型的参数值 fit.params # 相关系数 income.columns income.Salary.corr(income.YearsExperience) 多元线性回归 定义  对于一元线性回归模型来说，其反映的是单个自变量对因变量的影响，然而实际情况中，影 响因变量的自变量往往不止一个，从而需要将一元线性回归模型扩展到多元线性回归模型。  参数求解 模型的应用  数据集包含5个变量，分别是产品的研发成本、管理成本、市场营销成本、销售市场和销 售利润。  # 导入模块 from sklearn import model_selection # 导入数据 Profit = pd.</description>
+      <guid>https://www.m1sty.com/2021/dm_decision-trees_5_practise/</guid>
+      <description>决策树与随机森林 决策树节点字段的选择和阈值的选择 决策树模型介绍  图中的决策树呈现自顶向下的生长过程，深色的椭圆表示树的根节点;浅色的椭圆表示树的中间节点;方框则表示树的叶节点。 对于所有的非叶节点来说，都是用来表示条件判断，而叶节点则存储最终的分类结果，例如中年分支下的叶节点(4,0)表示4位客户购买，0位客户不购买。  信息熵与条件熵  熵原本是物理学中的一个定义，后来香农将其引申到了信息论领域，用来表示信息量的大小。 信息量越大(分类越不“纯净”)，对应的熵值就越大，反之亦然。信息熵的计算公式如下:   在实际应用中，会将概率$P_k$的值用经验概率替换，所以经验信息熵可以表示为：   举例:以产品是否被购买为例，假设数据集一共包含14个样本，其中购买的用户有9个，没有购买 的用户有5个，所以对于是否购买这个事件来说，它的经验信息熵为:   条件熵  信息增益  信息增益：对于已知的事件A来说，事件D的信息增益就是D的信息熵与A事件下D的条件熵之差，事件A对于事件D的影响越大，条件熵H（D｜A）就会越小（在事件A的影响下，事件D就划分得越“纯净”），体现在信息增益熵就是差值越大，进而说明事件D的信息熵下降得越多。   所以，在根节点或中间节点的变量选择过程中，就是挑选出各自变量下因变量的信息增益最大的。  信息增益率  决策树中的ID3算法使用信息增益指标实现根节点或中间节点的字段选择，但是该指标存在一个非常明显的缺点，即信息增益会偏向于取值较多的字段。 为了克服信息增益指标的缺点，提出了信息增益率的概念，它的思想很简单，就是在信息增益的基础上进行相应的惩罚。信息增益率的公式可以表示为:   其中$H_A$为事件A的信息熵。事件A的取值越多$Gain_A$(D)可能越大，但同时$H_A$也会越大，这样以商的形式就实现了$Gain_A$(D)的惩罚。  基尼指数与条件基尼指数  决策树中的C4.5算法使用信息增益率指标实现根节点或中间节点的字段选择，但该算法与ID3算法一致，都只能针对离散型因变量进行分类，对于连续型的因变量就显得束手无策了。 为了能够让决策树预测连续型的因变量，Breiman等人在1984年提出了CART算法，该算法也称为分类回归树，它所使用的字段选择指标是基尼指数。   条件基尼指数  基尼指数增益  与信息增益类似，还需要考虑自变量对因变量的影响程度，即因变量的基尼指数下降速度的快慢，下降得越快，自变量对因变量的影响就越强。下降速度的快慢可用下方式子衡量:  生成算法与划分标准 随机森林的思想 分类树与回归树 分类树  以C4.5分类树为例，C4.5分类树在每次分枝时，是穷举每一个feature的每一个阈值，找到使得按照feature&amp;lt;=阈值，和feature&amp;gt;阈值分成的两个分枝的熵最大的阈值(熵最大的概念可理解成尽可能每个分枝的男女比例都远离1:1)，按照该标准分枝得到两个新节点，用同样方法继续分枝直到所有人都被分入性别唯一的叶子节点，或达到预设的终止条件，若最终叶子节点中的性别不唯一，则以多数人的性别作为该叶子节点的性别。 总结：分类树使用信息增益或增益比率来划分节点；每个节点样本的类别情况投票决定测试样本的类别。  回归树  回归树总体流程也是类似，区别在于，回归树的每个节点（不一定是叶子节点）都会得一个预测值，以年龄为例，该预测值等于属于这个节点的所有人年龄的平均值。分枝时穷举每一个feature的每个阈值找最好的分割点，但衡量最好的标准不再是最大熵，而是最小化均方差即(每个人的年龄-预测年龄)^2 的总和 / N。也就是被预测出错的人数越多，错的越离谱，均方差就越大，通过最小化均方差能够找到最可靠的分枝依据。分枝直到每个叶子节点上人的年龄都唯一或者达到预设的终止条件(如叶子个数上限)，若最终叶子节点上人的年龄不唯一，则以该节点上所有人的平均年龄做为该叶子节点的预测年龄。 总结：回归树使用最大均方差划分节点；每个节点样本的均值作为测试样本的回归预测值  决策树模型函数说明 DecisionTreeClassifier(criterion=&amp;#39;gini&amp;#39;, splitter=&amp;#39;best&amp;#39;, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_leaf_nodes=None, class_weight=None)  criterion:用于指定选择节点字段的评价指标，对于分类决策树，默认为&amp;rsquo;gini&#39;，表示采用基尼指数选择节点的最佳分割字段;对于回归决策树，默认为&amp;rsquo;mse&#39;，表示使用均方误差选择节点的最佳分割字段 splitter:用于指定节点中的分割点选择方法，默认为&amp;rsquo;best&#39;，表示从所有的分割点中选择最佳分割点; 如果指定为&amp;rsquo;random&#39;，则表示随机选择分割点 max_depth:用于指定决策树的最大深度，默认为None，表示树的生长过程中对深度不做任何限制 min_samples_split:用于指定根节点或中间节点能够继续分割的最小样本量，默认为2 min_samples_leaf:用于指定叶节点的最小样本量，默认为1 max_leaf_nodes:用于指定最大的叶节点个数，默认为None，表示对叶节点个数不做任何限制 class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等;如果为balanced，则表示类别权重与原始样本中类别的比例成反比;还可以通过字典传递类别之间的权重差异，其形式为{class_label:weight}  随机森林模型介绍  利用Bootstrp抽样法，从原始数据集合中生成k个数据集，并且每个数据集都含有N个观测和P个自变量； 针对每一个数据集，构造一棵CART决策树，在构建子树的过程中，并没有将所有自变量用作节点字段的选择，而是随机选择p个字段； 让每一棵决策树尽可能地充分生长，使得树中的每个节点尽可能“纯净”，即随机森林中的每一棵子树都不需要剪枝； 针对k棵CART树的随机森林，对分类问题利用投票法，将最高得分的类别用于最终的判断结果；对回归问题利用均值法，将其用作预测样本的最终结果。  随机森林模型函数说明 RandomForestClassifier(n_estimators=10, criterion=&amp;#39;gini&amp;#39;, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_leaf_nodes=None, bootstrap=True, class_weight=None)  n_estimators:用于指定随机森林所包含的决策树个数 criterion:用于指定每棵决策树节点的分割字段所使用的度量标准，用于分类的随机森林，默认的 criterion值为&amp;rsquo;gini&#39;; 用于回归的随机森林，默认的criterion值为&amp;rsquo;mse&#39; max_depth:用于指定每棵决策树的最大深度，默认不限制树的生长深度 min_samples_split:用于指定每棵决策树根节点或中间节点能够继续分割的最小样本量，默认为2 min_samples_leaf:用于指定每棵决策树叶节点的最小样本量，默认为1 max_leaf_nodes:用于指定每棵决策树最大的叶节点个数，默认为None，表示对叶节点个数不做任 何限制 bootstrap:bool类型参数，是否对原始数据集进行bootstrap抽样，用于子树的构建，默认为True class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等  代码实操 导入数据 # 导入第三方模块 import pandas as pd # 读入数据 Titanic = pd.</description>
     </item>
     
     <item>
-      <title>Outline</title>
+      <title>Decision Trees：Project</title>
+      <link>https://www.m1sty.com/2021/dm_decision-trees_6_project/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_decision-trees_6_project/</guid>
+      <description>随机森林模型项目代码 建模版 导入数据 import pandas as pd import numpy as np import matplotlib.pyplot as plt import seaborn as sns import numpy as nps from scipy import stats from sklearn import metrics # 导入Excel文档 data=pd.read_excel(&amp;#39;D:\\Britney\\项目1\\K数据.xlsx&amp;#39;) 数据预处理 # 去除为0的行 a=data[data[&amp;#39;大货唛架 YY&amp;#39;]==0].index data1=data.drop(a,axis=0) data1[data1[&amp;#39;大货唛架 YY&amp;#39;].isin([0])] y1=data1[&amp;#39;大货唛架利用率%&amp;#39;] y2=data1[&amp;#39;大货唛架 YY&amp;#39;] #如果缺失率达到40%就可以去除该因子 d1=data1.isnull().sum()/data1.shape[0] #a=d1&amp;gt;0.5 a1=pd.DataFrame(d1) print(a1[a1[0]&amp;gt;0.4]) #去掉缺失率过大的因子 data2=data1.drop([&amp;#39;后整方式&amp;#39;,&amp;#39;循环尺寸标准_经向(Inch)&amp;#39;,&amp;#39;循环尺寸标准_纬向(Inch)&amp;#39;],axis=1) # 类型变量集合 quality=[attr for attr in data2.columns if data2.dtypes[attr] == &amp;#39;object&amp;#39;] # 类型变量缺失值补全 for c in quality: data2[c] = data2[c].</description>
+    </item>
+    
+    <item>
+      <title>知识框架</title>
       <link>https://www.m1sty.com/2021/overview_interview_map/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
@@ -126,35 +154,6 @@ ROI 指标 曝光-转化体系  基准值：各指标的及格线 pv：page view
  唯一索引：唯一索引是不允许其中任何两行具有相同索引值的索引。当现有数据中存在重复的键值时，大多数数据库不允许将新创建的唯一索引与表一起保存。数据库还可能防止添加将在表中创建重复键值的新数据。例如，如果在employee表中职员的姓(lname)上创建了唯一索引，则任何两个员工都不能同姓。 主键索引：数据库表经常有一列或多列组合，其值唯一标识表中的每一行。该列称为表的主键。在数据库关系图中为表定义主键将自动创建主键索引，主键索引是唯一索引的特定类型。该索引要求主键中的每个值都唯一。当在查询中使用主键索引时，它还允许对数据的快速访问。 聚集索引：在聚集索引中，表中行的物理顺序与键值的逻辑（索引）顺序相同。一个表只能包含一个聚集索引。如果某索引不是聚集索引，则表中行的物理顺序与键值的逻辑顺序不匹配。与非聚集索引相比，聚集索引通常提供更快的数据访问速度。聚集索引和非聚集索引的区别，如字典默认按字母顺序排序，读者如知道某个字的读音可根据字母顺序快速定位。因此聚集索引和表的内容是在一起的。如读者需查询某个生僻字，则需按字典前面的索引，举例按偏旁进行定位，找到该字对应的页数，再打开对应页数找到该字。这种通过两个地方而查询到某个字的方式就如非聚集索引。    union all &amp;amp; union
  union和union all的区别是,union会自动压缩多个结果集合中的重复结果，而union all则将所有的结果全部显示出来，不管是不是重复。 *Union：对两个结果集进行并集操作，不包括重复行，同时进行默认规则的排序；*Union在进行表链接后会筛选掉重复的记录，所以在表链接后会对所产生的结果集进行排序运算，删除重复的记录再返回结果。实际大部分应用中是不会产生重复的记录，最常见的是过程表与历史表UNION。 *Union All：对两个结果集进行并集操作，包括重复行，不进行排序；*如果返回的两个结果集中有重复的数据，那么返回的结果集就会包含重复的数据了。    sql笔试题 SQL面试必会50题
 # 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as &amp;#39;第一&amp;#39;, max(case when rank1 = 2 then s_score else null end ) as &amp;#39;第二&amp;#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.</description>
-    </item>
-    
-    <item>
-      <title>Regression：Ridge Regression and Lasson Regression</title>
-      <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</link>
-      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</guid>
-      <description>线性回归模型的短板 当列数比行数多 当列之间存在多重共线性 岭回归模型 为解决多元线性回归模型中可能存在的不可逆问题，统计学家提出了岭回归模型。该模型解决问题的思路就是在线性回归模型的目标函数之上增加l2正则项（也称为惩罚项）。
-表达式 系数求解 凸优化的等价命题 系数求解的几何意义 交叉验证法 Lasso模型 岭回归模型解决线性回归模型中矩阵X&amp;rsquo;X不可逆的办法是添加l2正则的惩罚项,但缺陷在于始终保留建模时的所有变量,无法降低模型的复杂度。对于 此, Lasso回归采用了l1正则的惩罚项。
-表达式 凸优化的等价命题 系数求解的几何意义 交叉验证法 实操 # 导入第三方模块 import pandas as pd import numpy as np from sklearn import model_selection from sklearn.linear_model import Ridge,RidgeCV import matplotlib.pyplot as plt # 读取糖尿病数据集 diabetes = pd.read_excel(r&amp;#39;diabetes.xlsx&amp;#39;) # 构造自变量（剔除患者性别、年龄和因变量） predictors = diabetes.columns[2:-1] # 将数据集拆分为训练集和测试集 X_train, X_test, y_train, y_test = model_selection.train_test_split(diabetes[predictors], diabetes[&amp;#39;Y&amp;#39;], test_size = 0.2, random_state = 1234 ) 多元线性回归 # 导入第三方模块 from statsmodels import api as sms # 为自变量X添加常数列1，用于拟合截距项 X_train2 = sms.</description>
-    </item>
-    
-    <item>
-      <title>Decistion Trees：Practise</title>
-      <link>https://www.m1sty.com/2021/dm_decistion-trees_5_practise/</link>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_decistion-trees_5_practise/</guid>
-      <description>决策树与随机森林 决策树节点字段的选择和阈值的选择 决策树模型介绍  图中的决策树呈现自顶向下的生长过程，深色的椭圆表示树的根节点;浅色的椭圆表示树的中间节点;方框则表示树的叶节点。 对于所有的非叶节点来说，都是用来表示条件判断，而叶节点则存储最终的分类结果，例如中年分支下的叶节点(4,0)表示4位客户购买，0位客户不购买。  信息熵与条件熵  熵原本是物理学中的一个定义，后来香农将其引申到了信息论领域，用来表示信息量的大小。 信息量越大(分类越不“纯净”)，对应的熵值就越大，反之亦然。信息熵的计算公式如下:   在实际应用中，会将概率$P_k$的值用经验概率替换，所以经验信息熵可以表示为：   举例:以产品是否被购买为例，假设数据集一共包含14个样本，其中购买的用户有9个，没有购买 的用户有5个，所以对于是否购买这个事件来说，它的经验信息熵为:   条件熵  信息增益  信息增益：对于已知的事件A来说，事件D的信息增益就是D的信息熵与A事件下D的条件熵之差，事件A对于事件D的影响越大，条件熵H（D｜A）就会越小（在事件A的影响下，事件D就划分得越“纯净”），体现在信息增益熵就是差值越大，进而说明事件D的信息熵下降得越多。   所以，在根节点或中间节点的变量选择过程中，就是挑选出各自变量下因变量的信息增益最大的。  信息增益率  决策树中的ID3算法使用信息增益指标实现根节点或中间节点的字段选择，但是该指标存在一个非常明显的缺点，即信息增益会偏向于取值较多的字段。 为了克服信息增益指标的缺点，提出了信息增益率的概念，它的思想很简单，就是在信息增益的基础上进行相应的惩罚。信息增益率的公式可以表示为:   其中$H_A$为事件A的信息熵。事件A的取值越多$Gain_A$(D)可能越大，但同时$H_A$也会越大，这样以商的形式就实现了$Gain_A$(D)的惩罚。  基尼指数与条件基尼指数  决策树中的C4.5算法使用信息增益率指标实现根节点或中间节点的字段选择，但该算法与ID3算法一致，都只能针对离散型因变量进行分类，对于连续型的因变量就显得束手无策了。 为了能够让决策树预测连续型的因变量，Breiman等人在1984年提出了CART算法，该算法也称为分类回归树，它所使用的字段选择指标是基尼指数。   条件基尼指数  基尼指数增益  与信息增益类似，还需要考虑自变量对因变量的影响程度，即因变量的基尼指数下降速度的快慢，下降得越快，自变量对因变量的影响就越强。下降速度的快慢可用下方式子衡量:  生成算法与划分标准 随机森林的思想 分类树与回归树 分类树  以C4.5分类树为例，C4.5分类树在每次分枝时，是穷举每一个feature的每一个阈值，找到使得按照feature&amp;lt;=阈值，和feature&amp;gt;阈值分成的两个分枝的熵最大的阈值(熵最大的概念可理解成尽可能每个分枝的男女比例都远离1:1)，按照该标准分枝得到两个新节点，用同样方法继续分枝直到所有人都被分入性别唯一的叶子节点，或达到预设的终止条件，若最终叶子节点中的性别不唯一，则以多数人的性别作为该叶子节点的性别。 总结：分类树使用信息增益或增益比率来划分节点；每个节点样本的类别情况投票决定测试样本的类别。  回归树  回归树总体流程也是类似，区别在于，回归树的每个节点（不一定是叶子节点）都会得一个预测值，以年龄为例，该预测值等于属于这个节点的所有人年龄的平均值。分枝时穷举每一个feature的每个阈值找最好的分割点，但衡量最好的标准不再是最大熵，而是最小化均方差即(每个人的年龄-预测年龄)^2 的总和 / N。也就是被预测出错的人数越多，错的越离谱，均方差就越大，通过最小化均方差能够找到最可靠的分枝依据。分枝直到每个叶子节点上人的年龄都唯一或者达到预设的终止条件(如叶子个数上限)，若最终叶子节点上人的年龄不唯一，则以该节点上所有人的平均年龄做为该叶子节点的预测年龄。 总结：回归树使用最大均方差划分节点；每个节点样本的均值作为测试样本的回归预测值  决策树模型函数说明 DecisionTreeClassifier(criterion=&amp;#39;gini&amp;#39;, splitter=&amp;#39;best&amp;#39;, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_leaf_nodes=None, class_weight=None)  criterion:用于指定选择节点字段的评价指标，对于分类决策树，默认为&amp;rsquo;gini&#39;，表示采用基尼指数选择节点的最佳分割字段;对于回归决策树，默认为&amp;rsquo;mse&#39;，表示使用均方误差选择节点的最佳分割字段 splitter:用于指定节点中的分割点选择方法，默认为&amp;rsquo;best&#39;，表示从所有的分割点中选择最佳分割点; 如果指定为&amp;rsquo;random&#39;，则表示随机选择分割点 max_depth:用于指定决策树的最大深度，默认为None，表示树的生长过程中对深度不做任何限制 min_samples_split:用于指定根节点或中间节点能够继续分割的最小样本量，默认为2 min_samples_leaf:用于指定叶节点的最小样本量，默认为1 max_leaf_nodes:用于指定最大的叶节点个数，默认为None，表示对叶节点个数不做任何限制 class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等;如果为balanced，则表示类别权重与原始样本中类别的比例成反比;还可以通过字典传递类别之间的权重差异，其形式为{class_label:weight}  随机森林模型介绍  利用Bootstrp抽样法，从原始数据集合中生成k个数据集，并且每个数据集都含有N个观测和P个自变量； 针对每一个数据集，构造一棵CART决策树，在构建子树的过程中，并没有将所有自变量用作节点字段的选择，而是随机选择p个字段； 让每一棵决策树尽可能地充分生长，使得树中的每个节点尽可能“纯净”，即随机森林中的每一棵子树都不需要剪枝； 针对k棵CART树的随机森林，对分类问题利用投票法，将最高得分的类别用于最终的判断结果；对回归问题利用均值法，将其用作预测样本的最终结果。  随机森林模型函数说明 RandomForestClassifier(n_estimators=10, criterion=&amp;#39;gini&amp;#39;, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_leaf_nodes=None, bootstrap=True, class_weight=None)  n_estimators:用于指定随机森林所包含的决策树个数 criterion:用于指定每棵决策树节点的分割字段所使用的度量标准，用于分类的随机森林，默认的 criterion值为&amp;rsquo;gini&#39;; 用于回归的随机森林，默认的criterion值为&amp;rsquo;mse&#39; max_depth:用于指定每棵决策树的最大深度，默认不限制树的生长深度 min_samples_split:用于指定每棵决策树根节点或中间节点能够继续分割的最小样本量，默认为2 min_samples_leaf:用于指定每棵决策树叶节点的最小样本量，默认为1 max_leaf_nodes:用于指定每棵决策树最大的叶节点个数，默认为None，表示对叶节点个数不做任 何限制 bootstrap:bool类型参数，是否对原始数据集进行bootstrap抽样，用于子树的构建，默认为True class_weight:用于指定因变量中类别之间的权重，默认为None，表示每个类别的权重都相等  代码实操 导入数据 # 导入第三方模块 import pandas as pd # 读入数据 Titanic = pd.</description>
-    </item>
-    
-    <item>
-      <title>Decistion Trees：Practise(project)</title>
-      <link>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</link>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_decistion-trees_6_practise_project/</guid>
-      <description>随机森林模型项目代码 建模版 导入数据 import pandas as pd import numpy as np import matplotlib.pyplot as plt import seaborn as sns import numpy as nps from scipy import stats from sklearn import metrics # 导入Excel文档 data=pd.read_excel(&amp;#39;D:\\Britney\\项目1\\K数据.xlsx&amp;#39;) 数据预处理 # 去除为0的行 a=data[data[&amp;#39;大货唛架 YY&amp;#39;]==0].index data1=data.drop(a,axis=0) data1[data1[&amp;#39;大货唛架 YY&amp;#39;].isin([0])] y1=data1[&amp;#39;大货唛架利用率%&amp;#39;] y2=data1[&amp;#39;大货唛架 YY&amp;#39;] #如果缺失率达到40%就可以去除该因子 d1=data1.isnull().sum()/data1.shape[0] #a=d1&amp;gt;0.5 a1=pd.DataFrame(d1) print(a1[a1[0]&amp;gt;0.4]) #去掉缺失率过大的因子 data2=data1.drop([&amp;#39;后整方式&amp;#39;,&amp;#39;循环尺寸标准_经向(Inch)&amp;#39;,&amp;#39;循环尺寸标准_纬向(Inch)&amp;#39;],axis=1) # 类型变量集合 quality=[attr for attr in data2.columns if data2.dtypes[attr] == &amp;#39;object&amp;#39;] # 类型变量缺失值补全 for c in quality: data2[c] = data2[c].</description>
     </item>
     
     <item>
@@ -228,6 +227,15 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
     </item>
     
     <item>
+      <title>PageRank：Content(2)【Not finish】</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_1_content2/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_1_content2/</guid>
+      <description>The Theory behind PageRank Computing Importance  Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages. Importance of v is proportional to the importance of nodes linking to v. It can be modeled by a system of linear equations&amp;hellip;  System of Linear Equations for PageRank PageRank  The importance of a web page can be computed by solving the corresponding system of linear equations.</description>
+    </item>
+    
+    <item>
       <title>Top-k Query：Content</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
@@ -237,12 +245,12 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
     </item>
     
     <item>
-      <title>PageRank：Content(2)【Not finish】</title>
-      <link>https://www.m1sty.com/2021/dm_pagerank_1_content2/</link>
+      <title>PageRank：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_pagerank_1_content2/</guid>
-      <description>The Theory behind PageRank Computing Importance  Web graph: a directed graph G = (V , E ) where nodes represent web pages, while there is a directed edge between u and v if there is a hyperlink between the corresponding web pages. Importance of v is proportional to the importance of nodes linking to v. It can be modeled by a system of linear equations&amp;hellip;  System of Linear Equations for PageRank PageRank  The importance of a web page can be computed by solving the corresponding system of linear equations.</description>
+      <guid>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</guid>
+      <description>Simple Wev Graph and its Matrix System of Linear Equations PageRank Algorithm </description>
     </item>
     
     <item>
@@ -257,15 +265,6 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     </item>
     
     <item>
-      <title>PageRank：Exercise</title>
-      <link>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</link>
-      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_pagerank_2_exercise/</guid>
-      <description>Simple Wev Graph and its Matrix System of Linear Equations PageRank Algorithm </description>
-    </item>
-    
-    <item>
       <title>Artificial Intelligence and Machine Learning for Business</title>
       <link>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
@@ -275,22 +274,22 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     </item>
     
     <item>
+      <title>PageRank：Supplement</title>
+      <link>https://www.m1sty.com/2021/dm_pagerank_4_more/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_pagerank_4_more/</guid>
+      <description>Key words  Link Analysis PageRank  Links 海量数据挖掘MMDS week1: Link Analysis - PageRank
+链接分析（Link Analysis）：PageRank算法</description>
+    </item>
+    
+    <item>
       <title>Top-k Query：Supplement</title>
       <link>https://www.m1sty.com/2021/atdm_top-k_4_more/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/atdm_top-k_4_more/</guid>
       <description>Threshold Algorithm (TA)  Original version, often used as synonym for entire family of top-k algorithms. But: eager random access to candidate objects required. Worst-case memory consumption is strictly bounded → O(k)  No-Random-Access Algorithm (NRA)  No random access required at all, but may have to scan large parts of the index lists. Worst-case memory consumption bounded by index size → O(m*n + k)  </description>
-    </item>
-    
-    <item>
-      <title>PageRank：Supplement</title>
-      <link>https://www.m1sty.com/2021/dm_pagerank_4_more/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_pagerank_4_more/</guid>
-      <description>Key words  Link Analysis PageRank  Links 海量数据挖掘MMDS week1: Link Analysis - PageRank
-链接分析（Link Analysis）：PageRank算法</description>
     </item>
     
     <item>
@@ -399,6 +398,34 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     </item>
     
     <item>
+      <title>Clusterings：Practise(DBSCAN)</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings_5_practise_dbscan/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_clusterings_5_practise_dbscan/</guid>
+      <description>Clusterings 熟悉密度聚类中的几个概念 模型介绍   Kmeans聚类存在两个致命缺点，一是聚类效果容易受到异常样本点的影响;二是该算法无法准确地将非球形样本进行合理的聚类。
+  基于密度的聚类则可以解决非球形簇的问题，“密度”可以理解为样本点的紧密程度，如果在指定的半径领域内，实际样本量超过给定的最小样本量阈值，则认为是密度高的对象，就可以聚成一个簇。
+  概念讲解  点的领域：在某点p处，给定其半径e后，所得到的覆盖区域 核心对象：对于给定的最少样本量MinPts而言，如果某点p的e领域内至少包含MinPts个样本点，则点p就为核心对象。 直接密度可达：假设点p为核心对象，且在点p的e领域内存在点q，则从点p出发到点q是直接密度可达的。 密度可达：假设存在一系列的对象链$P_1$,$P_2$,&amp;hellip;,$P_n$，如果$p_i$是关于半径e和最少样本点MinPts的直接密度可达$P_(i+1)$，则p1密度可达$P_n$。(i = 1,2,&amp;hellip;n) 密度相连：假设点o为核心对象，从点o出发得到两个密度可达点p和点q，则称点p和点q是密度相连的。 聚类的簇：簇包含了最大的密度相连所构成的样本点。 边界点：假设点p为核心对象，在其领域内包含了点b，如果点b为非核心对象，则称其为点p的边界点。 异常点：不属于任何簇的样本点。  理解密度聚类的过程 步骤讲解  为密度聚类算法设置一个合理的半径以及半径领域内所包含的最少样本量MinPts。 从数据集中随机挑选一个样本点p，检验其在半径领域内是否包含制定的最少样本量，如果包含就将其定性为核心对象，并构成一个簇C；否则，重新挑选一个样本点。 对于核心对象p所覆盖的其他样本点q，如果点q对应的半径领域内仍然包含最少样本量MinPts，就将其覆盖的样本点统统归于簇C。 重复步骤（3），将最大的密度相连所包含的样本点聚为一类，形成一个大簇。 完成步骤（4）后，重新回到步骤（2），并重复步骤（3）和（4），直到没有新的样本点可以生成新簇时算法结束。  函数介绍 cluster.DBSCAN(eps=0.5, min_samples=5, metric=‘euclidean’, p=None)   eps:用于设置密度聚类中的e领域，即半径，默认为0.5。
+  min_samples:用于设置e领域内最少的样本量，默认为5。
+  metric:用于指定计算点之间距离的方法，默认为欧氏距离 。
+  p:当参数metric为闵可夫斯基(&amp;lsquo;minkowski&amp;rsquo;)距离时，p=1，表示计算点之间的曼哈顿距离;p=2，表示计算点之间的欧式距离；该参数的默认值为2。
+  密度聚类相比Kmeans聚类的优势 球形簇的情况 K-means DBSCAN 非球形簇的情况 K-means DBSCAN DBSCAN难确定半径和MinPts
+密度聚类的应用实战 利用自定义球形簇数据对比DBSCAN和K-means # 导入第三方模块 import pandas as pd import numpy as np from sklearn.</description>
+    </item>
+    
+    <item>
+      <title>Clusterings：Practise(Hierarchical Clusterings)</title>
+      <link>https://www.m1sty.com/2021/dm_clusterings_5_practise_hierarchical/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_clusterings_5_practise_hierarchical/</guid>
+      <description>层次聚类 理论说明 https://blog.csdn.net/shulianghan/article/details/105960850
+https://blog.csdn.net/liujh845633242/article/details/103679724
+层次聚类更适合小样本；K-Means更适合大样本。
+代码实现 # 导入第三方模块 import pandas as pd import numpy as np from sklearn.datasets import make_blobs import matplotlib.pyplot as plt import seaborn as sns from sklearn import cluster # 构造两个球形簇的数据样本点 X,y = make_blobs(n_samples = 2000, centers = [[-1,0],[1,0.5]], cluster_std = [0.2,0.45], random_state = 1234) # 将模拟得到的数组转换为数据框，用于绘图 plot_data = pd.DataFrame(np.column_stack((X,y)), columns = [&amp;#39;x1&amp;#39;,&amp;#39;x2&amp;#39;,&amp;#39;y&amp;#39;]) # 绘制散点图（用不同的形状代表不同的簇） sns.lmplot(&amp;#39;x1&amp;#39;, &amp;#39;x2&amp;#39;, data = plot_data, hue = &amp;#39;y&amp;#39;,markers = [&amp;#39;^&amp;#39;,&amp;#39;o&amp;#39;], fit_reg = False, legend = False) # 显示图形 plt.</description>
+    </item>
+    
+    <item>
       <title>Clusterings：Practise(K-means)</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_5_practise_k-means/</link>
       <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
@@ -414,37 +441,9 @@ def k_SSE(X,cluster): # 选择连续的K种不同的值 K = range(1,clusters+1) 
     </item>
     
     <item>
-      <title>Clusterings：Practise(DBSCAN)</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_clusterings-6_practise_dbscan/</guid>
-      <description>Clusterings 熟悉密度聚类中的几个概念 模型介绍   Kmeans聚类存在两个致命缺点，一是聚类效果容易受到异常样本点的影响;二是该算法无法准确地将非球形样本进行合理的聚类。
-  基于密度的聚类则可以解决非球形簇的问题，“密度”可以理解为样本点的紧密程度，如果在指定的半径领域内，实际样本量超过给定的最小样本量阈值，则认为是密度高的对象，就可以聚成一个簇。
-  概念讲解  点的领域：在某点p处，给定其半径e后，所得到的覆盖区域 核心对象：对于给定的最少样本量MinPts而言，如果某点p的e领域内至少包含MinPts个样本点，则点p就为核心对象。 直接密度可达：假设点p为核心对象，且在点p的e领域内存在点q，则从点p出发到点q是直接密度可达的。 密度可达：假设存在一系列的对象链$P_1$,$P_2$,&amp;hellip;,$P_n$，如果$p_i$是关于半径e和最少样本点MinPts的直接密度可达$P_(i+1)$，则p1密度可达$P_n$。(i = 1,2,&amp;hellip;n) 密度相连：假设点o为核心对象，从点o出发得到两个密度可达点p和点q，则称点p和点q是密度相连的。 聚类的簇：簇包含了最大的密度相连所构成的样本点。 边界点：假设点p为核心对象，在其领域内包含了点b，如果点b为非核心对象，则称其为点p的边界点。 异常点：不属于任何簇的样本点。  理解密度聚类的过程 步骤讲解  为密度聚类算法设置一个合理的半径以及半径领域内所包含的最少样本量MinPts。 从数据集中随机挑选一个样本点p，检验其在半径领域内是否包含制定的最少样本量，如果包含就将其定性为核心对象，并构成一个簇C；否则，重新挑选一个样本点。 对于核心对象p所覆盖的其他样本点q，如果点q对应的半径领域内仍然包含最少样本量MinPts，就将其覆盖的样本点统统归于簇C。 重复步骤（3），将最大的密度相连所包含的样本点聚为一类，形成一个大簇。 完成步骤（4）后，重新回到步骤（2），并重复步骤（3）和（4），直到没有新的样本点可以生成新簇时算法结束。  函数介绍 cluster.DBSCAN(eps=0.5, min_samples=5, metric=‘euclidean’, p=None)   eps:用于设置密度聚类中的e领域，即半径，默认为0.5。
-  min_samples:用于设置e领域内最少的样本量，默认为5。
-  metric:用于指定计算点之间距离的方法，默认为欧氏距离 。
-  p:当参数metric为闵可夫斯基(&amp;lsquo;minkowski&amp;rsquo;)距离时，p=1，表示计算点之间的曼哈顿距离;p=2，表示计算点之间的欧式距离；该参数的默认值为2。
-  密度聚类相比Kmeans聚类的优势 球形簇的情况 K-means DBSCAN 非球形簇的情况 K-means DBSCAN DBSCAN难确定半径和MinPts
-密度聚类的应用实战 利用自定义球形簇数据对比DBSCAN和K-means # 导入第三方模块 import pandas as pd import numpy as np from sklearn.</description>
-    </item>
-    
-    <item>
-      <title>Clusterings：Practise(Hierarchical Clusterings)</title>
-      <link>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</link>
-      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_clusterings-7_practise_hierarchical/</guid>
-      <description>层次聚类 理论说明 https://blog.csdn.net/shulianghan/article/details/105960850
-https://blog.csdn.net/liujh845633242/article/details/103679724
-层次聚类更适合小样本；K-Means更适合大样本。
-代码实现 # 导入第三方模块 import pandas as pd import numpy as np from sklearn.datasets import make_blobs import matplotlib.pyplot as plt import seaborn as sns from sklearn import cluster # 构造两个球形簇的数据样本点 X,y = make_blobs(n_samples = 2000, centers = [[-1,0],[1,0.5]], cluster_std = [0.2,0.45], random_state = 1234) # 将模拟得到的数组转换为数据框，用于绘图 plot_data = pd.DataFrame(np.column_stack((X,y)), columns = [&amp;#39;x1&amp;#39;,&amp;#39;x2&amp;#39;,&amp;#39;y&amp;#39;]) # 绘制散点图（用不同的形状代表不同的簇） sns.lmplot(&amp;#39;x1&amp;#39;, &amp;#39;x2&amp;#39;, data = plot_data, hue = &amp;#39;y&amp;#39;,markers = [&amp;#39;^&amp;#39;,&amp;#39;o&amp;#39;], fit_reg = False, legend = False) # 显示图形 plt.</description>
-    </item>
-    
-    <item>
       <title>Association：Content(1)</title>
       <link>https://www.m1sty.com/2021/dm_association_1_content1/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_1_content1/</guid>
       <description>Frequent Itemsets and Association Rules Market Baskets The Market-Basket Model   A large set of items, e.g., things sold in a supermarket.
@@ -456,10 +455,51 @@ https://blog.csdn.net/liujh845633242/article/details/103679724
     <item>
       <title>Association：Content(2)</title>
       <link>https://www.m1sty.com/2021/dm_association_1_content2/</link>
-      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_1_content2/</guid>
       <description>Improvements to A-Priori PCY Algorithm Introdution  Main observation: during pass 1 of A-priori, most memory is idle. Use that memory to keep additional info to improve storage during pass 2 of A-priori. Passes &amp;gt; 2 are the same as in A-Priori.  Pass 1  Use a hash function which &amp;ldquo;bucketizes&amp;rdquo; item pairs, that is, maps them to integers in $[1,k]$. Each &amp;ldquo;bucket&amp;rdquo; i in $[1,k]$ is associated with a counter $c_i$.</description>
+    </item>
+    
+    <item>
+      <title>Association：Exercise</title>
+      <link>https://www.m1sty.com/2021/dm_association_2_exercise/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_2_exercise/</guid>
+      <description>Naive Algorithm Pass 1 Support treshold：2
+Pass 2 Support treshold：2
+Pass 3 Support treshold：2
+A-priori Algorithm Pass 1 Pass 2 Pass 3 PCY Algorithm Input Data Pass 1 Pass 2 The remaining passes The remaining passes are the same of A-priori
+SON Algorithm Introduction Let s be the support threshold:
+ Pass 1:  Divide the dataset into k chunks, let $p_i$ be such that the ith chunk contains a fraction of pi of the input dataset.</description>
+    </item>
+    
+    <item>
+      <title>Association：Assignment</title>
+      <link>https://www.m1sty.com/2021/dm_association_3_assignment/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_3_assignment/</guid>
+      <description>Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.</description>
+    </item>
+    
+    <item>
+      <title>Association：Supplement</title>
+      <link>https://www.m1sty.com/2021/dm_association_4_more/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_4_more/</guid>
+      <description>Association 《数据挖掘概念与技术》 第6章小结  大量数据中的频繁模式、关联和相关关系的发现在选择性销售、决策分析和商务管理方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一起(或依次)购买的商品的集合，研究顾客的购买习惯。 关联规则挖掘首先找出频繁项集(项的集合，如A和B，满足最小支持度阈值，或任务相关元组的百分比)，然后，由它们产生形如A→B的强关联规则。这些规则还满足最小置信度阈值(预定义的、在满足A的条件下满足B的概率)。可以进一步分析关联，发现项集A和B之间具有统计相关性的相关规则。 对于频繁项集挖掘，已经开发了许多有效的、可伸缩的算法，由它们可以导出关联和相关规则。这些算法可以分成三类：(1)类Apriori算法；(2)基于频繁模式增长的算法，如FP-growth；(3)使用垂直数据格式的算法。 Apriori算法是为布尔关联规则挖掘频繁项集的原创性算法。它逐层进行挖掘，利用先验性质：频繁项集的所有非空子集也都是频繁的。在第k次迭代(k≥2)，它根据频繁(k-1)项集形成k项集候选，并扫描数据库一次，找出完整的频繁k项集的集合L。使用涉及散列和事务压缩技术的变形使得过程更有效。其他变形包括划分数据(对每分区挖掘,然后合并结果)和抽样数据 (对数据子集挖掘)。这些变形可以将数据扫描次数减少到一两次。 频繁模式增长(FP-growth)是一种不产生候选的挖掘频繁项集方法。它构造一个高度压缩的数据结构(FP树)，压缩原来的事务数据库。与类Apriori方法使用产生-测试策略不同，它聚焦于频繁模式(段)增长，避免了高代价的候选产生，可获得更好的效率。 使用垂直效据格式挖掘频繁模式(ECLAT)将给定的、用TID-项集形式的水平数据格式事务数据集变换成项-TID集合形式的垂直数据格式。它根据先验性质和附加的优化技术(如differ)通过取TID-集的交，对变换后的数据集进行挖掘。 并非所有的强关联规则都是有趣的。因此,应当用模式评估度量来扩展支持度-置信度框架，促进更有趣的规则的挖掘，以产生更有意义的相关规则。一种度量是零不变的，如果它的值不受零事务（即不包含所考虑项集的事务）的影响。在许多模式评估度量中,我们考察了提升度、X、全置信度、最大置信度、 Kuczynski和余弦，并且说明只有后4种是零不变的。我们建议把Kuczynski度量与不平衡比一起使用，提供项集间的模式联系。  第7章小结  频繁模式挖掘的研究范围已经远远超第6章介绍的挖掘频繁项集和关联的基本概念和方法。本章给出了一个该领域的路线图，其中主题按照可挖掘的模式和规则的类型、挖掘方法和应用组织。 除了挖掘基本的频繁项集和关联外，还可以挖掘高级的模式形式，如多层关联和多维关联、量化关联规则、稀有模式和负模式。还可以挖掘高维模式、压缩的或近似的模式。 多层关联涉及多个抽象层中的数据（例如，“买计算机”和“买便携式计算机”）。这些可以使用多个最小支持度阀值挖掘。多维关联包含多个维。挖掘这种关联的技术因如何处理重复谓词而异。量化关联规则涉及量化属性。离散化、聚类和揭示异常行为的统计分析可以与模式挖掘过程集成在一起。 稀有模式很少出现但特别有趣。负模式是其成员呈现负相关行为的模式。应该小心定义负模式，考虑零不变性性质。稀有模式和负模式可能凸显数据的异常行为，这可能很有趣。 基于约束的挖掘策略可以用来引导挖掘过程，挖掘与用户只管一致或满足某些约束的模式。许多用户制定的约束都可以推进到挖掘过程中。约束可以分为模式剪枝约束和数据剪枝约束，这些约束的性质包括单调性、反单调性、数据反单调性和简洁性。具有这些性质的约束可以正确地集成到数据挖掘过程中。 已经为高维空间中的模式挖掘开发了一些方法，包括为挖掘维数很大但元组很少的数据集（如微阵列数据）的基于行枚举的模式增长方法，以及通过模式融合方法挖掘巨型模式（即非常长的模式）。 为了减少挖掘返回的模式数量，我们可以代之以挖掘压缩模式或近似模式。压缩模式可以通过基于聚类概念定义代表模式来挖掘，而近似模式可以通过提取感知冗余的top-k模式（即k个代表模式的小集合，它们不仅具有高显著性，而且相互之间低冗余）来挖掘。 可以产生语义注解，帮助用户理解发现的频繁模式的含义。这样的注解蕾丝词典，提供关于项的语义信息。这些信息包括语境提示符（例如，指示模式语境的术语）/最具代表性的事务（例如，包括该术语的片段或语句）和语义最相似的模式。这种注解从不同角度提供了模式的语境视图，有助于理解它们。 频繁模式挖掘具有形形色色的应用，涵盖从基于模式的数据清理，到基于模式的分类、聚类、离群点或异常分析。  </description>
+    </item>
+    
+    <item>
+      <title>Association：Practise</title>
+      <link>https://www.m1sty.com/2021/dm_association_5_practise/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_association_5_practise/</guid>
+      <description>#we run apriori on the order_data.csv file import math import pandas as pd from mlxtend.preprocessing import TransactionEncoder from mlxtend.frequent_patterns import apriori from mlxtend.frequent_patterns import association_rules data = pd.read_csv(r&amp;#34;order_data.csv&amp;#34;,delimiter=&amp;#34; &amp;#34;,header=None) #preprocessing: change to one hot encoding so as to be able to use apriori from mlxtend d=data.values.tolist() #removing nan values for i in range(len(d)): j=0 while(True): if (type(d[i][j])==float and math.isnan(d[i][j])) : del d[i][j] j-=1 j+=1 if (j&amp;gt;len(d[i])-1): break te = TransactionEncoder() te_ary = te.</description>
     </item>
     
     <item>
@@ -482,44 +522,23 @@ https://blog.csdn.net/liujh845633242/article/details/103679724
     </item>
     
     <item>
-      <title>Association：Exercise</title>
-      <link>https://www.m1sty.com/2021/dm_association_2_exercise/</link>
-      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_association_2_exercise/</guid>
-      <description>Naive Algorithm Pass 1 Support treshold：2
-Pass 2 Support treshold：2
-Pass 3 Support treshold：2
-A-priori Algorithm Pass 1 Pass 2 Pass 3 PCY Algorithm Input Data Pass 1 Pass 2 The remaining passes The remaining passes are the same of A-priori
-SON Algorithm Introduction Let s be the support threshold:
- Pass 1:  Divide the dataset into k chunks, let $p_i$ be such that the ith chunk contains a fraction of pi of the input dataset.</description>
-    </item>
-    
-    <item>
-      <title>Association：Assignment</title>
-      <link>https://www.m1sty.com/2021/dm_association_3_assignment/</link>
+      <title>Regression：Ridge Regression and Lasson Regression</title>
+      <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_association_3_assignment/</guid>
-      <description>Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.</description>
+      <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_ridge-regression-and-lasso-regression/</guid>
+      <description>线性回归模型的短板 当列数比行数多 当列之间存在多重共线性 岭回归模型 为解决多元线性回归模型中可能存在的不可逆问题，统计学家提出了岭回归模型。该模型解决问题的思路就是在线性回归模型的目标函数之上增加l2正则项（也称为惩罚项）。
+表达式 系数求解 凸优化的等价命题 系数求解的几何意义 交叉验证法 Lasso模型 岭回归模型解决线性回归模型中矩阵X&amp;rsquo;X不可逆的办法是添加l2正则的惩罚项,但缺陷在于始终保留建模时的所有变量,无法降低模型的复杂度。对于 此, Lasso回归采用了l1正则的惩罚项。
+表达式 凸优化的等价命题 系数求解的几何意义 交叉验证法 实操 # 导入第三方模块 import pandas as pd import numpy as np from sklearn import model_selection from sklearn.linear_model import Ridge,RidgeCV import matplotlib.pyplot as plt # 读取糖尿病数据集 diabetes = pd.read_excel(r&amp;#39;diabetes.xlsx&amp;#39;) # 构造自变量（剔除患者性别、年龄和因变量） predictors = diabetes.columns[2:-1] # 将数据集拆分为训练集和测试集 X_train, X_test, y_train, y_test = model_selection.train_test_split(diabetes[predictors], diabetes[&amp;#39;Y&amp;#39;], test_size = 0.2, random_state = 1234 ) 多元线性回归 # 导入第三方模块 from statsmodels import api as sms # 为自变量X添加常数列1，用于拟合截距项 X_train2 = sms.</description>
     </item>
     
     <item>
-      <title>Association：Supplement</title>
-      <link>https://www.m1sty.com/2021/dm_association_4_more/</link>
+      <title>Regression：Linear Regression</title>
+      <link>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/dm_association_4_more/</guid>
-      <description>Association 《数据挖掘概念与技术》 第6章小结  大量数据中的频繁模式、关联和相关关系的发现在选择性销售、决策分析和商务管理方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一起(或依次)购买的商品的集合，研究顾客的购买习惯。 关联规则挖掘首先找出频繁项集(项的集合，如A和B，满足最小支持度阈值，或任务相关元组的百分比)，然后，由它们产生形如A→B的强关联规则。这些规则还满足最小置信度阈值(预定义的、在满足A的条件下满足B的概率)。可以进一步分析关联，发现项集A和B之间具有统计相关性的相关规则。 对于频繁项集挖掘，已经开发了许多有效的、可伸缩的算法，由它们可以导出关联和相关规则。这些算法可以分成三类：(1)类Apriori算法；(2)基于频繁模式增长的算法，如FP-growth；(3)使用垂直数据格式的算法。 Apriori算法是为布尔关联规则挖掘频繁项集的原创性算法。它逐层进行挖掘，利用先验性质：频繁项集的所有非空子集也都是频繁的。在第k次迭代(k≥2)，它根据频繁(k-1)项集形成k项集候选，并扫描数据库一次，找出完整的频繁k项集的集合L。使用涉及散列和事务压缩技术的变形使得过程更有效。其他变形包括划分数据(对每分区挖掘,然后合并结果)和抽样数据 (对数据子集挖掘)。这些变形可以将数据扫描次数减少到一两次。 频繁模式增长(FP-growth)是一种不产生候选的挖掘频繁项集方法。它构造一个高度压缩的数据结构(FP树)，压缩原来的事务数据库。与类Apriori方法使用产生-测试策略不同，它聚焦于频繁模式(段)增长，避免了高代价的候选产生，可获得更好的效率。 使用垂直效据格式挖掘频繁模式(ECLAT)将给定的、用TID-项集形式的水平数据格式事务数据集变换成项-TID集合形式的垂直数据格式。它根据先验性质和附加的优化技术(如differ)通过取TID-集的交，对变换后的数据集进行挖掘。 并非所有的强关联规则都是有趣的。因此,应当用模式评估度量来扩展支持度-置信度框架，促进更有趣的规则的挖掘，以产生更有意义的相关规则。一种度量是零不变的，如果它的值不受零事务（即不包含所考虑项集的事务）的影响。在许多模式评估度量中,我们考察了提升度、X、全置信度、最大置信度、 Kuczynski和余弦，并且说明只有后4种是零不变的。我们建议把Kuczynski度量与不平衡比一起使用，提供项集间的模式联系。  第7章小结  频繁模式挖掘的研究范围已经远远超第6章介绍的挖掘频繁项集和关联的基本概念和方法。本章给出了一个该领域的路线图，其中主题按照可挖掘的模式和规则的类型、挖掘方法和应用组织。 除了挖掘基本的频繁项集和关联外，还可以挖掘高级的模式形式，如多层关联和多维关联、量化关联规则、稀有模式和负模式。还可以挖掘高维模式、压缩的或近似的模式。 多层关联涉及多个抽象层中的数据（例如，“买计算机”和“买便携式计算机”）。这些可以使用多个最小支持度阀值挖掘。多维关联包含多个维。挖掘这种关联的技术因如何处理重复谓词而异。量化关联规则涉及量化属性。离散化、聚类和揭示异常行为的统计分析可以与模式挖掘过程集成在一起。 稀有模式很少出现但特别有趣。负模式是其成员呈现负相关行为的模式。应该小心定义负模式，考虑零不变性性质。稀有模式和负模式可能凸显数据的异常行为，这可能很有趣。 基于约束的挖掘策略可以用来引导挖掘过程，挖掘与用户只管一致或满足某些约束的模式。许多用户制定的约束都可以推进到挖掘过程中。约束可以分为模式剪枝约束和数据剪枝约束，这些约束的性质包括单调性、反单调性、数据反单调性和简洁性。具有这些性质的约束可以正确地集成到数据挖掘过程中。 已经为高维空间中的模式挖掘开发了一些方法，包括为挖掘维数很大但元组很少的数据集（如微阵列数据）的基于行枚举的模式增长方法，以及通过模式融合方法挖掘巨型模式（即非常长的模式）。 为了减少挖掘返回的模式数量，我们可以代之以挖掘压缩模式或近似模式。压缩模式可以通过基于聚类概念定义代表模式来挖掘，而近似模式可以通过提取感知冗余的top-k模式（即k个代表模式的小集合，它们不仅具有高显著性，而且相互之间低冗余）来挖掘。 可以产生语义注解，帮助用户理解发现的频繁模式的含义。这样的注解蕾丝词典，提供关于项的语义信息。这些信息包括语境提示符（例如，指示模式语境的术语）/最具代表性的事务（例如，包括该术语的片段或语句）和语义最相似的模式。这种注解从不同角度提供了模式的语境视图，有助于理解它们。 频繁模式挖掘具有形形色色的应用，涵盖从基于模式的数据清理，到基于模式的分类、聚类、离群点或异常分析。  </description>
-    </item>
-    
-    <item>
-      <title>Association：Practise</title>
-      <link>https://www.m1sty.com/2021/dm_association_5_practise/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_association_5_practise/</guid>
-      <description>#we run apriori on the order_data.csv file import math import pandas as pd from mlxtend.preprocessing import TransactionEncoder from mlxtend.frequent_patterns import apriori from mlxtend.frequent_patterns import association_rules data = pd.read_csv(r&amp;#34;order_data.csv&amp;#34;,delimiter=&amp;#34; &amp;#34;,header=None) #preprocessing: change to one hot encoding so as to be able to use apriori from mlxtend d=data.values.tolist() #removing nan values for i in range(len(d)): j=0 while(True): if (type(d[i][j])==float and math.isnan(d[i][j])) : del d[i][j] j-=1 j+=1 if (j&amp;gt;len(d[i])-1): break te = TransactionEncoder() te_ary = te.</description>
+      <guid>https://www.m1sty.com/2021/dm_regression_5_pracitise_linear-regression/</guid>
+      <description>线性回归 一元线性回归 相关分析 一元线性回归模型  模型中的x称为自变量，y称为因变量; a为模型的截距项，b为模型的斜率项，ε为模型的误差项; 误差项ε的存在主要是为了平衡等号两边的值，通常被称为模型 无法解释的部分; 如果拟合线能够精确地捕捉到每一个点(即所有散点全部落在拟合线上)，那么对应的误差项ε应该为0; 所以，模型拟合的越好，则误差项ε应该越小。进而可以理解为: 求解参数的问题便是求解误差平方和最小的问题。  参数a和b求解  J(a,b)为目标函数，需求解该函数的最小值； 求解方法便是计算目标函数关于参数a和b的两个偏导数，最终令偏倒数为0即可。  模型的应用 # 导入第三方模块 import statsmodels.api as sm sm.ols(formula, data, subset=None, drop_cols=None)  formula:以字符串的形式指定线性回归模型的公式，如&amp;rsquo;y~x&amp;rsquo;就表示简单线性回归模型 data:指定建模的数据集 subset:通过bool类型的数组对象，获取data的子集用于建模 drop_cols:指定需要从data中删除的变量  # 导入第三方模块 import pandas as pd import statsmodels.api as sm # 导入数据 income = pd.read_csv(&amp;#39;Salary_Data.csv&amp;#39;) # 利用收入数据集，构建回归模型 fit = sm.formula.ols(&amp;#39;Salary ~ YearsExperience&amp;#39;, data = income).fit() # 返回模型的参数值 fit.params # 相关系数 income.columns income.Salary.corr(income.YearsExperience) 多元线性回归 定义  对于一元线性回归模型来说，其反映的是单个自变量对因变量的影响，然而实际情况中，影 响因变量的自变量往往不止一个，从而需要将一元线性回归模型扩展到多元线性回归模型。  参数求解 模型的应用  数据集包含5个变量，分别是产品的研发成本、管理成本、市场营销成本、销售市场和销 售利润。  # 导入模块 from sklearn import model_selection # 导入数据 Profit = pd.</description>
     </item>
     
     <item>
@@ -576,7 +595,7 @@ Alter table tabname drop primary key(col)</description>
     </item>
     
     <item>
-      <title>数据分析师学习路径</title>
+      <title>数据分析学习路径</title>
       <link>https://www.m1sty.com/2020/overview_data-analyst_map/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
       

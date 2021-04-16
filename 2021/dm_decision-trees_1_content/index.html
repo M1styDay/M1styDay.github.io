@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/" />
+  <link rel="next" href="https://www.m1sty.com/2021/eb_lecture2_business-disruption/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_decision-trees_1_content/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Decision Trees：Content | M1sty
+       
+  </title>
+  <meta name="title" content="Decision Trees：Content | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Decision Trees：Content",
+    "headline" : "Decision Trees：Content",
+    "description" : "Decisision Trees Classification Definition  Given a collection of records (training set)  Each record contains a set of attributes, one of the attributes is the Class.   Find a model for Class attribute as a function of the values of other attributes Goal: previously unseen records should be assigned a Class as accurately as possible  A test set is used to determine the accuracy of the model. Usually, the given data set is divided into training and test sets, with training set used to build the model and test set used to validate it.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-04-10 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-04-10 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_decision-trees_1_content\/",
+    "wordCount" : "1427",
+    "keywords" : [ "Decistion Trees","HKU", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Decision Trees：Content</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-04-10 itemprop="datePublished">April 10, 2021</time>
+           </span> (<span class="post-word-count">1427 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#classification">Classification</a>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#facts-about-classification">Facts about Classification</a></li>
+        <li><a href="#classification-techniques">Classification Techniques</a></li>
+      </ul>
+    </li>
+    <li><a href="#decision-tree">Decision Tree</a>
+      <ul>
+        <li><a href="#example-of-a-decision-tree">Example of a Decision Tree</a></li>
+        <li><a href="#induction">Induction</a></li>
+        <li><a href="#hunts-algorithm">Hunt&rsquo;s Algorithm</a></li>
+        <li><a href="#general-structure-of-tree-induction">General structure of tree induction</a></li>
+        <li><a href="#--how-to-specify-test-condition">- How to Specify Test Condition?</a></li>
+        <li><a href="#--how-to-determine-the-best-split">- How to determine the Best Split?</a></li>
+        <li><a href="#--when-to-stop-splitting">- When to Stop Splitting</a></li>
+        <li><a href="#advantages-of-decision-tree-based-classification">Advantages of Decision Tree Based Classification</a></li>
+        <li><a href="#decision-tree-algorithm-c45">Decision Tree Algorithm: C4.5</a></li>
+      </ul>
+    </li>
+    <li><a href="#practical-issues-of-classification">Practical Issues of Classification</a>
+      <ul>
+        <li><a href="#underfitting-and-overfitting">Underfitting and Overfitting</a></li>
+        <li><a href="#generalization-and-training-errors">Generalization and training errors</a></li>
+        <li><a href="#how-to-address-overfitting">How to Address Overfitting</a></li>
+      </ul>
+    </li>
+    <li><a href="#decision-trees-issues">Decision Trees: Issues</a>
+      <ul>
+        <li><a href="#data-fragmentation">Data Fragmentation</a></li>
+        <li><a href="#search-strategy">Search Strategy</a></li>
+        <li><a href="#expressiveness">Expressiveness</a></li>
+        <li><a href="#tree-replication">Tree Replication</a></li>
+      </ul>
+    </li>
+    <li><a href="#pseudocode">pseudocode</a>
+      <ul>
+        <li><a href="#simple-decision-tree">Simple Decision Tree</a></li>
+        <li><a href="#postpruning">Postpruning</a></li>
+      </ul>
+    </li>
+    <li><a href="#random-forest">Random Forest</a>
+      <ul>
+        <li><a href="#the-random-forest-classifier">The Random Forest Classifier</a></li>
+        <li><a href="#main-idea">Main Idea</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="decisision-trees">Decisision Trees</h1>
+<h2 id="classification">Classification</h2>
+<h3 id="definition">Definition</h3>
+<ul>
+<li>Given a collection of records (training set)
+<ul>
+<li>Each record contains a set of attributes, one of the attributes is the Class.</li>
+</ul>
+</li>
+<li>Find a model for Class attribute as a function of the values of other attributes</li>
+<li>Goal: previously unseen records should be assigned a Class as accurately as possible
+<ul>
+<li>A test set is used to determine the accuracy of the model. Usually, the given data set is divided into training and test sets, with training set used to build the model and test set used to validate it.</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>Predicting tumor cells as benign or malignant</li>
+<li>Classifying credit card transactions as legitimate or fraudulent</li>
+<li>Classifying secondary structures of protein as alpha-helix, beta-sheet, or random coil</li>
+<li>Categorizing news stories as finance, weather, entertainment, sports, etc</li>
+</ul>
+</li>
+</ul>
+<h4 id="illustrating-classification-task">Illustrating Classification Task</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415145322.png" alt=""></p>
+<h3 id="facts-about-classification">Facts about Classification</h3>
+<ul>
+<li>Attributes might be discrete or continuous, however, the class must be discrete.</li>
+<li>If the class is continuous then regression.</li>
+<li>Both descriptive and predictive.</li>
+<li>Most suited for binaries or nominal attributes, less effective for ordinal because ignores orders.</li>
+</ul>
+<h3 id="classification-techniques">Classification Techniques</h3>
+<ul>
+<li>Decision Tree based Methods</li>
+<li>Rule-based Methods</li>
+<li>Memory based reasoning Neural Networks</li>
+<li>Naïve Bayes and Bayesian Belief Networks</li>
+<li>Support Vector Machines</li>
+</ul>
+<h2 id="decision-tree">Decision Tree</h2>
+<h3 id="example-of-a-decision-tree">Example of a Decision Tree</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415150052.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415150113.png" alt=""></p>
+<h4 id="decision-tree-classification-task">Decision Tree Classification Task</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415150149.png" alt=""></p>
+<h4 id="apply-model-to-test-data">Apply Model to Test Data</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415150233.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415150524.png" alt=""></p>
+<h3 id="induction">Induction</h3>
+<ul>
+<li>Many Algorithms
+<ul>
+<li>Hunt’s Algorithm (one of the earliest)</li>
+<li>CART</li>
+<li>ID3, C4.5</li>
+<li>SLIQ,SPRINT</li>
+</ul>
+</li>
+</ul>
+<h3 id="hunts-algorithm">Hunt&rsquo;s Algorithm</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415152329.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415152306.png" alt=""></p>
+<h3 id="general-structure-of-tree-induction">General structure of tree induction</h3>
+<ul>
+<li>Based on a greedy strategy:
+<ul>
+<li>Split the records based on an attribute test that optimizes certain criterion.</li>
+</ul>
+</li>
+<li>We need to determine:
+<ul>
+<li>How to split the records:
+<ul>
+<li>How to split the attribute test condition?</li>
+<li>How to determine the best split?</li>
+</ul>
+</li>
+<li>When to stop splitting</li>
+</ul>
+</li>
+</ul>
+<h3 id="--how-to-specify-test-condition">- How to Specify Test Condition?</h3>
+<ul>
+<li>
+<p>Depends on attribute types:</p>
+<ul>
+<li>Nominal(or categorical), have 2 or more categories, no order.(USA, Spain)</li>
+<li>Ordinal, 2 or more categories but can ordered or ranked.(S,M,L,XL,XXL)</li>
+<li>Continuous Ordinal.(temperature, salary)</li>
+</ul>
+</li>
+<li>
+<p>Depends on numver of ways to split</p>
+<ul>
+<li>2-way split</li>
+<li>Multi-way split</li>
+</ul>
+</li>
+</ul>
+<h4 id="splitting-based-on-nominal-attributes">Splitting Based on Nominal Attributes</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415154003.png" alt=""></p>
+<h4 id="splitting-based-on-ordinal-attributes">Splitting Based on Ordinal Attributes</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415153819.png" alt=""></p>
+<h4 id="splitting-based-on-continuous-attributes">Splitting Based on Continuous Attributes</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415153928.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415153945.png" alt=""></p>
+<h3 id="--how-to-determine-the-best-split">- How to determine the Best Split?</h3>
+<ul>
+<li>Greedy approach:
+<ul>
+<li>Nodes with homogeneous Class distribution are preferred</li>
+</ul>
+</li>
+<li>Need a measure of node impurity</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415154903.png" alt=""></p>
+<ul>
+<li>Measures of Node Impurity
+<ul>
+<li>Gini Index</li>
+<li>Entropy</li>
+<li>MisClassification error</li>
+</ul>
+</li>
+</ul>
+<h4 id="gini-index">Gini Index</h4>
+<h5 id="measure-of-impurity-gini">Measure of Impurity: Gini</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415155133.png" alt=""></p>
+<h5 id="examples-for-computing-gini">Examples for computing Gini</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415155206.png" alt=""></p>
+<h5 id="splitting-based-on-gini">Splitting Based on Gini</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415155241.png" alt=""></p>
+<h5 id="binary-attributes-computing-gini">Binary Attributes: Computing Gini</h5>
+<ul>
+<li>Splits into two partitions</li>
+<li>Effect of Weighing partitions:
+<ul>
+<li>Larger and Purer Partitions are sought for.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415155727.png" alt=""></p>
+<h5 id="find-best-gini">Find best Gini</h5>
+<ul>
+<li>
+<p>Categorical Attributes</p>
+<ul>
+<li>For each distinct value, gather counts for each Class in the dataset</li>
+<li>Use the count matrix to make decisions
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415160332.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p>Continuous Attributes</p>
+<ul>
+<li>Input: N records, attribute A</li>
+<li>Output: value v with min Gini for A</li>
+<li>Naive:
+<ul>
+<li>let v1&hellip;vN be the values of A in the N records</li>
+<li>compute Gini for each of them, return the min</li>
+<li>requires O(N^2) operations, too expensive!</li>
+</ul>
+</li>
+<li>Better strategy
+<ul>
+<li>Sort the records non-decreasingly: v1&lt;=v2,&hellip;,&lt;=vN</li>
+<li>compute Gini index for each of them incrementally</li>
+<li>return the candidate with minimum Gini</li>
+<li>Running time: O (N log N)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415160632.png" alt=""></p>
+<h4 id="entropy">Entropy</h4>
+<h5 id="alternative-splitting-criteria-based-on-info">Alternative Splitting Criteria based on INFO</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415161051.png" alt=""></p>
+<h5 id="examples-for-computing-entropy">Examples for computing Entropy</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415161210.png" alt=""></p>
+<h5 id="splitting-based-on-information-theory">Splitting Based on Information Theory</h5>
+<ul>
+<li>Information Gain</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415161312.png" alt=""></p>
+<ul>
+<li>Gain Ratio</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415161343.png" alt=""></p>
+<h4 id="misclassification-error">MisClassification error</h4>
+<h5 id="splitting-criteria-based-on-classification-error">Splitting Criteria based on Classification Error</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415161652.png" alt=""></p>
+<h5 id="examples-for-computing-error">Examples for Computing Error</h5>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415161727.png" alt=""></p>
+<h4 id="comparison-among-splitting-criteria">Comparison among Splitting Criteria</h4>
+<ul>
+<li>Binary Classification (2 Classes)</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415162128.png" alt=""></p>
+<ul>
+<li>More about splitting criteria
+<ul>
+<li>Studies have shown that the choice of impurity measure has little effect on the final result</li>
+<li>The strategy used to prune the tree (decrease its size and complexity) has a much bigger impact. More on this later&hellip;</li>
+</ul>
+</li>
+</ul>
+<h3 id="--when-to-stop-splitting">- When to Stop Splitting</h3>
+<ul>
+<li>Stopping Criteria for Tree Induction
+<ul>
+<li>Stop expanding a node when all the records belong to the same Class</li>
+<li>Stop expanding a node when all the records have similar attribute values (e.g. similar salaries)</li>
+<li>Early termination (to be discussed later)</li>
+</ul>
+</li>
+</ul>
+<h3 id="advantages-of-decision-tree-based-classification">Advantages of Decision Tree Based Classification</h3>
+<ul>
+<li>Inexpensive to construct</li>
+<li>Extremely fast at Classifying unknown records</li>
+<li>Easy to interpret for small-sized trees</li>
+<li>Accuracy is comparable to other Classification techniques for many tasks</li>
+</ul>
+<h3 id="decision-tree-algorithm-c45">Decision Tree Algorithm: C4.5</h3>
+<ul>
+<li>#1 in the top 10 DM algorithm according to Springer LNCS (2008)*</li>
+<li>Simple depth-first construction.</li>
+<li>Uses Information Gain</li>
+<li>Needs entire data to fit in memory.</li>
+<li>Unsuitable for Large Datasets.</li>
+</ul>
+<h4 id="example-web-robot-detection">Example: Web-Robot detection</h4>
+<ul>
+<li>Problem: Given a Web log, detect which accesses are made by humans and which ones by robots (e.g. crawlers)</li>
+<li>Input: a list of accesses to a Web site with the info:
+<ul>
+<li>IP address</li>
+<li>average breadth of page visits</li>
+<li>average depth of page visits</li>
+<li>repeated access: how many times a same web page is accessed on average</li>
+<li>number of images retrieved</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415165415.png" alt=""></p>
+<ul>
+<li>Results
+<ul>
+<li>Web robots tend to access as many pages as possible =&gt; visits are broad but shallow.</li>
+<li>Web robots rarely download pictures.</li>
+<li>Web robots are more likely to make repeated requests to a same Web page (Web pages retrieved by humans are often cached).</li>
+</ul>
+</li>
+</ul>
+<h2 id="practical-issues-of-classification">Practical Issues of Classification</h2>
+<ul>
+<li>Underfitting and Overfitting</li>
+<li>Missing Values</li>
+<li>Costs of Classification</li>
+</ul>
+<h3 id="underfitting-and-overfitting">Underfitting and Overfitting</h3>
+<h4 id="description">Description</h4>
+<ul>
+<li>Our main goal is to find a model that predicts the Class values on unseen records. We might have:
+<ul>
+<li>underfitting: the model did not learn the structure of the data and performs poorly on both the training set and the test set.</li>
+<li>overfitting: the model becomes too specialized, describes well the training data but not unseen records. Good in training set but poor in the test set.</li>
+</ul>
+</li>
+<li>Might have overfitting when decision tree is too large e.g. one record per leaf, which means tree size &gt; dataset size.</li>
+</ul>
+<h4 id="example-of-underfitting-and-overfitting">Example of underfitting and overfitting</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415165818.png" alt=""></p>
+<h4 id="results">Results</h4>
+<ul>
+<li>Results after building a decision tree on the previous dataset.</li>
+<li>Note that more sophisticated decision trees (larger # nodes) deliver good results in the training set but poor in the test set.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415165946.png" alt=""></p>
+<h4 id="overfitting">Overfitting</h4>
+<ul>
+<li>Overfitting due to Noise</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415170225.png" alt=""></p>
+<ul>
+<li>
+<p>Overfitting due to insufficient examples
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415170235.png" alt=""></p>
+</li>
+<li>
+<p>notes on overfitting</p>
+<ul>
+<li>Overfitting results in decision trees that are more complex than necessary</li>
+<li>Training error no longer provides a good estimate of how well the tree will perform on previously unseen records</li>
+<li>Need new ways for estimating errors</li>
+</ul>
+</li>
+</ul>
+<h3 id="generalization-and-training-errors">Generalization and training errors</h3>
+<ul>
+<li>Our main goal: the decision tree should generalize well to previously unseen data</li>
+<li>Two main errors
+<ul>
+<li>Training(aka resubstitution) errors: on training set</li>
+<li>Generalization errors: errors on testing set</li>
+</ul>
+</li>
+</ul>
+<h4 id="occams-razororp">Occam&rsquo;s Razor(ORP)</h4>
+<ul>
+<li>ORP: Given two models with similar generalization errors, one should prefer the simpler model over the more complex model</li>
+<li>For complex models, there is a greater chance that it was fitted accidentally by errors in data</li>
+<li>Therefore, one should include model complexity when evaluating a model</li>
+</ul>
+<h4 id="estimating-generalization-errors">Estimating Generalization Errors</h4>
+<ul>
+<li>Optimistic approach: ideal training test, generalization errors=training errors.</li>
+<li>Penalty for model complexity (not ideal training set, in line with ORP)
+<ul>
+<li>Pessimistic estimate:
+<ul>
+<li>Gener. error = training error + 0.5 x #of leaves.</li>
+<li>E.g. Tree with 30 leaves,10 errors on training (1000 instances):
+<ul>
+<li>Gener. error = 10 + 30×0.5 = 25</li>
+<li>Normalized gener. error = (10 + 30×0.5)/1000 = 2.5%</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Minimum Description Length (MDL)</li>
+</ul>
+</li>
+</ul>
+<h4 id="minimum-description-length-mdl">Minimum Description Length (MDL)</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415171242.png" alt=""></p>
+<h3 id="how-to-address-overfitting">How to Address Overfitting</h3>
+<ul>
+<li>
+<p>pre-pruning (Early Stopping Rule)</p>
+<ul>
+<li>Stop the algorithm before it becomes a fully-grown tree</li>
+<li>Typical stopping conditions for a node:
+<ul>
+<li>Stop if all instances belong to the same Class</li>
+<li>Stop if all the attribute values are the same</li>
+</ul>
+</li>
+<li>More restrictive conditions:
+<ul>
+<li>Stop if number of instances per node is less than some threshold</li>
+<li>Stop if Class distribution of instances are independent of the available features (e.g., using χ 2 test to test variables indep.)</li>
+<li>Stop if expanding the current node does not improve impurity measures (e.g., Gini or information gain).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>post-pruning(after building the tree)</p>
+<ul>
+<li>Grow decision tree to its entirety</li>
+<li>Trim the nodes of the decision tree in a bottom-up fashion</li>
+<li>If generalization error improves after trimming, replace sub-tree by a leaf node.</li>
+<li>Class label of leaf node is determined from majority Class of instances in the sub-tree</li>
+<li>Better than pre-pruning but more operations.</li>
+</ul>
+</li>
+</ul>
+<h4 id="example-of-post-pruning">Example of Post-Pruning</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415171536.png" alt=""></p>
+<h4 id="example-web-robot-detection-1">Example: Web-Robot detection</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415171637.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415171649.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415171705.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415171715.png" alt=""></p>
+<h2 id="decision-trees-issues">Decision Trees: Issues</h2>
+<h3 id="data-fragmentation">Data Fragmentation</h3>
+<ul>
+<li>Number of instances gets smaller as you traverse down the tree</li>
+<li>Number of instances at the leaf nodes could be too small to make any statistically significant decision</li>
+</ul>
+<h3 id="search-strategy">Search Strategy</h3>
+<ul>
+<li>Finding an optimal decision tree is NP-hard</li>
+<li>The algorithm presented so far uses a greedy, top-down, recursive partitioning strategy to induce a reasonable solution</li>
+<li>Other strategies?
+<ul>
+<li>Bottom-up</li>
+<li>Bi-directional</li>
+</ul>
+</li>
+</ul>
+<h3 id="expressiveness">Expressiveness</h3>
+<ul>
+<li>
+<p>Decision tree works often well for discrete functions:</p>
+<ul>
+<li>Not always:
+<ul>
+<li>Example: parity function:
+<ul>
+<li>Class = 1 if even number of Boolean attributes with truth value = True</li>
+<li>Class = 0 otherwise</li>
+</ul>
+</li>
+<li>For accurate modeling, must have a complete tree (2^d nodes, where d is the number of boolean attributes)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Not expressive enough for modeling continuous variables</p>
+<ul>
+<li>Particularly when test condition involves only a single attribute at-a-time</li>
+</ul>
+</li>
+<li>
+<p>Decision Boundary
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415172541.png" alt=""></p>
+</li>
+<li>
+<p>Oblique Decision Trees
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415172620.png" alt=""></p>
+</li>
+</ul>
+<h3 id="tree-replication">Tree Replication</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210415172640.png" alt=""></p>
+<h2 id="pseudocode">pseudocode</h2>
+<h3 id="simple-decision-tree">Simple Decision Tree</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210416111954.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210416112019.png" alt=""></p>
+<h3 id="postpruning">Postpruning</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210416112047.png" alt=""></p>
+<h2 id="random-forest">Random Forest</h2>
+<h3 id="the-random-forest-classifier">The Random Forest Classifier</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210416112150.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210416112204.png" alt=""></p>
+<h3 id="main-idea">Main Idea</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210416112228.png" alt=""></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dm_decision-trees_1_content/>https://www.m1sty.com/2021/dm_decision-trees_1_content/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/decistion-trees/">
+                    #Decistion Trees</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/" class="prev" rel="prev" title="Lecture1：Business Order; Chaos and Complexity"><i class="iconfont icon-left"></i>&nbsp;Lecture1：Business Order; Chaos and Complexity</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/eb_lecture2_business-disruption/" class="next" rel="next" title="Lecture2：Business Disruption">Lecture2：Business Disruption&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>
