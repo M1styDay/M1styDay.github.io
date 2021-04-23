@@ -6,7 +6,17 @@
     <description>Recent content in Practise on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/practise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/practise/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KNN：Practise</title>
+      <link>https://www.m1sty.com/2021/dm_knn_5_practise/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_knn_5_practise/</guid>
+      <description>K近邻模型 模型思想 模型介绍 模型的本质就是寻找k个最近样本,然后基于最近样本做“预测”。对于离散型的因变量来说,从k个最近的已知类别样本中挑选出频率最高的类别用于未知样本的判断;对于连续型的因变量来说,则是将k个最近的已知样本均 值用作未知样本的预测。
+执行步骤  确定未知样本近邻的个数k值。 根据某种度量样本间相似度的指标(如欧氏距离)将每一个末知类别样本的最近k个已知样本搜寻出来,形成一个个簇。 对搜寻出来的已知样本进行投票,将各簇下类别最多的分类用作未知样本点的预测。  K值的选择 不同的K值带来的影响  根据经验发现，不同的k值对模型的预测准确性会有比较大的影响，如果k值过于偏小，可能会导致模型的过拟合；反之，又可能会使模型进入欠拟合状态。  设置投票权重/多重交叉检验  k值的选择，一种是设置k近邻样本的投票权重，使用KNN算法进行分类或预测时设置的k值比较大，担心模型发生欠拟合的现象，一个简单有效的处理办法就是设置近邻样本的投票权重，如果已知样本距离未知样本比较远，则对应的权重就设置得低一些，否则权重就高一些，通常可以将权重设置为距离的倒数。 另一种是采用多重交叉验证法，该方法是目前比较流行的方案，其核心就是将k取不同的值，然后在每种值下执行m重的交叉验证，最后选出平均误差最小的k值。 也可以将两种方法结合，选出理想的k值。  距离度量 欧氏距离 曼哈顿距离 余弦相似度 代码 函数说明 代码演示 Example 1 # 导入第三方包 import pandas as pd # 导入数据 Knowledge = pd.read_excel(r&amp;#39;Knowledge.xlsx&amp;#39;) # 返回前5行数据 Knowledge.head() # 构造训练集和测试集 # 导入第三方模块 from sklearn import model_selection # 将数据集拆分为训练集和测试集 predictors = Knowledge.columns[:-1] X_train, X_test, y_train, y_test = model_selection.train_test_split(Knowledge[predictors], Knowledge.UNS, test_size = 0.25, random_state = 1234) # 导入第三方模块 import numpy as np from sklearn import neighbors import matplotlib.</description>
+    </item>
+    
     <item>
       <title>Naive Bayes Class：Practise</title>
       <link>https://www.m1sty.com/2021/dm_naive-bayes-class_5_practise/</link>

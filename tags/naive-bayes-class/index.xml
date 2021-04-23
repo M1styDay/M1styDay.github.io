@@ -13,7 +13,7 @@
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_naive-bayes-class_1_content/</guid>
-      <description>Naive Bayes Class Bayes Classifier Example of Bayes Theorem Bayesian Classifiers Naïve Bayes Classifier How to Estimate Probabilities from Data? Example of Naïve Bayes Classifier Note on Probability Density Functions Naïve Bayes Classifier Example of Naïve Bayes Classifier Naive Bayes: Handling Missing values Naïve Bayes (Summary)  Robust to isolated noise points Handle missing values by ignoring the instance during probability estimate calculations Robust to irrelevant attributes Independence assumption:  independence when class is given.</description>
+      <description>Naive Bayes Class Bayes Classifier Example of Bayes Theorem Bayesian Classifiers Naïve Bayes Classifier How to Estimate Probabilities from Data? Example of Naïve Bayes Classifier Note on Probability Density Functions Naïve Bayes Classifier Example of Naïve Bayes Classifier Handling Missing values Summary  Robust to isolated noise points Handle missing values by ignoring the instance during probability estimate calculations Robust to irrelevant attributes Independence assumption:  independence when class is given.</description>
     </item>
     
     <item>
