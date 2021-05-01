@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_classifier_4_more/" />
+  
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_classifier_1_content/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Classifier：Content(ClassifierEvaluation) | M1sty
+       
+  </title>
+  <meta name="title" content="Classifier：Content(ClassifierEvaluation) | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Classifier：Content(ClassifierEvaluation)",
+    "headline" : "Classifier：Content(ClassifierEvaluation)",
+    "description" : "Model Evaluation  Metrics for Performance Evaluation  How to evaluate the performance of a model?   Methods for Performance Evaluation  How to obtain reliable estimates?   Methods for Model Comparison  How to compare the relative performance among competing models?    Metrics for Performance Evaluation Confusion Matrix  Focus on the predictive capability of a model  Rather than running time, scalability, etc.   Confusion Matrix:   Most widely-used metric:  Limitation of Accuracy  Consider a 2-Class problem  Number of Class 1 examples = 10 Number of Class 0 examples = 9990   If model predicts everything to be Class 0, accuracy is 9990\/10000 = 99.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-04-30 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-04-30 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_classifier_1_content\/",
+    "wordCount" : "442",
+    "keywords" : [ "Classifier","HKU", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Classifier：Content(ClassifierEvaluation)</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-04-30 itemprop="datePublished">April 30, 2021</time>
+           </span> (<span class="post-word-count">442 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#model-evaluation">Model Evaluation</a></li>
+    <li><a href="#metrics-for-performance-evaluation">Metrics for Performance Evaluation</a>
+      <ul>
+        <li><a href="#confusion-matrix">Confusion Matrix</a></li>
+        <li><a href="#limitation-of-accuracy">Limitation of Accuracy</a></li>
+        <li><a href="#alternative-measures-precision-recall-f-1">Alternative Measures: Precision, Recall, F-1</a></li>
+      </ul>
+    </li>
+    <li><a href="#methods-for-performance-evaluation">Methods for Performance Evaluation</a>
+      <ul>
+        <li><a href="#methods-of-estimation">Methods of Estimation</a></li>
+        <li><a href="#cross-validation-to-estimate-parameter">Cross Validation to Estimate Parameter</a></li>
+      </ul>
+    </li>
+    <li><a href="#methods-for-model-comparison">Methods for Model Comparison</a>
+      <ul>
+        <li><a href="#test-of-significance">Test of Significance</a></li>
+        <li><a href="#approximating-normal-distribution">Approximating Normal Distribution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h2 id="model-evaluation">Model Evaluation</h2>
+<ul>
+<li>Metrics for Performance Evaluation
+<ul>
+<li>How to evaluate the performance of a model?</li>
+</ul>
+</li>
+<li>Methods for Performance Evaluation
+<ul>
+<li>How to obtain reliable estimates?</li>
+</ul>
+</li>
+<li>Methods for Model Comparison
+<ul>
+<li>How to compare the relative performance among competing models?</li>
+</ul>
+</li>
+</ul>
+<h2 id="metrics-for-performance-evaluation">Metrics for Performance Evaluation</h2>
+<h3 id="confusion-matrix">Confusion Matrix</h3>
+<ul>
+<li>Focus on the predictive capability of a model
+<ul>
+<li>Rather than running time, scalability, etc.</li>
+</ul>
+</li>
+<li>Confusion Matrix:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210430225315.png" alt=""></p>
+<ul>
+<li>Most widely-used metric:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210430225353.png" alt=""></p>
+<h3 id="limitation-of-accuracy">Limitation of Accuracy</h3>
+<ul>
+<li>Consider a 2-Class problem
+<ul>
+<li>Number of Class 1 examples = 10</li>
+<li>Number of Class 0 examples = 9990</li>
+</ul>
+</li>
+<li>If model predicts everything to be Class 0, accuracy is 9990/10000 = 99.9 %
+<ul>
+<li>Misleading: model does not detect any Class 1 example</li>
+<li>Detecting the rare class is usually more interesting (frauds, intrusions, etc.)</li>
+</ul>
+</li>
+</ul>
+<h3 id="alternative-measures-precision-recall-f-1">Alternative Measures: Precision, Recall, F-1</h3>
+<ul>
+<li>
+<p>Easy to get only high precision: ‘Yes’ only for instances we are “sure” about (e.g. easy to classify “robot” if 1000 pages/sec. collected) =&gt; low recall</p>
+</li>
+<li>
+<p>Trivial to get only high recall: classify all instances as ‘Yes’ =&gt; low precision
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210501003035.png" alt=""></p>
+</li>
+<li>
+<p>F-measure is the harmonic mean of p and r, which penalizes very small recall or very small precision
+<img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210501235010.png" alt=""></p>
+</li>
+<li>
+<p>E.g. : Harmonic Mean (1,2,4) = 1/ (1/3 (1+1/2+/1/4)) = 12/7 (reciprocal of the arithmetic mean of the reciprocals)</p>
+</li>
+<li>
+<p>It can be shown min (x1,&hellip;,xn) &lt;= H(x1,&hellip;,xn) &lt;= n * min (x1,&hellip;,xn)</p>
+<ul>
+<li>min is very small then harmonic mean is very small.</li>
+</ul>
+</li>
+</ul>
+<h2 id="methods-for-performance-evaluation">Methods for Performance Evaluation</h2>
+<ul>
+<li>How to obtain a reliable estimate of performance?</li>
+<li>Performance of a model may depend on other factors besides the learning algorithm:
+<ul>
+<li>Class distribution</li>
+<li>Cost of misclassification</li>
+<li>Size of training and test sets</li>
+</ul>
+</li>
+</ul>
+<h3 id="methods-of-estimation">Methods of Estimation</h3>
+<ul>
+<li>Holdout
+<ul>
+<li>Reserve random 2/3 for training and 1/3 for testing</li>
+</ul>
+</li>
+<li>Random subsampling
+<ul>
+<li>Repeated holdout (compute the average)</li>
+</ul>
+</li>
+<li>Cross validation
+<ul>
+<li>Partition data into k disjoint subsets of the same size</li>
+<li>k-fold: train on k-1 sets, test on the remaining one. Repeat k times, each subset being used exactly once for testing. Compute the average of the results.</li>
+<li>Leave-one-out: k=n, (n-1 records training test, 1 test set)</li>
+</ul>
+</li>
+<li>Bootstrap
+<ul>
+<li>Sampling with replacement</li>
+</ul>
+</li>
+</ul>
+<h3 id="cross-validation-to-estimate-parameter">Cross Validation to Estimate Parameter</h3>
+<ul>
+<li>Goal
+<ul>
+<li>is classifier C1 better than C2?</li>
+<li>which parameter for C1 or C2? max height? k in k-nn?</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>perform k-fold cross validation for C1 and C2.Compute average accuracy, use best one.</li>
+<li>perform k-fold cross validation for different parameter values and use best one.</li>
+</ul>
+</li>
+</ul>
+<h2 id="methods-for-model-comparison">Methods for Model Comparison</h2>
+<h3 id="test-of-significance">Test of Significance</h3>
+<ul>
+<li>Use statistic tools to estimate the value of a parameter in a population (e.g. Wilson score interval, Jeffrey intervals, Clopper-Pearson, etc. )</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210502000107.png" alt=""></p>
+<h3 id="approximating-normal-distribution">Approximating Normal Distribution</h3>
+<ul>
+<li>Normal distribution
+<ul>
+<li>does not work well if N&lt;30, or p is close to 0 or 1</li>
+<li>rule of thumb: Np&gt;5 and N(1-p)&gt;5</li>
+</ul>
+</li>
+<li>More sophisticated techniques: Wilson score interval, Jeffrey intervals, Clopper-Pearson interval</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210502000303.png" alt=""></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dm_classifier_1_content/>https://www.m1sty.com/2021/dm_classifier_1_content/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/classifier/">
+                    #Classifier</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/dm_classifier_4_more/" class="prev" rel="prev" title="Classifier：More"><i class="iconfont icon-left"></i>&nbsp;Classifier：More</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>

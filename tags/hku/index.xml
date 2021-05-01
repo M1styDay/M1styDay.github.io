@@ -6,7 +6,16 @@
     <description>Recent content in HKU on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Classifier：Content(ClassifierEvaluation)</title>
+      <link>https://www.m1sty.com/2021/dm_classifier_1_content/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_classifier_1_content/</guid>
+      <description>Model Evaluation  Metrics for Performance Evaluation  How to evaluate the performance of a model?   Methods for Performance Evaluation  How to obtain reliable estimates?   Methods for Model Comparison  How to compare the relative performance among competing models?    Metrics for Performance Evaluation Confusion Matrix  Focus on the predictive capability of a model  Rather than running time, scalability, etc.   Confusion Matrix:   Most widely-used metric:  Limitation of Accuracy  Consider a 2-Class problem  Number of Class 1 examples = 10 Number of Class 0 examples = 9990   If model predicts everything to be Class 0, accuracy is 9990/10000 = 99.</description>
+    </item>
+    
     <item>
       <title>KNN：Content</title>
       <link>https://www.m1sty.com/2021/dm_knn_1_content/</link>
