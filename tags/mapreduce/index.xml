@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MapReduce on M1sty</title>
+    <link>https://www.m1sty.com/tags/mapreduce/</link>
+    <description>Recent content in MapReduce on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/mapreduce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MapReduce：Content</title>
+      <link>https://www.m1sty.com/2021/dm_mapreduce_1_content/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_mapreduce_1_content/</guid>
+      <description>Data and Algorithms of the Web: MapReduce Introduction  Very large data collections (TB to PB) stored on distributed filesystems:  Query logs Search engine indexes Sensor data   Need efficient ways for analyzing, reformatting, processing them In particular, we want:  Parallelization of computation (benefiting of the processing power of all nodes in a cluster Resilience to failure    Centralized computing with distributed data storage  Run the program at client node, get data from the distributed system.</description>
+    </item>
+    
+  </channel>
+</rss>

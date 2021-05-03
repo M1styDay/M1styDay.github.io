@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/note_operational-issues/" />
+  <link rel="next" href="https://www.m1sty.com/2021/overview_data-analyst_detail/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_mapreduce_1_content/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           MapReduce：Content | M1sty
+       
+  </title>
+  <meta name="title" content="MapReduce：Content | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "MapReduce：Content",
+    "headline" : "MapReduce：Content",
+    "description" : "Data and Algorithms of the Web: MapReduce Introduction  Very large data collections (TB to PB) stored on distributed filesystems:  Query logs Search engine indexes Sensor data   Need efficient ways for analyzing, reformatting, processing them In particular, we want:  Parallelization of computation (benefiting of the processing power of all nodes in a cluster Resilience to failure    Centralized computing with distributed data storage  Run the program at client node, get data from the distributed system.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-05-02 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-05-02 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_mapreduce_1_content\/",
+    "wordCount" : "1671",
+    "keywords" : [ "MapReduce","HKU", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">MapReduce：Content</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-05-02 itemprop="datePublished">May 2, 2021</time>
+           </span> (<span class="post-word-count">1671 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#centralized-computing-with-distributed-data-storage">Centralized computing with distributed data storage</a></li>
+        <li><a href="#pushing-the-program-near-the-data">Pushing the program near the data</a></li>
+        <li><a href="#mapreduce-in-brief">MapReduce in Brief</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-mapreduce-computing-model">The MapReduce Computing Model</a>
+      <ul>
+        <li><a href="#three-operations-on-key-value-pairs">Three operations on key-value pairs</a></li>
+        <li><a href="#job-workflow-in-mapreduce">Job workflow in MapReduce</a></li>
+        <li><a href="#some-terminology-jobtaskmapperreducer">Some terminology: job,task,mapper,reducer</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#more-on-the-map-function">More on the map function</a></li>
+        <li><a href="#more-on-the-reduce-function">More on the reduce function</a></li>
+        <li><a href="#a-mapreduce-cluster">A MapReduce cluster</a></li>
+        <li><a href="#processing-a-mapreduce-job">Processing a MapReduce job</a></li>
+        <li><a href="#facts-about-mappers-and-reducers">Facts about mappers and reducers</a></li>
+        <li><a href="#distributed-execution-of-a-mapreduce-job">Distributed execution of a MapReduce job</a></li>
+        <li><a href="#failure-management">Failure management</a></li>
+        <li><a href="#adapting-algorithms-into-mapreduce">Adapting algorithms into MapReduce</a></li>
+      </ul>
+    </li>
+    <li><a href="#mapreduce-optimization">MapReduce Optimization</a>
+      <ul>
+        <li><a href="#combiners">Combiners</a></li>
+        <li><a href="#compression">Compression</a></li>
+        <li><a href="#optimizing-the-shuffle-operation">Optimizing the shuffle operation</a></li>
+      </ul>
+    </li>
+    <li><a href="#mapreduce-in-hadoop">MapReduce in Hadoop</a>
+      <ul>
+        <li><a href="#hadoop">Hadoop</a></li>
+        <li><a href="#hadoop-programming-interfaces">Hadoop programming interfaces</a></li>
+        <li><a href="#testing-and-executing-a-hadoop-job">Testing and executing a Hadoop job</a></li>
+        <li><a href="#debugging-mapreduce">Debugging MapReduce</a></li>
+        <li><a href="#hadoop-in-the-cloud">Hadoop in the cloud</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusions">Conclusions</a>
+      <ul>
+        <li><a href="#mapreduce-limitations">MapReduce limitations</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="data-and-algorithms-of-the-web-mapreduce">Data and Algorithms of the Web: MapReduce</h1>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>Very large data collections (TB to PB) stored on distributed filesystems:
+<ul>
+<li>Query logs</li>
+<li>Search engine indexes</li>
+<li>Sensor data</li>
+</ul>
+</li>
+<li>Need efficient ways for analyzing, reformatting, processing them</li>
+<li>In particular, we want:
+<ul>
+<li>Parallelization of computation (benefiting of the processing power of all nodes in a cluster</li>
+<li>Resilience to failure</li>
+</ul>
+</li>
+</ul>
+<h3 id="centralized-computing-with-distributed-data-storage">Centralized computing with distributed data storage</h3>
+<ul>
+<li>Run the program at client node, get data from the distributed system.</li>
+<li>Downsides: Significant amount of data is transferred. Cluster computing resources are not used.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503170430.png" alt=""></p>
+<h3 id="pushing-the-program-near-the-data">Pushing the program near the data</h3>
+<ul>
+<li>MapReduce: A programming model (inspired by standard functional programming operators) to facilitate the development and execution of distributed tasks.</li>
+<li>Published by Google Labs in 2004 at OSDI (DG04). Widely used since then, open-source implementation in Hadoop.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503180127.png" alt=""></p>
+<h3 id="mapreduce-in-brief">MapReduce in Brief</h3>
+<ul>
+<li>The programmer defines the program logic as two functions:
+<ul>
+<li>Map transforms the input into key-value pairs to process</li>
+<li>Reduce aggregates the list of values for each key</li>
+</ul>
+</li>
+<li>The MapReduce environment takes in charge distribution aspects</li>
+<li>A complex program can be decomposed as a succession of Map and Reduce tasks</li>
+<li>Higher-level languages (Pig, Hive, etc.) help with writing distributed applications</li>
+</ul>
+<h2 id="the-mapreduce-computing-model">The MapReduce Computing Model</h2>
+<h3 id="three-operations-on-key-value-pairs">Three operations on key-value pairs</h3>
+<ul>
+<li>User-defined:
+<ul>
+<li>map : (K,V) → list(K′,V′)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">function map(docOffset, document)
+    <span style="color:#66d9ef">while</span> (document<span style="color:#f92672">.</span>hasNext())
+        output (document<span style="color:#f92672">.</span>nextWord(), <span style="color:#ae81ff">1</span>)
+</code></pre></div><ul>
+<li>
+<p>Seamless to the programmer:</p>
+<ul>
+<li>shuffle : list(K′,V′) → list(K′,list(V′)) regroups all intermediate pairs on the key</li>
+</ul>
+</li>
+<li>
+<p>User-defined:</p>
+<ul>
+<li>reduce : (K′,list(V′)) → list(K′′,V′′)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">function reduce(word, parSums)
+    tot<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span> (parSums<span style="color:#f92672">.</span>hasNext())
+        tot <span style="color:#f92672">+=</span> parSums<span style="color:#f92672">.</span>next()
+    output (word, tot)
+</code></pre></div><h3 id="job-workflow-in-mapreduce">Job workflow in MapReduce</h3>
+<ul>
+<li>Important: each pair, at each phase, is processed independently from the other pairs.</li>
+<li>Network and distribution are transparently managed by the MapReduce environment.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503180758.png" alt=""></p>
+<h3 id="some-terminology-jobtaskmapperreducer">Some terminology: job,task,mapper,reducer</h3>
+<ul>
+<li>A MapReduce job is a unit of work that the client node seeks to perform. It consists mainly of the input data, the MapReduce program and configuration information.</li>
+<li>A MapReduce program might contain one or several jobs.</li>
+<li>Each job might consist of several map and reduce tasks.</li>
+<li>Mapper and Reducer: any node that executes either map or reduce tasks, respectively.</li>
+</ul>
+<h3 id="example">Example</h3>
+<h4 id="example-term-count-in-mapreduce-input">Example: term count in MapReduce (input)</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503184837.png" alt=""></p>
+<h4 id="example-term-count-in-mapreduce">Example: term count in MapReduce</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503184910.png" alt=""></p>
+<h3 id="more-on-the-map-function">More on the map function</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">function map(docOffset, document)
+    <span style="color:#66d9ef">while</span> (document<span style="color:#f92672">.</span>hasNext())
+        output (document<span style="color:#f92672">.</span>nextWord(), <span style="color:#ae81ff">1</span>)
+</code></pre></div><ul>
+<li>where docOffset is the physical address of document (handled by MapReduce). Why we output 1? Input is a data stream with sequential access (accessed through an Iterator in Java).</li>
+<li>More efficient: output partial sums rather than 1’s (keep some data in main memory).</li>
+<li>Best: use a combiner (more on this later).</li>
+</ul>
+<h3 id="more-on-the-reduce-function">More on the reduce function</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">function reduce(word, parSums)
+    tot<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span> (parSums<span style="color:#f92672">.</span>hasNext())
+        tot <span style="color:#f92672">+=</span> parSums<span style="color:#f92672">.</span>next()
+    output (word, tot)
+</code></pre></div><ul>
+<li>Each reduce task consists of aggregating partial sums. Note that reduce tasks are independent from each other and can be executed in parallel.</li>
+<li>If user requires more than one reducer, then reduce tasks are executed in parallel. E.g. two reducers, each taking care of 50% of words (ideal case).</li>
+<li>Otherwise no parallelism in the reduce tasks.</li>
+</ul>
+<h3 id="a-mapreduce-cluster">A MapReduce cluster</h3>
+<ul>
+<li>Nodes inside a MapReduce cluster can be classified as follows:
+<ul>
+<li>A jobtracker acts as a master node. It coordinates all the jobs run on the system, scheduling tasks to run on tasktrackers. It also keeps a record of the overall progress of each job. If a task fails, the job tracker can reschedule it.</li>
+<li>Several tasktrackers run the computation itself, i.e., map and reduce tasks and send progress report to the jobtracker.</li>
+<li>Tasktrackers usually also act as data nodes of a distributed filesystem (e.g., HDFS) + a client node where the application is launched.</li>
+</ul>
+</li>
+</ul>
+<h3 id="processing-a-mapreduce-job">Processing a MapReduce job</h3>
+<ul>
+<li>the input is divided into fixed-size pieces called splits (default size:64MB).</li>
+<li>MapReduce assigns one map task for each split, which runs the user-defined map function (assignment is based on the data locality principle).</li>
+<li>Map output is stored on a local disk (not HDFS), as it can be thrown away after reducers processed it.</li>
+</ul>
+<h4 id="remarks">Remarks</h4>
+<ul>
+<li>Data locality no longer hold for reducers, since they read from the mappers.</li>
+<li>Split size can be changed by the user. Small splits implies more parallelism, however, too many splits entails too much overhead in managing them.</li>
+</ul>
+<h3 id="facts-about-mappers-and-reducers">Facts about mappers and reducers</h3>
+<ul>
+<li>The number of mappers is function of the number of map tasks and the number of available nodes in the cluster.</li>
+<li>Assignment of data splits to mappers tries optimizing data locality: the mapper node in charge of a split is, if possible, one that stores a replica of this split.</li>
+<li>The number of reducers is set by the user.</li>
+<li>Map output is assigned to reducers by hashing of the key, usually uniformly at random to balance the load. No data locality possible.</li>
+</ul>
+<h3 id="distributed-execution-of-a-mapreduce-job">Distributed execution of a MapReduce job</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503211836.png" alt=""></p>
+<h3 id="failure-management">Failure management</h3>
+<ul>
+<li>Since tasks are distributed over thousands of machines, faulty machines are relatively common. Starting the job from the beginning is not a valid option.</li>
+<li>The jobtracker periodically checks the availability and reachability of the tasktrackers (heartbeats) and whether map or reduce jobs make any progress
+<ul>
+<li>if a reducer fails, its task is reassigned to another tasktracker; this usually requires restarting map tasks as well.</li>
+<li>if a mapper fails, its task is reassigned to another tasktracker</li>
+<li>if the jobtracker fails, the whole job should be re-executed</li>
+</ul>
+</li>
+</ul>
+<h3 id="adapting-algorithms-into-mapreduce">Adapting algorithms into MapReduce</h3>
+<ul>
+<li>
+<p>Prefer simple map and reduce functions</p>
+</li>
+<li>
+<p>try to balance computational load across the machines (reducers). Easier when computing matrix-vector multiplications.</p>
+</li>
+<li>
+<p>iterative algorithms: prefer small number of iterations. The output of each iteration must be stored in the HDFS → large I/O overhead per iteration.</p>
+</li>
+<li>
+<p>A given application may have:</p>
+<ul>
+<li>many mappers and reducers (parallelism in HDFS I/O and computing).</li>
+<li>only one reducer.</li>
+<li>zero reducers (e.g. input preprocessing, filtering, . . . ).</li>
+</ul>
+</li>
+</ul>
+<h2 id="mapreduce-optimization">MapReduce Optimization</h2>
+<h3 id="combiners">Combiners</h3>
+<ul>
+<li>A mapper task can produce a large number of pairs with the same key (e.g. (jaguar,1)), which need to be sent over the network to reducers: costly.</li>
+<li>A combiner combine these pairs into a single key-value pair</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210503212203.png" alt=""></p>
+<ul>
+<li>combiner : list(V′ ) → V′ function executed (possibly several times) to combine the values for a given key, on a mapper node.</li>
+<li>No guarantee that the combiner is called</li>
+<li>Easy case: the combiner is the same as the reduce function. Possible when the aggregate function computed by reduce is commutative and associative.</li>
+</ul>
+<h3 id="compression">Compression</h3>
+<ul>
+<li>Data transfers over the network:
+<ul>
+<li>From datanodes to mapper nodes (usually reduced using data locality)</li>
+<li>From mappers to reducers</li>
+<li>From reducers to datanodes to store the final output</li>
+</ul>
+</li>
+<li>Each of these can benefit from data compression</li>
+<li>Tradeoff between volume of data transfer and (de)compression time</li>
+<li>Usually, compressing map outputs using a fast compressor increases efficiency</li>
+</ul>
+<h3 id="optimizing-the-shuffle-operation">Optimizing the shuffle operation</h3>
+<ul>
+<li>Sorting of pairs (needed to assign data to reducers) can be costly.</li>
+<li>Sorting much more efficient in memory than on disk</li>
+<li>Increasing the amount of memory available for shuffle operations can greatly increase the performance</li>
+<li>. . . at the downside of less memory available for map and reduce tasks.</li>
+</ul>
+<h2 id="mapreduce-in-hadoop">MapReduce in Hadoop</h2>
+<h3 id="hadoop">Hadoop</h3>
+<ul>
+<li>Open-source software, Java-based, managed by the Apache foundation, for large-scale distributed storage and computing</li>
+<li>Originally developed for Apache Nutch (open-source Web search engine), a part of Apache Lucene (text indexing platform)</li>
+<li>Open-source implementation of GFS and Google’s MapReduce</li>
+<li>Yahoo!: a main contributor of the development of Hadoop</li>
+<li>Hadoop components:
+<ul>
+<li>Hadoop filesystem (HDFS)</li>
+<li>MapReduce</li>
+<li>Pig (data exploration), Hive (data warehousing): higher-level languages for describing MapReduce applications</li>
+<li>HBase: column-oriented distributed DBMS</li>
+<li>ZooKeeper: coordination service for distributed applications</li>
+</ul>
+</li>
+</ul>
+<h3 id="hadoop-programming-interfaces">Hadoop programming interfaces</h3>
+<ul>
+<li>Different APIs to write Hadoop programs:
+<ul>
+<li>A rich Java API (main way to write Hadoop programs)</li>
+<li>A Streaming API that can be used to write map and reduce functions in any programming language (using standard inputs and outputs)</li>
+<li>A C++ API (Hadoop Pipes)</li>
+<li>With a higher-language level (e.g., Pig, Hive)</li>
+</ul>
+</li>
+<li>Advanced features only available in the Java API</li>
+<li>Two different Java APIs depending on the Hadoop version; presenting the “old” one</li>
+</ul>
+<h3 id="testing-and-executing-a-hadoop-job">Testing and executing a Hadoop job</h3>
+<ul>
+<li>Required environment:
+<ul>
+<li>JDK on client</li>
+<li>JRE on all Hadoop nodes</li>
+<li>Hadoop distribution (HDFS + MapReduce) on client and all Hadoop nodes</li>
+<li>SSH servers on each tasktracker, SSH client on jobtracker (used to control the execution of tasktrackers)</li>
+<li>An IDE (e.g., Eclipse + plugin) on client</li>
+</ul>
+</li>
+<li>Three different execution modes:
+<ul>
+<li>local: One mapper, one reducer, run locally from the same JVM as the client</li>
+<li>pseudo-distributed mappers and reducers are launched on a single machine, but communicate over the network</li>
+<li>distributed over a cluster for real runs</li>
+</ul>
+</li>
+</ul>
+<h3 id="debugging-mapreduce">Debugging MapReduce</h3>
+<ul>
+<li>Easiest: debugging in local mode</li>
+<li>Web interface with status information about the job</li>
+<li>Standard output and error channels saved on each node, accessible through the Web interface</li>
+<li>Counters can be used to track side information across a MapReduce job (e.g., number of invalid input records)</li>
+<li>Remote debugging possible but complicated to set up (impossible to know in advance where a map or reduce task will be executed)</li>
+<li>IsolationRunner allows to run in isolation part of the MapReduce job</li>
+</ul>
+<h3 id="hadoop-in-the-cloud">Hadoop in the cloud</h3>
+<ul>
+<li>Possibly to set up one’s own Hadoop cluster</li>
+<li>But often easier to use clusters in the cloud that support MapReduce:
+<ul>
+<li>Amazon EC2</li>
+<li>Cloudera</li>
+<li>etc.</li>
+</ul>
+</li>
+<li>Not always easy to know the cluster’s configuration (in terms of racks, etc.) when on the cloud, which hurts data locality in MapReduce</li>
+</ul>
+<h2 id="conclusions">Conclusions</h2>
+<h3 id="mapreduce-limitations">MapReduce limitations</h3>
+<ul>
+<li>High latency. Launching a MapReduce job has a high overhead, and reduce functions are only called after all map functions succeed, not suitable for applications needing a quick result.</li>
+<li>Batch processing only. MapReduce excels at processing a large collection, not at retrieving individual items from a collection.</li>
+<li>Write-once, read-many mode. No real possibility of updating a dataset using MapReduce, it should be regenerated from scratch.</li>
+<li>Relatively low-level. Ongoing efforts for more high-level languages: Scope (CJL+08), Pig [ORS+08, GNC+09], Hive (TSJ+09), Cascading <a href="http://www.cascading.org/">http://www.cascading.org/</a></li>
+<li>No structure. Implies lack of indexing, difficult to optimize, etc. (DS87])</li>
+<li>Hard to tune. Number of reducers? Compression? Memory available at
+each node? etc.</li>
+<li>Recent projects: Pregel (MAB+10) for graph data processing (Giraph open-source implementation), Spark (ZCF+10) (maybe the most efficient but perhaps still difficult to use).</li>
+</ul>
+<h3 id="resources">Resources</h3>
+<ul>
+<li>Original description of the MapReduce framework (DG04)</li>
+<li>Hadoop distribution and documentation available at <a href="http://hadoop.apache.org/">http://hadoop.apache.org/</a></li>
+<li>Documentation for Pig is available at <a href="http://wiki.apache.org/pig/">http://wiki.apache.org/pig/</a></li>
+<li>Excellent textbook on Hadoop (Whi09)</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dm_mapreduce_1_content/>https://www.m1sty.com/2021/dm_mapreduce_1_content/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/mapreduce/">
+                    #MapReduce</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/note_operational-issues/" class="prev" rel="prev" title="Operational Issues"><i class="iconfont icon-left"></i>&nbsp;Operational Issues</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/overview_data-analyst_detail/" class="next" rel="next" title="数据分析师知识图谱">数据分析师知识图谱&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>
