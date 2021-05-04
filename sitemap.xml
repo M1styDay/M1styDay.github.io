@@ -4,7 +4,17 @@
     <url>
       <loc>https://www.m1sty.com/categories/</loc>
       
-      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/data-mining/</loc>
+      
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
       
       
       
@@ -14,17 +24,7 @@
     <url>
       <loc>https://www.m1sty.com/</loc>
       
-      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/overview/</loc>
-      
-      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
       
       
       
@@ -33,6 +33,56 @@
   
     <url>
       <loc>https://www.m1sty.com/posts/</loc>
+      
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/practise/</loc>
+      
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/svm/</loc>
+      
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/dm_svm_4_practise/</loc>
+      
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/</loc>
+      
+      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/overview/</loc>
       
       <lastmod>2021-05-03T00:00:00+00:00</lastmod>
       
@@ -52,29 +102,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/</loc>
-      
-      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/2021/overview_data-analyst_detail/</loc>
       
       <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/data-mining/</loc>
-      
-      <lastmod>2021-05-02T00:00:00+00:00</lastmod>
       
       
       
@@ -233,16 +263,6 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/dm_knn_5_practise/</loc>
-      
-      <lastmod>2021-04-21T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/practise/</loc>
       
       <lastmod>2021-04-21T00:00:00+00:00</lastmod>
       

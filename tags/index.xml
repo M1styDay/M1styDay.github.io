@@ -6,7 +6,25 @@
     <description>Recent content in Tags on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practise</title>
+      <link>https://www.m1sty.com/tags/practise/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/practise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SVM</title>
+      <link>https://www.m1sty.com/tags/svm/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/svm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Study Map</title>
       <link>https://www.m1sty.com/tags/study-map/</link>
@@ -67,15 +85,6 @@
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/knn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Practise</title>
-      <link>https://www.m1sty.com/tags/practise/</link>
-      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/practise/</guid>
       <description></description>
     </item>
     

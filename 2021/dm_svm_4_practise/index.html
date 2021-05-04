@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/overview_data-analyst_detail/" />
+  
+  <link rel="canonical" href="https://www.m1sty.com/2021/dm_svm_4_practise/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           SVM：Practise | M1sty
+       
+  </title>
+  <meta name="title" content="SVM：Practise | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "SVM：Practise",
+    "headline" : "SVM：Practise",
+    "description" : "SVM模型 SVM模型的思想和理论 模型介绍 超平面的理解:在一维空间中，如需将数据切分为两段，只需要一个点即可;在二维空间中，对于线性可分的样本点，将其切分为两类，只需一条直线即 可;在三维空间中，将样本点切分开来，就需要一个平面。\n距离计算 思想介绍  图中绘制了两条分割直线,利用这两条直线,可以方便地将样本点所属的类别判断出来。虽然从直观上来看这两条分割线都没有问题,但是哪一条直线的分类效果更佳呢(训练样本点的分类效果一致,并不代表测试样本点的分类效果也一样)?甚至于在直线l1和l2之间还存在无数多个分割直线,那么在这么多的分割线中是否存在一条最优的“超平面”呢?   假设直线是l1和l2之间的某条直线(分割面),为了能够寻找到最优的分割面l2,需要做三件事,首先计算两个类别中的样本点到直线li的距离;然后从两组距离中各挑选出一个最短的(如图中所示的距离d1和d2),继续比较d1和d2,再选出最短的距离(如图中的d1),并以该距离构造“分割带”(如图中经平移后的两条虚线);最后利用无穷多个分割直线li,构造无穷多个“分割带”,并从这些“分割 带”中挑选出带宽最大的li。  分隔带  “分割带”代表了模型划分样本点的能力或可信度，“分割带”越宽，说明模型能够将样本点划分得越清晰，进而保证模型泛化能力越强，分类的可信度越高;反之，“分割带”越窄，说明模型的准确率越容易受到异常点的影响，进而理解为模型的预测能力越弱，分类的可信度越低。  目标函数 函数间隔  将图中五角星所代表的正例样本用1表示,将实心圆所代表的负例样本用-1表示;实体加粗直线表示某条分割面;两条虚线分别表示因变量y取值为\u002b1和-1时的情况,它们与分割面平行。 不管是五角星代表的样本点,还是实心圆代表的样本点,这些点均落在两条虚线以及虚线之外,则说明这些点带入到方程w\u0026rsquo;x\u002bb所得的绝对值一定大于等于1 进而可以说明如果点对应的取值越小于-1,该样本为负例的可能性越高;点对应的取值越大于\u002b1,样本为正例的可能性越髙。   其中,yi表示样本点所属的类别,用\u002b1和-1表示当w\u0026rsquo;xi\u002bb计算的值小于等于-1时,根据分割面可以将样本点xi对应的yi预测为-1;当w\u0026rsquo;xi\u002bb计算的值大于等于\u002b1时,分割面会将样本点xi对应的yi预测为\u002b1。故利用如上的乘积公式可以得到线性可分的SVM所对应的函数间隔满足yi≥1的条件。  几何间隔  当分割面中的参数w和b同比例增加时,所对应的γ值也会同比例增加,但这样的增加对分割面W\u0026rsquo;x\u002bb=0来说却丝毫没有影响。 所以,为了避免这样的问题,需要对函数间隔做约束,常见的约束为单位化处理。  线性可分的SVM 目标函数 目标函数的等价转换 基于拉格朗日乘子法的目标函数 拉格朗日乘子法 目标函数求解 函数介绍 非线性可分的SVM 目标函数 目标函数的求解 核函数 函数介绍 实操 案例1 案例2 # 导入第三方模块 from sklearn import svm import pandas as pd from sklearn import model_selection from sklearn import metrics # 读取外部数据 letters = pd.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-05-04 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-05-04 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dm_svm_4_practise\/",
+    "wordCount" : "273",
+    "keywords" : [ "SVM","Practise", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">SVM：Practise</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-05-04 itemprop="datePublished">May 4, 2021</time>
+           </span> (<span class="post-word-count">273 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#svm模型的思想和理论">SVM模型的思想和理论</a>
+      <ul>
+        <li><a href="#模型介绍">模型介绍</a></li>
+        <li><a href="#思想介绍">思想介绍</a></li>
+        <li><a href="#分隔带">分隔带</a></li>
+        <li><a href="#目标函数">目标函数</a></li>
+      </ul>
+    </li>
+    <li><a href="#线性可分的svm">线性可分的SVM</a>
+      <ul>
+        <li><a href="#目标函数-1">目标函数</a></li>
+        <li><a href="#基于拉格朗日乘子法的目标函数">基于拉格朗日乘子法的目标函数</a></li>
+        <li><a href="#目标函数求解">目标函数求解</a></li>
+        <li><a href="#函数介绍">函数介绍</a></li>
+      </ul>
+    </li>
+    <li><a href="#非线性可分的svm">非线性可分的SVM</a>
+      <ul>
+        <li><a href="#目标函数-2">目标函数</a></li>
+        <li><a href="#核函数">核函数</a></li>
+        <li><a href="#函数介绍-1">函数介绍</a></li>
+      </ul>
+    </li>
+    <li><a href="#实操">实操</a>
+      <ul>
+        <li><a href="#案例1">案例1</a></li>
+        <li><a href="#案例2">案例2</a></li>
+      </ul>
+    </li>
+    <li><a href="#面试常用题">面试常用题</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="svm模型">SVM模型</h1>
+<h2 id="svm模型的思想和理论">SVM模型的思想和理论</h2>
+<h3 id="模型介绍">模型介绍</h3>
+<p>超平面的理解:在一维空间中，如需将数据切分为两段，只需要一个点即可;在二维空间中，对于线性可分的样本点，将其切分为两类，只需一条直线即
+可;在三维空间中，将样本点切分开来，就需要一个平面。</p>
+<h4 id="距离计算">距离计算</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504204350.png" alt=""></p>
+<h3 id="思想介绍">思想介绍</h3>
+<ul>
+<li>图中绘制了两条分割直线,利用这两条直线,可以方便地将样本点所属的类别判断出来。虽然从直观上来看这两条分割线都没有问题,但是哪一条直线的分类效果更佳呢(训练样本点的分类效果一致,并不代表测试样本点的分类效果也一样)?甚至于在直线l1和l2之间还存在无数多个分割直线,那么在这么多的分割线中是否存在一条最优的“超平面”呢?</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504205133.png" alt=""></p>
+<ul>
+<li>假设直线是l1和l2之间的某条直线(分割面),为了能够寻找到最优的分割面l2,需要做三件事,首先计算两个类别中的样本点到直线li的距离;然后从两组距离中各挑选出一个最短的(如图中所示的距离d1和d2),继续比较d1和d2,再选出最短的距离(如图中的d1),并以该距离构造“分割带”(如图中经平移后的两条虚线);最后利用无穷多个分割直线li,构造无穷多个“分割带”,并从这些“分割 带”中挑选出带宽最大的li。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504213934.png" alt=""></p>
+<h3 id="分隔带">分隔带</h3>
+<ul>
+<li>“分割带”代表了模型划分样本点的能力或可信度，“分割带”越宽，说明模型能够将样本点划分得越清晰，进而保证模型泛化能力越强，分类的可信度越高;反之，“分割带”越窄，说明模型的准确率越容易受到异常点的影响，进而理解为模型的预测能力越弱，分类的可信度越低。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504214002.png" alt=""></p>
+<h3 id="目标函数">目标函数</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504214040.png" alt=""></p>
+<h4 id="函数间隔">函数间隔</h4>
+<ul>
+<li>将图中五角星所代表的正例样本用1表示,将实心圆所代表的负例样本用-1表示;实体加粗直线表示某条分割面;两条虚线分别表示因变量y取值为+1和-1时的情况,它们与分割面平行。</li>
+<li>不管是五角星代表的样本点,还是实心圆代表的样本点,这些点均落在两条虚线以及虚线之外,则说明这些点带入到方程w&rsquo;x+b所得的绝对值一定大于等于1</li>
+<li>进而可以说明如果点对应的取值越小于-1,该样本为负例的可能性越高;点对应的取值越大于+1,样本为正例的可能性越髙。</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504214439.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504214459.png" alt=""></p>
+<ul>
+<li>其中,yi表示样本点所属的类别,用+1和-1表示当w&rsquo;xi+b计算的值小于等于-1时,根据分割面可以将样本点xi对应的yi预测为-1;当w&rsquo;xi+b计算的值大于等于+1时,分割面会将样本点xi对应的yi预测为+1。故利用如上的乘积公式可以得到线性可分的SVM所对应的函数间隔满足yi≥1的条件。</li>
+</ul>
+<h4 id="几何间隔">几何间隔</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504214737.png" alt=""></p>
+<ul>
+<li>当分割面中的参数w和b同比例增加时,所对应的γ值也会同比例增加,但这样的增加对分割面W&rsquo;x+b=0来说却丝毫没有影响。</li>
+<li>所以,为了避免这样的问题,需要对函数间隔做约束,常见的约束为单位化处理。</li>
+</ul>
+<h2 id="线性可分的svm">线性可分的SVM</h2>
+<h3 id="目标函数-1">目标函数</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220058.png" alt=""></p>
+<h4 id="目标函数的等价转换">目标函数的等价转换</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220125.png" alt=""></p>
+<h3 id="基于拉格朗日乘子法的目标函数">基于拉格朗日乘子法的目标函数</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220224.png" alt=""></p>
+<h4 id="拉格朗日乘子法">拉格朗日乘子法</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220153.png" alt=""></p>
+<h3 id="目标函数求解">目标函数求解</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220305.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220332.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220350.png" alt=""></p>
+<h3 id="函数介绍">函数介绍</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504220426.png" alt=""></p>
+<h2 id="非线性可分的svm">非线性可分的SVM</h2>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504221321.png" alt=""></p>
+<h3 id="目标函数-2">目标函数</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504221341.png" alt=""></p>
+<h4 id="目标函数的求解">目标函数的求解</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504221405.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504221417.png" alt=""></p>
+<h3 id="核函数">核函数</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504221503.png" alt=""></p>
+<h3 id="函数介绍-1">函数介绍</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504221647.png" alt=""></p>
+<h2 id="实操">实操</h2>
+<h3 id="案例1">案例1</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504224438.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504224456.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504224516.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210504224529.png" alt=""></p>
+<h3 id="案例2">案例2</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 导入第三方模块</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> svm
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> model_selection
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
+
+
+<span style="color:#75715e"># 读取外部数据</span>
+letters <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;letterdata.csv&#39;</span>)
+<span style="color:#75715e"># 数据前5行</span>
+letters<span style="color:#f92672">.</span>head()
+
+
+<span style="color:#75715e"># 将数据拆分为训练集和测试集</span>
+predictors <span style="color:#f92672">=</span> letters<span style="color:#f92672">.</span>columns[<span style="color:#ae81ff">1</span>:]
+X_train,X_test,y_train,y_test <span style="color:#f92672">=</span> model_selection<span style="color:#f92672">.</span>train_test_split(letters[predictors], letters<span style="color:#f92672">.</span>letter<span style="color:#960050;background-color:#1e0010">，</span>test_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.25</span>, random_state <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>)
+
+
+<span style="color:#75715e"># 选择线性可分SVM模型</span>
+linear_svc <span style="color:#f92672">=</span> svm<span style="color:#f92672">.</span>LinearSVC()
+<span style="color:#75715e"># 模型在训练数据集上的拟合</span>
+linear_svc<span style="color:#f92672">.</span>fit(X_train,y_train)
+
+
+<span style="color:#75715e"># 模型在测试集上的预测</span>
+pred_linear_svc <span style="color:#f92672">=</span> linear_svc<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># 模型的预测准确率</span>
+metrics<span style="color:#f92672">.</span>accuracy_score(y_test, pred_linear_svc)
+
+
+<span style="color:#75715e"># 选择非线性SVM模型</span>
+nolinear_svc <span style="color:#f92672">=</span> svm<span style="color:#f92672">.</span>SVC(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;rbf&#39;</span>)
+<span style="color:#75715e"># 模型在训练数据集上的拟合</span>
+nolinear_svc<span style="color:#f92672">.</span>fit(X_train,y_train)
+
+
+<span style="color:#75715e"># 模型在测试集上的预测</span>
+pred_svc <span style="color:#f92672">=</span> nolinear_svc<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># 模型的预测准确率</span>
+metrics<span style="color:#f92672">.</span>accuracy_score(y_test,pred_svc)
+
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 读取外部数据</span>
+forestfires <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;forestfires.csv&#39;</span>)
+<span style="color:#75715e"># 数据前5行</span>
+forestfires<span style="color:#f92672">.</span>head()
+
+
+<span style="color:#75715e"># 删除day变量</span>
+forestfires<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;day&#39;</span>,axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, inplace <span style="color:#f92672">=</span> True)
+<span style="color:#75715e"># 将月份作数值化处理</span>
+forestfires<span style="color:#f92672">.</span>month <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>factorize(forestfires<span style="color:#f92672">.</span>month)[<span style="color:#ae81ff">0</span>]
+<span style="color:#75715e"># 预览数据前5行</span>
+forestfires<span style="color:#f92672">.</span>head()
+
+
+<span style="color:#75715e"># 导入第三方模块</span>
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> norm
+<span style="color:#75715e"># 绘制森林烧毁面积的直方图</span>
+sns<span style="color:#f92672">.</span>distplot(forestfires<span style="color:#f92672">.</span>area, bins <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>, kde <span style="color:#f92672">=</span> True, fit <span style="color:#f92672">=</span> norm, hist_kws <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;color&#39;</span>:<span style="color:#e6db74">&#39;steelblue&#39;</span>}, 
+             kde_kws <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;color&#39;</span>:<span style="color:#e6db74">&#39;red&#39;</span>, <span style="color:#e6db74">&#39;label&#39;</span>:<span style="color:#e6db74">&#39;Kernel Density&#39;</span>}, 
+             fit_kws <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;color&#39;</span>:<span style="color:#e6db74">&#39;black&#39;</span>,<span style="color:#e6db74">&#39;label&#39;</span>:<span style="color:#e6db74">&#39;Nomal&#39;</span>, <span style="color:#e6db74">&#39;linestyle&#39;</span>:<span style="color:#e6db74">&#39;--&#39;</span>})
+<span style="color:#75715e"># 显示图例</span>
+plt<span style="color:#f92672">.</span>legend()
+<span style="color:#75715e"># 显示图形</span>
+plt<span style="color:#f92672">.</span>show()
+
+
+<span style="color:#75715e"># 导入第三方模块</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> preprocessing
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> neighbors
+<span style="color:#75715e"># 对area变量作对数变换</span>
+y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>log1p(forestfires<span style="color:#f92672">.</span>area)
+<span style="color:#75715e"># 将X变量作标准化处理</span>
+predictors <span style="color:#f92672">=</span> forestfires<span style="color:#f92672">.</span>columns[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+X <span style="color:#f92672">=</span> preprocessing<span style="color:#f92672">.</span>scale(forestfires[predictors])
+
+
+
+<span style="color:#75715e"># 将数据拆分为训练集和测试集</span>
+X_train,X_test,y_train,y_test <span style="color:#f92672">=</span> model_selection<span style="color:#f92672">.</span>train_test_split(X, y, test_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.25</span>, random_state <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234</span>)
+
+
+<span style="color:#75715e"># 构建默认参数的SVM回归模型</span>
+svr <span style="color:#f92672">=</span> svm<span style="color:#f92672">.</span>SVR()
+<span style="color:#75715e"># 模型在训练数据集上的拟合</span>
+svr<span style="color:#f92672">.</span>fit(X_train,y_train)
+<span style="color:#75715e"># 模型在测试上的预测</span>
+pred_svr <span style="color:#f92672">=</span> svr<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># 计算模型的MSE</span>
+metrics<span style="color:#f92672">.</span>mean_squared_error(y_test,pred_svr)
+
+
+
+<span style="color:#75715e"># 使用网格搜索法，选择SVM回归中的最佳C值、epsilon值和gamma值</span>
+epsilon <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0.1</span>,<span style="color:#ae81ff">1.5</span>,<span style="color:#ae81ff">0.2</span>)
+C<span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">100</span>,<span style="color:#ae81ff">1000</span>,<span style="color:#ae81ff">200</span>)
+gamma <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0.001</span>,<span style="color:#ae81ff">0.01</span>,<span style="color:#ae81ff">0.002</span>)
+parameters <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;epsilon&#39;</span>:epsilon,<span style="color:#e6db74">&#39;C&#39;</span>:C,<span style="color:#e6db74">&#39;gamma&#39;</span>:gamma}
+grid_svr <span style="color:#f92672">=</span> model_selection<span style="color:#f92672">.</span>GridSearchCV(estimator <span style="color:#f92672">=</span> svm<span style="color:#f92672">.</span>SVR(max_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>),param_grid <span style="color:#f92672">=</span>parameters,
+                                        scoring<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;neg_mean_squared_error&#39;</span>,cv<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>,verbose <span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, n_jobs<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+<span style="color:#75715e"># 模型在训练数据集上的拟合</span>
+grid_svr<span style="color:#f92672">.</span>fit(X_train,y_train)
+<span style="color:#75715e"># 返回交叉验证后的最佳参数值</span>
+<span style="color:#66d9ef">print</span>(grid_svr<span style="color:#f92672">.</span>best_params_, grid_svr<span style="color:#f92672">.</span>best_score_)
+
+
+<span style="color:#75715e"># 模型在测试集上的预测</span>
+pred_grid_svr <span style="color:#f92672">=</span> grid_svr<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># 计算模型在测试集上的MSE值</span>
+metrics<span style="color:#f92672">.</span>mean_squared_error(y_test,pred_grid_svr)
+
+
+</code></pre></div><h2 id="面试常用题">面试常用题</h2>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/u013793732/article/details/80117521">机器学习——SVM算法面试总结</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/qy724728631/article/details/82622535">SVM常见面试点</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/szlcw1/article/details/52259668">数据挖掘（机器学习）面试&ndash;SVM面试常考问题</a></p>
+</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dm_svm_4_practise/>https://www.m1sty.com/2021/dm_svm_4_practise/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/svm/">
+                    #SVM</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/practise/">
+                    #Practise</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/overview_data-analyst_detail/" class="prev" rel="prev" title="数据分析师知识图谱"><i class="iconfont icon-left"></i>&nbsp;数据分析师知识图谱</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>
