@@ -8,12 +8,34 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/job/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>统计学相关知识</title>
+      <title>知识框架</title>
+      <link>https://www.m1sty.com/2021/overview_interview_map/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/overview_interview_map/</guid>
+      <description>Database sql基础知识 sql基础知识
+  索引
+  union all &amp;amp; union
+  sql笔试题 SQL面试必会50题
+# 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as &amp;#39;第一&amp;#39;, max(case when rank1 = 2 then s_score else null end ) as &amp;#39;第二&amp;#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.s_id = student.s_id) a WHERE rank1 in (1,2) Group by c_id; # 查询选修“张三”老师所授课程的学生中成绩最高的学生姓名及其成绩 select score.</description>
+    </item>
+    
+    <item>
+      <title>统计学考点</title>
       <link>https://www.m1sty.com/2021/note_statistics/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/note_statistics/</guid>
       <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  </description>
+    </item>
+    
+    <item>
+      <title>数据分析师知识图谱</title>
+      <link>https://www.m1sty.com/2021/overview_data-analyst_detail/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/overview_data-analyst_detail/</guid>
+      <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  分析工具 Excel  基本计算函数 数据透视表 VLOOKUP  SQL  表的增删改查 表连接 子查询 窗口函数 SQL语句执行顺序  Python  基本数据结构  列表 字典 字符串 元组 数组 集合   基本语句  if条件语句 for循环 while循环   基本package  numpy pandas sklearn statsmodel matplotilb seaborn    数据可视化 Tableau  图标类型（使用场景） 交互式面板 基础的计算函数  机器学习 原理/模型解读/模型评估/使用场景/优缺点/模型优化/数学原理/公式</description>
     </item>
     
     <item>
@@ -106,6 +128,15 @@ ROI 指标 曝光-转化体系  基准值：各指标的及格线 pv：page view
   重合用户特征：用户人口统计学特征和用户行为特征，这个指标主要观测即将收官的内容是否能够承接用户给新热内容，如果新热内容不能完全承接则需要提取片库内的内容来留存用户。
   收入体系  GMV=DAU X 转化率 X ARPU GMV：gross merchandise volume，成交额 DAU：daily active user，日访问用户量 ARPU：average revenue per user，平均单用户收入 会员收入体系主要考量是否能够通过有效的售卖手段让用户续费和充值，广告收入体系主要考量分发是否准确，能够为广告主带来曝光和收益。  ROI策略 入水和出水 稳定的流量池——量和结构的稳定 流量池每天都会有入水和出水，我们不仅仅要关注量的稳定，还要关注结构的稳定，并且分析流入和流出的原因。
   量的稳定：需观测入水和出水的流转过程，通常关注DAU/WAU/MAU等能够反映用户总体活跃的指标，以及整体的拉新-留存-促活-承接体系是否周期性（有些指标在一定的时间周期内呈现规律性特征）运转健康正常，如果在某段时间中体系中某个指标出现异常（需要设定基准值），应该及时追溯原因并补救，一般头部内容可以反映大部分的整体情况，因此我们只需关注头部内容的特征指标即可。比如，某个头部内容在有比较高的资源投入上持续有较高新用户占比，但在某一集之后新用户占比和留存率都持续走低，那么有可能是以下几种原因：剧情出现问题 不再能够吸引用户/明星的吸引力有限 已不足以支持粉丝继续追剧/会员权益已释放 无持续的内容更新，如果判定由于权益不合理释放导致需调整排播策略和会员权益释放节奏，如果判定该内容已经不具备拉新和留存的能力则需将其做降级处理，以避免过多的资源投入浪费在不停的拉新和流失中。</description>
+    </item>
+    
+    <item>
+      <title>数据分析学习路径</title>
+      <link>https://www.m1sty.com/2020/overview_data-analyst_map/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2020/overview_data-analyst_map/</guid>
+      <description></description>
     </item>
     
   </channel>

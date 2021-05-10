@@ -42,7 +42,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/operation/</loc>
+      <loc>https://www.m1sty.com/categories/overview/</loc>
       
       <lastmod>2021-05-09T00:00:00+00:00</lastmod>
       
@@ -62,7 +62,27 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/tags/study-map/</loc>
+      
+      <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/tags/</loc>
+      
+      <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/overview_interview_map/</loc>
       
       <lastmod>2021-05-09T00:00:00+00:00</lastmod>
       
@@ -152,26 +172,6 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/overview/</loc>
-      
-      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/study-map/</loc>
-      
-      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/2021/overview_data-analyst_detail/</loc>
       
       <lastmod>2021-05-03T00:00:00+00:00</lastmod>
@@ -195,6 +195,16 @@
       <loc>https://www.m1sty.com/2021/dm_mapreduce_1_content/</loc>
       
       <lastmod>2021-05-02T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/operation/</loc>
+      
+      <lastmod>2021-05-01T00:00:00+00:00</lastmod>
       
       
       
@@ -485,16 +495,6 @@
       <loc>https://www.m1sty.com/2021/dm_decision-trees_6_project/</loc>
       
       <lastmod>2021-04-05T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/overview_interview_map/</loc>
-      
-      <lastmod>2021-04-02T00:00:00+00:00</lastmod>
       
       
       

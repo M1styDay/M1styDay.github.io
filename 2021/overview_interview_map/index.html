@@ -12,8 +12,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/" />
-  <link rel="next" href="https://www.m1sty.com/2021/dm_decision-trees_6_project/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/note_statistics/" />
+  
   <link rel="canonical" href="https://www.m1sty.com/2021/overview_interview_map/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,7 +49,7 @@
     "articleSection" : "posts",
     "name" : "知识框架",
     "headline" : "知识框架",
-    "description" : "Database sql基础知识 sql基础知识\n  索引：索引是对数据库表中一列或多列的值进行排序的一种结构，使用索引可快速访问数据库表中的特定信息。如果想按特定职员的姓来查找他或她，则与在表中搜索所有的行相比，索引有助于更快地获取信息。索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放的物理位置为顺序的，而非聚簇索引就不一样了；聚簇索引能提高多行检索的速度，而非聚簇索引对于单行的检索很快。根据数据库的功能，可以在数据库设计器中创建三种索引：唯一索引、主键索引和聚集索引。\n 唯一索引：唯一索引是不允许其中任何两行具有相同索引值的索引。当现有数据中存在重复的键值时，大多数数据库不允许将新创建的唯一索引与表一起保存。数据库还可能防止添加将在表中创建重复键值的新数据。例如，如果在employee表中职员的姓(lname)上创建了唯一索引，则任何两个员工都不能同姓。 主键索引：数据库表经常有一列或多列组合，其值唯一标识表中的每一行。该列称为表的主键。在数据库关系图中为表定义主键将自动创建主键索引，主键索引是唯一索引的特定类型。该索引要求主键中的每个值都唯一。当在查询中使用主键索引时，它还允许对数据的快速访问。 聚集索引：在聚集索引中，表中行的物理顺序与键值的逻辑（索引）顺序相同。一个表只能包含一个聚集索引。如果某索引不是聚集索引，则表中行的物理顺序与键值的逻辑顺序不匹配。与非聚集索引相比，聚集索引通常提供更快的数据访问速度。聚集索引和非聚集索引的区别，如字典默认按字母顺序排序，读者如知道某个字的读音可根据字母顺序快速定位。因此聚集索引和表的内容是在一起的。如读者需查询某个生僻字，则需按字典前面的索引，举例按偏旁进行定位，找到该字对应的页数，再打开对应页数找到该字。这种通过两个地方而查询到某个字的方式就如非聚集索引。    union all \u0026amp; union\n union和union all的区别是,union会自动压缩多个结果集合中的重复结果，而union all则将所有的结果全部显示出来，不管是不是重复。 *Union：对两个结果集进行并集操作，不包括重复行，同时进行默认规则的排序；*Union在进行表链接后会筛选掉重复的记录，所以在表链接后会对所产生的结果集进行排序运算，删除重复的记录再返回结果。实际大部分应用中是不会产生重复的记录，最常见的是过程表与历史表UNION。 *Union All：对两个结果集进行并集操作，包括重复行，不进行排序；*如果返回的两个结果集中有重复的数据，那么返回的结果集就会包含重复的数据了。    sql笔试题 SQL面试必会50题\n# 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as \u0026#39;第一\u0026#39;, max(case when rank1 = 2 then s_score else null end ) as \u0026#39;第二\u0026#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.",
+    "description" : "Database sql基础知识 sql基础知识\n  索引\n  union all \u0026amp; union\n  sql笔试题 SQL面试必会50题\n# 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as \u0026#39;第一\u0026#39;, max(case when rank1 = 2 then s_score else null end ) as \u0026#39;第二\u0026#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.s_id = student.s_id) a WHERE rank1 in (1,2) Group by c_id; # 查询选修“张三”老师所授课程的学生中成绩最高的学生姓名及其成绩 select score.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -57,11 +57,11 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-04-02 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-04-02 00:00:00 \u002b0000 UTC",
+    "datePublished": "2021-05-09 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-05-09 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/overview_interview_map\/",
-    "wordCount" : "384",
-    "keywords" : [ "Study Map", "M1sty"]
+    "wordCount" : "381",
+    "keywords" : [ "Study Map","Job", "M1sty"]
 }
 </script>
 
@@ -131,8 +131,8 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-04-02 itemprop="datePublished">April 2, 2021</time>
-           </span> (<span class="post-word-count">384 words)</span>
+        <time datetime=2021-05-09 itemprop="datePublished">May 9, 2021</time>
+           </span> (<span class="post-word-count">381 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -163,10 +163,9 @@
         <li><a href="#如何优化">如何优化</a></li>
         <li><a href="#成果产出">成果产出</a></li>
         <li><a href="#汇报阶段">汇报阶段</a></li>
-        <li><a href="#准确率评估">准确率评估</a></li>
         <li><a href="#项目成员">项目成员</a></li>
         <li><a href="#困难">困难</a></li>
-        <li><a href="#实体产业数据和互联网区别">实体产业数据和互联网区别</a></li>
+        <li><a href="#实体产业数据分析和互联网区别">实体产业数据分析和互联网区别</a></li>
       </ul>
     </li>
     <li><a href="#技术相关">技术相关</a>
@@ -184,11 +183,12 @@
     </li>
     <li><a href="#商业相关">商业相关</a>
       <ul>
+        <li><a href="#商业智能">商业智能</a></li>
+        <li><a href="#业务场景">业务场景</a></li>
         <li><a href="#mece原则">MECE原则</a></li>
         <li><a href="#数据指标体系">数据指标体系</a></li>
-        <li><a href="#循环改善模型">循环改善模型</a></li>
         <li><a href="#分析指标的变化">分析指标的变化</a></li>
-        <li><a href="#场景">场景</a></li>
+        <li><a href="#面试实例">面试实例</a></li>
       </ul>
     </li>
     <li><a href="#个人相关">个人相关</a>
@@ -257,20 +257,10 @@
 <p><a href="https://www.m1sty.com/2020/database_sql_notes/">sql基础知识</a></p>
 <ul>
 <li>
-<p>索引：索引是对数据库表中一列或多列的值进行排序的一种结构，使用索引可快速访问数据库表中的特定信息。如果想按特定职员的姓来查找他或她，则与在表中搜索所有的行相比，索引有助于更快地获取信息。索引分为聚簇索引和非聚簇索引两种，聚簇索引是按照数据存放的物理位置为顺序的，而非聚簇索引就不一样了；聚簇索引能提高多行检索的速度，而非聚簇索引对于单行的检索很快。根据数据库的功能，可以在数据库设计器中创建三种索引：唯一索引、主键索引和聚集索引。</p>
-<ul>
-<li>唯一索引：唯一索引是不允许其中任何两行具有相同索引值的索引。当现有数据中存在重复的键值时，大多数数据库不允许将新创建的唯一索引与表一起保存。数据库还可能防止添加将在表中创建重复键值的新数据。例如，如果在employee表中职员的姓(lname)上创建了唯一索引，则任何两个员工都不能同姓。</li>
-<li>主键索引：数据库表经常有一列或多列组合，其值唯一标识表中的每一行。该列称为表的主键。在数据库关系图中为表定义主键将自动创建主键索引，主键索引是唯一索引的特定类型。该索引要求主键中的每个值都唯一。当在查询中使用主键索引时，它还允许对数据的快速访问。</li>
-<li>聚集索引：在聚集索引中，表中行的物理顺序与键值的逻辑（索引）顺序相同。一个表只能包含一个聚集索引。如果某索引不是聚集索引，则表中行的物理顺序与键值的逻辑顺序不匹配。与非聚集索引相比，聚集索引通常提供更快的数据访问速度。聚集索引和非聚集索引的区别，如字典默认按字母顺序排序，读者如知道某个字的读音可根据字母顺序快速定位。因此聚集索引和表的内容是在一起的。如读者需查询某个生僻字，则需按字典前面的索引，举例按偏旁进行定位，找到该字对应的页数，再打开对应页数找到该字。这种通过两个地方而查询到某个字的方式就如非聚集索引。</li>
-</ul>
+<p>索引</p>
 </li>
 <li>
 <p>union all &amp; union</p>
-<ul>
-<li>union和union all的区别是,union会自动压缩多个结果集合中的重复结果，而union all则将所有的结果全部显示出来，不管是不是重复。</li>
-<li>*Union：对两个结果集进行并集操作，不包括重复行，同时进行默认规则的排序；*Union在进行表链接后会筛选掉重复的记录，所以在表链接后会对所产生的结果集进行排序运算，删除重复的记录再返回结果。实际大部分应用中是不会产生重复的记录，最常见的是过程表与历史表UNION。</li>
-<li>*Union All：对两个结果集进行并集操作，包括重复行，不进行排序；*如果返回的两个结果集中有重复的数据，那么返回的结果集就会包含重复的数据了。</li>
-</ul>
 </li>
 </ul>
 <h3 id="sql笔试题">sql笔试题</h3>
@@ -300,27 +290,24 @@
 </code></pre></div><h2 id="统计学">统计学</h2>
 <h3 id="核心知识">核心知识</h3>
 <ul>
-<li>描述性统计（平均值，标准差，中位数）</li>
-<li>概率（独立事件，相关事件，期望，贝叶斯）</li>
-<li>概率分布（离散概率分布，连续概率分布）</li>
-<li>统计推断（抽样，置信区间，假设检验）</li>
+<li><a href="https://www.m1sty.com/2021/note_statistics/">统计学考点</a></li>
 </ul>
 <h3 id="ab-test">AB Test</h3>
 <ul>
-<li><a href="https://www.m1sty.com/2021/business_web_ab-test/">AB Test相关</a></li>
+<li><a href="https://www.m1sty.com/2021/note_operational-issues/#ab%E5%AE%9E%E9%AA%8C">AB Test业务知识</a></li>
+<li><a href="https://www.m1sty.com/2021/business_web_ab-test/">AB Test实验全知识</a></li>
 </ul>
 <h2 id="项目相关">项目相关</h2>
 <h3 id="项目介绍">项目介绍</h3>
 <ul>
-<li>预测布料利用率-&gt;嵌入公司报价系统，自动报价，节约人力资源和事件成本</li>
-<li>构建正品率和报废率指标体系-&gt;循环改善机制，优化生产流程，提升正品率</li>
+<li>预测布料利用率-&gt;嵌入公司报价系统，实现自动报价，节约人力资源和时间成本</li>
+<li>构建正品率指标体系-&gt;监控异常生产数据，建立循环改善机制，优化生产流程，提升正品率</li>
 <li>数据获取-&gt;数据处理-&gt;建模处理-&gt;模型优化-&gt;可视化呈现-&gt;指标体系</li>
 </ul>
 <h3 id="数据来源">数据来源</h3>
 <ul>
-<li>生产系统</li>
-<li>取出后导入数据库/处理/筛选</li>
-<li>水洗系统/对条对格系统/车缝系统/染色系统……</li>
+<li>生产系统（自动生成/手工录入）：布料系统/样式系统/车缝系统/对条对格系统/烫/水洗系统/染色系统……</li>
+<li>取出后导入数据库/处理/筛选（excel/sql/python）</li>
 </ul>
 <h3 id="因子筛选">因子筛选</h3>
 <ul>
@@ -348,8 +335,9 @@
 </li>
 </ul>
 </li>
-<li>数据初步分组（确定建模的组类：工厂/种类）</li>
-<li>降维</li>
+<li>根据生产流程找到关键指标</li>
+<li>分组分析（种类/工厂）</li>
+<li>降维（PCA）</li>
 </ul>
 </li>
 <li>
@@ -380,42 +368,65 @@
 </ul>
 <h3 id="如何优化">如何优化</h3>
 <ul>
+<li>建模
+<ul>
 <li>Xgboost</li>
-<li>模型比较方式：ROC曲线</li>
-<li>数据录入规范化，降低数据处理的事件成本，数据良性循环</li>
+<li>模型比较方式：ROC曲线（分类）</li>
+</ul>
+</li>
+<li>数据
+<ul>
+<li>核心指标拆解（对核心指标进行公式计算，再从不同的生产路径进行拆解）</li>
+<li>指标的周知、存档及落地</li>
+</ul>
+</li>
 </ul>
 <h3 id="成果产出">成果产出</h3>
 <ul>
-<li>数据规范化</li>
-<li>模型预测准确率</li>
+<li>数据规范（降低数据处理时间，数据良性循环）</li>
+<li>模型预测准确率，提升收益（时间成本/人力成本）</li>
+<li>生产流程优化，提升正品率</li>
 <li>项目推广</li>
 </ul>
 <h3 id="汇报阶段">汇报阶段</h3>
 <ul>
 <li>如何分组分类，因子来源</li>
 <li>模型选择，判定标准</li>
+<li>指标体系建立</li>
 <li>优化效果，因子组合，嵌入系统的可行性</li>
-</ul>
-<h3 id="准确率评估">准确率评估</h3>
-<ul>
-<li>测试集的预测结果 &gt; 80%</li>
 </ul>
 <h3 id="项目成员">项目成员</h3>
 <ul>
 <li>2</li>
 <li>智能制造，精益生产，项目</li>
-<li>预测报价-&gt;指标建立-&gt;提升正品率</li>
+<li>预测报价-&gt;核心指标-&gt;提升正品率-&gt;指标体系</li>
 </ul>
 <h3 id="困难">困难</h3>
 <ul>
 <li>数据理解</li>
 <li>模型原理</li>
 </ul>
-<h3 id="实体产业数据和互联网区别">实体产业数据和互联网区别</h3>
+<h3 id="实体产业数据分析和互联网区别">实体产业数据分析和互联网区别</h3>
+<ul>
+<li>数据
 <ul>
 <li>质量差（人工填写），错误/缺失高</li>
-<li>标准化程度低，车间之间，工厂之间缺乏统一标准</li>
-<li>规则不明显，不有趣</li>
+<li>标准化程度低，车间之间、工厂之间缺乏统一标准</li>
+</ul>
+</li>
+<li>建模
+<ul>
+<li>模型更复杂</li>
+<li>规则不明显</li>
+</ul>
+</li>
+<li>指标体系
+<ul>
+<li>核心指标大多为原生指标，派生指标待探究</li>
+<li>以业务为导向，比较平面和抽象，没有例如AAARR这样的模型可以使用</li>
+<li>推进指标体系的思想比较困难（指标的周知、存档及落地）</li>
+</ul>
+</li>
 </ul>
 <h2 id="技术相关">技术相关</h2>
 <h3 id="随机森林模型">随机森林模型</h3>
@@ -473,7 +484,8 @@
 <img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210408192933.png" alt=""></p>
 </li>
 <li>
-<p>对比优劣</p>
+<p>对比优劣
+<a href="https://www.zhoulujun.cn/html/theory/algorithm/RegressionAlgorithm/8272.html">几种常见回归算法的原理和优劣对比</a></p>
 </li>
 </ul>
 <h3 id="对比建模结果">对比建模结果</h3>
@@ -542,6 +554,7 @@
 <li>层次聚类更适合小样本；K-Means更适合大样本。</li>
 </ul>
 </li>
+<li><a href="https://www.m1sty.com/2021/note_operational-issues/#%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F">用户画像</a></li>
 </ul>
 <h3 id="关联规则">关联规则</h3>
 <ul>
@@ -597,18 +610,23 @@
 <li>构造新特征</li>
 <li>进行特征选项 / 对特征重要性进行排序</li>
 <li>异常数据检测</li>
+<li><a href="https://www.m1sty.com/2021/note_operational-issues/#%E7%94%A8%E6%88%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%BB%B7%E5%80%BC">用户生命周期价值</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="商业相关">商业相关</h2>
+<h3 id="商业智能">商业智能</h3>
+<p><a href="https://www.m1sty.com/2021/note_bi_map/">商业智能</a></p>
+<h3 id="业务场景">业务场景</h3>
+<p><a href="https://www.m1sty.com/2021/note_operational-issues/">分析场景</a>
+<a href="https://www.m1sty.com/2021/note_industry-and-business-scenarios/">运营场景</a>
+<a href="https://www.m1sty.com/2021/note_shop-analysis/">店铺分析</a></p>
 <h3 id="mece原则">MECE原则</h3>
 <p><a href="https://www.m1sty.com/2021/project_data-index_content/#%E6%A2%B3%E7%90%86%E4%B8%9A%E5%8A%A1%E4%B8%8E%E6%8C%87%E6%A0%87">梳理业务与指标</a></p>
 <h3 id="数据指标体系">数据指标体系</h3>
-<p><a href="https://www.m1sty.com/2021/project_data-index_content/">数据指标体系</a></p>
+<p><a href="https://www.m1sty.com/2021/note_operational-issues/#%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB">指标体系</a></p>
+<p><a href="https://www.m1sty.com/2021/project_data-index_content/">搭建数据指标体系（长文）</a></p>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%201.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210329154251.png" alt=""></p>
-<h3 id="循环改善模型">循环改善模型</h3>
-<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210409015654.png" alt=""></p>
 <h3 id="分析指标的变化">分析指标的变化</h3>
 <ul>
 <li>描述性统计：下跌了多少？</li>
@@ -620,7 +638,7 @@
 <li>风险/损失评估：日活下跌对产品的核心kpi有什么影响</li>
 <li>制定策略：如何挽回损失/如何下次避免</li>
 </ul>
-<h3 id="场景">场景</h3>
+<h3 id="面试实例">面试实例</h3>
 <ul>
 <li>分析某次大促的预计目标是否达成/策略是否有效/对未来的借鉴</li>
 <li>如何评估红包活动的有效性</li>
@@ -657,20 +675,11 @@
 <h2 id="待优化">待优化</h2>
 <ul>
 <li>统计学核心知识</li>
-<li>AB Test设计</li>
-<li>数据的处理方法、因子筛选（技术和商业角度）</li>
 <li>数据降维方法</li>
-<li>Ridge回归和Lasson回归的区别（L1正则化和L2正则化）</li>
-<li>如何处理过拟合</li>
 <li>hive/hadoop</li>
 <li>Xgboost</li>
-<li>业务场景题</li>
-<li>数据指标体系搭建</li>
 <li>随机森林模型深挖</li>
-<li>逻辑回归/贝叶斯</li>
 <li>特征工程</li>
-<li>交叉检验</li>
-<li>模型评价</li>
 <li>项目/场景
 <ul>
 <li>请举例说明自己参与的一个数据分析项目</li>
@@ -723,6 +732,9 @@
             <span class="tag"><a href="https://www.m1sty.com/tags/study-map/">
                     #Study Map</a></span>
             
+            <span class="tag"><a href="https://www.m1sty.com/tags/job/">
+                    #Job</a></span>
+            
             </section>
         
         <section>
@@ -733,10 +745,8 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/" class="prev" rel="prev" title="Deep Learning and Neural Networks"><i class="iconfont icon-left"></i>&nbsp;Deep Learning and Neural Networks</a>
+        <a href="https://www.m1sty.com/2021/note_statistics/" class="prev" rel="prev" title="统计学考点"><i class="iconfont icon-left"></i>&nbsp;统计学考点</a>
          
-        
-        <a href="https://www.m1sty.com/2021/dm_decision-trees_6_project/" class="next" rel="next" title="Decision Trees：Project">Decision Trees：Project&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
