@@ -12,9 +12,9 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_svm_4_practise/" />
-  <link rel="next" href="https://www.m1sty.com/2021/note_statistics/" />
-  <link rel="canonical" href="https://www.m1sty.com/2021/dm_graph-mining_1_content1/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_graph-mining_1_content1/" />
+  
+  <link rel="canonical" href="https://www.m1sty.com/2021/note_statistics/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,10 +25,10 @@
   <title>
        
        
-           Graph Mining：Content | M1sty
+           统计学相关知识 | M1sty
        
   </title>
-  <meta name="title" content="Graph Mining：Content | M1sty">
+  <meta name="title" content="统计学相关知识 | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -47,9 +47,9 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Graph Mining：Content",
-    "headline" : "Graph Mining：Content",
-    "description" : "k-cores and Densest Subgraphs Graph  Graph Mining: finding dense regions ina graph (for community detectionm spam detection, event detection\u0026hellip;)  Definitions   Undirected Graph: A graph G is a pair ($V_G$,$E_G$), where $V_G$ is a set of nodes, while $E_G$ is a set of edges (u,v) with u,v ∈ $V_G$.\n  Other important definitions:\n A graph H = ($V_H$,$E_H$) is a (induced) subgraph of G = ($V_G$,$E_G$) if the following two conditions hold: $V_H$ ⊆ $V_G$, moreover, (u,v) ∈ $E_H$ if and only if u,v ∈ H and (u,v) ∈ $E_G$.",
+    "name" : "统计学相关知识",
+    "headline" : "统计学相关知识",
+    "description" : "统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设\/备份假设 T检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计\/参数估计 $R^2$ 方差分析  ",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -57,11 +57,11 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-05-05 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-05-05 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/www.m1sty.com\/2021\/dm_graph-mining_1_content1\/",
-    "wordCount" : "244",
-    "keywords" : [ "Graph Mining","HKU", "M1sty"]
+    "datePublished": "2021-05-09 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-05-09 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/note_statistics\/",
+    "wordCount" : "35",
+    "keywords" : [ "Job","operation", "M1sty"]
 }
 </script>
 
@@ -123,16 +123,16 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Graph Mining：Content</h1>
+        <h1 class="post-title" itemprop="name headline">统计学相关知识</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
-                <a href="https://www.m1sty.com/categories/data-mining/"> Data Mining </a>
+                <a href="https://www.m1sty.com/categories/note/"> Note </a>
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-05-05 itemprop="datePublished">May 5, 2021</time>
-           </span> (<span class="post-word-count">244 words)</span>
+        <time datetime=2021-05-09 itemprop="datePublished">May 9, 2021</time>
+           </span> (<span class="post-word-count">35 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -141,15 +141,11 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#graph">Graph</a>
+    <li><a href="#统计学">统计学</a>
       <ul>
-        <li><a href="#definitions">Definitions</a></li>
-      </ul>
-    </li>
-    <li><a href="#k-cores">K-cores</a>
-      <ul>
-        <li><a href="#definitions-1">Definitions</a></li>
-        <li><a href="#k-core-decomposition">k-core decomposition</a></li>
+        <li><a href="#描述性统计">描述性统计</a></li>
+        <li><a href="#假设检验">假设检验</a></li>
+        <li><a href="#概率论">概率论</a></li>
       </ul>
     </li>
   </ul>
@@ -201,55 +197,47 @@
           
           
 
-          <h1 id="k-cores-and-densest-subgraphs">k-cores and Densest Subgraphs</h1>
-<h2 id="graph">Graph</h2>
+          <h2 id="统计学">统计学</h2>
+<h3 id="描述性统计">描述性统计</h3>
 <ul>
-<li>Graph Mining: finding dense regions ina graph (for community detectionm spam detection, event detection&hellip;)</li>
-</ul>
-<h3 id="definitions">Definitions</h3>
+<li>均值（数学期望）</li>
+<li>中位数</li>
+<li>众数</li>
+<li>方差（标准差）：掌握3 sigma原理</li>
+<li>极大值、极小值</li>
+<li>数据分布
 <ul>
-<li>
-<p>Undirected Graph: A graph G is a pair ($V_G$,$E_G$), where $V_G$ is a set of nodes, while $E_G$ is a set of edges (u,v) with u,v ∈ $V_G$.</p>
-</li>
-<li>
-<p>Other important definitions:</p>
-<ul>
-<li>A graph H = ($V_H$,$E_H$) is a (induced) subgraph of G = ($V_G$,$E_G$) if the following two conditions hold: $V_H$ ⊆ $V_G$, moreover, (u,v) ∈ $E_H$ if and only if u,v ∈ H and (u,v) ∈ $E_G$.</li>
-<li>$δ_G$(v) denotes the number of edges incident to v in G, while $δ_H$(v) denotes the number of edges incident to v in H.</li>
-</ul>
-</li>
-</ul>
-<h2 id="k-cores">K-cores</h2>
-<h3 id="definitions-1">Definitions</h3>
-<ul>
-<li>
-<p>Given a graph G and k ≥ 0, a subgraph H of G is a k-core, if</p>
-<ul>
-<li>for every node v ∈ $V_H$, $δ_H$(v) ≥ k;</li>
-<li>|$V_H$| is maximum;</li>
+<li>正态</li>
+<li>伯努利</li>
+<li>二项</li>
+<li>均匀</li>
+<li>指数</li>
+<li>播送</li>
+<li>偏度与峰度</li>
 </ul>
 </li>
-<li>
-<p>A k-core can be computed in linear time in |$E_G$| as follows.</p>
-<ul>
-<li>While (at least one node has degree &lt; k)</li>
+<li>缺失值</li>
+<li>异常值</li>
 </ul>
-</li>
-</ul>
-<h3 id="k-core-decomposition">k-core decomposition</h3>
+<h3 id="假设检验">假设检验</h3>
 <ul>
-<li>
-<p>Note: a k-core might not be connected and is unique (possibly empty).</p>
-</li>
-<li>
-<p>Note: If v belongs to a k−core then it belongs to a k'-core, k'&lt; k.</p>
-</li>
-<li>
-<p>k-core decomposition(definition): A k−core decomposition specifies for each node v in G an integer $k_v$ such that v is in the $k_v$−core and $k_v$ is maximum.</p>
-</li>
-<li>
-<p>Note: A k−core decomposition can be computed in linear time: a k'-core is obtained by iteratively removing all nodes with degree &lt; k', k'=1, &hellip; n.</p>
-</li>
+<li>原假设/备份假设</li>
+<li>T检验</li>
+<li>卡方检验（非参数检验）</li>
+<li>P值</li>
+<li>置信度</li>
+<li>置信区间</li>
+<li>AB Test</li>
+</ul>
+<h3 id="概率论">概率论</h3>
+<ul>
+<li>条件概率（贝叶斯原理）</li>
+<li>抽样</li>
+<li>大数据定律</li>
+<li>中心极限定理</li>
+<li>区间估计/参数估计</li>
+<li>$R^2$</li>
+<li>方差分析</li>
 </ul>
 
     </div>
@@ -265,7 +253,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://www.m1sty.com/2021/dm_graph-mining_1_content1/>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</span>
+                    <a href=https://www.m1sty.com/2021/note_statistics/>https://www.m1sty.com/2021/note_statistics/</span>
             </p>
             
              
@@ -281,11 +269,11 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/graph-mining/">
-                    #Graph Mining</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/job/">
+                    #Job</a></span>
             
-            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
-                    #HKU</a></span>
+            <span class="tag"><a href="https://www.m1sty.com/tags/operation/">
+                    #operation</a></span>
             
             </section>
         
@@ -297,10 +285,8 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_svm_4_practise/" class="prev" rel="prev" title="SVM：Practise"><i class="iconfont icon-left"></i>&nbsp;SVM：Practise</a>
+        <a href="https://www.m1sty.com/2021/dm_graph-mining_1_content1/" class="prev" rel="prev" title="Graph Mining：Content"><i class="iconfont icon-left"></i>&nbsp;Graph Mining：Content</a>
          
-        
-        <a href="https://www.m1sty.com/2021/note_statistics/" class="next" rel="next" title="统计学相关知识">统计学相关知识&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
