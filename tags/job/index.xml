@@ -14,9 +14,7 @@
       
       <guid>https://www.m1sty.com/2021/overview_interview_map/</guid>
       <description>Database sql基础知识 sql基础知识
-  索引
-  union all &amp;amp; union
-  sql笔试题 SQL面试必会50题
+sql笔试题 SQL面试必会50题
 # 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as &amp;#39;第一&amp;#39;, max(case when rank1 = 2 then s_score else null end ) as &amp;#39;第二&amp;#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.s_id = student.s_id) a WHERE rank1 in (1,2) Group by c_id; # 查询选修“张三”老师所授课程的学生中成绩最高的学生姓名及其成绩 select score.</description>
     </item>
     
@@ -26,7 +24,7 @@
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/note_statistics/</guid>
-      <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  </description>
+      <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 Z检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  问题  t检验、Z检验、卡方检验 t检验和Z检验哪个更常用  </description>
     </item>
     
     <item>

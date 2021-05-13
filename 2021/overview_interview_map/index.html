@@ -49,7 +49,7 @@
     "articleSection" : "posts",
     "name" : "知识框架",
     "headline" : "知识框架",
-    "description" : "Database sql基础知识 sql基础知识\n  索引\n  union all \u0026amp; union\n  sql笔试题 SQL面试必会50题\n# 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as \u0026#39;第一\u0026#39;, max(case when rank1 = 2 then s_score else null end ) as \u0026#39;第二\u0026#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.s_id = student.s_id) a WHERE rank1 in (1,2) Group by c_id; # 查询选修“张三”老师所授课程的学生中成绩最高的学生姓名及其成绩 select score.",
+    "description" : "Database sql基础知识 sql基础知识\nsql笔试题 SQL面试必会50题\n# 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as \u0026#39;第一\u0026#39;, max(case when rank1 = 2 then s_score else null end ) as \u0026#39;第二\u0026#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.s_id = student.s_id) a WHERE rank1 in (1,2) Group by c_id; # 查询选修“张三”老师所授课程的学生中成绩最高的学生姓名及其成绩 select score.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -60,7 +60,7 @@
     "datePublished": "2021-05-09 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-05-09 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/overview_interview_map\/",
-    "wordCount" : "381",
+    "wordCount" : "377",
     "keywords" : [ "Study Map","Job", "M1sty"]
 }
 </script>
@@ -132,7 +132,7 @@
             </span>
           <span class="post-time"> on
         <time datetime=2021-05-09 itemprop="datePublished">May 9, 2021</time>
-           </span> (<span class="post-word-count">381 words)</span>
+           </span> (<span class="post-word-count">377 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -255,14 +255,6 @@
           <h2 id="database">Database</h2>
 <h3 id="sql基础知识">sql基础知识</h3>
 <p><a href="https://www.m1sty.com/2020/database_sql_notes/">sql基础知识</a></p>
-<ul>
-<li>
-<p>索引</p>
-</li>
-<li>
-<p>union all &amp; union</p>
-</li>
-</ul>
 <h3 id="sql笔试题">sql笔试题</h3>
 <p><a href="https://www.m1sty.com/2020/database_sql_50/">SQL面试必会50题</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">查询每门功成绩最好的前两名</span>
@@ -295,7 +287,7 @@
 <h3 id="ab-test">AB Test</h3>
 <ul>
 <li><a href="https://www.m1sty.com/2021/note_operational-issues/#ab%E5%AE%9E%E9%AA%8C">AB Test业务知识</a></li>
-<li><a href="https://www.m1sty.com/2021/business_web_ab-test/">AB Test实验全知识</a></li>
+<li><a href="https://www.m1sty.com/2021/business_web_ab-test/">AB Test实验全知识+统计学</a></li>
 </ul>
 <h2 id="项目相关">项目相关</h2>
 <h3 id="项目介绍">项目介绍</h3>
@@ -397,9 +389,9 @@
 </ul>
 <h3 id="项目成员">项目成员</h3>
 <ul>
-<li>2</li>
 <li>智能制造，精益生产，项目</li>
 <li>预测报价-&gt;核心指标-&gt;提升正品率-&gt;指标体系</li>
+<li>数据选取、实验设计、模型调优、指标搭建、项目上线等</li>
 </ul>
 <h3 id="困难">困难</h3>
 <ul>
@@ -627,14 +619,19 @@
 <p><a href="https://www.m1sty.com/2021/project_data-index_content/#%E6%A2%B3%E7%90%86%E4%B8%9A%E5%8A%A1%E4%B8%8E%E6%8C%87%E6%A0%87">梳理业务与指标</a></p>
 <h3 id="数据指标体系">数据指标体系</h3>
 <p><a href="https://www.m1sty.com/2021/note_operational-issues/#%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB">指标体系</a></p>
-<p><a href="https://www.m1sty.com/2021/project_data-index_content/">搭建数据指标体系（长文）</a></p>
+<p><a href="https://www.m1sty.com/2021/project_data-index_content/">搭建数据指标体系（项目）</a></p>
 <p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%201.png" alt=""></p>
 <h3 id="分析指标的变化">分析指标的变化</h3>
 <ul>
 <li>描述性统计：下跌了多少？</li>
 <li>观察变化：同比？环比？</li>
 <li>评估变化/方差分析：跌幅是否在合理范围？</li>
-<li>交叉分析/相关性分析：有哪些指标可能和日活下跌有关系，有关系到什么程度？</li>
+<li>交叉分析/相关性分析：有哪些指标可能和日活下跌有关系，有关系到什么程度？
+<ul>
+<li>链路分析（用户路径）</li>
+<li>指标拆解（用户群）</li>
+</ul>
+</li>
 <li>业务分析：这些指标的运营部门？他们是否有某些运营策略或者活动对造成了这些指标的变化，间接导致日活下跌</li>
 <li>回归分析/预测：还会跌几天？跌幅最坏去到什么程度</li>
 <li>风险/损失评估：日活下跌对产品的核心kpi有什么影响</li>
@@ -677,7 +674,6 @@
 <h2 id="待优化">待优化</h2>
 <ul>
 <li>统计学核心知识</li>
-<li>数据降维方法</li>
 <li>hive/hadoop</li>
 <li>Xgboost</li>
 <li>随机森林模型深挖</li>
