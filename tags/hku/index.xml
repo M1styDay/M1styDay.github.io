@@ -6,16 +6,25 @@
     <description>Recent content in HKU on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/hku/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Graph Mining：Content</title>
+      <title>Graph Mining：k-cores and Densest Subgraphs</title>
       <link>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</guid>
       <description>k-cores and Densest Subgraphs Graph  Graph Mining: finding dense regions ina graph (for community detectionm spam detection, event detection&amp;hellip;)  Definitions   Undirected Graph: A graph G is a pair ($V_G$,$E_G$), where $V_G$ is a set of nodes, while $E_G$ is a set of edges (u,v) with u,v ∈ $V_G$.
   Other important definitions:
  A graph H = ($V_H$,$E_H$) is a (induced) subgraph of G = ($V_G$,$E_G$) if the following two conditions hold: $V_H$ ⊆ $V_G$, moreover, (u,v) ∈ $E_H$ if and only if u,v ∈ H and (u,v) ∈ $E_G$.</description>
+    </item>
+    
+    <item>
+      <title>Graph Mining：Community Detection</title>
+      <link>https://www.m1sty.com/2021/dm_graph-mining_1_content2/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_graph-mining_1_content2/</guid>
+      <description>Community Detection Community Detection Introduction  Community detection is the problem of finding groups of entities in a network, so as to reflect the structure of the network and other meaningful properties of the underlying system. Examples of communities are: computer scientists, users in Facebook sharing similar interests, blogs dealing with the same topic, group of dolphins interacting between each other, etc. Community detection finds application in social science, advertising, and it is a cool problem!</description>
     </item>
     
     <item>

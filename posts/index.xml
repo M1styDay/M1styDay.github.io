@@ -6,7 +6,27 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graph Mining：k-cores and Densest Subgraphs</title>
+      <link>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</guid>
+      <description>k-cores and Densest Subgraphs Graph  Graph Mining: finding dense regions ina graph (for community detectionm spam detection, event detection&amp;hellip;)  Definitions   Undirected Graph: A graph G is a pair ($V_G$,$E_G$), where $V_G$ is a set of nodes, while $E_G$ is a set of edges (u,v) with u,v ∈ $V_G$.
+  Other important definitions:
+ A graph H = ($V_H$,$E_H$) is a (induced) subgraph of G = ($V_G$,$E_G$) if the following two conditions hold: $V_H$ ⊆ $V_G$, moreover, (u,v) ∈ $E_H$ if and only if u,v ∈ H and (u,v) ∈ $E_G$.</description>
+    </item>
+    
+    <item>
+      <title>Graph Mining：Community Detection</title>
+      <link>https://www.m1sty.com/2021/dm_graph-mining_1_content2/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dm_graph-mining_1_content2/</guid>
+      <description>Community Detection Community Detection Introduction  Community detection is the problem of finding groups of entities in a network, so as to reflect the structure of the network and other meaningful properties of the underlying system. Examples of communities are: computer scientists, users in Facebook sharing similar interests, blogs dealing with the same topic, group of dolphins interacting between each other, etc. Community detection finds application in social science, advertising, and it is a cool problem!</description>
+    </item>
+    
     <item>
       <title>知识框架</title>
       <link>https://www.m1sty.com/2021/overview_interview_map/</link>
@@ -25,17 +45,6 @@ sql笔试题 SQL面试必会50题
       
       <guid>https://www.m1sty.com/2021/note_statistics/</guid>
       <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 Z检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  问题  t检验、Z检验、卡方检验 t检验和Z检验哪个更常用  </description>
-    </item>
-    
-    <item>
-      <title>Graph Mining：Content</title>
-      <link>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</guid>
-      <description>k-cores and Densest Subgraphs Graph  Graph Mining: finding dense regions ina graph (for community detectionm spam detection, event detection&amp;hellip;)  Definitions   Undirected Graph: A graph G is a pair ($V_G$,$E_G$), where $V_G$ is a set of nodes, while $E_G$ is a set of edges (u,v) with u,v ∈ $V_G$.
-  Other important definitions:
- A graph H = ($V_H$,$E_H$) is a (induced) subgraph of G = ($V_G$,$E_G$) if the following two conditions hold: $V_H$ ⊆ $V_G$, moreover, (u,v) ∈ $E_H$ if and only if u,v ∈ H and (u,v) ∈ $E_G$.</description>
     </item>
     
     <item>

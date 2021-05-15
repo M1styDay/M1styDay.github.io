@@ -12,8 +12,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/dm_svm_4_practise/" />
-  <link rel="next" href="https://www.m1sty.com/2021/note_statistics/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_graph-mining_1_content2/" />
+  
   <link rel="canonical" href="https://www.m1sty.com/2021/dm_graph-mining_1_content1/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,10 +25,10 @@
   <title>
        
        
-           Graph Mining：Content | M1sty
+           Graph Mining：k-cores and Densest Subgraphs | M1sty
        
   </title>
-  <meta name="title" content="Graph Mining：Content | M1sty">
+  <meta name="title" content="Graph Mining：k-cores and Densest Subgraphs | M1sty">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -47,8 +47,8 @@
          "@id": "https:\/\/www.m1sty.com"
     },
     "articleSection" : "posts",
-    "name" : "Graph Mining：Content",
-    "headline" : "Graph Mining：Content",
+    "name" : "Graph Mining：k-cores and Densest Subgraphs",
+    "headline" : "Graph Mining：k-cores and Densest Subgraphs",
     "description" : "k-cores and Densest Subgraphs Graph  Graph Mining: finding dense regions ina graph (for community detectionm spam detection, event detection\u0026hellip;)  Definitions   Undirected Graph: A graph G is a pair ($V_G$,$E_G$), where $V_G$ is a set of nodes, while $E_G$ is a set of edges (u,v) with u,v ∈ $V_G$.\n  Other important definitions:\n A graph H = ($V_H$,$E_H$) is a (induced) subgraph of G = ($V_G$,$E_G$) if the following two conditions hold: $V_H$ ⊆ $V_G$, moreover, (u,v) ∈ $E_H$ if and only if u,v ∈ H and (u,v) ∈ $E_G$.",
     "inLanguage" : "en-us",
     "author" : "Misty",
@@ -57,10 +57,10 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-05-05 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-05-05 00:00:00 \u002b0000 UTC",
+    "datePublished": "2021-05-10 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-05-10 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/dm_graph-mining_1_content1\/",
-    "wordCount" : "244",
+    "wordCount" : "454",
     "keywords" : [ "Graph Mining","HKU", "M1sty"]
 }
 </script>
@@ -123,7 +123,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Graph Mining：Content</h1>
+        <h1 class="post-title" itemprop="name headline">Graph Mining：k-cores and Densest Subgraphs</h1>
         <div class="post-meta">
         <i class="far fa-folder-open"></i>
             <span class="post-category"> in
@@ -131,8 +131,8 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-05-05 itemprop="datePublished">May 5, 2021</time>
-           </span> (<span class="post-word-count">244 words)</span>
+        <time datetime=2021-05-10 itemprop="datePublished">May 10, 2021</time>
+           </span> (<span class="post-word-count">454 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -150,6 +150,19 @@
       <ul>
         <li><a href="#definitions-1">Definitions</a></li>
         <li><a href="#k-core-decomposition">k-core decomposition</a></li>
+      </ul>
+    </li>
+    <li><a href="#density-of-a-graph">Density of a graph</a>
+      <ul>
+        <li></li>
+        <li><a href="#simple-lemma">Simple lemma</a></li>
+        <li><a href="#our-main-problem">Our main problem</a></li>
+        <li><a href="#densest-subgraph-algorithm">Densest Subgraph Algorithm</a></li>
+        <li><a href="#approximation-guarantee">Approximation Guarantee</a></li>
+        <li><a href="#running-time">Running Time</a></li>
+        <li><a href="#computing-the-densest-subgraph">Computing the Densest Subgraph</a></li>
+        <li><a href="#densest-subgraph-variants">Densest subgraph: variants</a></li>
+        <li><a href="#what-about-clique-density">What about clique density?</a></li>
       </ul>
     </li>
   </ul>
@@ -188,6 +201,8 @@
     <div class="post-content">
         
 
+        
+            
         
 
         
@@ -251,6 +266,61 @@
 <p>Note: A k−core decomposition can be computed in linear time: a k'-core is obtained by iteratively removing all nodes with degree &lt; k', k'=1, &hellip; n.</p>
 </li>
 </ul>
+<h2 id="density-of-a-graph">Density of a graph</h2>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210514020345.png" alt=""></p>
+<h4 id="example">Example</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210514020703.png" alt=""></p>
+<h3 id="simple-lemma">Simple lemma</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515102929.png" alt=""></p>
+<h3 id="our-main-problem">Our main problem</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515103051.png" alt=""></p>
+<ul>
+<li>Facts: A global optimum can be computed in polynomial time. There is a linear-time algorithm that computes an approximation to the problem..</li>
+</ul>
+<h3 id="densest-subgraph-algorithm">Densest Subgraph Algorithm</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515103156.png" alt=""></p>
+<h4 id="example-1">Example</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515103646.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515103702.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515103719.png" alt=""></p>
+<h3 id="approximation-guarantee">Approximation Guarantee</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515103805.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104039.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104054.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104108.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104359.png" alt=""></p>
+<h4 id="proof">Proof</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104457.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104519.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104531.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104548.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104602.png" alt=""></p>
+<h3 id="running-time">Running Time</h3>
+<p>The algo. can be implemented in linear time in the size of the input graph (i.e. the total number of edges and nodes in the graph).</p>
+<ul>
+<li>for each value δ in $[1, n]$ maintain a list of nodes with degree δ in the current graph.</li>
+<li>As nodes are removed from the graph, update the lists so that each node is placed in the correct list (depending on its current degree).</li>
+</ul>
+<h4 id="exercise">Exercise</h4>
+<p>which data structures to have a linear-time algorithm?</p>
+<h3 id="computing-the-densest-subgraph">Computing the Densest Subgraph</h3>
+<p>Three main techniques:</p>
+<ul>
+<li>maximum flow</li>
+<li>based on linear programming(LP)</li>
+<li>one recent technique based on convex programming</li>
+</ul>
+<h3 id="densest-subgraph-variants">Densest subgraph: variants</h3>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210515104921.png" alt=""></p>
+<h3 id="what-about-clique-density">What about clique density?</h3>
+<ul>
+<li>Finding a “large” subgraph with maximum edge density is very difficult!.</li>
+<li>However, in practice the following heuristic works very well. Modify the greedy algorithm as follows:
+<ul>
+<li>at each step remove the node with minimum degree until the graph becomes empty (similarly to greedy). Return a subgraph H (among all subgraphs obtained by greedy) maximizing the clique density and with size at least k.</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -297,10 +367,8 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/dm_svm_4_practise/" class="prev" rel="prev" title="SVM：Practise"><i class="iconfont icon-left"></i>&nbsp;SVM：Practise</a>
+        <a href="https://www.m1sty.com/2021/dm_graph-mining_1_content2/" class="prev" rel="prev" title="Graph Mining：Community Detection"><i class="iconfont icon-left"></i>&nbsp;Graph Mining：Community Detection</a>
          
-        
-        <a href="https://www.m1sty.com/2021/note_statistics/" class="next" rel="next" title="统计学考点">统计学考点&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -342,8 +410,9 @@
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 
