@@ -6,7 +6,16 @@
     <description>Recent content in Posts on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hadoop Overview</title>
+      <link>https://www.m1sty.com/2021/data-warehouse_0_overview/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/data-warehouse_0_overview/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Graph Mining：k-cores and Densest Subgraphs</title>
       <link>https://www.m1sty.com/2021/dm_graph-mining_1_content1/</link>
@@ -108,6 +117,15 @@ delete和drop最本质的区别在于，delete是数据操纵语言，即DML，�
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/coding_model_r_practise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://www.m1sty.com/2021/coding_test/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_test/</guid>
       <description></description>
     </item>
     
