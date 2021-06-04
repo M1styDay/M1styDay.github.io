@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on M1sty</title>
+    <link>https://www.m1sty.com/categories/coding/</link>
+    <description>Recent content in Coding on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm_Leetcode</title>
+      <link>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm_Nowcoder</title>
+      <link>https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database_Leetcode</title>
+      <link>https://www.m1sty.com/2021/coding_database_sql_leetcode/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_database_sql_leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database_Nowcoder</title>
+      <link>https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/</guid>
+      <description>语法问题 删除 如果要从数据库中删除触发器，应该使用SQL语言的命令：（B）
+ A.DELETE TRIGGER B.DROP TRIGGER C.DISABLE TRIGGER D.REMOVE TRIGGER  Notes: 删除触发器: DROP TRIGGER &amp;lt;触发器名&amp;gt; ON &amp;lt;表名&amp;gt;
+Drop:删除数据表或数据库，或删除数据表字段
+Remove:删除数据库文件
+Truncate：删除数据表中的数据（仅数据表中的数据，不删除表）
+delete和drop最本质的区别在于，delete是数据操纵语言，即DML，而drop是数据定义语言，即DDL。因此，当我们需要删除或者创建一个东西，如表/视图/触发器等等，用的是数据定义语言。当我们对已经存在的表/视图/触发器进行修改/更新时，用的是数据操纵语言。以表为例，如果你不想将表真的删掉，只是想删除其中某些特定的记录，则应该用delete，此时，表的其他数据以及表的结构还在。
+权限 收回从u1创建表的权限：（B）
+ A.revoke create table to u1 B.revoke create table from u1 C.revoke create table from u1 with grant option D.deny create table to u1  Notes: with grant option 权限传递 使用这个子句时将允许用户将其权限分配给他人
+子查询： 在SQL语言中，子查询是： (D)
+ A.返回单表中数据子集的查询语言 B.选取多表中字段子集的查询语句 C.选取单表中字段子集的查询语句 D.嵌入到另一个查询语句之中的查询语句  Notes: 子查询本质上是嵌套进其他SELECT,UPDATE,INSERT,DELETE语句的一个被限制的SELECT语句。
+子查询也可以嵌套在其他子查询中,这个嵌套最多可达32层。子查询也叫内部查询(Inner query)或者内部选择(Inner Select),而包含子查询的查询语句也叫做外部查询（Outter)或者外部选择(Outer Select)。</description>
+    </item>
+    
+    <item>
+      <title>Model_Python</title>
+      <link>https://www.m1sty.com/2021/coding_model_python_practise/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_model_python_practise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model_R</title>
+      <link>https://www.m1sty.com/2021/coding_model_r_practise/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_model_r_practise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL面试必会50题</title>
+      <link>https://www.m1sty.com/2020/coding_database_sql_50exercise/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2020/coding_database_sql_50exercise/</guid>
+      <description>材料 题源+数据 SQL面试必会50题
+表关系  题解 01-10 1. 查询课程编号为“01”的课程比“02”的课程成绩高的所有学生的学号 SELECT st.s_id, a.s_score, b.s_score FROM student st INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = &amp;#34;01&amp;#34;) as a on a.s_id = st.`s_id` INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = &amp;#34;02&amp;#34;) as b on b.s_id = st.`s_id` WHERE a.s_score &amp;gt; b.s_score; 2. 查询平均成绩大于60分的学生的学号和平均成绩 SELECT distinct s_id, AVG(s_score) as avg1 FROM score Group by S_id having avg1 &amp;gt; 60 3.</description>
+    </item>
+    
+    <item>
+      <title>SQL复习笔记</title>
+      <link>https://www.m1sty.com/2020/coding_database_sql_2note/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2020/coding_database_sql_2note/</guid>
+      <description>DDL &amp;amp; DML 库操作 创建数据库 CREATE DATABASE database-name
+删除数据库 drop database dbname
+分离数据库 sp_detach_db
+附加数据库 sp_attach_db （后接表明，附加需要完整的路径名）
+修改数据库名称 sp_renamedb &amp;lsquo;old_name&amp;rsquo;, &amp;lsquo;new_name&amp;rsquo;
+表操作 创建新表 create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)
+根据已有的表创建新表 A：create table tab_new like tab_old
+B：create table tab_new as select col1,col2… from tab_old definition only
+删除表 drop table tabname
+增加列 Alter table tabname add column col type
+添加/删除主键 Alter table tabname add primary key(col)
+Alter table tabname drop primary key(col)</description>
+    </item>
+    
+    <item>
+      <title>SQL必知必会笔记</title>
+      <link>https://www.m1sty.com/2020/coding_database_sql_1note/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2020/coding_database_sql_1note/</guid>
+      <description>表操作 创建表 create table 表名（字段名称 字段类型 约束，……） 字符类型  character 字符串  char(size) 保存固定长度的字符串 varchar(n) 可变长度的字符_最多8000个字符 text 可变长度的字符串_最多2GB字符数据   unicode 字符串  nchar(n) 固定长度的Unicode数据_最多4000个字符 nvarchar(n) 可变长度的Unicode数据_最多4000个字符 ntext 可变长度的Unicode数据_最多2GB字符数据   Binary 类型  bit 允许0/1/null binary(n) 固定长度的二进制数据_最多8000字节 varbinary(n) 可变长度的二进制数据_最多8000字节 image 可变长度的二进制数据_最多2GB   Number 类型  tinyint 允许从0到255的所有数字 int 允许从-2,147,483,648到2,147,483,647的所有数字_占4字节 bigint -9,223,372,036,854,775,808到9,223,372,036,854,775,807范围内数字_占8字节 float 从-1.79E+308到1.79E+308的浮动精度数字数据 real 从-3.40E+38到3.40E+38的浮动精度数字数据 money 10进制货币数据   Date 类型  datetime 从1753年1月1日到9999年年12月31日，精度为3.33毫秒_8bytes date 仅储存日期。从0001年1月1日到9999年12月31日_3bytes   其他数据类型  uniqueidentifler 存储全局标识符（GUID） xml 存储XML格式化数据_最多2GB cursor 存储对用于数据库操作的指针的引用   常见的字符类型选择  字符类型建议采用varchar/nvarchar数据类型 全额货币建议采用money数据类型 自增长标识建议采用bigint数据类型（int类型限制） 时间类型建议采用datetime数据类型 尽量不用text、ntext、image 尽量不用xml、varchar(max)、nvarchar(max)    不同数据库数据字符类型区别  https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

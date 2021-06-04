@@ -29,10 +29,10 @@
     
     <item>
       <title>知识框架</title>
-      <link>https://www.m1sty.com/2021/overview_interview_map/</link>
+      <link>https://www.m1sty.com/2021/study-map_interview/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/overview_interview_map/</guid>
+      <guid>https://www.m1sty.com/2021/study-map_interview/</guid>
       <description>Database sql基础知识 sql基础知识
 sql笔试题 SQL面试必会50题
 # 查询每门功成绩最好的前两名 SELECT c_id, max(case when rank1 = 1 then s_score else null end ) as &amp;#39;第一&amp;#39;, max(case when rank1 = 2 then s_score else null end ) as &amp;#39;第二&amp;#39; FROM (SELECT score.s_id, student.s_name, score.c_id, score.s_score, row_number() over(partition by c_id order by s_score DESC) rank1 FROM score INNER JOIN student ON score.s_id = student.s_id) a WHERE rank1 in (1,2) Group by c_id; # 查询选修“张三”老师所授课程的学生中成绩最高的学生姓名及其成绩 select score.</description>
@@ -40,11 +40,75 @@ sql笔试题 SQL面试必会50题
     
     <item>
       <title>统计学考点</title>
-      <link>https://www.m1sty.com/2021/note_statistics/</link>
+      <link>https://www.m1sty.com/2021/statistics_overview/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_statistics/</guid>
+      <guid>https://www.m1sty.com/2021/statistics_overview/</guid>
       <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 Z检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  问题  t检验、Z检验、卡方检验 t检验和Z检验哪个更常用  </description>
+    </item>
+    
+    <item>
+      <title>Algorithm_Leetcode</title>
+      <link>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm_Nowcoder</title>
+      <link>https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database_Leetcode</title>
+      <link>https://www.m1sty.com/2021/coding_database_sql_leetcode/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_database_sql_leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database_Nowcoder</title>
+      <link>https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/</guid>
+      <description>语法问题 删除 如果要从数据库中删除触发器，应该使用SQL语言的命令：（B）
+ A.DELETE TRIGGER B.DROP TRIGGER C.DISABLE TRIGGER D.REMOVE TRIGGER  Notes: 删除触发器: DROP TRIGGER &amp;lt;触发器名&amp;gt; ON &amp;lt;表名&amp;gt;
+Drop:删除数据表或数据库，或删除数据表字段
+Remove:删除数据库文件
+Truncate：删除数据表中的数据（仅数据表中的数据，不删除表）
+delete和drop最本质的区别在于，delete是数据操纵语言，即DML，而drop是数据定义语言，即DDL。因此，当我们需要删除或者创建一个东西，如表/视图/触发器等等，用的是数据定义语言。当我们对已经存在的表/视图/触发器进行修改/更新时，用的是数据操纵语言。以表为例，如果你不想将表真的删掉，只是想删除其中某些特定的记录，则应该用delete，此时，表的其他数据以及表的结构还在。
+权限 收回从u1创建表的权限：（B）
+ A.revoke create table to u1 B.revoke create table from u1 C.revoke create table from u1 with grant option D.deny create table to u1  Notes: with grant option 权限传递 使用这个子句时将允许用户将其权限分配给他人
+子查询： 在SQL语言中，子查询是： (D)
+ A.返回单表中数据子集的查询语言 B.选取多表中字段子集的查询语句 C.选取单表中字段子集的查询语句 D.嵌入到另一个查询语句之中的查询语句  Notes: 子查询本质上是嵌套进其他SELECT,UPDATE,INSERT,DELETE语句的一个被限制的SELECT语句。
+子查询也可以嵌套在其他子查询中,这个嵌套最多可达32层。子查询也叫内部查询(Inner query)或者内部选择(Inner Select),而包含子查询的查询语句也叫做外部查询（Outter)或者外部选择(Outer Select)。</description>
+    </item>
+    
+    <item>
+      <title>Model_Python</title>
+      <link>https://www.m1sty.com/2021/coding_model_python_practise/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_model_python_practise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model_R</title>
+      <link>https://www.m1sty.com/2021/coding_model_r_practise/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_model_r_practise/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -59,10 +123,10 @@ sql笔试题 SQL面试必会50题
     
     <item>
       <title>数据分析师知识图谱</title>
-      <link>https://www.m1sty.com/2021/overview_data-analyst_detail/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_important-points/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/overview_data-analyst_detail/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_important-points/</guid>
       <description>统计学 描述性统计  均值（数学期望） 中位数 众数 方差（标准差）：掌握3 sigma原理 极大值、极小值 数据分布  正态 伯努利 二项 均匀 指数 播送 偏度与峰度   缺失值 异常值  假设检验  原假设/备份假设 T检验 卡方检验（非参数检验） P值 置信度 置信区间 AB Test  概率论  条件概率（贝叶斯原理） 抽样 大数据定律 中心极限定理 区间估计/参数估计 $R^2$ 方差分析  分析工具 Excel  基本计算函数 数据透视表 VLOOKUP  SQL  表的增删改查 表连接 子查询 窗口函数 SQL语句执行顺序  Python  基本数据结构  列表 字典 字符串 元组 数组 集合   基本语句  if条件语句 for循环 while循环   基本package  numpy pandas sklearn statsmodel matplotilb seaborn    数据可视化 Tableau  图标类型（使用场景） 交互式面板 基础的计算函数  机器学习 原理/模型解读/模型评估/使用场景/优缺点/模型优化/数学原理/公式</description>
     </item>
     
@@ -77,10 +141,10 @@ sql笔试题 SQL面试必会50题
     
     <item>
       <title>数据分析业务场景</title>
-      <link>https://www.m1sty.com/2021/note_operational-issues/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_operational-issues/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_operational-issues/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_operational-issues/</guid>
       <description>指标体系 选取原则  根本性：正确的核心指标，正确的分析方向 可解释性：能用相应的业务逻辑去解释 结构性：对业务进行充分解读，从不同的维度进行拆解  例如新增用户：不同渠道的新增用户，每个渠道的转化率，新增用户的价值    业务指标构成  原生指标（已经最细，不可再拆分，例如支付金额、下单数等，会和一些修饰词和时间段连用） 派生指标（日活、月活、次活、转化率等，经过一些转化和计算得到的复合指标，进行进一步拆分和细化，到具体的用户群和场景去分析这些指标的波动或变化）  搭建步骤  理清目前业务所处阶段和发展方向  前期/创业期：用户量。围绕用户量的提升进行多维拆解，关注用户来源的渠道（保证渠道的有效性）。 中期/上升期：用户量的变化趋势，优化用户的结构。关注新老、年龄、性别、学历、地区等用户属性的维度。用户留存，用户群体，用户群体的特殊性，功能方向。 后期/成熟期：产品变现能力和市场份额（商业化）。ROI指标，各种商业化模式的收入（市场份额和竞品的监控）。   确定核心指标  正确、具有相当解释性的指标。例如头条等产品日活和留存很高，但是打开app后三秒内的跳出率很高，所以应该关注的是“打开app后停留超过三秒的用户”这个指标。   核心指标的拆解  监控组成核心指标的各个维度和各个部分 拆解办法：对核心指标进行公式计算，再从不同的业务路径进行拆解  例如“打开app后停留超过三秒的用户”，可以拆解为进入app用户*停留大于3秒用户%（占比）； 关注用户来源渠道，分析用户来源：用户以何种方式打开app的，例如点击桌面图标、通知、push等等 关注用户画像：例如停留时长分布；停留时长分布的用户特性；分析作弊或者刷量的可能性 例如电商平台，关注成交额或者交易额，用户必须经过打开app选择商品确认订单支付订单（漏斗环节），每个漏斗环节的关键指标都可以通过这种方式进行分析。更细维度拆分，再根据公式进行逐个影响因素的分析     指标的周知、存档及落地  周知：当面告知所有该业务相关的工作人员（保证后续工作顺利与推进，防止相关工作人员对指标进行误用、甩锅的现象） 存档：搭建的业务指标体系所涉及到的具体业务逻辑以及口径，需要有明确的记载和存档；比如我们在定义某个功能的渗透率的口径，该功能的日点击人数比上当天的日活。进行存档，后来的人知道我们当初是如何去定义和计算的。 落地：建立核心指标相关的报告和看板。实际工作中，与埋点挂钩，在埋点之前完成。    AB实验 原理   来源于假设检验
  原假设：对于两个同质样本组，我们对于其中一组做出某项改动，对于我们关注的核心指标不会产生显著影响。如果最后得到的p值足够小，则证明该改动会对我们关注的结果产生显著影响。 本质：对同质样本组的对照实验。    辛普森悖论
  对两个数据分别进行讨论的时候，他们都满足同样的性质，可是当我们把两个数据进行合并的时候则会得出截然相反的结论。 原因：我们把值和量两个维度的数据合并为了值一个维度数据进行讨论。我们没有对样本数据集去进行流量合理的分割，导致每个数据集的特征不一致。 解决方案：对样本数据集进行一个合理的样本量的计算，保证每个实验组的样本量都合理且他们的特征都与总体特征相接近。    如何计算样本量</description>
@@ -106,29 +170,29 @@ sql笔试题 SQL面试必会50题
     
     <item>
       <title>商业智能思维</title>
-      <link>https://www.m1sty.com/2021/note_bi_map/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_bi-sense/</link>
       <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_bi_map/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_bi-sense/</guid>
       <description>BI的价值  我们的使命：让业务更清晰，让决策更高效 我们的远景：打造阿里巴巴数字经济决策支持系统  工作的本质（关键词）  给事实  用数据描述整体业务的表现情况 用具体的数据描述业务，客观描述 如何定义业务   给结论  业务处在什么阶段，发展状况，是否达到满意的状况   给建议  给策略价值 如何通过数据分析给用户更好的服务    能力要求 懂商业、懂数据、会分析、助业务
  计算机基础（sql取数，处理） 数理统计（如何有机整合数据，结构化） 商业理解（让分析结果有落地性，提升决策效率） 系统化思考（不仅仅考虑当下，要考虑未来的远景，蝴蝶效应） 逻辑思考（因果关系，哪些东西对业务产生积极/消极影响，是长期还是短期） 结构化思考（问题拆解，有结构的拆解，分解分拆，寻找主干，解决主干的问题，看到全局）  BI职业发展  助力决策 专业精进  阿里BI的优势  数据环境好（海量数据 海量业务） 阿里偏重决策支持，面向高管，多看多学习 （部门）技术中台，简单直接  阿里BI与外面的区别  商业理解（快速学习业务） 发现问题 分析问题 解决问题 给出结论 偏决策分析  如何与其他部门业务合作  合作部门  业务团队 数据产品团队（反馈需求） 财务 法务    如何准备  冷静、有条理、有框架  面试什么？  分析相关的基础知识 做什么分析项目 商业情景如何分析（用什么指标） 思路展示  </description>
     </item>
     
     <item>
       <title>数据运营行业与业务场景</title>
-      <link>https://www.m1sty.com/2021/note_industry-and-business-scenarios/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_industry-and-business-scenarios/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_industry-and-business-scenarios/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_industry-and-business-scenarios/</guid>
       <description>热门行业+业务场景  零售行业  会员打标  用户标签、MECE原则   A/B测试  AB实验、核心业务指标的制定   流失预警  RFM模型、防流失模型、GB/NBG模型   偏好分析  用户画像、标签任务自动化   聚类分析  聚类算法、无监督学习、Scaling   数据推演  数据推演、case when函数     跨境电商行业  选品分析  主观赋权法、CRITIC客观赋权法   报表制作  漏斗模型、人货场模型、指标搭建   盈亏分析  费米分解法、蒙特卡洛模型   策略复盘  贝叶斯公式、Possion分布、参数估计   竞品分析  RFM模型、DBSCAN聚类分析   广告策略  细分分析、AARRR、敏感性分析     电商行业  薪资预测  线性回归模型   用户行为  AARRR模型、漏斗分析   用户价值  RFM模型、用户分析   用户画像  标签体系建立、用户生命周期开发   销售预测  ARIMA模型、智能补货流程搭建   协同过滤  用户相似度、智能推荐      数据分析流程 用户流失模型 应用数据挖掘技术可以根据过去拥有的客户流失数据建立客户属性、服务属性和客户消费数据与客户流失可能性关联的数学模型，找出客户属性、服务属性和客户消费数据与流失的关系，给出明确的数学公式或规则，从而计算出客户流失的可能性。</description>
     </item>
     
     <item>
       <title>电商店铺数据监控&amp;品牌诊断报告</title>
-      <link>https://www.m1sty.com/2021/note_shop-analysis/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_shop-analysis/</link>
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_shop-analysis/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_shop-analysis/</guid>
       <description>店铺监控数据指标 通过对店铺进行每月，每周，每天的数据记录分析，跟市场行业，对手，消费者的变化进行比较，从而对自己品牌的运营打法，营销策划针对性的优化，提升品牌的复购率和议价空间。
 处理数据的方法：主要是在数据里加入时间维度，对核心数据指标进行同比，环比的分析得出数据出现差异的地方进行优化。另外一个维度是利润导向，通过财务管理来驱动运营效率提升。
 同时，通过对店铺的数据监控和分析来建立起数据化驱动团队的精细化运营模式。
@@ -152,6 +216,15 @@ sql笔试题 SQL面试必会50题
     </item>
     
     <item>
+      <title>Uncertainty in Data Integration：Content</title>
+      <link>https://www.m1sty.com/2021/atmd_9_uncertainty-in-data-integration_1_content/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atmd_9_uncertainty-in-data-integration_1_content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>KNN：Practise</title>
       <link>https://www.m1sty.com/2021/dm_knn_5_practise/</link>
       <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
@@ -159,6 +232,24 @@ sql笔试题 SQL面试必会50题
       <guid>https://www.m1sty.com/2021/dm_knn_5_practise/</guid>
       <description>K近邻模型 模型思想 模型介绍 模型的本质就是寻找k个最近样本,然后基于最近样本做“预测”。对于离散型的因变量来说,从k个最近的已知类别样本中挑选出频率最高的类别用于未知样本的判断;对于连续型的因变量来说,则是将k个最近的已知样本均 值用作未知样本的预测。
 执行步骤  确定未知样本近邻的个数k值。 根据某种度量样本间相似度的指标(如欧氏距离)将每一个末知类别样本的最近k个已知样本搜寻出来,形成一个个簇。 对搜寻出来的已知样本进行投票,将各簇下类别最多的分类用作未知样本点的预测。  K值的选择 不同的K值带来的影响  根据经验发现，不同的k值对模型的预测准确性会有比较大的影响，如果k值过于偏小，可能会导致模型的过拟合；反之，又可能会使模型进入欠拟合状态。  设置投票权重/多重交叉检验  k值的选择，一种是设置k近邻样本的投票权重，使用KNN算法进行分类或预测时设置的k值比较大，担心模型发生欠拟合的现象，一个简单有效的处理办法就是设置近邻样本的投票权重，如果已知样本距离未知样本比较远，则对应的权重就设置得低一些，否则权重就高一些，通常可以将权重设置为距离的倒数。 另一种是采用多重交叉验证法，该方法是目前比较流行的方案，其核心就是将k取不同的值，然后在每种值下执行m重的交叉验证，最后选出平均误差最小的k值。 也可以将两种方法结合，选出理想的k值。  距离度量 欧氏距离 曼哈顿距离 余弦相似度 代码 函数说明 代码演示 Example 1 # 导入第三方包 import pandas as pd # 导入数据 Knowledge = pd.read_excel(r&amp;#39;Knowledge.xlsx&amp;#39;) # 返回前5行数据 Knowledge.head() # 构造训练集和测试集 # 导入第三方模块 from sklearn import model_selection # 将数据集拆分为训练集和测试集 predictors = Knowledge.columns[:-1] X_train, X_test, y_train, y_test = model_selection.train_test_split(Knowledge[predictors], Knowledge.UNS, test_size = 0.25, random_state = 1234) # 导入第三方模块 import numpy as np from sklearn import neighbors import matplotlib.</description>
+    </item>
+    
+    <item>
+      <title>Text Databases：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_8_text-databases_1_content/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_8_text-databases_1_content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Databases：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_8_text-databases_2_tutorial/</link>
+      <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_8_text-databases_2_tutorial/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -181,41 +272,6 @@ sql笔试题 SQL面试必会50题
     </item>
     
     <item>
-      <title>Lecture3：Business Model Innovation</title>
-      <link>https://www.m1sty.com/2021/eb_lecture3_business-model-innovation/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/eb_lecture3_business-model-innovation/</guid>
-      <description>Curriculum structure   Learn about
- Major factors influencing strategic IT investment decisions Forces that erode competitive advantage    Reading
- Chapter 2 (textbook)    Prepare Case
- Facebook: Facing Off Against Tencent (HBR)    Case Questions
- Give an example of how Tencent disrupted the vertical value chain of an industry of your choice. Provide a detailed analysis of Tencent as a global payment gateway provider.</description>
-    </item>
-    
-    <item>
-      <title>Game Simulation Review</title>
-      <link>https://www.m1sty.com/2021/ed_8_game-simulation-review/</link>
-      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/ed_8_game-simulation-review/</guid>
-      <description>Game Simulation Review Curriculum Structure  Guide to analysis framework for Final Board Presentations on 25 April 2021 Summary of lessons learned in: Integration of value chain, product design, marketing, production, sales, competition  Class 8 PPT Simulation Game Learning Goals You have actually run a business  Selected brand portfolio Distributed products to end users Placed advertisements in the media Decided on employee compensation Scheduled production Worried about profits Managed cash flows  You Have Sweated the Details  Customers were demanding Competitors were unrelenting Investors were challenging Many functional, tactical decisions to master Decisions had to be well-coordinated and timed Cash was always a constraint Constant skillful adjustment was required to stay on course and get ahead  Were You Driven?</description>
-    </item>
-    
-    <item>
-      <title>Lecture2：Business Disruption</title>
-      <link>https://www.m1sty.com/2021/eb_lecture2_business-disruption/</link>
-      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/eb_lecture2_business-disruption/</guid>
-      <description>Curriculum structure   Learn about:
- Disruption and e-business transformation Forces transforming strategy Achieving sustainable competitive advantage    Reading:
- How to Plan E-Business Initiatives in Established Companies    Prepare Case:
- Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game Industry (HBR)    Case Questions:
- Analyze the macro view of the video game industry and Nintendo’s business cycle. Discuss how technology companies can cope with a fast-paced environment.</description>
-    </item>
-    
-    <item>
       <title>Decision Trees：Content</title>
       <link>https://www.m1sty.com/2021/dm_decision-trees_1_content/</link>
       <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
@@ -225,15 +281,12 @@ sql笔试题 SQL面试必会50题
     </item>
     
     <item>
-      <title>Lecture1：Business Order; Chaos and Complexity</title>
-      <link>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</link>
+      <title>Top-k Queries on Uncertain Data：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_7_top-k-queries-on-uncertain-data_1_content/</link>
       <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</guid>
-      <description>Curriculum structure   Learn about:
- Transition from industrial revolution to digital revolution Information as an experience good Economics of information Chaos and complexity e-Business transformation cycle    Reading:
- Chapter 1 (textbook)    Case:
- From Mental Models to Transformation: Overcoming Inhibitors to Change (HBR)    Text Book: Chapter 1 Introduction Chapter 1 Change and transformation in business explores past attempts at organisational transformation and considers why many of these efforts have been unsuccessful.</description>
+      <guid>https://www.m1sty.com/2021/atdm_7_top-k-queries-on-uncertain-data_1_content/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -247,11 +300,20 @@ sql笔试题 SQL面试必会50题
     </item>
     
     <item>
-      <title>AB Test实验全知识</title>
-      <link>https://www.m1sty.com/2021/note_ab-test/</link>
+      <title>Top-k Queries on Uncertain Data：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_7_top-k-queries-on-uncertain-data_2_tutorial/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_7_top-k-queries-on-uncertain-data_2_tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AB Test</title>
+      <link>https://www.m1sty.com/2021/data-analysis_ab-test/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_ab-test/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_ab-test/</guid>
       <description>前言 A/B实验的目的在于通过科学的实验设计、采样样本代表性、流量分割与小流量测试等方式来获得具有代表性的结论，并确信该结论可推广到全部流量。目前已广泛用于推荐算法、产品交互设计、广告投放、产品功能迭代、运营策略等方方面面，在评估资源使用ROI最常用且最为准确的方法也是A/B实验。
 AB test基础知识 在开始进行A/B实验之前需要了解一些关于A/B测试的基础知识，包含流量的正交与互斥、实验分组、假设检验、P值、显著性水平α、置信区间、统计功效等。
 正交试验与互斥实验 一个产品的流量是有限的，但是A/B实验的需求是大量的，因此在进行实验前需要确认流量必须互斥还是可以进行正交。正交实验指每个独立实验为一层，层与层之间流量是正交的，一份流量经过每层实验时，都会再次随机打散，且随机效果离散。互斥实验指实验在同一层拆分流量，且不论如何拆分，不同组的流量是不重叠的，如下图所示：
@@ -275,21 +337,11 @@ AB test基础知识 在开始进行A/B实验之前需要了解一些关于A/B测
     </item>
     
     <item>
-      <title>Funding your startup</title>
-      <link>https://www.m1sty.com/2021/ed_7_funding-your-startup/</link>
-      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/ed_7_funding-your-startup/</guid>
-      <description>Funding your startup Curriculum Structure  Funding your startup  Venture Capital YCombinator, Seed Capital, Angel Investors, Accelerators and AI Design Studios Kickstarter and other crowdfunding options   Summary  Class 7 PPT New Venture Funding Lean Startup Methodology Forming a Team w. Complementary Skills Steve Blank’s Lessons Learned:
- Schedule a Mixer a month before the start. Interview teams only. Finding product/market fit often requires complementary skills  Hacker/Hardware Hustler Designer Visionary   Encourage inter-departmental/disciplinary teams—business + engineering + science  Steve Blank &amp;amp; the Lean Launchpad Class 3 yrs from Lean Startup to Acquisition</description>
-    </item>
-    
-    <item>
       <title>ROI思维</title>
-      <link>https://www.m1sty.com/2021/note_roi/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_roi/</link>
       <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/note_roi/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_roi/</guid>
       <description>ROI思维 ROI指的就是投入回报率。举个简单的例子，我们经营一个剧集，这个剧集分发在AB不同的场景里面，在曝光量的量级基本相同的情况下，A场景的转化率远远高于B场景，那么这就说明A场景的投入回报率要高于B场景，这样我们就可以通过调整AB两个场景的投入来获得更高效的回报并提升资源的利用率。
 ROI 指标 曝光-转化体系  基准值：各指标的及格线 pv：page view uv：user view 曝光pv：访问次数，可以反映资源给到的支持，首屏位置的曝光pv一般是页面最高的，如果能固定在这个位置的资源，那么就可以获得较高的曝光pv 点击pv：点击次数 CTR（pv）=点击pv/曝光pv，可以反映在这个位置上的内容推广物料的转化能力，如果pv点击率低于基准值则说明物料的转化能力弱，投入产出率低，产出的转化配不上给到的资源 曝光uv：访问用户数，同样可以反映资源给到的支持 点击uv：点击用户数 CTR（uv）=点击uv/曝光uv，可以反映在这个位置上的内容推广物料对单个用户的转化能力 过曝：累积过曝：曝光pv/曝光uv≥5时，这个标准不太一样有些以3为标准，有些以4或5为标准，这个指标单个物料是给单个用户曝光了多少次，一般展示频次控制在4次是能够达到最高的转化效能的，曝光过多往往会起到反效果； 粗放过曝：CTR没有达到基准值，可能是物料的吸引力不够强，也可能是曝光命中的准确度不高，一定程度上造成了资源浪费，出现这种情况可以调整为更为精准的定向曝光。 欠曝：欠曝与过曝相反。  拉新-留存-促活-承接体系  拉新：拉新主要是为内容拉入新用户，分为站外新用户和站内新用户，一般增量内容（比如新的题材、IP内容、热搜内容）更关注站外的拉新能力 新用户占比：新用户数/总用户数，体现内容拉新能力的重要指标。 时长：用户内容消费的时长 DAU：日活用户数，该指标可以看到内容在时间周期上的流量变化情况。 次日/3日/7日留存率：当天流入用户中第N天还登录的用户数/当天天新增总用户数，该指标是观测用户阶段性留存的重要依据，一般也可反向观测弃看率，留存率高则说明内容有持续的留存效能。 互动率：参与互动的用户数/收视用户数，这个指标可以看到该内容是否吸引用户参与讨论或者分享。 互动热词：一般以词云的方式呈现，排名靠前的热词在一定程度上代表用户共同的情感反馈，这些热词可以用作站外宣发和站内看点用。 承接：新热内容都是有生命周期的，这些内容即将结束的时候，需要用相关性比较强的内容产品将这部分用户留存住，这个过程就是承接，一般在内容即将收官时或中间的更新空档会进行种草预埋，如果是承接给未上线的新内容则需要进一步引导预约，观测预约用户的特征，决定是否能够完全承接旧内容，如果不能则需用不同内容分层承接，当新热内容无法满足承接需求时，也可用片库的内容进行承接。    图中简单罗列了内容承接的特征依据，除了性别和年龄外，可以参考的特征指标还有地域、受教育程度等人口统计学特征和类型偏好、情节偏好、明星偏好等行为特征。其中承接的效能主要观测两个指标，一个是用户重合度，一个是重合用户特征。
   用户重合度：（X内容用户∩Y内容用户）/（X内容用户∪Y内容用户），这个可以看到X内容对Y内容用户承接的能力，比如B1内容和A1内容的用户重合度是10%，B2内容和A1内容的用户重合度=30%，那么可以看到B2内容对A1内容的承接能力更强。
@@ -317,64 +369,110 @@ ROI 指标 曝光-转化体系  基准值：各指标的及格线 pv：page view
     </item>
     
     <item>
-      <title>Deep Learning and Neural Networks</title>
-      <link>https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/</link>
-      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Lecture 8：Game Simulation Review</title>
+      <link>https://www.m1sty.com/2021/edafv_8_game-simulation-review/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/</guid>
+      <guid>https://www.m1sty.com/2021/edafv_8_game-simulation-review/</guid>
+      <description>Game Simulation Review Curriculum Structure  Guide to analysis framework for Final Board Presentations on 25 April 2021 Summary of lessons learned in: Integration of value chain, product design, marketing, production, sales, competition  Class 8 PPT Simulation Game Learning Goals You have actually run a business  Selected brand portfolio Distributed products to end users Placed advertisements in the media Decided on employee compensation Scheduled production Worried about profits Managed cash flows  You Have Sweated the Details  Customers were demanding Competitors were unrelenting Investors were challenging Many functional, tactical decisions to master Decisions had to be well-coordinated and timed Cash was always a constraint Constant skillful adjustment was required to stay on course and get ahead  Were You Driven?</description>
+    </item>
+    
+    <item>
+      <title>Lecture 7：Funding your startup</title>
+      <link>https://www.m1sty.com/2021/edafv_7_funding-your-startup/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/edafv_7_funding-your-startup/</guid>
+      <description>Funding your startup Curriculum Structure  Funding your startup  Venture Capital YCombinator, Seed Capital, Angel Investors, Accelerators and AI Design Studios Kickstarter and other crowdfunding options   Summary  Class 7 PPT New Venture Funding Lean Startup Methodology Forming a Team w. Complementary Skills Steve Blank’s Lessons Learned:
+ Schedule a Mixer a month before the start. Interview teams only. Finding product/market fit often requires complementary skills  Hacker/Hardware Hustler Designer Visionary   Encourage inter-departmental/disciplinary teams—business + engineering + science  Steve Blank &amp;amp; the Lean Launchpad Class 3 yrs from Lean Startup to Acquisition</description>
+    </item>
+    
+    <item>
+      <title>Lecture 6：Deep Learning and Neural Networks</title>
+      <link>https://www.m1sty.com/2021/edafv_6_deep-learning-and-neural-networks/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/edafv_6_deep-learning-and-neural-networks/</guid>
       <description>Deep Learning and Neural Networks Curriculum Structure  Read Chapter 7 and 8  Review of using scorecards for decision-making - Figure 1 and 2 Why use decision trees? What are neural networks and what are the benefits and risks of deep learning?   Amazon and the Alexa Voice Smart Speaker Breakthrough  Deep Learning and Image and Voice Recognition Breakthroughs Fastest Consumer Adoption in US History Internet of Things and the Connected Smart City   Summary  Class 6 PPT Deep Learning: Image &amp;amp; Voice Applied AI: Perform tasks with AI or apply AI to specific industry verticals  Virtual Assistance Generating Insights Automation of Manual Processes Unlocking Unstructured Data  AI “core” capabilities in Language &amp;amp; Vision NLP Natural Language Processing    https://www.</description>
     </item>
     
     <item>
-      <title>Blue Ocean Strategy</title>
-      <link>https://www.m1sty.com/2021/ed_5_midterm-review/</link>
-      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Lecture 5：Blue Ocean Strategy</title>
+      <link>https://www.m1sty.com/2021/edafv_5_midterm-review/</link>
+      <pubDate>Mon, 22 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/ed_5_midterm-review/</guid>
+      <guid>https://www.m1sty.com/2021/edafv_5_midterm-review/</guid>
       <description>Blue Ocean Strategy Curriculum Structure  Industry Evolution from Emerging to Growth to Mature and Highly Competitive Blue Ocean Strategy: From Technology Innovation to Value Innovation Cirque du Soleil and YellowTail Wines Value Innovation cases Technology and Value Innovation in the Commuter Bicycle Industry  Class 5 PPT Industry Life Cycle &amp;amp; Porter&amp;rsquo;s Five Forces Stafes of the Industry Life Cycle Porter’s Five Forces Analysis of Industry Profitability Industry Life Cycle and Five Forces  Industries in the stages of Maturity and Decline will often seek government intervention or subsidies to help protect the declining industry.</description>
     </item>
     
     <item>
-      <title>Machine Learning, InsurTech and Ethical Considerations</title>
-      <link>https://www.m1sty.com/2021/ed_4_machine-learning-insurtech-and-ethical-considerations/</link>
-      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Lecture 4：Machine Learning, InsurTech and Ethical Considerations</title>
+      <link>https://www.m1sty.com/2021/edafv_4_machine-learning-insurtech-and-ethical-considerations/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/ed_4_machine-learning-insurtech-and-ethical-considerations/</guid>
+      <guid>https://www.m1sty.com/2021/edafv_4_machine-learning-insurtech-and-ethical-considerations/</guid>
       <description>Machine Learning, InsurTech and Ethical Considerations Curriculum Structure   How does Machine Learning work and why does data matter? Read Chapter 4 - 7
  Predicting heart attacks with a scorecard and common sense How much data do you need for Figure 2? What is the likelihood of Susan getting a heart attack in the next five years?    AI-enabled insurance: Improving the customer experience, better predictions and reduced claim fraud</description>
     </item>
     
     <item>
-      <title>Competitive Advantage</title>
-      <link>https://www.m1sty.com/2021/ed_3_competitive-advantage/</link>
-      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Probabilistic Queries：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_6_probabilistic-queries_1_content/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/ed_3_competitive-advantage/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_6_probabilistic-queries_1_content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Queries：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_6_probabilistic-queries_2_tutorial/</link>
+      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_6_probabilistic-queries_2_tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lecture 3：Competitive Advantage</title>
+      <link>https://www.m1sty.com/2021/edafv_3_competitive-advantage/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/edafv_3_competitive-advantage/</guid>
       <description>Competitive Advantage and Profitability Analysis Curriculum Structure   What is Competitive Advantage and how do you gain and sustain above-average profitability?
  Industry analysis vs firm-level analysis Calculating profit margins in low-cost, differentiated and dual advantage strategies Value chain analysis and profitability analysis Summary    How does this apply to the 3D Printed Carbon Fiber Bike Industry in the Venture Simulation Game?
  Trek and the Traditional Bike Producers Dragon and the Online Bike Startups Pricing, production and sales costs, market share and competitive advantage Summary    Class 3 PPT Competitive Advantage Defined Startegy Toolbox  Firm-level Analysis Industry-level Analysis  Competitive Advantage Analysis Value Chain Analysis    Level of Analysis: One Company vs.</description>
     </item>
     
     <item>
-      <title>Applied AI in Business</title>
-      <link>https://www.m1sty.com/2021/ed_2_applied-ai-in-business/</link>
+      <title>Lecture 2：Applied AI in Business</title>
+      <link>https://www.m1sty.com/2021/edafv_2_applied-ai-in-business/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/ed_2_applied-ai-in-business/</guid>
+      <guid>https://www.m1sty.com/2021/edafv_2_applied-ai-in-business/</guid>
       <description>Applied AI in Business Curriculum Structure   Reading
  What is Machine Learning and the 5 components of AI systems（Read Chapter 1-3 of AI book）    Material
  Why use Machine Learning for Credit Scoring and deciding to give Loans? What are the 5 components of AI systems What are the 5 components of DoNotPay? Several FinTech Use Cases Summary Questions for reflection    Class 2 PPT Intro to Applied AI Four Pillars of Applied AI  Virtual Assistance Generating Insights Automation of Manual Processes Unlocking Unstructured Data  DoNotPay: Four Pillars of Applied AI?</description>
     </item>
     
     <item>
-      <title>Intro Entrepreneurship Development</title>
-      <link>https://www.m1sty.com/2021/ed_1_intro/</link>
+      <title>Lecture 1：Intro Entrepreneurship Development</title>
+      <link>https://www.m1sty.com/2021/edafv_1_intro/</link>
       <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/ed_1_intro/</guid>
+      <guid>https://www.m1sty.com/2021/edafv_1_intro/</guid>
       <description>Topic Topics covered
  The Business Model Canvas Customer Discovery Value Propositions &amp;amp; Minimal Viable Products Channels and Influencers Pivots Revenues and Pricing Models Resources, Activities and Partners Costs, Metrics, Financials and Fundraising Crowdfunding, Venture Capital Hong Kong incubators and accelerators Applied AI in Business The Applied AI Data Business Model Canvas The AI Startup Playbook  MVP Minimum Viable Product
 Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</description>
+    </item>
+    
+    <item>
+      <title>Textbook：Artificial Intelligence and Machine Learning for Business</title>
+      <link>https://www.m1sty.com/2021/edafv_0_textbook_artificial-intelligence-and-machine-learning-for-business/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/edafv_0_textbook_artificial-intelligence-and-machine-learning-for-business/</guid>
+      <description>Artificial Intelligence and Machine Learning for Business 1.Introduction Topics in the book  What machine learning and artificial intelligence are. The sort o things organizations use artificial intelligence for. What a predictive model looks like. The relationship between artificial intelligence, machine learning and Big Data. The people and tools needed to apply artificial intelligence. How to use artificial intelligence to improve business processes and the bottom line. The legal and ethical issues that need to be considered when developing artificial intelligence based solutions that are going to be used to make decisions about people.</description>
     </item>
     
     <item>
@@ -396,12 +494,12 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
     </item>
     
     <item>
-      <title>Top-k Query：Content</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k_1_content/</link>
+      <title>Uncertain Databases：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_5_uncertain-databases_1_content/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_top-k_1_content/</guid>
-      <description>Top-k Queries Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
+      <guid>https://www.m1sty.com/2021/atdm_5_uncertain-databases_1_content/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -414,23 +512,12 @@ Business Model Canvas Steve Blank Lean Startup Videos Value Proposition Videos</
     </item>
     
     <item>
-      <title>Top-k Query：Tutorial</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</link>
+      <title>Uncertain Databases：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_5_uncertain-databases_2_tutorial/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</guid>
-      <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
-Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
-Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
-    </item>
-    
-    <item>
-      <title>Artificial Intelligence and Machine Learning for Business</title>
-      <link>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</guid>
-      <description>Artificial Intelligence and Machine Learning for Business 1.Introduction Topics in the book  What machine learning and artificial intelligence are. The sort o things organizations use artificial intelligence for. What a predictive model looks like. The relationship between artificial intelligence, machine learning and Big Data. The people and tools needed to apply artificial intelligence. How to use artificial intelligence to improve business processes and the bottom line. The legal and ethical issues that need to be considered when developing artificial intelligence based solutions that are going to be used to make decisions about people.</description>
+      <guid>https://www.m1sty.com/2021/atdm_5_uncertain-databases_2_tutorial/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -444,20 +531,11 @@ Q2) Use the TA algorithm to find the two best apartments in terms of f.</descrip
     </item>
     
     <item>
-      <title>Top-k Query：Supplement</title>
-      <link>https://www.m1sty.com/2021/atdm_top-k_4_more/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/atdm_top-k_4_more/</guid>
-      <description>Threshold Algorithm (TA)  Original version, often used as synonym for entire family of top-k algorithms. But: eager random access to candidate objects required. Worst-case memory consumption is strictly bounded → O(k)  No-Random-Access Algorithm (NRA)  No random access required at all, but may have to scan large parts of the index lists. Worst-case memory consumption bounded by index size → O(m*n + k)  </description>
-    </item>
-    
-    <item>
       <title>Tableau学习心得与模板分享</title>
-      <link>https://www.m1sty.com/2021/visualization_tableau_map/</link>
+      <link>https://www.m1sty.com/2021/data-analysis_tableau/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/visualization_tableau_map/</guid>
+      <guid>https://www.m1sty.com/2021/data-analysis_tableau/</guid>
       <description>学习路径 Tableau 入门套件 简单了解Tableau的界面和基础操作。
 https://www.tableau.com/zh-cn/learn/starter-kits
 建议学习时间：两天
@@ -485,6 +563,35 @@ Tableau的学习最重要的就是动手操作，学习数据的逻辑、页面�
     </item>
     
     <item>
+      <title>Top-k Queries：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_4_top-k-queries_1_content/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_4_top-k-queries_1_content/</guid>
+      <description>Top-k Queries Background Multidimensional Data  Flat relational tables Multimedia feature vectors Data warehouse data Spatial data Text documents  Attribute Types  Attributes of multidimensional tuples may have variable types  Ordinal (e.g., age, salary) Nominal categorical values (e.g., color, religion) Binary (e.g., gender, owns_property)   Basic queries: range, NN, similarity  Basic Queries  (Range) selection query  Returns the records that qualify a (multidimensional) range predicate Example:  Return the employees of age between 45 and 50 and salary above $100,000     Distance (similarity) query  Returns the records that are within a distance from a reference record.</description>
+    </item>
+    
+    <item>
+      <title>Top-k Queries：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_4_top-k-queries_2_tutorial/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_4_top-k-queries_2_tutorial/</guid>
+      <description>TA &amp;amp; NRA Qustion A website posts information about apartments. Suppose that there are 10 apartments to be sold, together with their ratings($a_1$) and prices($a_2$), as listed in the table below. The website employs an aggregation function f = 0.6*$a_1$+ 0.4*$a_2$ to rank these apartments.
+Q1) Write down two lists of apartments, in descending order of $a_1$ and $a_2$.
+Q2) Use the TA algorithm to find the two best apartments in terms of f.</description>
+    </item>
+    
+    <item>
+      <title>Top-k Queries：Supplement</title>
+      <link>https://www.m1sty.com/2021/atdm_4_top-k-queries_4_more/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_4_top-k-queries_4_more/</guid>
+      <description>Threshold Algorithm (TA)  Original version, often used as synonym for entire family of top-k algorithms. But: eager random access to candidate objects required. Worst-case memory consumption is strictly bounded → O(k)  No-Random-Access Algorithm (NRA)  No random access required at all, but may have to scan large parts of the index lists. Worst-case memory consumption bounded by index size → O(m*n + k)  </description>
+    </item>
+    
+    <item>
       <title>Clusterings：Content</title>
       <link>https://www.m1sty.com/2021/dm_clusterings_1_content/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
@@ -495,10 +602,10 @@ Tableau的学习最重要的就是动手操作，学习数据的逻辑、页面�
     
     <item>
       <title>Spatial Networks：Content</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</link>
+      <link>https://www.m1sty.com/2021/atdm_3_spatial-networks_1_content/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_3_spatial-networks_1_content/</guid>
       <description>Spatial Networks Background Network Distance  In many real applications accessibility of objects is restricted by a spatial network  Examples  Driver looking for nearest gas station Mobile user looking for nearest restaurant     Shortest path distance used instead of Euclidean distance SP(a,b) = path between a and b with the minimum accumulated length  Challenges  Euclidean distance is no longer relevant  R-tree may not be useful, when search is based on shortest path distance   Graph cannot be flattened to a one-dimensional space  Special storage and indexing techniques for graphs are required   Graph properties may vary  directed vs.</description>
     </item>
     
@@ -514,10 +621,10 @@ The algorithm selects the first point randomly. Let t be any step of the algorit
     
     <item>
       <title>Spatial Networks：Tutorial</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</link>
+      <link>https://www.m1sty.com/2021/atdm_3_spatial-networks_2_tutorial/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_3_spatial-networks_2_tutorial/</guid>
       <description>Dijkstra&amp;rsquo;s algorithm review A* search algorithm review Nearest neighbor search exercise Question Consider a spatial network database, which includes a road network graph G and a set of points of interest P. The points in P can only be located on the vertices or edges of G. Each point of interest is with some labels (at least one), e.g., &amp;lsquo;school&amp;rsquo;, &amp;lsquo;hotel&amp;rsquo;, &amp;lsquo;restaurant&amp;rsquo;. The points P are indexed by an R-tree $R_P$ based on location and by an inverted file (see the demo below) IP based on the labels.</description>
     </item>
     
@@ -544,10 +651,10 @@ Reclustering  STEP 1  For each point P2, P3, P5, P6, P7, determine the closest c
     
     <item>
       <title>Spatial Networks：Supplement</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</link>
+      <link>https://www.m1sty.com/2021/atdm_3_spatial-networks_4_more/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_3_spatial-networks_4_more/</guid>
       <description>Shortest Path Search Dijkstra&amp;rsquo;s algorithm   Dijkstra算法用来寻找图形中节点之间的最短路径。
   在Dijkstra算法中，需要计算每一个节点距离起点的总移动代价。同时，还需要一个优先队列结构。对于所有待遍历的节点，放入优先队列中会按照代价进行排序。
   在算法运行的过程中，每次都从优先队列中选出代价最小的作为下一个遍历的节点。直到到达终点为止。
@@ -601,6 +708,24 @@ def k_SSE(X,cluster): # 选择连续的K种不同的值 K = range(1,clusters+1) 
     </item>
     
     <item>
+      <title>Spatial Data Management：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_2_spatial-data-management_1_content/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_2_spatial-data-management_1_content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial Data Management：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_2_spatial-data-management_2_tutorial/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_2_spatial-data-management_2_tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Association：Content(1)</title>
       <link>https://www.m1sty.com/2021/dm_association_1_content1/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
@@ -622,6 +747,15 @@ def k_SSE(X,cluster): # 选择连续的K种不同的值 K = range(1,clusters+1) 
     </item>
     
     <item>
+      <title>Database Review：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_1_database-review_1_content/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_1_database-review_1_content/</guid>
+      <description> Database design and queries  Structure of Relational Databases Reduction of an E-R Schema to Tables Relational Algebra and SQL Storage of relations   Database indexing  Why indexing? What are the types of indexes that we have in a DBMS? How does the B+-tree index a relation based on a search key? How are B+-trees updated? How do hash-based indexes operate?    </description>
+    </item>
+    
+    <item>
       <title>Association：Exercise</title>
       <link>https://www.m1sty.com/2021/dm_association_2_exercise/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
@@ -636,12 +770,32 @@ SON Algorithm Introduction Let s be the support threshold:
     </item>
     
     <item>
+      <title>Database Review：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_1_database-review_2_tutorial/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_1_database-review_2_tutorial/</guid>
+      <description>TBC</description>
+    </item>
+    
+    <item>
       <title>Association：Assignment</title>
       <link>https://www.m1sty.com/2021/dm_association_3_assignment/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dm_association_3_assignment/</guid>
       <description>Association Frequent Itemsets Qustion 1 Qustion 1-1  Table 1 shows a list of baskets as well as the items they contain. For example, this could be the set of products bought by each customer during a single trip to a grocery store. Using the A-priori algorithm, find all frequent itemsets with support threshold 0.4 (i.e. in this example they occur at least 40% of 7 times, i.e. at least three times.</description>
+    </item>
+    
+    <item>
+      <title>Curriculum Overview</title>
+      <link>https://www.m1sty.com/2021/atdm_0_overview/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_0_overview/</guid>
+      <description>Course Information 1-27
+  Lecture 1 Database Review 28-128
+ Database design and queries  Structure of Relational Databases Reduction of an E-R Schema to Tables Relational Algebra and SQL Storage of relations   Database indexing  Why indexing? What are the types of indexes that we have in a DBMS? How does the B+-tree index a relation based on a search key? How are B+-trees updated?</description>
     </item>
     
     <item>
@@ -679,6 +833,15 @@ SON Algorithm Introduction Let s be the support threshold:
   指标体系生命周期 生命周期主要包含定义、生产、消费、下线四个阶段。针对整个生命周期要持续做指标运维、质量保障，同时为了提高指标数据复用度，降低用户使用成本需要做对应的数据运营工作。
 应用场景 指标体系主要是结合用户的业务场景来进行使用，多个不同的指标和维度可以组合起来进行业务的综合分析，用户可通过指标的变化看到整体业务的变化，并能够快速发现问题、定位问题。常用的场景一种是决策分析的场景，通过数据看清业务现状进行战略决策支持，另一种是运营分析场景，无论是做用户运营、产品运营还是活动运营都需要各类指标数据的支撑去看清问题、分析问题和指导解决问题。
 为什么要搭建数据指标体系？ 横向意义  衡量业务发展质量：指标体系可以反映业务客观事实，看清业务发展现状，通过指标对业务质量进行衡量，把控业务发展情况，针对发现的业务问题聚焦解决，促进业务有序增长。 建立指标因果关系：主要明确结果型指标和过程型指标关系，通过结果指标回溯过程指标，找到解决问题的核心原因。 指导用户分析工作：目的建立产品评估体系、活动效果评估体系、智能运营分析体系。 指导基础数据建设：明确基础数据建设方向，集中资源，避免过程和结果分析指标数据的遗漏或缺失。 指导内容产品建设：结合用户的业务场景来进行使用，多个不同的指标和维度可以组合起来进行业务的综合分析，用户可通过指标的变化看到整体业务的变化，并能够快速发现问题、定位问题。 统一指标消费口径：企业内统一关键指标业务口径及计算口径，统一企业业务目标，实现自上而下目标驱动。  纵向意义  业务规整 数据管理、数据仓库 数字产品、数字服务 企业数字生态化、数字驱动  数据指标体系搭建流程 STEP1：数据指标选取 快速了解行业/企业/业务 拆解业务模块  内容：  了解产品形态：指的是熟悉整个产品的运作逻辑，关注的是用户角色，信息和渠道，以及他们之间的流转关系是什么样的，也就是产品的框架； 了解业务逻辑：指的是要执行某个业务，用户角色需要走过的路径，会有什么角色参与，有什么功能模块（或子系统），模块之间的关联性，数据之间的流向是什么样的； 绘制业务流程图：在了解了业务逻辑的基础上，把功能分解下来，划分具体的细节流程，异常流程或提示等【业务流程图、数据流程图、visio的使用】。   方法：  用户行为法：数据分析的最终落脚点都会落到用户的行为分析上，只有更好地了解用户习惯、用户偏好、用户画像才能更好地创新或改进或迭代产品。用户行为法是将自己带入到产品与业务中去，实际的走一遍产品流程与业务流程，了解我们在这个过程中所收获的一些信息。 业务拆分法：业务拆分法针对的对象是一些大型的生态型企业，他们的业务多种多样，每个业务板块的产品布局也是不相同的。把业务拆分成不同的子模块，既可以通过优势互补来达到共享资源，也可以将每个子业务经过重新定位来强化营收，同时业务之间增加其竞争力，在强化业务中寻求大创新与大突破。 指标推进法：指标推进法其实就是将企业的总指标进行层层划分，可以按照流程或者公式来进行拆解，根据分解的指标所涉及的工作内容，来了解整体业务的详细流程。 商业画布：商业画布是一种分析企业价值的工具，通过把商业模式中的元素标准化，引导我们的思维，将业务知识素材归档。    例子  电商类产品  商品类指标 营销类指标 风控类指标 市场竞争类指标 电商总体运营类指标 流量类指标 销售转化类指标 客户价值指标   o2o类产品  流量类指标 订单相关指标 登陆注册指标 生命周期相关指标 行为转化指标 用户属性指标    梳理业务与指标 鱼骨图/逻辑树/MECE原则 对业务流程图、数据流程图进行进一步分析，把复杂的业务问题拆解成多个简单问题，进而拆分更细的数据指标，有利于把握核心指标，提升指标系统的有效性。</description>
+    </item>
+    
+    <item>
+      <title>数据可视化案例</title>
+      <link>https://www.m1sty.com/2021/project_visualization_content/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/project_visualization_content/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -726,20 +889,20 @@ SON Algorithm Introduction Let s be the support threshold:
     
     <item>
       <title>SQL面试必会50题</title>
-      <link>https://www.m1sty.com/2020/database_sql_50/</link>
+      <link>https://www.m1sty.com/2020/coding_database_sql_50exercise/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/database_sql_50/</guid>
+      <guid>https://www.m1sty.com/2020/coding_database_sql_50exercise/</guid>
       <description>材料 题源+数据 SQL面试必会50题
 表关系  题解 01-10 1. 查询课程编号为“01”的课程比“02”的课程成绩高的所有学生的学号 SELECT st.s_id, a.s_score, b.s_score FROM student st INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = &amp;#34;01&amp;#34;) as a on a.s_id = st.`s_id` INNER JOIN (SELECT s_id, s_score FROM score WHERE c_id = &amp;#34;02&amp;#34;) as b on b.s_id = st.`s_id` WHERE a.s_score &amp;gt; b.s_score; 2. 查询平均成绩大于60分的学生的学号和平均成绩 SELECT distinct s_id, AVG(s_score) as avg1 FROM score Group by S_id having avg1 &amp;gt; 60 3.</description>
     </item>
     
     <item>
-      <title>SQL语句复习</title>
-      <link>https://www.m1sty.com/2020/database_sql_notes2/</link>
+      <title>SQL复习笔记</title>
+      <link>https://www.m1sty.com/2020/coding_database_sql_2note/</link>
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/database_sql_notes2/</guid>
+      <guid>https://www.m1sty.com/2020/coding_database_sql_2note/</guid>
       <description>DDL &amp;amp; DML 库操作 创建数据库 CREATE DATABASE database-name
 删除数据库 drop database dbname
 分离数据库 sp_detach_db
@@ -755,40 +918,21 @@ Alter table tabname drop primary key(col)</description>
     </item>
     
     <item>
-      <title>SQL基础知识</title>
-      <link>https://www.m1sty.com/2020/database_sql_notes/</link>
+      <title>SQL必知必会笔记</title>
+      <link>https://www.m1sty.com/2020/coding_database_sql_1note/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/database_sql_notes/</guid>
+      <guid>https://www.m1sty.com/2020/coding_database_sql_1note/</guid>
       <description>表操作 创建表 create table 表名（字段名称 字段类型 约束，……） 字符类型  character 字符串  char(size) 保存固定长度的字符串 varchar(n) 可变长度的字符_最多8000个字符 text 可变长度的字符串_最多2GB字符数据   unicode 字符串  nchar(n) 固定长度的Unicode数据_最多4000个字符 nvarchar(n) 可变长度的Unicode数据_最多4000个字符 ntext 可变长度的Unicode数据_最多2GB字符数据   Binary 类型  bit 允许0/1/null binary(n) 固定长度的二进制数据_最多8000字节 varbinary(n) 可变长度的二进制数据_最多8000字节 image 可变长度的二进制数据_最多2GB   Number 类型  tinyint 允许从0到255的所有数字 int 允许从-2,147,483,648到2,147,483,647的所有数字_占4字节 bigint -9,223,372,036,854,775,808到9,223,372,036,854,775,807范围内数字_占8字节 float 从-1.79E+308到1.79E+308的浮动精度数字数据 real 从-3.40E+38到3.40E+38的浮动精度数字数据 money 10进制货币数据   Date 类型  datetime 从1753年1月1日到9999年年12月31日，精度为3.33毫秒_8bytes date 仅储存日期。从0001年1月1日到9999年12月31日_3bytes   其他数据类型  uniqueidentifler 存储全局标识符（GUID） xml 存储XML格式化数据_最多2GB cursor 存储对用于数据库操作的指针的引用   常见的字符类型选择  字符类型建议采用varchar/nvarchar数据类型 全额货币建议采用money数据类型 自增长标识建议采用bigint数据类型（int类型限制） 时间类型建议采用datetime数据类型 尽量不用text、ntext、image 尽量不用xml、varchar(max)、nvarchar(max)    不同数据库数据字符类型区别  https://www.</description>
     </item>
     
     <item>
       <title>数据分析学习路径</title>
-      <link>https://www.m1sty.com/2020/overview_data-analyst_map/</link>
+      <link>https://www.m1sty.com/2020/study-map_data-analysis/</link>
       <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2020/overview_data-analyst_map/</guid>
+      <guid>https://www.m1sty.com/2020/study-map_data-analysis/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>牛客网数据库_错题集</title>
-      <link>https://www.m1sty.com/2020/database_sql_nowcoder/</link>
-      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2020/database_sql_nowcoder/</guid>
-      <description>语法问题 删除 如果要从数据库中删除触发器，应该使用SQL语言的命令：（B）
- A.DELETE TRIGGER B.DROP TRIGGER C.DISABLE TRIGGER D.REMOVE TRIGGER  Notes: 删除触发器: DROP TRIGGER &amp;lt;触发器名&amp;gt; ON &amp;lt;表名&amp;gt;
-Drop:删除数据表或数据库，或删除数据表字段
-Remove:删除数据库文件
-Truncate：删除数据表中的数据（仅数据表中的数据，不删除表）
-delete和drop最本质的区别在于，delete是数据操纵语言，即DML，而drop是数据定义语言，即DDL。因此，当我们需要删除或者创建一个东西，如表/视图/触发器等等，用的是数据定义语言。当我们对已经存在的表/视图/触发器进行修改/更新时，用的是数据操纵语言。以表为例，如果你不想将表真的删掉，只是想删除其中某些特定的记录，则应该用delete，此时，表的其他数据以及表的结构还在。
-权限 收回从u1创建表的权限：（B）
- A.revoke create table to u1 B.revoke create table from u1 C.revoke create table from u1 with grant option D.deny create table to u1  Notes: with grant option 权限传递 使用这个子句时将允许用户将其权限分配给他人
-子查询： 在SQL语言中，子查询是： (D)
- A.返回单表中数据子集的查询语言 B.选取多表中字段子集的查询语句 C.选取单表中字段子集的查询语句 D.嵌入到另一个查询语句之中的查询语句  Notes: 子查询本质上是嵌套进其他SELECT,UPDATE,INSERT,DELETE语句的一个被限制的SELECT语句。
-子查询也可以嵌套在其他子查询中,这个嵌套最多可达32层。子查询也叫内部查询(Inner query)或者内部选择(Inner Select),而包含子查询的查询语句也叫做外部查询（Outter)或者外部选择(Outer Select)。</description>
     </item>
     
     <item>

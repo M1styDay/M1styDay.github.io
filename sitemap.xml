@@ -102,7 +102,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/note/</loc>
+      <loc>https://www.m1sty.com/tags/note/</loc>
       
       <lastmod>2021-05-09T00:00:00+00:00</lastmod>
       
@@ -112,7 +112,17 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/overview/</loc>
+      <loc>https://www.m1sty.com/categories/statistics/</loc>
+      
+      <lastmod>2021-05-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/study-map/</loc>
       
       <lastmod>2021-05-09T00:00:00+00:00</lastmod>
       
@@ -132,7 +142,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/overview_interview_map/</loc>
+      <loc>https://www.m1sty.com/2021/study-map_interview/</loc>
       
       <lastmod>2021-05-09T00:00:00+00:00</lastmod>
       
@@ -142,7 +152,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/note_statistics/</loc>
+      <loc>https://www.m1sty.com/2021/statistics_overview/</loc>
       
       <lastmod>2021-05-09T00:00:00+00:00</lastmod>
       
@@ -152,9 +162,99 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/practise/</loc>
+      <loc>https://www.m1sty.com/tags/algorithm/</loc>
       
-      <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/coding/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/database/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/coding_database_sql_leetcode/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/model/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/coding_model_python_practise/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/coding_model_r_practise/</loc>
+      
+      <lastmod>2021-05-05T00:00:00+00:00</lastmod>
       
       
       
@@ -182,7 +282,17 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/overview_data-analyst_detail/</loc>
+      <loc>https://www.m1sty.com/categories/data-analysis/</loc>
+      
+      <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/data-analysis_important-points/</loc>
       
       <lastmod>2021-05-03T00:00:00+00:00</lastmod>
       
@@ -212,17 +322,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/operation/</loc>
-      
-      <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/note_operational-issues/</loc>
+      <loc>https://www.m1sty.com/2021/data-analysis_operational-issues/</loc>
       
       <lastmod>2021-05-01T00:00:00+00:00</lastmod>
       
@@ -262,7 +362,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/note_bi_map/</loc>
+      <loc>https://www.m1sty.com/2021/data-analysis_bi-sense/</loc>
       
       <lastmod>2021-04-27T00:00:00+00:00</lastmod>
       
@@ -272,7 +372,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/note_industry-and-business-scenarios/</loc>
+      <loc>https://www.m1sty.com/2021/data-analysis_industry-and-business-scenarios/</loc>
       
       <lastmod>2021-04-25T00:00:00+00:00</lastmod>
       
@@ -282,9 +382,29 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/note_shop-analysis/</loc>
+      <loc>https://www.m1sty.com/2021/data-analysis_shop-analysis/</loc>
       
       <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/advanced-topics-in-data-management/</loc>
+      
+      <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/comp-7801/</loc>
+      
+      <lastmod>2021-04-22T00:00:00+00:00</lastmod>
       
       
       
@@ -312,9 +432,59 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/tags/uncertainty-in-data-integration/</loc>
+      
+      <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atmd_9_uncertainty-in-data-integration_1_content/</loc>
+      
+      <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/2021/dm_knn_5_practise/</loc>
       
       <lastmod>2021-04-21T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/text-databases/</loc>
+      
+      <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_8_text-databases_1_content/</loc>
+      
+      <lastmod>2021-04-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_8_text-databases_2_tutorial/</loc>
+      
+      <lastmod>2021-04-19T00:00:00+00:00</lastmod>
       
       
       
@@ -352,76 +522,6 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/e-business/</loc>
-      
-      <lastmod>2021-04-12T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/e-business/</loc>
-      
-      <lastmod>2021-04-12T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/eb_lecture3_business-model-innovation/</loc>
-      
-      <lastmod>2021-04-12T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/categories/entrepreneurship/</loc>
-      
-      <lastmod>2021-04-11T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/entrepreneurship-development/</loc>
-      
-      <lastmod>2021-04-11T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/ed_8_game-simulation-review/</loc>
-      
-      <lastmod>2021-04-11T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/eb_lecture2_business-disruption/</loc>
-      
-      <lastmod>2021-04-11T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/2021/dm_decision-trees_1_content/</loc>
       
       <lastmod>2021-04-10T00:00:00+00:00</lastmod>
@@ -442,7 +542,17 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/eb_lecture1_business-order-chaos-and-complexity/</loc>
+      <loc>https://www.m1sty.com/tags/top-k-queries-on-uncertain-data/</loc>
+      
+      <lastmod>2021-04-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_7_top-k-queries-on-uncertain-data_1_content/</loc>
       
       <lastmod>2021-04-10T00:00:00+00:00</lastmod>
       
@@ -462,7 +572,17 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/note_ab-test/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_7_top-k-queries-on-uncertain-data_2_tutorial/</loc>
+      
+      <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/data-analysis_ab-test/</loc>
       
       <lastmod>2021-04-07T00:00:00+00:00</lastmod>
       
@@ -472,17 +592,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_7_funding-your-startup/</loc>
-      
-      <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/note_roi/</loc>
+      <loc>https://www.m1sty.com/2021/data-analysis_roi/</loc>
       
       <lastmod>2021-04-07T00:00:00+00:00</lastmod>
       
@@ -512,17 +622,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_6_deep-learning-and-neural-networks/</loc>
-      
-      <lastmod>2021-03-31T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/ed_5_midterm-review/</loc>
+      <loc>https://www.m1sty.com/tags/ecom-7122/</loc>
       
       <lastmod>2021-03-28T00:00:00+00:00</lastmod>
       
@@ -532,7 +632,47 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_4_machine-learning-insurtech-and-ethical-considerations/</loc>
+      <loc>https://www.m1sty.com/tags/entrepreneurship-development/</loc>
+      
+      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/categories/entrepreneurship-development-and-fintech-ventures-in-asia/</loc>
+      
+      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/edafv_8_game-simulation-review/</loc>
+      
+      <lastmod>2021-03-28T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/edafv_7_funding-your-startup/</loc>
+      
+      <lastmod>2021-03-26T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/edafv_6_deep-learning-and-neural-networks/</loc>
       
       <lastmod>2021-03-24T00:00:00+00:00</lastmod>
       
@@ -542,9 +682,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_3_competitive-advantage/</loc>
+      <loc>https://www.m1sty.com/2021/edafv_5_midterm-review/</loc>
       
-      <lastmod>2021-03-21T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-22T00:00:00+00:00</lastmod>
       
       
       
@@ -552,7 +692,57 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_2_applied-ai-in-business/</loc>
+      <loc>https://www.m1sty.com/2021/edafv_4_machine-learning-insurtech-and-ethical-considerations/</loc>
+      
+      <lastmod>2021-03-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/tags/probabilistic-queries/</loc>
+      
+      <lastmod>2021-03-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_6_probabilistic-queries_1_content/</loc>
+      
+      <lastmod>2021-03-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_6_probabilistic-queries_2_tutorial/</loc>
+      
+      <lastmod>2021-03-19T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/edafv_3_competitive-advantage/</loc>
+      
+      <lastmod>2021-03-18T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/edafv_2_applied-ai-in-business/</loc>
       
       <lastmod>2021-03-16T00:00:00+00:00</lastmod>
       
@@ -562,7 +752,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/ed_1_intro/</loc>
+      <loc>https://www.m1sty.com/2021/edafv_1_intro/</loc>
       
       <lastmod>2021-03-14T00:00:00+00:00</lastmod>
       
@@ -572,9 +762,19 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/advanced-topics-in-data-management/</loc>
+      <loc>https://www.m1sty.com/tags/book/</loc>
       
-      <lastmod>2021-03-10T00:00:00+00:00</lastmod>
+      <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/edafv_0_textbook_artificial-intelligence-and-machine-learning-for-business/</loc>
+      
+      <lastmod>2021-03-12T00:00:00+00:00</lastmod>
       
       
       
@@ -612,7 +812,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/top-k/</loc>
+      <loc>https://www.m1sty.com/tags/uncertain-databases/</loc>
       
       <lastmod>2021-03-10T00:00:00+00:00</lastmod>
       
@@ -622,7 +822,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k_1_content/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_5_uncertain-databases_1_content/</loc>
       
       <lastmod>2021-03-10T00:00:00+00:00</lastmod>
       
@@ -642,29 +842,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k_2_tutorial/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_5_uncertain-databases_2_tutorial/</loc>
       
       <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</loc>
-      
-      <lastmod>2021-03-07T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/book/</loc>
-      
-      <lastmod>2021-03-07T00:00:00+00:00</lastmod>
       
       
       
@@ -682,17 +862,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_top-k_4_more/</loc>
-      
-      <lastmod>2021-03-07T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/tableau/</loc>
+      <loc>https://www.m1sty.com/2021/data-analysis_tableau/</loc>
       
       <lastmod>2021-03-06T00:00:00+00:00</lastmod>
       
@@ -702,9 +872,9 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/visualization_tableau_map/</loc>
+      <loc>https://www.m1sty.com/tags/top-k-queries/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-02-20T00:00:00+00:00</lastmod>
       
       
       
@@ -712,9 +882,29 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/visualization/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_4_top-k-queries_1_content/</loc>
       
-      <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+      <lastmod>2021-02-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_4_top-k-queries_2_tutorial/</loc>
+      
+      <lastmod>2021-02-19T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_4_top-k-queries_4_more/</loc>
+      
+      <lastmod>2021-02-17T00:00:00+00:00</lastmod>
       
       
       
@@ -752,7 +942,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_3_spatial-networks_1_content/</loc>
       
       <lastmod>2021-02-10T00:00:00+00:00</lastmod>
       
@@ -772,7 +962,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_3_spatial-networks_2_tutorial/</loc>
       
       <lastmod>2021-02-09T00:00:00+00:00</lastmod>
       
@@ -802,7 +992,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</loc>
+      <loc>https://www.m1sty.com/2021/atdm_3_spatial-networks_4_more/</loc>
       
       <lastmod>2021-02-07T00:00:00+00:00</lastmod>
       
@@ -842,6 +1032,36 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/tags/spatial-data-management/</loc>
+      
+      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_2_spatial-data-management_1_content/</loc>
+      
+      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_2_spatial-data-management_2_tutorial/</loc>
+      
+      <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/tags/association/</loc>
       
       <lastmod>2021-01-10T00:00:00+00:00</lastmod>
@@ -872,6 +1092,16 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/2021/atdm_1_database-review_1_content/</loc>
+      
+      <lastmod>2021-01-10T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/2021/dm_association_2_exercise/</loc>
       
       <lastmod>2021-01-09T00:00:00+00:00</lastmod>
@@ -882,7 +1112,27 @@
     </url>
   
     <url>
+      <loc>https://www.m1sty.com/2021/atdm_1_database-review_2_tutorial/</loc>
+      
+      <lastmod>2021-01-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://www.m1sty.com/2021/dm_association_3_assignment/</loc>
+      
+      <lastmod>2021-01-08T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/atdm_0_overview/</loc>
       
       <lastmod>2021-01-08T00:00:00+00:00</lastmod>
       
@@ -912,7 +1162,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/index-system/</loc>
+      <loc>https://www.m1sty.com/tags/article/</loc>
       
       <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
@@ -933,6 +1183,16 @@
   
     <url>
       <loc>https://www.m1sty.com/2021/project_data-index_content/</loc>
+      
+      <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://www.m1sty.com/2021/project_visualization_content/</loc>
       
       <lastmod>2021-01-05T00:00:00+00:00</lastmod>
       
@@ -1012,7 +1272,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/categories/database/</loc>
+      <loc>https://www.m1sty.com/2020/coding_database_sql_50exercise/</loc>
       
       <lastmod>2020-12-30T00:00:00+00:00</lastmod>
       
@@ -1022,27 +1282,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/tags/sql/</loc>
-      
-      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2020/database_sql_50/</loc>
-      
-      <lastmod>2020-12-30T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/2020/database_sql_notes2/</loc>
+      <loc>https://www.m1sty.com/2020/coding_database_sql_2note/</loc>
       
       <lastmod>2020-12-28T00:00:00+00:00</lastmod>
       
@@ -1052,7 +1292,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2020/database_sql_notes/</loc>
+      <loc>https://www.m1sty.com/2020/coding_database_sql_1note/</loc>
       
       <lastmod>2020-12-26T00:00:00+00:00</lastmod>
       
@@ -1062,7 +1302,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2020/overview_data-analyst_map/</loc>
+      <loc>https://www.m1sty.com/2020/study-map_data-analysis/</loc>
       
       <lastmod>2020-12-24T00:00:00+00:00</lastmod>
       
@@ -1072,27 +1312,7 @@
     </url>
   
     <url>
-      <loc>https://www.m1sty.com/2020/database_sql_nowcoder/</loc>
-      
-      <lastmod>2020-12-18T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://www.m1sty.com/categories/business/</loc>
-      
-      <lastmod>2020-12-07T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/dynamic-digital-capabilities/</loc>
       
       <lastmod>2020-12-07T00:00:00+00:00</lastmod>
       
@@ -1113,16 +1333,6 @@
   
     <url>
       <loc>https://www.m1sty.com/2020/business_essay_data-application-in-enterprise/</loc>
-      
-      <lastmod>2020-11-30T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://www.m1sty.com/tags/enterprise/</loc>
       
       <lastmod>2020-11-30T00:00:00+00:00</lastmod>
       

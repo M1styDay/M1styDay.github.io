@@ -35,7 +35,16 @@
     </item>
     
     <item>
-      <title>Study Map</title>
+      <title>Note</title>
+      <link>https://www.m1sty.com/tags/note/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Study map</title>
       <link>https://www.m1sty.com/tags/study-map/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
@@ -44,11 +53,29 @@
     </item>
     
     <item>
-      <title>Practise</title>
-      <link>https://www.m1sty.com/tags/practise/</link>
-      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      <title>Algorithm</title>
+      <link>https://www.m1sty.com/tags/algorithm/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/tags/practise/</guid>
+      <guid>https://www.m1sty.com/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database</title>
+      <link>https://www.m1sty.com/tags/database/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model</title>
+      <link>https://www.m1sty.com/tags/model/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/model/</guid>
       <description></description>
     </item>
     
@@ -71,20 +98,20 @@
     </item>
     
     <item>
-      <title>Operation</title>
-      <link>https://www.m1sty.com/tags/operation/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/operation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Classifier</title>
       <link>https://www.m1sty.com/tags/classifier/</link>
       <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/classifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COMP 7801</title>
+      <link>https://www.m1sty.com/tags/comp-7801/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/comp-7801/</guid>
       <description></description>
     </item>
     
@@ -98,29 +125,29 @@
     </item>
     
     <item>
+      <title>Uncertainty in Data Integration</title>
+      <link>https://www.m1sty.com/tags/uncertainty-in-data-integration/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/uncertainty-in-data-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Databases</title>
+      <link>https://www.m1sty.com/tags/text-databases/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/text-databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Naive Bayes Class</title>
       <link>https://www.m1sty.com/tags/naive-bayes-class/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/naive-bayes-class/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>E-Business</title>
-      <link>https://www.m1sty.com/tags/e-business/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/e-business/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Entrepreneurship Development</title>
-      <link>https://www.m1sty.com/tags/entrepreneurship-development/</link>
-      <pubDate>Sun, 11 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/entrepreneurship-development/</guid>
       <description></description>
     </item>
     
@@ -134,6 +161,51 @@
     </item>
     
     <item>
+      <title>Top-k Queries on Uncertain Data</title>
+      <link>https://www.m1sty.com/tags/top-k-queries-on-uncertain-data/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/top-k-queries-on-uncertain-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECOM 7122</title>
+      <link>https://www.m1sty.com/tags/ecom-7122/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/ecom-7122/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entrepreneurship Development</title>
+      <link>https://www.m1sty.com/tags/entrepreneurship-development/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/entrepreneurship-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Queries</title>
+      <link>https://www.m1sty.com/tags/probabilistic-queries/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/probabilistic-queries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Book</title>
+      <link>https://www.m1sty.com/tags/book/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>PageRank</title>
       <link>https://www.m1sty.com/tags/pagerank/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
@@ -143,29 +215,20 @@
     </item>
     
     <item>
-      <title>Top-k</title>
-      <link>https://www.m1sty.com/tags/top-k/</link>
+      <title>Uncertain Databases</title>
+      <link>https://www.m1sty.com/tags/uncertain-databases/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/tags/top-k/</guid>
+      <guid>https://www.m1sty.com/tags/uncertain-databases/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>book</title>
-      <link>https://www.m1sty.com/tags/book/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Top-k Queries</title>
+      <link>https://www.m1sty.com/tags/top-k-queries/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/tags/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tableau</title>
-      <link>https://www.m1sty.com/tags/tableau/</link>
-      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/tableau/</guid>
+      <guid>https://www.m1sty.com/tags/top-k-queries/</guid>
       <description></description>
     </item>
     
@@ -188,6 +251,15 @@
     </item>
     
     <item>
+      <title>Spatial Data Management</title>
+      <link>https://www.m1sty.com/tags/spatial-data-management/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/spatial-data-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Association</title>
       <link>https://www.m1sty.com/tags/association/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
@@ -197,11 +269,11 @@
     </item>
     
     <item>
-      <title>Index System</title>
-      <link>https://www.m1sty.com/tags/index-system/</link>
+      <title>Article</title>
+      <link>https://www.m1sty.com/tags/article/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/tags/index-system/</guid>
+      <guid>https://www.m1sty.com/tags/article/</guid>
       <description></description>
     </item>
     
@@ -211,33 +283,6 @@
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sql</title>
-      <link>https://www.m1sty.com/tags/sql/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dynamic digital capabilities</title>
-      <link>https://www.m1sty.com/tags/dynamic-digital-capabilities/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/dynamic-digital-capabilities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>enterprise</title>
-      <link>https://www.m1sty.com/tags/enterprise/</link>
-      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/enterprise/</guid>
       <description></description>
     </item>
     

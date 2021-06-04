@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>book on M1sty</title>
+    <title>Book on M1sty</title>
     <link>https://www.m1sty.com/tags/book/</link>
-    <description>Recent content in book on M1sty</description>
+    <description>Recent content in Book on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Artificial Intelligence and Machine Learning for Business</title>
-      <link>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Textbook：Artificial Intelligence and Machine Learning for Business</title>
+      <link>https://www.m1sty.com/2021/edafv_0_textbook_artificial-intelligence-and-machine-learning-for-business/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/business_book_artificial-intelligence-and-machine-learning-for-business/</guid>
+      <guid>https://www.m1sty.com/2021/edafv_0_textbook_artificial-intelligence-and-machine-learning-for-business/</guid>
       <description>Artificial Intelligence and Machine Learning for Business 1.Introduction Topics in the book  What machine learning and artificial intelligence are. The sort o things organizations use artificial intelligence for. What a predictive model looks like. The relationship between artificial intelligence, machine learning and Big Data. The people and tools needed to apply artificial intelligence. How to use artificial intelligence to improve business processes and the bottom line. The legal and ethical issues that need to be considered when developing artificial intelligence based solutions that are going to be used to make decisions about people.</description>
     </item>
     

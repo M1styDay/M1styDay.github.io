@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/edafv_5_midterm-review/" />
+  <link rel="next" href="https://www.m1sty.com/2021/edafv_7_funding-your-startup/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/edafv_6_deep-learning-and-neural-networks/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Lecture 6：Deep Learning and Neural Networks | M1sty
+       
+  </title>
+  <meta name="title" content="Lecture 6：Deep Learning and Neural Networks | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Lecture 6：Deep Learning and Neural Networks",
+    "headline" : "Lecture 6：Deep Learning and Neural Networks",
+    "description" : "Deep Learning and Neural Networks Curriculum Structure  Read Chapter 7 and 8  Review of using scorecards for decision-making - Figure 1 and 2 Why use decision trees? What are neural networks and what are the benefits and risks of deep learning?   Amazon and the Alexa Voice Smart Speaker Breakthrough  Deep Learning and Image and Voice Recognition Breakthroughs Fastest Consumer Adoption in US History Internet of Things and the Connected Smart City   Summary  Class 6 PPT Deep Learning: Image \u0026amp; Voice Applied AI: Perform tasks with AI or apply AI to specific industry verticals  Virtual Assistance Generating Insights Automation of Manual Processes Unlocking Unstructured Data  AI “core” capabilities in Language \u0026amp; Vision NLP Natural Language Processing    https:\/\/www.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-03-24 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-03-24 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/edafv_6_deep-learning-and-neural-networks\/",
+    "wordCount" : "955",
+    "keywords" : [ "HKU","ECOM 7122","Entrepreneurship Development", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Lecture 6：Deep Learning and Neural Networks</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/entrepreneurship-development-and-fintech-ventures-in-asia/"> Entrepreneurship development and FinTech ventures in Asia </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-03-24 itemprop="datePublished">March 24, 2021</time>
+           </span> (<span class="post-word-count">955 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#curriculum-structure">Curriculum Structure</a></li>
+    <li><a href="#class-6-ppt">Class 6 PPT</a>
+      <ul>
+        <li><a href="#deep-learning-image--voice">Deep Learning: Image &amp; Voice</a></li>
+        <li><a href="#takeaways">Takeaways</a></li>
+        <li><a href="#deep-learning--neural-networks">Deep Learning &amp; Neural networks</a></li>
+        <li><a href="#white-box--black-box-ai">White Box &amp; Black Box AI</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-6-details">Class 6 Details</a>
+      <ul>
+        <li><a href="#deep-learning-and-neural-networks-1">Deep Learning and Neural Networks</a></li>
+        <li><a href="#key-questions">Key Questions</a></li>
+        <li><a href="#learning-objectives">Learning Objectives</a></li>
+        <li><a href="#reading-videos--assignments">Reading, Videos &amp; Assignments</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="deep-learning-and-neural-networks">Deep Learning and Neural Networks</h1>
+<h2 id="curriculum-structure">Curriculum Structure</h2>
+<ul>
+<li>Read Chapter 7 and 8
+<ul>
+<li>Review of using scorecards for decision-making - Figure 1 and 2</li>
+<li>Why use decision trees?</li>
+<li>What are neural networks and what are the benefits and risks of deep learning?</li>
+</ul>
+</li>
+<li>Amazon and the Alexa Voice Smart Speaker Breakthrough
+<ul>
+<li>Deep Learning and Image and Voice Recognition Breakthroughs</li>
+<li>Fastest Consumer Adoption in US History</li>
+<li>Internet of Things and the Connected Smart City</li>
+</ul>
+</li>
+<li>Summary</li>
+</ul>
+<h2 id="class-6-ppt">Class 6 PPT</h2>
+<h3 id="deep-learning-image--voice">Deep Learning: Image &amp; Voice</h3>
+<h4 id="applied-ai-perform-tasks-with-ai-or-apply-ai-to-specific-industry-verticals">Applied AI: Perform tasks with AI or apply AI to specific industry verticals</h4>
+<ol>
+<li>Virtual Assistance</li>
+<li>Generating Insights</li>
+<li>Automation of Manual Processes</li>
+<li>Unlocking Unstructured Data
+<ul>
+<li>AI “core” capabilities in Language &amp; Vision</li>
+<li>NLP Natural Language Processing</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://www.forbes.com/sites/gregsatell/2016/09/18/4-ways-every-business-needs-to-use-artificial-intelligence/#28e387862a52">https://www.forbes.com/sites/gregsatell/2016/09/18/4-ways-every-business-needs-to-use-artificial-intelligence/#28e387862a52</a></p>
+<h4 id="deep-learning">Deep Learning</h4>
+<ul>
+<li>The “Core” Deep Learning Breakthroughs: Vision and Language</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331233816.png" alt=""></p>
+<h4 id="alexa-voice-engine--applied-ai-services">Alexa Voice Engine &amp; Applied AI Services</h4>
+<p>6-pager business plan at 2011 Bezos strategy meeting: “A low-cost, ubiquitous computer with all its brains in the
+cloud that you could interact with over voice—you speak to it, it speaks to you,”</p>
+<p>&ndash;as described by Al Lindsay, project lead, in “Inside Amazon’s AI flywheel” Wired Magazine,</p>
+<p>Far-field {voice recognition} technology had been done before&hellip; But “it was on the nose cone of Trident submarines, and it cost a billion dollars.” Amazon was trying to implement it in a device that would sit on a kitchen counter, and it had to be cheap enough for consumers to spring for a weird new gadget.</p>
+<p>&ndash;as described by Limp, the VP of devices and services in “Inside Amazon’s AI flywheel”. Echo Dot available 2015&hellip;and becomes fastest adoption consumer product in 3 years time.</p>
+<h4 id="amazon-echo-voice-engine--assistant">Amazon Echo Voice Engine &amp; Assistant</h4>
+<p>Core Components of most AI/ML applications p.11:</p>
+<ul>
+<li>Data input-camera image, voice, text, forms? Voice Example: Alexa, tell me the weather in SF&hellip;</li>
+<li>Data (pre)processing? DL for soundbites &amp; NLP</li>
+<li>Predictive models- Far field voice recognition + understanding of intent and context of voice question or command.</li>
+<li>Decision Rules (rule sets)—Use the appropriate Alexa skill to address user intent&hellip;</li>
+<li>Response/output-Alexa voice response&hellip;</li>
+</ul>
+<h3 id="takeaways">Takeaways</h3>
+<ul>
+<li>Applied AI products and services in all industries and markets were accelerated by two core AI deep learning technologies—image and voice recognition</li>
+<li>The key AI crossover point and date for commercialization and rapid user adoption is at the 95% human accuracy level.</li>
+<li>We discussed applications in self-driving cars, rapid adoption to 50% of Amazon Alexa (Echo Dot) voice speakers and the emergence of voice-enabled devices including smart kitchen appliances.</li>
+</ul>
+<h3 id="deep-learning--neural-networks">Deep Learning &amp; Neural networks</h3>
+<h4 id="from-scorecards-to-decision-trees">From Scorecards to Decision Trees</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331234609.png" alt=""></p>
+<h4 id="an-artificial-neuron">An Artificial Neuron</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331234655.png" alt=""></p>
+<h4 id="a-neural-network-model">A Neural Network Model</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331234724.png" alt=""></p>
+<h4 id="deep-learning-1">Deep Learning</h4>
+<ul>
+<li>The more the layers, the “deeper” the network.</li>
+<li>Convoluted Neural Network: Not connecting all inputs to all of the neurons in the first layer.</li>
+<li>Recurrent Neural Network: Create feedback loops where the output of later layers act as inputs to earlier layers. Time latency effect.</li>
+<li>Supervised Learning</li>
+<li>Unsupervised Learning</li>
+<li>Semi-supervised learning</li>
+<li>Reinforcement Learning</li>
+</ul>
+<h3 id="white-box--black-box-ai">White Box &amp; Black Box AI</h3>
+<h4 id="create-a-common-sense-baseline-first">Create a common sense baseline first&hellip;</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331235240.png" alt=""></p>
+<h4 id="white-box-vs-black-box-ai">White box vs. Black box AI</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331235339.png" alt=""></p>
+<h4 id="the-ethics-of-applied-ai--deep-learning">The Ethics of Applied AI &amp; Deep Learning</h4>
+<ul>
+<li>What can you do with AI?</li>
+<li>What should you do with AI?</li>
+</ul>
+<h4 id="ai-insurtech--neural-net-risk-analysis">AI InsurTech &amp; Neural Net Risk Analysis</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210331235520.png" alt=""></p>
+<h2 id="class-6-details">Class 6 Details</h2>
+<h3 id="deep-learning-and-neural-networks-1">Deep Learning and Neural Networks</h3>
+<p>This week, we turn to Deep Learning and Neural Networks. We explain how two recent “core” or “fundamental” AI research advances turned out to be breakthroughs –in image and voice recognition&ndash;that opened up a world of commercial opportunity and applied AI
+products and services. We note that Fei-Fei Li, a Chinese-American woman computer science professor saw that AI advances in deep learning were stuck without better datasets and created ImageNet, the catalyst for the AI boom in image recognition . We look at the AI vs human speech recognition crossover and the business impact on accelerating the fastest growing consumer product in history and consider the new directions future products and services will take. We review artificial neurons, neural networks, supervised, unsupervised, semi-supervised and reinforcement learning before discussing white-box and black box AI.</p>
+<p>Since this is such an important area to understand, I recommend taking a look at the optional videos and readings in the areas that interest you the most.</p>
+<h3 id="key-questions">Key Questions</h3>
+<ul>
+<li>What are the two core AI breakthroughs and when did they happen?</li>
+<li>What is an artificial neuron &amp; neural network?</li>
+<li>What is deep learning and how many layers of a neural network is deep?</li>
+<li>What is supervised, unsupervised, semi-supervised and reinforcement learning?</li>
+<li>Why does white box and black box AI matter to your choice of AI system?</li>
+</ul>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Know the two core AI breakthroughs and how we measure the crossover point and timeframe. Note how quickly consumer adoption followed</li>
+<li>Think and be comfortable explaining deep learning and a simple example of supervised vs unsupervised machine learning.</li>
+<li>Speak up in the discussions and consider how white box and black box AI differ and why this might have legal or ethical implications for automated decision-making</li>
+<li>Act and practice applying two key and equally important questions to AI projects and ideas—Can we do this with AI? And, should we do this with AI?</li>
+</ul>
+<h3 id="reading-videos--assignments">Reading, Videos &amp; Assignments</h3>
+<h4 id="deep-learning-and-2-core-ai-breakthroughs">Deep Learning and 2 Core AI Breakthroughs</h4>
+<ul>
+<li>
+<p>Required Reading: Chapter 8 in AI for Business book Optional videos:</p>
+<ul>
+<li>Google’s development of AlphaGo <a href="https://youtu.be/SUbqykXVx0A">https://youtu.be/SUbqykXVx0A</a></li>
+<li>The AlphaGo documentary. This is a long 1 hour + video of the AlphaGo match against Lee Sedow. The most interesting part is when Lee wins game 4 and does so with a 1 in 10k move. <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y">https://www.youtube.com/watch?v=WXuK6gekU1Y</a></li>
+</ul>
+</li>
+<li>
+<p>Optional Reading:</p>
+<ul>
+<li><a href="https://www.theverge.com/2016/3/9/11185030/google-deepmind-alphago-go-artificial-intelligence-impact">https://www.theverge.com/2016/3/9/11185030/google-deepmind-alphago-go-artificial-intelligence-impact</a></li>
+<li><a href="https://spectrum.ieee.org/tech-talk/at-work/tech-careers/computer-vision-leader-feifei-li-on-why-ai-needs-diversity">https://spectrum.ieee.org/tech-talk/at-work/tech-careers/computer-vision-leader-feifei-li-on-why-ai-needs-diversity</a></li>
+<li><a href="https://medium.com/self-driving-cars/pony-ai-launches-chinas-first-robotaxi-service-8603bd56d314">https://medium.com/self-driving-cars/pony-ai-launches-chinas-first-robotaxi-service-8603bd56d314</a></li>
+<li><a href="https://www.wired.com/story/amazon-artificial-intelligence-flywheel/">https://www.wired.com/story/amazon-artificial-intelligence-flywheel/</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="deep-learning-and-neural-networks-explained">Deep Learning and Neural Networks Explained</h4>
+<ul>
+<li>
+<p>Watch a 12 minute video on deep learning: <a href="https://www.youtube.com/watch?v=oV3ZY6tJiA0">https://www.youtube.com/watch?v=oV3ZY6tJiA0</a></p>
+</li>
+<li>
+<p>Optional Reading:</p>
+<ul>
+<li><a href="https://www.repairerdrivennews.com/2017/06/28/alibaba-chinese-photo-estimating-ai-handles-12-claims-in-6-seconds/">https://www.repairerdrivennews.com/2017/06/28/alibaba-chinese-photo-estimating-ai-handles-12-claims-in-6-seconds/</a></li>
+<li><a href="https://www.sixthtone.com/news/1005216/scan-reading-ai-systems-are-helping-doctors-diagnose-covid-19">https://www.sixthtone.com/news/1005216/scan-reading-ai-systems-are-helping-doctors-diagnose-covid-19</a></li>
+<li><a href="https://www.nationalgeographic.com/history/article/maya-laser-lidar-guatemala-pacunam#:~:text=Laser%20technology%20known%20as%20LiDAR,ground%2Dbased%20research%20had%20suggested.&amp;text=unknown%20areas%20of%20Maya%20cities">https://www.nationalgeographic.com/history/article/maya-laser-lidar-guatemala-pacunam#:~:text=Laser%20technology%20known%20as%20LiDAR,ground%2Dbased%20research%20had%20suggested.&amp;text=unknown%20areas%20of%20Maya%20cities</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="white-box-and-black-box-ai">White Box and Black Box AI</h4>
+<ul>
+<li>Watch the video in the article: <a href="https://www.sciencemag.org/news/2017/07/how-ai-detectives-are-cracking-open-black-box-deep-learning">https://www.sciencemag.org/news/2017/07/how-ai-detectives-are-cracking-open-black-box-deep-learning</a></li>
+<li>Optional Reading:
+<ul>
+<li>Chapter 13 in the AI for Business book</li>
+<li><a href="https://towardsdatascience.com/machine-learning-interpretability-techniques-662c723454f3">https://towardsdatascience.com/machine-learning-interpretability-techniques-662c723454f3</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/edafv_6_deep-learning-and-neural-networks/>https://www.m1sty.com/2021/edafv_6_deep-learning-and-neural-networks/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/ecom-7122/">
+                    #ECOM 7122</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/entrepreneurship-development/">
+                    #Entrepreneurship Development</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/edafv_5_midterm-review/" class="prev" rel="prev" title="Lecture 5：Blue Ocean Strategy"><i class="iconfont icon-left"></i>&nbsp;Lecture 5：Blue Ocean Strategy</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/edafv_7_funding-your-startup/" class="next" rel="next" title="Lecture 7：Funding your startup">Lecture 7：Funding your startup&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>

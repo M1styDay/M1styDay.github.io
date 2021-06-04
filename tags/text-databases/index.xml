@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text Databases on M1sty</title>
+    <link>https://www.m1sty.com/tags/text-databases/</link>
+    <description>Recent content in Text Databases on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/text-databases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Text Databases：Content</title>
+      <link>https://www.m1sty.com/2021/atdm_8_text-databases_1_content/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_8_text-databases_1_content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Databases：Tutorial</title>
+      <link>https://www.m1sty.com/2021/atdm_8_text-databases_2_tutorial/</link>
+      <pubDate>Mon, 19 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/atdm_8_text-databases_2_tutorial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

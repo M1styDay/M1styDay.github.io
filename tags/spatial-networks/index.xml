@@ -9,28 +9,28 @@
     <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/spatial-networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spatial Networks：Content</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</link>
+      <link>https://www.m1sty.com/2021/atdm_3_spatial-networks_1_content/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_1_content/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_3_spatial-networks_1_content/</guid>
       <description>Spatial Networks Background Network Distance  In many real applications accessibility of objects is restricted by a spatial network  Examples  Driver looking for nearest gas station Mobile user looking for nearest restaurant     Shortest path distance used instead of Euclidean distance SP(a,b) = path between a and b with the minimum accumulated length  Challenges  Euclidean distance is no longer relevant  R-tree may not be useful, when search is based on shortest path distance   Graph cannot be flattened to a one-dimensional space  Special storage and indexing techniques for graphs are required   Graph properties may vary  directed vs.</description>
     </item>
     
     <item>
       <title>Spatial Networks：Tutorial</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</link>
+      <link>https://www.m1sty.com/2021/atdm_3_spatial-networks_2_tutorial/</link>
       <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_2_tutorial/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_3_spatial-networks_2_tutorial/</guid>
       <description>Dijkstra&amp;rsquo;s algorithm review A* search algorithm review Nearest neighbor search exercise Question Consider a spatial network database, which includes a road network graph G and a set of points of interest P. The points in P can only be located on the vertices or edges of G. Each point of interest is with some labels (at least one), e.g., &amp;lsquo;school&amp;rsquo;, &amp;lsquo;hotel&amp;rsquo;, &amp;lsquo;restaurant&amp;rsquo;. The points P are indexed by an R-tree $R_P$ based on location and by an inverted file (see the demo below) IP based on the labels.</description>
     </item>
     
     <item>
       <title>Spatial Networks：Supplement</title>
-      <link>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</link>
+      <link>https://www.m1sty.com/2021/atdm_3_spatial-networks_4_more/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.m1sty.com/2021/atdm_spatial-networks_4_more/</guid>
+      <guid>https://www.m1sty.com/2021/atdm_3_spatial-networks_4_more/</guid>
       <description>Shortest Path Search Dijkstra&amp;rsquo;s algorithm   Dijkstra算法用来寻找图形中节点之间的最短路径。
   在Dijkstra算法中，需要计算每一个节点距离起点的总移动代价。同时，还需要一个优先队列结构。对于所有待遍历的节点，放入优先队列中会按照代价进行排序。
   在算法运行的过程中，每次都从优先队列中选出代价最小的作为下一个遍历的节点。直到到达终点为止。
