@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data science for business on M1sty</title>
+    <link>https://www.m1sty.com/tags/data-science-for-business/</link>
+    <description>Recent content in Data science for business on M1sty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/data-science-for-business/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 1：Understanding Data and the Data Mining Process</title>
+      <link>https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/</link>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/</guid>
+      <description>Course information   In this class we discuss the role of data mining for electronic commerce. The wealth of information and methodologies does not necessarily lead managers to make better decisions unless they are able to transform the data into a useable form. In this lecture we consider how data mining can help turn data into information that managers. We also consider examples where data mining has been used successfully in business and electronic commerce.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/dm_graph-mining_1_content1/" />
+  <link rel="next" href="https://www.m1sty.com/2021/data-warehouse_0_overview/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Lecture 1：Understanding Data and the Data Mining Process | M1sty
+       
+  </title>
+  <meta name="title" content="Lecture 1：Understanding Data and the Data Mining Process | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Lecture 1：Understanding Data and the Data Mining Process",
+    "headline" : "Lecture 1：Understanding Data and the Data Mining Process",
+    "description" : "Course information   In this class we discuss the role of data mining for electronic commerce. The wealth of information and methodologies does not necessarily lead managers to make better decisions unless they are able to transform the data into a useable form. In this lecture we consider how data mining can help turn data into information that managers. We also consider examples where data mining has been used successfully in business and electronic commerce.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-05-23 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-05-23 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dsfb_1_understanding-data-and-the-data-mining-process\/",
+    "wordCount" : "772",
+    "keywords" : [ "HKU","ICOM 6044","Data science for business", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Lecture 1：Understanding Data and the Data Mining Process</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-science-for-business/"> Data science for business </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-05-23 itemprop="datePublished">May 23, 2021</time>
+           </span> (<span class="post-word-count">772 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#course-information">Course information</a></li>
+    <li><a href="#file-class-overview">File: Class Overview</a></li>
+    <li><a href="#file-the-promise-and-limiations-of-data-science-for-business">File: The promise and limiations of data science for business</a>
+      <ul>
+        <li><a href="#what-is-data-science">What is Data science</a></li>
+        <li><a href="#the-promise-of-big-data">The Promise of Big Data</a></li>
+        <li><a href="#limitations-of-data-science">Limitations of Data Science</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h2 id="course-information">Course information</h2>
+<ul>
+<li>
+<p>In this class we discuss the role of data mining for electronic commerce.  The wealth of information and methodologies does not necessarily lead managers to make better decisions unless they are able to transform the data into a useable form.  In this lecture we consider how data mining can help turn data into information that managers.  We also consider examples where data mining has been used successfully in business and electronic commerce.  Finally, we introduce different types of data and how statistics and visual techniques can be used to understand the data.</p>
+</li>
+<li>
+<p>Required Readings:</p>
+<ul>
+<li>Sahay (2018), “Data Mining: Tools and Applications in Predictive Analytics”, Harvard Business Case BEP506.</li>
+<li>Taddy, Business Data Science, Chapter 1.</li>
+<li>Venables et al, An Introduction to R, available online at <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf</a></li>
+</ul>
+</li>
+<li>
+<p>Optional Readings:</p>
+<ul>
+<li>Provost and Fawcett, Data Science for Business, Chapters 1 and 2.</li>
+<li>Stanton, Introduction to Data Science, Chapters 1 through 9.</li>
+<li>James et al, An Introduction to Statistical Learning, Chapter 1.</li>
+</ul>
+</li>
+</ul>
+<h2 id="file-class-overview">File: Class Overview</h2>
+<ul>
+<li>Required Textbook</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608213326.png" alt=""></p>
+<ul>
+<li>Optional, Supplemental Book</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608213410.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608213439.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608213532.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608213554.png" alt=""></p>
+<h2 id="file-the-promise-and-limiations-of-data-science-for-business">File: The promise and limiations of data science for business</h2>
+<ul>
+<li>Lecture Outline
+<ul>
+<li>What is Data Science?</li>
+<li>Promise of Big Data</li>
+<li>Limitations of Data Science</li>
+</ul>
+</li>
+</ul>
+<h3 id="what-is-data-science">What is Data science</h3>
+<h4 id="extracting-knowledge-from-data-to-make-better-decisions-in-business">Extracting knowledge from data to make better decisions in business.</h4>
+<ul>
+<li>Data can be structured (transactions) or unstructured (emails, videos, photos, social media, &hellip;).</li>
+<li>Data are facts, while knowledge is generalizable.</li>
+<li>The extraction process uses data mining techniques.</li>
+<li>Data scientists need to have both technical skills for data mining, but domain knowledge to know how to structure an analysis to have an impact.</li>
+<li>Notice that Data Science is an empirical science. It is based upon experimentation or observation (evidence), as opposed to case studies or theoretical research methods.</li>
+</ul>
+<h4 id="hacking-skills--math--statistics-knowledge--substantive-expertise">Hacking Skills / Math &amp; Statistics Knowledge / Substantive Expertise</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608230038.png" alt=""></p>
+<h4 id="empiricism-versus-rationalism">Empiricism versus Rationalism</h4>
+<ul>
+<li>Empiricists believe that we learn about our world through previous experience. Rationalists believe reason is the basis for understanding anything.
+<ul>
+<li>Strength of empiricism: Objectivity, measurability, replicability, &hellip;</li>
+<li>Weaknesses of empiricism: Inefficient, Potential for bias in data due to (bad) prior research or incorrect collection, Lack of information (e.g., predict future), &hellip;</li>
+</ul>
+</li>
+<li>Example: Why is our customer loyalty dropping?
+<ul>
+<li>Empiricists collect data, rationalists argue we know that loyalty is driven by consumer heuristic to “keep doing it if it works”</li>
+</ul>
+</li>
+</ul>
+<h4 id="data-science-is-a-proces">Data science is a proces</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608230536.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608230605.png" alt=""></p>
+<h4 id="connection-with-other-related-areas">Connection with Other Related Areas</h4>
+<ul>
+<li>Machine Learning</li>
+<li>Artificial Intelligence</li>
+<li>Optimization</li>
+<li>Operations Research</li>
+<li>Exploratory Data Analysis</li>
+<li>Visualization</li>
+<li>Statistical Modeling</li>
+<li>Statistical Computing</li>
+<li>Hadoop/MapReduce/GraphLab/Parallel Computing</li>
+</ul>
+<h4 id="what-are-the-most-important-qualities-that-recruiters-want-in-a-data-scientist">What are the most important qualities that recruiters want in a data scientist?</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608231205.png" alt=""></p>
+<h3 id="the-promise-of-big-data">The Promise of Big Data</h3>
+<h4 id="what-is-big-data">What is Big Data</h4>
+<ul>
+<li>Four basic components:
+<ul>
+<li>Massive datasets</li>
+<li>Unstructured data</li>
+<li>Collected as a by-product from transactions (not for decision making)</li>
+<li>Populations not samples</li>
+</ul>
+</li>
+<li>Related to Business Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, Statistics</li>
+</ul>
+<h4 id="big-data-example">Big Data Example</h4>
+<ul>
+<li>Billion Prices Project</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608231405.png" alt=""></p>
+<ul>
+<li>Google Correlates</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608231452.png" alt=""></p>
+<ul>
+<li>Tweeting about Unemployment</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608231539.png" alt=""></p>
+<ul>
+<li>Predicting TV Ratings</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608233940.png" alt=""></p>
+<ul>
+<li>Understanding Market Structure</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608234021.png" alt=""></p>
+<ul>
+<li>Making Better Priceing Decisions</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210608234111.png" alt=""></p>
+<h4 id="advantages-of-big-data">Advantages of Big Data</h4>
+<ul>
+<li>Can detect patterns by leveraging these qualities: ◦ Massive
+<ul>
+<li>Immediate and timely</li>
+<li>Predictive</li>
+<li>Free (or inexpensive)</li>
+</ul>
+</li>
+</ul>
+<h3 id="limitations-of-data-science">Limitations of Data Science</h3>
+<h4 id="why-companies-fail-to-leverage-big-data">Why companies fail to leverage Big Data</h4>
+<ul>
+<li>
+<p>Some illustrations</p>
+<ul>
+<li>Assessing Model Uncertainty in Financial Risk Management</li>
+<li>Retail Price Optimization using Business Rules</li>
+<li>Predicting Flu Trends</li>
+<li>Problems with Big Data</li>
+<li>Mangers and culture</li>
+</ul>
+</li>
+<li>
+<p>Summary</p>
+<ul>
+<li>Big Data has a huge potential to shape our lives through changes in business, government, and science, or society in general
+<ul>
+<li>It is a by-product of our electronic lives and generally the reason it is collected has nothing to do with analysis or learning</li>
+<li>The goal of data science is to tap into this potential of data (big or small) to make decisions</li>
+</ul>
+</li>
+<li>But remember analytical approaches fail because
+<ul>
+<li>Bad/poor/biased data</li>
+<li>Bad/poor/biased models</li>
+<li>Bad/poor/biased managers who interface with the models</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="limitations-of-big-data-and-data-science">Limitations of Big Data and Data Science</h4>
+<ul>
+<li>The promise of Big Data is that we can solve problems faster, cheaper and better.</li>
+<li>The problem is that Big Data is still just data, and we need to know its biases
+<ul>
+<li>Historical data may not be representative of future data</li>
+<li>Participants in social media data may not be representative of society</li>
+<li>The collection and use of “Big Data” changes through time</li>
+</ul>
+</li>
+<li>Knowledge (managerial or theoretical) is still useful
+<ul>
+<li>The data we observe is influenced by our past decisions, which is a function of our “models”, need to consider this feedback relationship</li>
+</ul>
+</li>
+</ul>
+<h4 id="disadvantages-of-data-based-approaches">Disadvantages of Data Based Approaches</h4>
+<ul>
+<li>It may not be representative
+<ul>
+<li>Who writes reviews? Really excited customers and really disappointed ones</li>
+</ul>
+</li>
+<li>Data quality may be poor
+<ul>
+<li>Consumers generate Big Data for themselves not for data miners</li>
+</ul>
+</li>
+<li>Privacy and confidentiality issues
+<ul>
+<li>How can we protect consumers?</li>
+</ul>
+</li>
+<li>Difficult to assess accuracy and uncertainty</li>
+<li>The past may not be representative of the future</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/>https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/icom-6044/">
+                    #ICOM 6044</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/data-science-for-business/">
+                    #Data science for business</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/dm_graph-mining_1_content1/" class="prev" rel="prev" title="Graph Mining：k-cores and Densest Subgraphs"><i class="iconfont icon-left"></i>&nbsp;Graph Mining：k-cores and Densest Subgraphs</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/data-warehouse_0_overview/" class="next" rel="next" title="Hadoop Overview">Hadoop Overview&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>
