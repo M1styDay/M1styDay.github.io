@@ -6,14 +6,14 @@
     <description>Recent content in Coding on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm_Leetcode</title>
       <link>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</guid>
-      <description></description>
+      <description>175. 组合两个表 题目  https://leetcode-cn.com/problems/combine-two-tables/ right join  解答 select FirstName, LastName, City, State from address right join person on person.personId = address.personId 176. 第二高的薪水 题目  https://leetcode-cn.com/problems/second-highest-salary/ ifnull(a,b) limit 1 offset 1 distinct  解答 select ifnull((select distinct Salary from employee order by salary desc LIMIT 1 OFFSET 1),null) as SecondHighestSalary 178. 分数排名 题目  https://leetcode-cn.com/problems/rank-scores/ 窗口函数 rank()/dense_rank()/row_number()  解答 select Score, dense_rank() over (order by Score desc ) as &amp;#39;Rank&amp;#39; from Scores 181.</description>
     </item>
     
     <item>
