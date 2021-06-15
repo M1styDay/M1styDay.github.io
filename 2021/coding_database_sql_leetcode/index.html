@@ -12,8 +12,8 @@
   
   
   
-  <link rel="prev" href="https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/" />
-  <link rel="next" href="https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/" />
+  <link rel="prev" href="https://www.m1sty.com/2021/coding_algorithm_python_leetcode/" />
+  
   <link rel="canonical" href="https://www.m1sty.com/2021/coding_database_sql_leetcode/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,7 +49,7 @@
     "articleSection" : "posts",
     "name" : "Database_Leetcode",
     "headline" : "Database_Leetcode",
-    "description" : "",
+    "description" : "175. 组合两个表 题目  https:\/\/leetcode-cn.com\/problems\/combine-two-tables\/ right join  解答 select FirstName, LastName, City, State from address right join person on person.personId = address.personId 176. 第二高的薪水 题目  https:\/\/leetcode-cn.com\/problems\/second-highest-salary\/ ifnull(a,b) limit 1 offset 1 distinct  解答 select ifnull((select distinct Salary from employee order by salary desc LIMIT 1 OFFSET 1),null) as SecondHighestSalary 178. 分数排名 题目  https:\/\/leetcode-cn.com\/problems\/rank-scores\/ 窗口函数 rank()\/dense_rank()\/row_number()  解答 select Score, dense_rank() over (order by Score desc ) as \u0026#39;Rank\u0026#39; from Scores 181.",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -57,10 +57,10 @@
     "accountablePerson" : "Misty",
     "copyrightHolder" : "Misty",
     "copyrightYear" : "2021",
-    "datePublished": "2021-05-05 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2021-05-05 00:00:00 \u002b0000 UTC",
+    "datePublished": "2021-06-12 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-06-12 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/coding_database_sql_leetcode\/",
-    "wordCount" : "0",
+    "wordCount" : "752",
     "keywords" : [ "Database", "M1sty"]
 }
 </script>
@@ -131,15 +131,98 @@
                     
             </span>
           <span class="post-time"> on
-        <time datetime=2021-05-05 itemprop="datePublished">May 5, 2021</time>
-           </span> (<span class="post-word-count">0 words)</span>
+        <time datetime=2021-06-12 itemprop="datePublished">June 12, 2021</time>
+           </span> (<span class="post-word-count">752 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#175-组合两个表">175. 组合两个表</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#176-第二高的薪水">176. 第二高的薪水</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#178-分数排名">178. 分数排名</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#181-超过经理收入的员工">181. 超过经理收入的员工</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#184-部门工资最高的员工">184. 部门工资最高的员工</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#185部门工资前三高的所有员工">185.部门工资前三高的所有员工</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#182查找重复的电子邮箱">182.查找重复的电子邮箱</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#183从不订购的客户">183.从不订购的客户</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#197上升的温度">197.上升的温度</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#180-连续出现的数字">180. 连续出现的数字</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#177-第n高的薪水">177. 第N高的薪水</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#1777-每家商店的产品价格">1777. 每家商店的产品价格</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#196-删除重复的电子邮箱">196. 删除重复的电子邮箱</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#262-行程和用户">262. 行程和用户</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#601-体育馆的人流量">601. 体育馆的人流量</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#1179-重新格式化部门表">1179. 重新格式化部门表</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
 </div>
 <script type="text/javascript">
@@ -187,7 +270,263 @@
           
           
 
-          
+          <h2 id="175-组合两个表">175. 组合两个表</h2>
+<h4 id="题目">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/combine-two-tables/">https://leetcode-cn.com/problems/combine-two-tables/</a></li>
+<li>right join</li>
+</ul>
+<h4 id="解答">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> FirstName, LastName, City, <span style="color:#66d9ef">State</span>
+<span style="color:#66d9ef">from</span> address
+<span style="color:#66d9ef">right</span> <span style="color:#66d9ef">join</span> person
+<span style="color:#66d9ef">on</span> person.personId <span style="color:#f92672">=</span> address.personId
+</code></pre></div><h2 id="176-第二高的薪水">176. 第二高的薪水</h2>
+<h4 id="题目-1">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/second-highest-salary/">https://leetcode-cn.com/problems/second-highest-salary/</a></li>
+<li>ifnull(a,b)</li>
+<li>limit 1 offset 1</li>
+<li>distinct</li>
+</ul>
+<h4 id="解答-1">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> ifnull((<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> Salary <span style="color:#66d9ef">from</span> employee <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> salary <span style="color:#66d9ef">desc</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">OFFSET</span> <span style="color:#ae81ff">1</span>),<span style="color:#66d9ef">null</span>) <span style="color:#66d9ef">as</span> SecondHighestSalary
+</code></pre></div><h2 id="178-分数排名">178. 分数排名</h2>
+<h4 id="题目-2">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/rank-scores/">https://leetcode-cn.com/problems/rank-scores/</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/138282683">窗口函数</a></li>
+<li>rank()/dense_rank()/row_number()</li>
+</ul>
+<h4 id="解答-2">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Score, dense_rank() over (<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> Score <span style="color:#66d9ef">desc</span> ) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Rank&#39;</span>
+<span style="color:#66d9ef">from</span> Scores
+</code></pre></div><h2 id="181-超过经理收入的员工">181. 超过经理收入的员工</h2>
+<h4 id="题目-3">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a></li>
+<li>自连接/笛卡尔积</li>
+</ul>
+<h4 id="解答-3">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> a.name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Employee&#39;</span>
+<span style="color:#66d9ef">from</span> employee a
+<span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> employee b
+<span style="color:#66d9ef">on</span> a.Managerid <span style="color:#f92672">=</span> b.id
+<span style="color:#66d9ef">where</span> a.Salary <span style="color:#f92672">&gt;</span> b.Salary
+</code></pre></div><h2 id="184-部门工资最高的员工">184. 部门工资最高的员工</h2>
+<h4 id="题目-4">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/department-highest-salary/">https://leetcode-cn.com/problems/department-highest-salary/</a></li>
+<li>窗口函数/也可以用in</li>
+</ul>
+<h4 id="解答-4">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Department, Employee, Salary
+<span style="color:#66d9ef">from</span> (
+    <span style="color:#66d9ef">select</span> 
+    a.Id, 
+    a.Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Employee&#39;</span>, 
+    a.Salary <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Salary&#39;</span>, 
+    b.Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Department&#39;</span>, 
+    rank() over (Partition <span style="color:#66d9ef">by</span> b.name <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> a.Salary <span style="color:#66d9ef">desc</span>) <span style="color:#66d9ef">as</span> ranking
+    <span style="color:#66d9ef">from</span> Employee a
+    <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Department b
+    <span style="color:#66d9ef">on</span> a.DepartmentId <span style="color:#f92672">=</span> b.Id) <span style="color:#66d9ef">c</span>
+<span style="color:#66d9ef">where</span> ranking <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span>
+	Department.NAME <span style="color:#66d9ef">AS</span> Department,
+	Employee.NAME <span style="color:#66d9ef">AS</span> Employee,
+	Salary 
+<span style="color:#66d9ef">FROM</span>
+	Employee,
+	Department 
+<span style="color:#66d9ef">WHERE</span>
+	Employee.DepartmentId <span style="color:#f92672">=</span> Department.Id 
+	<span style="color:#66d9ef">AND</span> ( Employee.DepartmentId, Salary ) 
+    <span style="color:#66d9ef">IN</span> (<span style="color:#66d9ef">SELECT</span> DepartmentId, <span style="color:#66d9ef">max</span>( Salary ) 
+        <span style="color:#66d9ef">FROM</span> Employee 
+        <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> DepartmentId )
+</code></pre></div><h2 id="185部门工资前三高的所有员工">185.部门工资前三高的所有员工</h2>
+<h4 id="题目-5">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/department-top-three-salaries/">https://leetcode-cn.com/problems/department-top-three-salaries/</a></li>
+<li>窗口函数</li>
+</ul>
+<h4 id="解答-5">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Department, Employee, Salary
+<span style="color:#66d9ef">from</span>(
+    <span style="color:#66d9ef">select</span> 
+    a.Id, 
+    a.Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Employee&#39;</span>, 
+    a.Salary <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Salary&#39;</span>, 
+    b.Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Department&#39;</span>, 
+    dense_rank() over (Partition <span style="color:#66d9ef">by</span> b.name <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> a.Salary <span style="color:#66d9ef">desc</span>) <span style="color:#66d9ef">as</span> ranking
+    <span style="color:#66d9ef">from</span> Employee a
+    <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Department b
+    <span style="color:#66d9ef">on</span> a.DepartmentId <span style="color:#f92672">=</span> b.Id ) <span style="color:#66d9ef">c</span>
+<span style="color:#66d9ef">where</span> ranking <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>
+</code></pre></div><h2 id="182查找重复的电子邮箱">182.查找重复的电子邮箱</h2>
+<h4 id="题目-6">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/duplicate-emails/">https://leetcode-cn.com/problems/duplicate-emails/</a></li>
+<li>count()</li>
+</ul>
+<h4 id="解答-6">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> Email
+<span style="color:#66d9ef">from</span> person
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> email
+<span style="color:#66d9ef">having</span> <span style="color:#66d9ef">count</span>(email) <span style="color:#f92672">&gt;</span><span style="color:#ae81ff">1</span>
+</code></pre></div><h2 id="183从不订购的客户">183.从不订购的客户</h2>
+<h4 id="题目-7">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/customers-who-never-order/">https://leetcode-cn.com/problems/customers-who-never-order/</a></li>
+<li>not in</li>
+</ul>
+<h4 id="解答-7">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Customers&#39;</span>
+<span style="color:#66d9ef">from</span> customers
+<span style="color:#66d9ef">where</span> id <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">in</span>
+(<span style="color:#66d9ef">select</span> a.id
+<span style="color:#66d9ef">from</span> customers a
+<span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Orders b
+<span style="color:#66d9ef">on</span> a.id <span style="color:#f92672">=</span> b.CustomerId)
+</code></pre></div><h2 id="197上升的温度">197.上升的温度</h2>
+<h4 id="题目-8">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/rising-temperature/">https://leetcode-cn.com/problems/rising-temperature/</a></li>
+<li>datediff(day1,day2)</li>
+</ul>
+<h4 id="解答-8">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> b.id
+<span style="color:#66d9ef">from</span> Weather a
+<span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Weather b
+<span style="color:#66d9ef">where</span> datediff(b.recordDate,a.recordDate) <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">and</span> a.Temperature <span style="color:#f92672">&lt;</span> b.Temperature
+</code></pre></div><h2 id="180-连续出现的数字">180. 连续出现的数字</h2>
+<h4 id="题目-9">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/consecutive-numbers/">https://leetcode-cn.com/problems/consecutive-numbers/</a></li>
+<li>连接表</li>
+</ul>
+<h4 id="解答-9">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> 
+    a.Num <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;ConsecutiveNums&#39;</span>
+<span style="color:#66d9ef">from</span> 
+    logs a, 
+    logs b, 
+    logs <span style="color:#66d9ef">c</span>
+<span style="color:#66d9ef">where</span> 
+    a.id <span style="color:#f92672">=</span> b.id <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> 
+    <span style="color:#66d9ef">and</span> b.id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> 
+    <span style="color:#66d9ef">and</span> a.Num <span style="color:#f92672">=</span> b.Num 
+    <span style="color:#66d9ef">and</span> b.Num <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.Num
+</code></pre></div><h2 id="177-第n高的薪水">177. 第N高的薪水</h2>
+<h4 id="题目-10">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/nth-highest-salary/">https://leetcode-cn.com/problems/nth-highest-salary/</a></li>
+<li>ifnull(a,b)/distinct</li>
+</ul>
+<h4 id="解答-10">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">FUNCTION</span> getNthHighestSalary(N INT) <span style="color:#66d9ef">RETURNS</span> INT
+<span style="color:#66d9ef">BEGIN</span>
+  <span style="color:#66d9ef">RETURN</span> (
+      <span style="color:#f92672">#</span> <span style="color:#66d9ef">Write</span> your MySQL query <span style="color:#66d9ef">statement</span> below.
+      <span style="color:#66d9ef">select</span> 
+      ifnull(
+          (<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> 
+                Salary <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;getNthHighestSalary&#39;</span> 
+            <span style="color:#66d9ef">from</span> 
+                (<span style="color:#66d9ef">select</span> Salary, dense_rank() over (<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> Salary <span style="color:#66d9ef">desc</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;ranking&#39;</span> <span style="color:#66d9ef">from</span> employee) a 
+            <span style="color:#66d9ef">where</span> ranking <span style="color:#f92672">=</span> N)
+      ,<span style="color:#66d9ef">null</span>)
+  );
+<span style="color:#66d9ef">END</span>
+</code></pre></div><h2 id="1777-每家商店的产品价格">1777. 每家商店的产品价格</h2>
+<h4 id="题目-11">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/products-price-for-each-store/">https://leetcode-cn.com/problems/products-price-for-each-store/</a></li>
+<li>行转列/group by聚合</li>
+</ul>
+<h4 id="解答-11">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> product_id,
+        <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> store <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;store1&#39;</span> <span style="color:#66d9ef">then</span> price <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;store1&#39;</span>,
+        <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> store <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;store2&#39;</span> <span style="color:#66d9ef">then</span> price <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;store2&#39;</span>,
+        <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> store <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;store3&#39;</span> <span style="color:#66d9ef">then</span> price <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;store3&#39;</span>
+<span style="color:#66d9ef">from</span> Products
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> product_id
+</code></pre></div><h2 id="196-删除重复的电子邮箱">196. 删除重复的电子邮箱</h2>
+<h4 id="题目-12">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/delete-duplicate-emails/">https://leetcode-cn.com/problems/delete-duplicate-emails/</a></li>
+<li>delete</li>
+</ul>
+<h4 id="解答-12">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">delete</span> a
+<span style="color:#66d9ef">from</span> person a, person b
+<span style="color:#66d9ef">where</span> a.Email <span style="color:#f92672">=</span> b.Email <span style="color:#66d9ef">and</span> a.id <span style="color:#f92672">&gt;</span> b.id
+</code></pre></div><h2 id="262-行程和用户">262. 行程和用户</h2>
+<h4 id="题目-13">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/trips-and-users/">https://leetcode-cn.com/problems/trips-and-users/</a></li>
+<li>困难题，两次连接，统计取消率</li>
+</ul>
+<h4 id="解答-13">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> 
+    T.Request_at <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Day</span>,
+    round(<span style="color:#66d9ef">sum</span>(<span style="color:#66d9ef">if</span>(Status<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;completed&#39;</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>))<span style="color:#f92672">/</span><span style="color:#66d9ef">count</span>(T.Request_at),<span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Cancellation Rate&#39;</span>
+
+<span style="color:#66d9ef">from</span> (
+<span style="color:#66d9ef">select</span> Id, Client_Id, Driver_Id, City_Id, Status, Request_at <span style="color:#66d9ef">from</span> Trips
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Users a <span style="color:#66d9ef">on</span> a.Users_Id <span style="color:#f92672">=</span> Client_id <span style="color:#66d9ef">and</span> a.<span style="color:#66d9ef">Role</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Client&#39;</span> 
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Users b <span style="color:#66d9ef">on</span> b.Users_Id <span style="color:#f92672">=</span> Driver_id <span style="color:#66d9ef">and</span> b.<span style="color:#66d9ef">Role</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Driver&#39;</span> 
+<span style="color:#66d9ef">where</span> a.Banned <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;No&#39;</span> <span style="color:#66d9ef">and</span> b.Banned <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;No&#39;</span>
+) T
+
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> T.Request_at
+<span style="color:#66d9ef">having</span> T.Request_at <span style="color:#66d9ef">between</span> <span style="color:#e6db74">&#39;2013-10-01&#39;</span> <span style="color:#66d9ef">and</span> <span style="color:#e6db74">&#39;2013-10-03&#39;</span>
+</code></pre></div><h2 id="601-体育馆的人流量">601. 体育馆的人流量</h2>
+<h4 id="题目-14">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/human-traffic-of-stadium/">https://leetcode-cn.com/problems/human-traffic-of-stadium/</a></li>
+<li>多表连接</li>
+</ul>
+<h4 id="解答-14">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span>
+    a.<span style="color:#f92672">*</span>
+<span style="color:#66d9ef">from</span> 
+    (<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> Stadium <span style="color:#66d9ef">where</span> people <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">100</span>) a,
+    (<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> Stadium <span style="color:#66d9ef">where</span> people <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">100</span>) b,
+    (<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> Stadium <span style="color:#66d9ef">where</span> people <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">c</span>
+<span style="color:#66d9ef">where</span> 
+    (a.id <span style="color:#f92672">=</span> b.id <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">and</span> b.id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) 
+    <span style="color:#66d9ef">or</span> (a.id <span style="color:#f92672">=</span> b.id <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">and</span> b.id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id  <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) 
+    <span style="color:#66d9ef">or</span> (a.id <span style="color:#f92672">=</span> b.id <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">and</span> b.id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id  <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)    
+<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> 
+    a.id 
+</code></pre></div><h2 id="1179-重新格式化部门表">1179. 重新格式化部门表</h2>
+<h4 id="题目-15">题目</h4>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/reformat-department-table/">https://leetcode-cn.com/problems/reformat-department-table/</a></li>
+<li>case when</li>
+</ul>
+<h4 id="解答-15">解答</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> 
+    id,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Jan&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Jan_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Feb&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Feb_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Mar&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Mar_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Apr&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Apr_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;May&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;May_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Jun&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Jun_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Jul&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Jul_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Aug&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Aug_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Sep&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Sep_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Oct&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Oct_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Nov&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Nov_Revenue&#39;</span>,
+    <span style="color:#66d9ef">max</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> <span style="color:#66d9ef">month</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Dec&#39;</span> <span style="color:#66d9ef">then</span> revenue <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Dec_Revenue&#39;</span>
+<span style="color:#66d9ef">from</span> 
+    Department
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> 
+    id
+</code></pre></div>
     </div>
 
     <div class="post-copyright">
@@ -230,10 +569,8 @@
 
     <div class="post-nav">
         
-        <a href="https://www.m1sty.com/2021/coding_databasel_sql_nowcoder/" class="prev" rel="prev" title="Database_Nowcoder"><i class="iconfont icon-left"></i>&nbsp;Database_Nowcoder</a>
+        <a href="https://www.m1sty.com/2021/coding_algorithm_python_leetcode/" class="prev" rel="prev" title="Algorithm_Leetcode"><i class="iconfont icon-left"></i>&nbsp;Algorithm_Leetcode</a>
          
-        
-        <a href="https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/" class="next" rel="next" title="Algorithm_Nowcoder">Algorithm_Nowcoder&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

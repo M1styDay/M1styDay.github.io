@@ -6,14 +6,23 @@
     <description>Recent content in Coding on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database_Leetcode</title>
+      <link>https://www.m1sty.com/2021/coding_database_sql_leetcode/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/coding_database_sql_leetcode/</guid>
+      <description>175. 组合两个表 题目  https://leetcode-cn.com/problems/combine-two-tables/ right join  解答 select FirstName, LastName, City, State from address right join person on person.personId = address.personId 176. 第二高的薪水 题目  https://leetcode-cn.com/problems/second-highest-salary/ ifnull(a,b) limit 1 offset 1 distinct  解答 select ifnull((select distinct Salary from employee order by salary desc LIMIT 1 OFFSET 1),null) as SecondHighestSalary 178. 分数排名 题目  https://leetcode-cn.com/problems/rank-scores/ 窗口函数 rank()/dense_rank()/row_number()  解答 select Score, dense_rank() over (order by Score desc ) as &amp;#39;Rank&amp;#39; from Scores 181.</description>
+    </item>
+    
     <item>
       <title>Algorithm_Leetcode</title>
       <link>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</link>
       <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/coding_algorithm_python_leetcode/</guid>
-      <description>175. 组合两个表 题目  https://leetcode-cn.com/problems/combine-two-tables/ right join  解答 select FirstName, LastName, City, State from address right join person on person.personId = address.personId 176. 第二高的薪水 题目  https://leetcode-cn.com/problems/second-highest-salary/ ifnull(a,b) limit 1 offset 1 distinct  解答 select ifnull((select distinct Salary from employee order by salary desc LIMIT 1 OFFSET 1),null) as SecondHighestSalary 178. 分数排名 题目  https://leetcode-cn.com/problems/rank-scores/ 窗口函数 rank()/dense_rank()/row_number()  解答 select Score, dense_rank() over (order by Score desc ) as &amp;#39;Rank&amp;#39; from Scores 181.</description>
+      <description>1. 两数之和 题目  https://leetcode-cn.com/problems/two-sum/  解答 class Solution(object): def twoSum(self, nums, target): n=len(nums) for i in range(n): for j in range(i+1,n): if nums[i]+nums[j]==target: return i,j def twoSum(nums, target): hashmap={} for ind,num in enumerate(nums): hashmap[num] = ind for i,num in enumerate(nums): j = hashmap.get(target - num) if j is not None and i!=j: return [i,j] </description>
     </item>
     
     <item>
@@ -22,15 +31,6 @@
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/coding_algorithm_python_nowcoder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Database_Leetcode</title>
-      <link>https://www.m1sty.com/2021/coding_database_sql_leetcode/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/coding_database_sql_leetcode/</guid>
       <description></description>
     </item>
     

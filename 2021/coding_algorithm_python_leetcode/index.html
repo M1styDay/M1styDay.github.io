@@ -13,7 +13,7 @@
   
   
   <link rel="prev" href="https://www.m1sty.com/2021/data-warehouse_0_overview/" />
-  
+  <link rel="next" href="https://www.m1sty.com/2021/coding_database_sql_leetcode/" />
   <link rel="canonical" href="https://www.m1sty.com/2021/coding_algorithm_python_leetcode/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,7 +49,7 @@
     "articleSection" : "posts",
     "name" : "Algorithm_Leetcode",
     "headline" : "Algorithm_Leetcode",
-    "description" : "175. 组合两个表 题目  https:\/\/leetcode-cn.com\/problems\/combine-two-tables\/ right join  解答 select FirstName, LastName, City, State from address right join person on person.personId = address.personId 176. 第二高的薪水 题目  https:\/\/leetcode-cn.com\/problems\/second-highest-salary\/ ifnull(a,b) limit 1 offset 1 distinct  解答 select ifnull((select distinct Salary from employee order by salary desc LIMIT 1 OFFSET 1),null) as SecondHighestSalary 178. 分数排名 题目  https:\/\/leetcode-cn.com\/problems\/rank-scores\/ 窗口函数 rank()\/dense_rank()\/row_number()  解答 select Score, dense_rank() over (order by Score desc ) as \u0026#39;Rank\u0026#39; from Scores 181.",
+    "description" : "1. 两数之和 题目  https:\/\/leetcode-cn.com\/problems\/two-sum\/  解答 class Solution(object): def twoSum(self, nums, target): n=len(nums) for i in range(n): for j in range(i\u002b1,n): if nums[i]\u002bnums[j]==target: return i,j def twoSum(nums, target): hashmap={} for ind,num in enumerate(nums): hashmap[num] = ind for i,num in enumerate(nums): j = hashmap.get(target - num) if j is not None and i!=j: return [i,j] ",
     "inLanguage" : "en-us",
     "author" : "Misty",
     "creator" : "Misty",
@@ -60,7 +60,7 @@
     "datePublished": "2021-06-11 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-06-11 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/www.m1sty.com\/2021\/coding_algorithm_python_leetcode\/",
-    "wordCount" : "175",
+    "wordCount" : "53",
     "keywords" : [ "Algorithm", "M1sty"]
 }
 </script>
@@ -132,7 +132,7 @@
             </span>
           <span class="post-time"> on
         <time datetime=2021-06-11 itemprop="datePublished">June 11, 2021</time>
-           </span> (<span class="post-word-count">175 words)</span>
+           </span> (<span class="post-word-count">53 words)</span>
         </div>
     
     <div class="post-toc" id="post-toc">
@@ -141,27 +141,7 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#175-组合两个表">175. 组合两个表</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#176-第二高的薪水">176. 第二高的薪水</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#178-分数排名">178. 分数排名</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#181-超过经理收入的员工">181. 超过经理收入的员工</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#184-部门工资最高的员工">184. 部门工资最高的员工</a>
+    <li><a href="#1-两数之和">1. 两数之和</a>
       <ul>
         <li></li>
       </ul>
@@ -215,81 +195,27 @@
           
           
 
-          <h2 id="175-组合两个表">175. 组合两个表</h2>
+          <h2 id="1-两数之和">1. 两数之和</h2>
 <h4 id="题目">题目</h4>
 <ul>
-<li><a href="https://leetcode-cn.com/problems/combine-two-tables/">https://leetcode-cn.com/problems/combine-two-tables/</a></li>
-<li>right join</li>
+<li><a href="https://leetcode-cn.com/problems/two-sum/">https://leetcode-cn.com/problems/two-sum/</a></li>
 </ul>
 <h4 id="解答">解答</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> FirstName, LastName, City, <span style="color:#66d9ef">State</span>
-<span style="color:#66d9ef">from</span> address
-<span style="color:#66d9ef">right</span> <span style="color:#66d9ef">join</span> person
-<span style="color:#66d9ef">on</span> person.personId <span style="color:#f92672">=</span> address.personId
-</code></pre></div><h2 id="176-第二高的薪水">176. 第二高的薪水</h2>
-<h4 id="题目-1">题目</h4>
-<ul>
-<li><a href="https://leetcode-cn.com/problems/second-highest-salary/">https://leetcode-cn.com/problems/second-highest-salary/</a></li>
-<li>ifnull(a,b)</li>
-<li>limit 1 offset 1</li>
-<li>distinct</li>
-</ul>
-<h4 id="解答-1">解答</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> ifnull((<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> Salary <span style="color:#66d9ef">from</span> employee <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> salary <span style="color:#66d9ef">desc</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">OFFSET</span> <span style="color:#ae81ff">1</span>),<span style="color:#66d9ef">null</span>) <span style="color:#66d9ef">as</span> SecondHighestSalary
-</code></pre></div><h2 id="178-分数排名">178. 分数排名</h2>
-<h4 id="题目-2">题目</h4>
-<ul>
-<li><a href="https://leetcode-cn.com/problems/rank-scores/">https://leetcode-cn.com/problems/rank-scores/</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/138282683">窗口函数</a></li>
-<li>rank()/dense_rank()/row_number()</li>
-</ul>
-<h4 id="解答-2">解答</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Score, dense_rank() over (<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> Score <span style="color:#66d9ef">desc</span> ) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Rank&#39;</span>
-<span style="color:#66d9ef">from</span> Scores
-</code></pre></div><h2 id="181-超过经理收入的员工">181. 超过经理收入的员工</h2>
-<h4 id="题目-3">题目</h4>
-<ul>
-<li><a href="https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/">https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/</a></li>
-<li>自连接/笛卡尔积</li>
-</ul>
-<h4 id="解答-3">解答</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> a.name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Employee&#39;</span>
-<span style="color:#66d9ef">from</span> employee a
-<span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> employee b
-<span style="color:#66d9ef">on</span> a.Managerid <span style="color:#f92672">=</span> b.id
-<span style="color:#66d9ef">where</span> a.Salary <span style="color:#f92672">&gt;</span> b.Salary
-</code></pre></div><h2 id="184-部门工资最高的员工">184. 部门工资最高的员工</h2>
-<h4 id="题目-4">题目</h4>
-<ul>
-<li><a href="https://leetcode-cn.com/problems/department-highest-salary/">https://leetcode-cn.com/problems/department-highest-salary/</a></li>
-<li>窗口函数/也可以用in</li>
-</ul>
-<h4 id="解答-4">解答</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Department, Employee, Salary
-<span style="color:#66d9ef">from</span> (
-    <span style="color:#66d9ef">select</span> 
-    a.Id, 
-    a.Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Employee&#39;</span>, 
-    a.Salary <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Salary&#39;</span>, 
-    b.Name <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Department&#39;</span>, 
-    rank() over (Partition <span style="color:#66d9ef">by</span> b.name <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> a.Salary <span style="color:#66d9ef">desc</span>) <span style="color:#66d9ef">as</span> ranking
-    <span style="color:#66d9ef">from</span> Employee a
-    <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Department b
-    <span style="color:#66d9ef">on</span> a.DepartmentId <span style="color:#f92672">=</span> b.Id) <span style="color:#66d9ef">c</span>
-<span style="color:#66d9ef">where</span> ranking <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span>
-	Department.NAME <span style="color:#66d9ef">AS</span> Department,
-	Employee.NAME <span style="color:#66d9ef">AS</span> Employee,
-	Salary 
-<span style="color:#66d9ef">FROM</span>
-	Employee,
-	Department 
-<span style="color:#66d9ef">WHERE</span>
-	Employee.DepartmentId <span style="color:#f92672">=</span> Department.Id 
-	<span style="color:#66d9ef">AND</span> ( Employee.DepartmentId, Salary ) 
-    <span style="color:#66d9ef">IN</span> (<span style="color:#66d9ef">SELECT</span> DepartmentId, <span style="color:#66d9ef">max</span>( Salary ) 
-        <span style="color:#66d9ef">FROM</span> Employee 
-        <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> DepartmentId )
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums, target):
+        n<span style="color:#f92672">=</span>len(nums)
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,n):
+                <span style="color:#66d9ef">if</span> nums[i]<span style="color:#f92672">+</span>nums[j]<span style="color:#f92672">==</span>target:
+                    <span style="color:#66d9ef">return</span> i,j
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(nums, target):
+    hashmap<span style="color:#f92672">=</span>{}
+    <span style="color:#66d9ef">for</span> ind,num <span style="color:#f92672">in</span> enumerate(nums):
+        hashmap[num] <span style="color:#f92672">=</span> ind
+    <span style="color:#66d9ef">for</span> i,num <span style="color:#f92672">in</span> enumerate(nums):
+        j <span style="color:#f92672">=</span> hashmap<span style="color:#f92672">.</span>get(target <span style="color:#f92672">-</span> num)
+        <span style="color:#66d9ef">if</span> j <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None <span style="color:#f92672">and</span> i<span style="color:#f92672">!=</span>j:
+            <span style="color:#66d9ef">return</span> [i,j]
 </code></pre></div>
     </div>
 
@@ -335,6 +261,8 @@
         
         <a href="https://www.m1sty.com/2021/data-warehouse_0_overview/" class="prev" rel="prev" title="Hadoop Overview"><i class="iconfont icon-left"></i>&nbsp;Hadoop Overview</a>
          
+        
+        <a href="https://www.m1sty.com/2021/coding_database_sql_leetcode/" class="next" rel="next" title="Database_Leetcode">Database_Leetcode&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
