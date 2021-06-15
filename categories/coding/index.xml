@@ -72,15 +72,6 @@ delete和drop最本质的区别在于，delete是数据操纵语言，即DML，�
     </item>
     
     <item>
-      <title>Test</title>
-      <link>https://www.m1sty.com/2021/coding_test/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/coding_test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SQL面试必会50题</title>
       <link>https://www.m1sty.com/2020/coding_database_sql_50exercise/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>

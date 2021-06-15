@@ -130,15 +130,6 @@ delete和drop最本质的区别在于，delete是数据操纵语言，即DML，�
     </item>
     
     <item>
-      <title>Test</title>
-      <link>https://www.m1sty.com/2021/coding_test/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/2021/coding_test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SVM：Practise</title>
       <link>https://www.m1sty.com/2021/dm_svm_4_practise/</link>
       <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
