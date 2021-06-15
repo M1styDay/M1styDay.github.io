@@ -6,14 +6,23 @@
     <description>Recent content in ICOM 6044 on M1sty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/icom-6044/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.m1sty.com/tags/icom-6044/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture 2：Exploring and Visualizing Data</title>
+      <link>https://www.m1sty.com/2021/dsfb_2_exploring-and-visualizing-data/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/2021/dsfb_2_exploring-and-visualizing-data/</guid>
+      <description>Lecture 2：Exploring and Visualizing Data   This lecture focuses on how we can use descriptive statistics and exploratory analysis to understand datasets. A primary goal of data visualization is to help identify patterns in data and be able to communicate these patterns succinctly to an analyst. Often our goal is to find patterns in large datasets, to help reduce the size of the dataset we introduce cluster analysis as a data mining technique for grouping objects into similar subsets or clusters.</description>
+    </item>
+    
     <item>
       <title>Lecture 1：Understanding Data and the Data Mining Process</title>
       <link>https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/</link>
       <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/2021/dsfb_1_understanding-data-and-the-data-mining-process/</guid>
-      <description>Course information   In this class we discuss the role of data mining for electronic commerce. The wealth of information and methodologies does not necessarily lead managers to make better decisions unless they are able to transform the data into a useable form. In this lecture we consider how data mining can help turn data into information that managers. We also consider examples where data mining has been used successfully in business and electronic commerce.</description>
+      <description>Lecture 1: Understanding Data and the Data Mining Process   In this class we discuss the role of data mining for electronic commerce. The wealth of information and methodologies does not necessarily lead managers to make better decisions unless they are able to transform the data into a useable form. In this lecture we consider how data mining can help turn data into information that managers. We also consider examples where data mining has been used successfully in business and electronic commerce.</description>
     </item>
     
   </channel>

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <link href="//use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://cdn.splitbee.io/sb-ab.js"></script>
+  <meta name="author" content="M1sty">
+  
+  
+  
+  <link rel="prev" href="https://www.m1sty.com/2021/data-warehouse_0_overview/" />
+  <link rel="next" href="https://www.m1sty.com/2021/coding_algorithm_python_leetcode/" />
+  <link rel="canonical" href="https://www.m1sty.com/2021/dsfb_2_exploring-and-visualizing-data/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Lecture 2：Exploring and Visualizing Data | M1sty
+       
+  </title>
+  <meta name="title" content="Lecture 2：Exploring and Visualizing Data | M1sty">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/www.m1sty.com"
+    },
+    "articleSection" : "posts",
+    "name" : "Lecture 2：Exploring and Visualizing Data",
+    "headline" : "Lecture 2：Exploring and Visualizing Data",
+    "description" : "Lecture 2：Exploring and Visualizing Data   This lecture focuses on how we can use descriptive statistics and exploratory analysis to understand datasets. A primary goal of data visualization is to help identify patterns in data and be able to communicate these patterns succinctly to an analyst. Often our goal is to find patterns in large datasets, to help reduce the size of the dataset we introduce cluster analysis as a data mining technique for grouping objects into similar subsets or clusters.",
+    "inLanguage" : "en-us",
+    "author" : "Misty",
+    "creator" : "Misty",
+    "publisher": "Misty",
+    "accountablePerson" : "Misty",
+    "copyrightHolder" : "Misty",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-06-10 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-06-10 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/www.m1sty.com\/2021\/dsfb_2_exploring-and-visualizing-data\/",
+    "wordCount" : "1738",
+    "keywords" : [ "HKU","ICOM 6044","Data science for business", "M1sty"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://www.m1sty.com">M1sty</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="About">About</a>
+                
+                <a class="menu-item" href="/links/" title="Links">Links</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Lecture 2：Exploring and Visualizing Data</h1>
+        <div class="post-meta">
+        <i class="far fa-folder-open"></i>
+            <span class="post-category"> in
+                <a href="https://www.m1sty.com/categories/data-science-for-business/"> Data science for business </a>
+                    
+            </span>
+          <span class="post-time"> on
+        <time datetime=2021-06-10 itemprop="datePublished">June 10, 2021</time>
+           </span> (<span class="post-word-count">1738 words)</span>
+        </div>
+    
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#part-1-cluster-analysis">Part 1: Cluster Analysis</a>
+      <ul>
+        <li><a href="#review-from-lecture-1-and-questions">Review from Lecture 1 and Questions</a></li>
+        <li><a href="#motivation-and-types-of-cluster-analysis">Motivation and Types of Cluster Analysis</a></li>
+        <li><a href="#distance-based-approaches">Distance Based Approaches</a></li>
+        <li><a href="#combinatorial-problem-of-finding-clustering-solutions">Combinatorial Problem of Finding Clustering Solutions</a></li>
+        <li><a href="#k-means-algorithm">K-Means Algorithm</a></li>
+        <li><a href="#cluster-validity">Cluster Validity</a></li>
+        <li><a href="#lending-club-in-class-exercise">Lending Club In-Class Exercise</a></li>
+        <li><a href="#conclusions">Conclusions</a></li>
+      </ul>
+    </li>
+    <li><a href="#part-2-k-means-clustering-with-iris-data">Part 2: k-Means Clustering with Iris Data</a>
+      <ul>
+        <li><a href="#processing">Processing</a></li>
+        <li><a href="#summary-of-cluster-analysis-with-r">Summary of Cluster Analysis with R</a></li>
+      </ul>
+    </li>
+    <li><a href="#part-3-introduction-to-ford-ka-case">Part 3: Introduction to Ford Ka Case</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script> 
+    
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="lecture-2exploring-and-visualizing-data">Lecture 2：Exploring and Visualizing Data</h1>
+<ul>
+<li>
+<p>This lecture focuses on how we can use descriptive statistics and exploratory analysis to understand datasets. A primary goal of data visualization is to help identify patterns in data and be able to communicate these patterns succinctly to an analyst.  Often our goal is to find patterns in large datasets, to help reduce the size of the dataset we introduce cluster analysis as a data mining technique for grouping objects into similar subsets or clusters.  It is one of the most common data mining techniques and used in many fields, such as machine learning, pattern recognition, image analysis and bioinformatics.</p>
+</li>
+<li>
+<p>Required Readings:</p>
+<ul>
+<li>Taddy, Business Data Science, Chapter 7.</li>
+<li>“Cluster Analysis for Marketing Segmentation”, UVA-M-0748.</li>
+</ul>
+</li>
+<li>
+<p>Optional Readings:</p>
+<ul>
+<li>Provost and Fawcett, Data Science for Business, Chapter 6.</li>
+<li>James et al, An Introduction to Statistical Learning, Chapter 10.3.</li>
+</ul>
+</li>
+<li>
+<p>Session:</p>
+<ul>
+<li>Introduction to Cluster Analysis</li>
+<li>Example of k-Means Clustering using Iris Data</li>
+<li>Introduce Ford Ka Case</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-1-cluster-analysis">Part 1: Cluster Analysis</h2>
+<ul>
+<li>Review from Lecture 1 and Questions</li>
+<li>Cluster Introduction</li>
+<li>k-Means Algorithm</li>
+<li>Example of k-Means clustering using Lending Club</li>
+<li>Video: Example of k-Means clustering using Iris Data</li>
+</ul>
+<h3 id="review-from-lecture-1-and-questions">Review from Lecture 1 and Questions</h3>
+<ul>
+<li>Data Science for Business</li>
+<li>Course Objectives</li>
+<li>Zoom Etiquette</li>
+<li>Questions</li>
+<li>Announcements</li>
+</ul>
+<h3 id="motivation-and-types-of-cluster-analysis">Motivation and Types of Cluster Analysis</h3>
+<h4 id="clustering">Clustering</h4>
+<ul>
+<li>“Clustering is the most frequent data mining task.” Kdnuggets News, 11 June 2001</li>
+<li>An unsupervised learning method that organizes and simplifies the structure for large, complex data sets</li>
+<li>Example: Find a “natural” grouping of data given unlabeled data with two variables (dimensions)</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615233649.png" alt=""></p>
+<h4 id="types-of-clustering-methods">Types of Clustering Methods</h4>
+<ul>
+<li>Partitioning
+<ul>
+<li>Distinct, non-overlapping groups</li>
+<li>Works using iterative assignment (and re-assignment) of objects</li>
+</ul>
+</li>
+<li>Hierarchical
+<ul>
+<li>Tree of objects; Dendrogram</li>
+<li>Works using agglomerative or divisive approaches</li>
+</ul>
+</li>
+<li>Other clustering techniques
+<ul>
+<li>Fuzzy or soft clustering; Overlapping</li>
+<li>Probablistic or mixtures, as with topic models like Latent Dirichlet Allocation (LDA) or Gaussian Mixture Models</li>
+</ul>
+</li>
+</ul>
+<h4 id="using-cluster-analysis-to-understand">Using Cluster Analysis to Understand</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615233901.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615233934.png" alt=""></p>
+<h4 id="using-cluster-analysis-to-summarize-psychographic-sementation-for-weight-loss">Using Cluster Analysis to Summarize Psychographic Sementation for Weight-Loss</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615234240.png" alt=""></p>
+<h4 id="example-personicxcom-lifestyle-segmentaion">Example: PersonicX.com Lifestyle Segmentaion</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615234356.png" alt=""></p>
+<h3 id="distance-based-approaches">Distance Based Approaches</h3>
+<h4 id="use-of-closest-data-points">Use of &ldquo;Closest&rdquo; data points</h4>
+<ul>
+<li>Amazon.com: “People like you also liked &hellip;”</li>
+<li>House appraisals: “The three most similar houses to your are &hellip;”</li>
+<li>Lots of informal arguments: “I was in a similar situation three years ago and I &hellip;”</li>
+</ul>
+<h4 id="clustering-works-by-measuring-distance-between-records">Clustering works by measuring distance between records</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615234718.png" alt=""></p>
+<h4 id="distance-metrics-implicitly-reflect-judgment-about-importance">Distance metrics implicitly reflect judgment about importance</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615235430.png" alt=""></p>
+<h4 id="distances">Distances</h4>
+<ul>
+<li>Range (or continuous): easy enough, can just take (absolute value of) differences</li>
+<li>Ordinal: a little harder, but not unreasonable to take number of categories different</li>
+<li>Nominal: 1 if different, 0 if the same
+<ul>
+<li>Previous example: |704-619| + 2+1+1 = 89</li>
+<li>Not best distance metric: lots of weight on GMAT</li>
+</ul>
+</li>
+</ul>
+<h4 id="fixing-weight-issue">Fixing Weight issue</h4>
+<ul>
+<li>Normalize data, or</li>
+<li>Assign weights to each field: say (1/100,1,2,3) to give value
+<ul>
+<li>Previous example: |704-619|/100 + 2+2<em>1+3</em>1 = 7.85</li>
+</ul>
+</li>
+<li>How to get weights? No obvious way, but distance function is critical to these approaches</li>
+</ul>
+<h3 id="combinatorial-problem-of-finding-clustering-solutions">Combinatorial Problem of Finding Clustering Solutions</h3>
+<h4 id="illustrating-our-true-grouping">Illustrating our true grouping</h4>
+<ul>
+<li>Suppose we have a dataset with 2 variables and 15 observations</li>
+<li>We know that it is made up of 3 groups each with 5 observations</li>
+<li>Our true grouping of the data shows three distinct groups</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615235922.png" alt=""></p>
+<h4 id="the-goal-of-cluster-analysis-is-to-reconstruct-the-true-grouping-but-without-knowing-the-group">The goal of cluster analysis is to reconstruct the true grouping but without knowing the group</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210615235959.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616000301.png" alt=""></p>
+<h4 id="how-do-we-decide-which-is-the-best-solution">How do we decide which is the best &ldquo;solution&rdquo;</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616000610.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616000705.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616000741.png" alt=""></p>
+<h4 id="k-means-decomposes-variation-into-between-explained-and-within-unexplained">K-Means decomposes variation into between (explained) and within (unexplained)</h4>
+<ul>
+<li>Find k groupings (or clusters) of n observations that maximize the distances between the groups (or minimize distances within groups)
+<ul>
+<li>Motivation “similar within, different between</li>
+<li>SStotal = SSwithin + SSbetween</li>
+</ul>
+</li>
+<li>Define centroid of a group of observations to be the mean or average of each of the field values for those points (convert discrete and ranks to numeric values)</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616000924.png" alt=""></p>
+<h4 id="k-means-attempts-to-find-the-best-solution-by-iterating-upon-an-initial-solution">K-Means attempts to find the best solution by iterating upon an initial solution</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616001108.png" alt=""></p>
+<h3 id="k-means-algorithm">K-Means Algorithm</h3>
+<ul>
+<li>We cannot evaluate every potential solution, so we use an algorithm that avoids computing every permutation and iterates to find a “good” one.</li>
+</ul>
+<h4 id="k-means-clustering-algorithm">K-means Clustering Algorithm</h4>
+<ul>
+<li>Partitional clustering approach</li>
+<li>Each cluster is associated with a centroid (center point)</li>
+<li>Each point is assigned to the cluster with the closest centroid</li>
+<li>Number of clusters, K, must be specified</li>
+<li>The basic algorithm is very simple</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616001355.png" alt=""></p>
+<h4 id="k-means-example-geometric-perspective">K-Means Example (Geometric Perspective)</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616001550.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616001603.png" alt=""></p>
+<h4 id="k-means-clustering---detail">K-means Clustering - Detail</h4>
+<ul>
+<li>Initial centroids are often chosen randomly.
+<ul>
+<li>Clusters produced vary from one run to another.</li>
+</ul>
+</li>
+<li>The centroid is the mean of the points in the cluster</li>
+<li>‘Closeness’ is measured by Euclidean distance (others are cosine similarity, correlation, etc.)</li>
+<li>K-means will converge for common similarity measures mentioned above.</li>
+<li>Most of the convergence happens in the first few iterations.
+<ul>
+<li>Often the stopping condition is changed to ‘Until relatively few points change clusters’</li>
+</ul>
+</li>
+<li>Complexity is O( n * K * I * d )
+<ul>
+<li>n = number of points</li>
+<li>K = number of clusters</li>
+<li>I = number of iterations</li>
+<li>d = number of attributes</li>
+</ul>
+</li>
+</ul>
+<h4 id="cluster-profiling-what-do-my-clusters-mean">Cluster Profiling: What do my clusters mean?</h4>
+<ul>
+<li>Clustering optimizes a statistical criterion, but your goal is to use the clusters to make better sense of your data. To interpret the meaning of the clusters try the following:
+<ul>
+<li>Examine the cluster centroids (averages) and compare them to one another (e.g., Heavy vs. Light users) with tables and plots</li>
+<li>Select individual(s) close to the cluster centroid to give a prototypical example, to understand what observations belong (e.g., high income customer might suggest “affluent” cluster)</li>
+<li>Identify names or labels for each cluster can relate to behaviors or observables (e.g., wealthy retired become “Sitting Pretty”, rural customers “Country Ways”, single consumers renting in the city “Urban Tenants”)</li>
+<li>Compare with known taxonomies or groupings to validate the meaning of your clusters</li>
+</ul>
+</li>
+</ul>
+<h3 id="cluster-validity">Cluster Validity</h3>
+<h4 id="cluster-validity-1">Cluster Validity</h4>
+<ul>
+<li>For supervised classification we have a variety of measures to evaluate how good our model is
+<ul>
+<li>Accuracy, precision, recall</li>
+</ul>
+</li>
+<li>For cluster analysis, the analogous question is how to evaluate the “goodness” of the resulting clusters?</li>
+<li>But &ldquo;clusters are in the eye of the beholder&rdquo;!</li>
+<li>Then why do we want to evaluate them?
+<ul>
+<li>To avoid finding patterns in noise</li>
+<li>To compare clustering algorithms</li>
+<li>To compare two sets of clusters</li>
+<li>To compare two clusters</li>
+</ul>
+</li>
+</ul>
+<h4 id="internal-measures-cohesion-and-separation">Internal Measures: Cohesion and Separation</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616002753.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616003154.png" alt=""></p>
+<h4 id="evaluating-k-means-clusters">Evaluating K-means Clusters</h4>
+<ul>
+<li>Most common measure is Sum of Squared Error (SSE) or Within Sum of Squares (WSS)
+<ul>
+<li>For each point, the error is the distance to the nearest cluster</li>
+<li>To get SSE, we square these errors and sum them.</li>
+<li><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616004443.png" alt=""></li>
+<li>x is a data point in cluster Ci and mi is the representative point for cluster Ci
+<ul>
+<li>can show that mi corresponds to the center (mean) of the cluster</li>
+</ul>
+</li>
+<li>Given two clusters, we can choose the one with the smallest error</li>
+<li>One easy way to reduce SSE is to increase K, the number of clusters
+<ul>
+<li>A good clustering with smaller K can have a lower SSE than a poor clustering with higher K</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="using-scree-plots-to-determine-k">Using Scree Plots to determine k</h4>
+<ul>
+<li>Clusters in more complicated figures aren’t well separated</li>
+<li>Internal Index: Used to measure the goodness of a clustering structure without respect to external information like SSE</li>
+<li>SSE is good for comparing two clusterings or two clusters (average SSE).</li>
+<li>Can also be used to estimate the number of clusters</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616005108.png" alt=""></p>
+<h4 id="framework-for-cluster-validity">Framework for Cluster Validity</h4>
+<ul>
+<li>Our goal is to find a cluster solution that is “Similar within, different between”</li>
+<li>Need a framework to interpret any measure.
+<ul>
+<li>For example, if our measure of evaluation has the value, 10, is that good, fair, or poor?</li>
+</ul>
+</li>
+<li>Statistics provide a framework for cluster validity
+<ul>
+<li>The more “atypical” a clustering result is, the more likely it represents valid structure in the data</li>
+<li>Can compare the values of an index that result from random data or clusterings to those of a clustering result.
+<ul>
+<li>If the value of the index is unlikely, then the cluster results are valid</li>
+</ul>
+</li>
+<li>These approaches are more complicated and harder to understand.</li>
+</ul>
+</li>
+<li>For comparing the results of two different sets of cluster analyses, a framework is less necessary.
+<ul>
+<li>However, there is the question of whether the difference between two index values is significant</li>
+</ul>
+</li>
+</ul>
+<h3 id="lending-club-in-class-exercise">Lending Club In-Class Exercise</h3>
+<p>Customer Segmentation using k-Means</p>
+<h4 id="introduction-to-lending-club">Introduction to Lending Club</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616005556.png" alt=""></p>
+<h4 id="two-sided-market">Two-sided Market</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616005837.png" alt=""></p>
+<h4 id="lending-club-dataset">Lending Club Dataset</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616005924.png" alt=""></p>
+<h4 id="in-class-exercise-cluster-analysis-of-lending-club">In-Class Exercise Cluster Analysis of Lending Club</h4>
+<ul>
+<li>Review the list of variables and identify what potential relationships you expect to find with loan default</li>
+<li>Download the files: lendingclub_kmeans.R and loans-kpi.csv</li>
+<li>Run the “@setup” and “@input”. Step through the “@exploratory analysis” section of the script and carefully consider the output.</li>
+<li>What did you learn from descriptive analysis?</li>
+<li>Run the “@kmeans” and “@scree” and “@cluster” to complete the cluster analysis. Make sure you choose the best k.</li>
+<li>What is the meaning of the cluster analysis?</li>
+</ul>
+<h4 id="understanding-boxplots">Understanding Boxplots</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012202.png" alt=""></p>
+<h4 id="parallel-lines-visualization">Parallel Lines Visualization</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012226.png" alt=""></p>
+<h4 id="scatterplot-matrix">Scatterplot Matrix</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012250.png" alt=""></p>
+<h4 id="k-means-cluster-for-lending-club-data">K-Means Cluster for Lending Club Data</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012318.png" alt=""></p>
+<h4 id="understanding-k-means-output">Understanding k-means output</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012342.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012410.png" alt=""></p>
+<h4 id="choosing-the-number-of-clusters-using-a-scree-plot">Choosing the Number of Clusters Using a Scree Plot</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012437.png" alt=""></p>
+<h4 id="how-do-we-interpret-our-clusters">How do we interpret our clusters</h4>
+<ul>
+<li>Focus on the Cluster Centroids or Centers since this is our summary of the cluster or gives us a “prototype” of the cluster
+<ul>
+<li>Look at the table</li>
+<li>Also try a parallels lines plot of the Cluster Centroids</li>
+</ul>
+</li>
+<li>Often we label our clusters so that we do not refer to them as “cluster A”, “cluster B”, &hellip; but instead something more meaningful like “big spenders”, &hellip;</li>
+</ul>
+<h4 id="interpreting-our-clusters-use-the-parallel-lines-plot-to-compare-centroids-graphically">Interpreting our Clusters (Use the Parallel Lines Plot to Compare Centroids Graphically)</h4>
+<p><img src="https://raw.githubusercontent.com/M1styDay/image_hosting/master/hugo_images/20210616012510.png" alt=""></p>
+<h3 id="conclusions">Conclusions</h3>
+<h4 id="summary-on-clustering">Summary on Clustering</h4>
+<ul>
+<li>Undirected data mining approach: no output field.</li>
+<li>Wish to group together “similar” records (as given by distance function)</li>
+<li>Used as end in itself (determining market segments) or as part of datamining process (apply different neural network or decision tree to each cluster)</li>
+<li>Advantages
+<ul>
+<li>Easy to apply, depends only on distance function</li>
+<li>Leads to interesting insights</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Relies on distance function: bad function, bad results</li>
+<li>Difficult to find good clusters: lots of algorithms, no clear winner</li>
+<li>Difficult to interpret the results</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-2-k-means-clustering-with-iris-data">Part 2: k-Means Clustering with Iris Data</h2>
+<ul>
+<li>Iris Dataset</li>
+<li>R script to complete k-Means Analysis
+<ul>
+<li>Setup</li>
+<li>Syntax help</li>
+<li>Visualization</li>
+<li>k-Means</li>
+<li>Scree Plots</li>
+</ul>
+</li>
+</ul>
+<h3 id="processing">Processing</h3>
+<ul>
+<li>详情见课件</li>
+</ul>
+<h3 id="summary-of-cluster-analysis-with-r">Summary of Cluster Analysis with R</h3>
+<ul>
+<li>Goal
+<ul>
+<li>Take a large datasets (many rows) and organize into groups (or assign each row into a cluster) ◦ Helpful in reducing the dimension of a dataset and finding patterns</li>
+</ul>
+</li>
+<li>Input
+<ul>
+<li>Matrix of numeric values (rows are observations, columns are variables)</li>
+</ul>
+</li>
+<li>Output
+<ul>
+<li>Vector of assignments (each element corresponds to the cluster of a row) ◦ Matrix of cluster centroids (averages of the variables within a cluster)</li>
+</ul>
+</li>
+<li>Interpretation
+<ul>
+<li>Comparing the differences in the means of the clusters using cluster centroids</li>
+<li>Visualize differences in the clusters by looking at tables/plots of cluster centroids ◦ Use the clusters as a way of reducing the dimension of the data for other analyses</li>
+</ul>
+</li>
+</ul>
+<h2 id="part-3-introduction-to-ford-ka-case">Part 3: Introduction to Ford Ka Case</h2>
+<ul>
+<li>详情见课件</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>M1sty </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://www.m1sty.com/2021/dsfb_2_exploring-and-visualizing-data/>https://www.m1sty.com/2021/dsfb_2_exploring-and-visualizing-data/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/hku/">
+                    #HKU</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/icom-6044/">
+                    #ICOM 6044</a></span>
+            
+            <span class="tag"><a href="https://www.m1sty.com/tags/data-science-for-business/">
+                    #Data science for business</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://www.m1sty.com">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://www.m1sty.com/2021/data-warehouse_0_overview/" class="prev" rel="prev" title="Hadoop Overview"><i class="iconfont icon-left"></i>&nbsp;Hadoop Overview</a>
+         
+        
+        <a href="https://www.m1sty.com/2021/coding_algorithm_python_leetcode/" class="next" rel="next" title="Algorithm_Leetcode">Algorithm_Leetcode&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2020 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://www.m1sty.com">M1sty</a> | </span> 
+         
+
+         
+		  <span> <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Analyst</a> => <a href="https://www.m1sty.com" target="_blank" rel="external nofollow">Data Scientist</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     </div>
+  </body>
+</html>

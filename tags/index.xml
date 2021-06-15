@@ -26,18 +26,9 @@
     </item>
     
     <item>
-      <title>Hadoop</title>
-      <link>https://www.m1sty.com/tags/hadoop/</link>
-      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.m1sty.com/tags/hadoop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data science for business</title>
       <link>https://www.m1sty.com/tags/data-science-for-business/</link>
-      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/data-science-for-business/</guid>
       <description></description>
@@ -46,7 +37,7 @@
     <item>
       <title>HKU</title>
       <link>https://www.m1sty.com/tags/hku/</link>
-      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/hku/</guid>
       <description></description>
@@ -55,9 +46,18 @@
     <item>
       <title>ICOM 6044</title>
       <link>https://www.m1sty.com/tags/icom-6044/</link>
-      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.m1sty.com/tags/icom-6044/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hadoop</title>
+      <link>https://www.m1sty.com/tags/hadoop/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.m1sty.com/tags/hadoop/</guid>
       <description></description>
     </item>
     
